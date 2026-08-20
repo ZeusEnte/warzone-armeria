@@ -243,7 +243,7 @@ regla 3 prohíbe reescribir la historia para separarlas.
 
 ### Comprobado de verdad
 
-- `python scripts/pruebas.py` → 34 comprobaciones, todas pasan (sin red).
+- `python scripts/pruebas.py` → 35 comprobaciones, todas pasan (sin red).
 - `python scripts/validar_meta.py` sobre el `meta.json` real → 5 modos, 615 armas,
   66 armas con accesorios.
 - **Scraper completo en vivo** contra wzstats (5 modos + fichas), escribiendo

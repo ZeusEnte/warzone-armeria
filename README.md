@@ -6,6 +6,10 @@ y te dice con qué armas jugar según el modo y el estilo que marques.
 No necesita servidor propio, ni base de datos, ni que tu PC esté encendido:
 un cron de GitHub Actions raspa, hace commit del JSON y republica la página.
 
+> Si vas a trabajar en este repo con Claude Code, empieza por
+> [CLAUDE.md](CLAUDE.md): resume la arquitectura, cómo probarlo y las
+> trampas del scraping.
+
 ## Cómo funciona
 
 ```

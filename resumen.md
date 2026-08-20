@@ -8,10 +8,12 @@ Proyecto completo y commiteado en `main` (commit `e05db60`). Funciona de punta a
 
 - `scripts/scrape.py` — raspa wzstats.gg. 5 modos: Resurgence, Multijugador (BO7),
   Resurgence Ranked, MP Ranked y Battle Royale. Saca tier, puesto por categoría,
-  imagen y los accesorios de las 26 mejores armas separados por modo.
+  imagen, y de las 66 armas de tier S y A: accesorios por modo y por variante,
+  requisito de desbloqueo de cada accesorio, código de canje y nivel máximo.
 - `docs/index.html` — la app. Sin dependencias, sin build. Perfil (modo, estilo,
-  mando/teclado, exclusiones) en localStorage.
-- `docs/data/meta.json` — datos generados (~520 KB).
+  mando/teclado, exclusiones, armas que no tienes) en localStorage. Cualquier
+  arma de la tabla se despliega con sus builds completas.
+- `docs/data/meta.json` — datos generados (~680 KB).
 - `.github/workflows/update-meta.yml` — cron diario 06:10 UTC → scraper → commit → Pages.
 
 ## Decisiones tomadas
@@ -22,6 +24,14 @@ Proyecto completo y commiteado en `main` (commit `e05db60`). Funciona de punta a
   esto no necesite mantenimiento. El gamertag es solo etiqueta visual.
 - Modos prioritarios del usuario: **Resurgence** y **Multijugador**.
 
+## Posesión de armas
+
+wzstats da el requisito de cada **accesorio** (`Level 37`, `Armory`, `Prestige`,
+o el arma que hay que subir), pero **qué armas tiene un jugador no existe en
+ninguna fuente pública**. Se resuelve con un botón «No la tengo» por arma, que
+es un «todavía no», no un descarte: el equipamiento del día solo usa las
+disponibles y el panel «A por la siguiente» ordena las que faltan.
+
 ## Detalles del scraping que costaron
 
 - Warzone categoriza por alcance (`Long Range`), BO7 por tipo (`Assault Rifle`).
@@ -30,6 +40,12 @@ Proyecto completo y commiteado en `main` (commit `e05db60`). Funciona de punta a
   (KAR98K). El parser ancla en `ul.weapon-visual-no-image-container`, común a ambos.
 - Hay que forzar `r.encoding = "utf-8"` o los nombres con acento se rompen (JÄGER 45).
 - El primer bloque de la tier list no lleva cabecera: es el S tier.
+- Los accesorios cuelgan de `ul.weapon-visual-no-image-container`; el requisito
+  está en `.level-tag` y el código en `.weapon-build-code`, que es hermano de la
+  lista, no descendiente (hay que subir hasta 4 niveles buscándolo).
+- `.prestige-slot` lleva también `.attachment-slot-no-image`: un selector basta.
+- Las fichas repiten las builds por modo, incluidos modos que no seguimos
+  (Iron Gauntlet, Zombies, Black Ops Royale). Se filtran o el JSON se dispara.
 
 ## Publicado y funcionando
 

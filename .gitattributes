@@ -1,0 +1,10 @@
+# El proyecto se edita en Windows y se ejecuta en runners Linux: normalizamos
+# los finales de linea a LF dentro del repositorio para no generar diffs falsos.
+* text=auto eol=lf
+
+# Binarios: que git no los toque.
+*.png binary
+*.ico binary
+
+# meta.json lo genera el bot; no cuenta como codigo escrito a mano.
+docs/data/meta.json linguist-generated=true

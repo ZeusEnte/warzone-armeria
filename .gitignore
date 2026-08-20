@@ -1,3 +1,21 @@
+# Python
 __pycache__/
 *.pyc
+.venv/
+venv/
+env/
+
+# Cuarentena de la auditoria: se revisa en local, no se sube
 _CUARENTENA/
+
+# Editores y sistema operativo
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Temporales
+*.log
+*.tmp
+*.bak

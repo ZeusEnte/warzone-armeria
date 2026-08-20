@@ -176,6 +176,9 @@ Ahora:
    warnings: la web se publica igual, pero GitHub manda el correo.
 5. `modoValido()` en el frontend recoloca al modo por defecto si el guardado ya
    no existe, en vez de reventar.
+6. Las armas cuya **ficha** falle hoy conservan los accesorios de la
+   actualizacion anterior (solo las que siguen en la lista del dia, para que el
+   JSON no crezca sin control). Si falla un tercio o mas, se anota un warning.
 
 Si dos ejecuciones caen el **mismo día UTC**, los `changes` se acumulan en vez de
 reemplazarse (`fusionar_cambios`). Sin eso, tocar `index.html` dejaba el panel

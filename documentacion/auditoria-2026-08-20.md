@@ -220,3 +220,63 @@ el repo es del propio interesado. Queda dicho para que la decisión sea suya.
 Viene anotado en `CLAUDE.md` como pendiente sin confirmar. **No está en ningún
 archivo del repositorio** (verificado, ver informe). Sigue siendo recomendable
 cambiarla; es una acción fuera de esta carpeta, así que no la toco.
+
+---
+
+## Lo que se aplicó, y cómo se comprobó
+
+| Commit | Qué |
+|---|---|
+| `be5f1fd` | punto de partida (árbol ya limpio, no hizo falta commit previo) |
+| `a26b20d` | este plan |
+| `ca3ce96` | `_CUARENTENA/INDICE.md`, `.gitignore` ampliado, `.gitattributes` (LF) |
+| `ef55288` | web: gamertag fuera, A3–A7, buscador, avisos, service worker |
+| `9ea93c9` | scraper: recuperación de modos, CLI de prueba, validador, pruebas, workflow |
+| `600e477` | buscador a 44 px de alto en móvil |
+| `695440c` | README, CLAUDE.md y resumen.md |
+| `cfc3303` | conservar los accesorios de las armas cuya ficha falle |
+
+**Desviación del guion:** las mejoras de categoría B no llevan cada una su commit
+`mejora:` como pedía el guion; están agrupadas por área (web y scraper) junto con
+las correcciones de la misma zona, en `ef55288` y `9ea93c9`. Se vio tarde y la
+regla 3 prohíbe reescribir la historia para separarlas.
+
+### Comprobado de verdad
+
+- `python scripts/pruebas.py` → 34 comprobaciones, todas pasan (sin red).
+- `python scripts/validar_meta.py` sobre el `meta.json` real → 5 modos, 615 armas,
+  66 armas con accesorios.
+- **Scraper completo en vivo** contra wzstats (5 modos + fichas), escribiendo
+  fuera del proyecto: 248/59/55/5/248 armas, código 0.
+- **Fallo de dos modos simulado** (URLs a un 404 real): los dos modos conservan
+  sus 248 y 59 armas del día anterior marcadas `stale`, `warnings` con las dos
+  entradas, código 0 para que la web se publique igual.
+- **Fallo de todas las fichas de arma simulado**: los accesorios anteriores se
+  conservan y se anota el aviso.
+- **Web en el navegador** (servida en `127.0.0.1:8765`): sin errores de consola;
+  buscador con acentos («jager» → JÄGER 45) y armas fuera del top 20 (KAR98K);
+  «ver todas» → 248 filas; apertura de ficha con **Enter** y foco devuelto;
+  avisos de dato viejo y de modo conservado; barra de encaje sin `NaN`.
+- **Bug de la página en blanco**: reproducido metiendo un modo inexistente en
+  `localStorage` y recargando. Antes reventaba en `mode.weapons`; ahora recoloca
+  al modo por defecto y pinta la página. Verificado en vivo.
+- **Sin conexión**: con el servidor local **apagado**, recarga completa y la app
+  sigue mostrando armas, accesorios y códigos de canje.
+- **Móvil** a 390 y 360 px con el andamio de iframes: sin desbordes, ningún
+  elemento pulsable por debajo de 44 px, columna «puesto oficial» oculta.
+- `git grep` del gamertag sobre los archivos versionados: cero apariciones.
+- Enlaces relativos de todos los `.md` y rutas citadas en README/CLAUDE.md:
+  ninguna rota.
+
+### No comprobado
+
+- **El workflow de GitHub Actions no se ha ejecutado.** El YAML es válido y el
+  paso del heredoc se probó a mano en local, pero los tres jobs encadenados
+  (`build` → `deploy` → `avisar`) solo se pueden ver funcionando en GitHub. La
+  primera ejecución real será el cron de mañana.
+- **El service worker en el móvil del usuario.** Verificado en Chrome de
+  escritorio. En iOS la instalación desde Safari se comporta distinto.
+- **La copia al portapapeles con una pulsación real.** En la prueba sintética no
+  hay activación de usuario, así que se ejerció la rama de fallo: el botón dice
+  «no se pudo, cópialo a mano» en vez de mentir. La rama de éxito no se ha
+  ejercido.

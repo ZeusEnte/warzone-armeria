@@ -485,12 +485,23 @@ def main(argv=None) -> int:
     else:
         frescos = {k: v for k, v in modes.items() if not v.get("stale")}
         targets = pick_for_builds(frescos or modes, args.limite_builds)
+        # Partimos de los accesorios que ya teniamos para estas mismas armas: si
+        # hoy falla la ficha de una, se queda la de ayer en vez de desaparecer.
+        # Solo las de la lista de hoy, para que el JSON no crezca sin control con
+        # armas que ya no estan en la meta.
+        anteriores = previo.get("builds") or {}
+        for slug, _ in targets:
+            if slug in anteriores:
+                builds[slug] = anteriores[slug]
+
         print(f"-> accesorios de {len(targets)} armas")
+        fallos = 0
         for slug, name in targets:
             try:
                 page = get(f"{BASE}/best-loadouts/{slug}", session)
                 found = parse_builds(page)
             except Exception as exc:
+                fallos += 1
                 aviso(f"{slug}: {exc}")
                 continue
             if found:
@@ -500,11 +511,19 @@ def main(argv=None) -> int:
                     "builds": found,
                 }
                 print(f"   {name}: {len(found)} builds")
+            else:
+                fallos += 1
+                aviso(f"{slug}: la ficha no traia ninguna build")
             time.sleep(args.pausa)
-        if not builds and previo.get("builds"):
-            builds = dict(previo["builds"])
-            avisos.append("no se pudo leer ninguna ficha de arma, se conservan los accesorios anteriores")
-            aviso("ninguna ficha de arma legible: se conservan los accesorios anteriores")
+
+        heredados = sum(1 for slug, _ in targets
+                        if slug in anteriores and builds.get(slug) is anteriores[slug])
+        if heredados:
+            print(f"   {heredados} armas conservan los accesorios de la actualizacion anterior")
+        # Un fallo suelto es ruido de red; que falle un tercio significa que
+        # wzstats cambio el HTML de las fichas y hay que mirarlo.
+        if targets and fallos >= max(3, len(targets) // 3):
+            avisos.append(f"no se pudieron leer los accesorios de {fallos} de {len(targets)} armas")
 
     ahora = datetime.now(timezone.utc)
     cambios = diff_modes(previo, modes)

@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Armería · Warzone Meta</title>
 <meta name="description" content="Qué armas usar en Warzone según tu estilo, con los accesorios exactos y la meta actualizada a diario.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Armería · Warzone Meta">
+<meta property="og:description" content="Qué armas usar en Warzone según tu estilo, con los accesorios exactos y la meta actualizada a diario.">
+<meta property="og:image" content="icons/icon-512.png">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#0b0e13">
 <link rel="icon" href="icons/favicon.ico" sizes="any">
@@ -138,6 +144,19 @@
 
   footer{color:var(--faint);font-size:12.5px;text-align:center;line-height:1.9;margin-top:26px}
   .err{background:#2a1416;border:1px solid #5b2226;color:#ffb4b4;padding:14px 16px;border-radius:var(--radius);font-size:13.5px}
+  .warn{background:rgba(255,159,28,.09);border:1px solid rgba(255,159,28,.32);color:#ffd39b;
+        padding:12px 15px;border-radius:var(--radius);font-size:13px;margin-bottom:14px}
+
+  .search{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+  .search input{
+    flex:1 1 210px;min-width:0;background:var(--panel-2);color:var(--ink);
+    border:1px solid var(--line);border-radius:9px;padding:9px 12px;
+    font:inherit;font-size:13.5px;
+  }
+  .search input:focus{outline:none;border-color:var(--acc-2)}
+  .search input::placeholder{color:var(--faint)}
+  table.rank tr.row:focus-visible{outline:2px solid var(--acc-2);outline-offset:-2px}
+  .nores{color:var(--faint);font-size:13.5px;padding:10px 0}
   @media(max-width:640px){
     .wrap{padding:14px 11px 48px}
     /* Los botones median 21-27px de alto: imposibles de acertar con el dedo. */
@@ -159,9 +178,9 @@
 
   <header class="top">
     <div class="who">
-      <div class="badge" id="initials">ZE</div>
+      <div class="badge" id="initials">··</div>
       <div>
-        <h1 id="tag">ZeusEnte<span>#2497</span></h1>
+        <h1 id="tag">Jugador</h1>
         <p>Armería personal · <button class="chip tiny" id="edit-tag">cambiar gamertag</button></p>
       </div>
     </div>
@@ -169,6 +188,7 @@
   </header>
 
   <div id="error" hidden class="err"></div>
+  <div id="avisos" hidden></div>
 
   <section class="panel">
     <h2>Tu perfil</h2>
@@ -205,7 +225,12 @@
 
   <section class="panel">
     <h2>Ranking completo para tu perfil</h2>
-    <p class="sub">Las 20 mejores del modo elegido. <b>Pincha cualquiera</b> para ver los accesorios exactos que hay que montar.</p>
+    <p class="sub" id="rank-sub"></p>
+    <div class="search">
+      <input id="q" type="search" autocomplete="off" placeholder="Buscar un arma por nombre o tipo (KAR98K, SMG…)"
+             aria-label="Buscar un arma por nombre o tipo">
+      <button class="btn" id="ver-todas" type="button">Ver todas</button>
+    </div>
     <div class="scroll"><table class="rank">
       <thead><tr><th></th><th>Arma</th><th>Tipo</th><th class="pos">Puesto oficial</th><th>Tier</th><th>Encaje</th></tr></thead>
       <tbody id="rank"></tbody>
@@ -237,7 +262,15 @@ const INPUTS = [
   {id:"mando",  label:"Mando"},
   {id:"teclado",label:"Teclado y ratón"},
 ];
-const AVOIDABLE = ["Sniper","Shotgun","LMG","Marksman","Pistol"];
+// El "id" es el tipo tal cual lo publica wzstats (en inglés); la etiqueta es lo
+// que ve el usuario. No se traduce el id o dejaría de casar con los datos.
+const AVOIDABLE = [
+  {id:"Sniper",   label:"Francotirador"},
+  {id:"Shotgun",  label:"Escopeta"},
+  {id:"LMG",      label:"Ametralladora"},
+  {id:"Marksman", label:"Tirador"},
+  {id:"Pistol",   label:"Pistola"},
+];
 // Son secundarias: aunque wzstats las rankee ("#1 Pistol"), no compiten con un
 // arma principal, asi que no deben colarse por delante en el ranking.
 const SECUNDARIAS = ["Pistol","Melee","Launcher","Special"];
@@ -247,10 +280,15 @@ const TIER_SCORE = {S:100, A:78, B:55, C:35, D:18};
 // ("Assault Rifle") a estos tres papeles.
 const ROLE_LABEL = {largo:"Larga distancia", corto:"Corta distancia", sniper:"Francotirador"};
 
-const DEFAULTS = {mode:"resurgence", style:"agresivo", input:"mando", avoid:[], tag:"ZeusEnte#2497", missing:[]};
+// El gamertag por defecto es genérico a propósito: esto se publica en un repo y
+// en una web públicos. Cada usuario pone el suyo con «cambiar gamertag» y se
+// queda en el localStorage de su dispositivo, sin salir de ahí.
+const DEFAULTS = {mode:"resurgence", style:"agresivo", input:"mando", avoid:[], tag:"Jugador", missing:[]};
 let profile = load();
 let DATA = null;
 let openSlug = null;
+let busqueda = "";
+let verTodas = false;
 
 function load(){
   try{
@@ -357,7 +395,8 @@ function wzLink(w, texto){
 }
 
 function esc(s){
-  return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  return String(s).replace(/[&<>"']/g,
+    c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 }
 
 function attsHtml(build){
@@ -399,14 +438,27 @@ function chips(host, items, current, onPick, multi){
   });
 }
 
+// El scraper se salta los modos que fallen, así que un meta.json sin el modo
+// que el usuario tenía guardado es un resultado normal. Sin esto, renderAll()
+// leía weapons de undefined y la página se quedaba en blanco sin explicación.
+function modoValido(){
+  const ids = Object.keys(DATA.modes || {});
+  if(!ids.length) return "";
+  if(!DATA.modes[profile.mode]){
+    profile.mode = DEFAULTS.mode in DATA.modes ? DEFAULTS.mode : ids[0];
+    openSlug = null;
+    save();
+  }
+  return profile.mode;
+}
+
 function renderFilters(){
   const modes = Object.entries(DATA.modes).map(([id,m]) => ({id, label:m.label}));
-  if(!DATA.modes[profile.mode]) profile.mode = modes[0].id;
 
   chips(document.getElementById("f-mode"), modes, profile.mode, id => { profile.mode=id; openSlug=null; save(); renderAll(); });
   chips(document.getElementById("f-style"), STYLES, profile.style, id => { profile.style=id; save(); renderAll(); });
   chips(document.getElementById("f-input"), INPUTS, profile.input, id => { profile.input=id; save(); renderAll(); });
-  chips(document.getElementById("f-avoid"), AVOIDABLE.map(t=>({id:t,label:t})), profile.avoid, id => {
+  chips(document.getElementById("f-avoid"), AVOIDABLE, profile.avoid, id => {
     profile.avoid = profile.avoid.includes(id) ? profile.avoid.filter(x=>x!==id) : profile.avoid.concat(id);
     save(); renderAll();
   }, true);
@@ -499,11 +551,40 @@ function detailHtml(w){
   return h;
 }
 
+// Quita acentos y pasa a minúsculas: buscar "jager" tiene que encontrar "JÄGER 45".
+function normaliza(s){
+  return String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+}
+
 function renderRank(pool){
   const body = document.getElementById("rank");
   body.innerHTML = "";
-  const top = pool.slice(0, 20);
-  const max = top.length ? top[0]._s : 1;
+
+  const q = normaliza(busqueda.trim());
+  // Buscando se mira TODO el modo, no solo el top: meta.json trae ~250 armas por
+  // modo y antes no había forma de consultar una que no estuviera entre las 20.
+  const filtrado = q
+    ? pool.filter(w => normaliza(w.name).includes(q) || normaliza(w.weapon_type || "").includes(q))
+    : pool;
+  const top = (q || verTodas) ? filtrado : filtrado.slice(0, 20);
+  // Con 0/0 el ancho de la barra salía "NaN%".
+  const max = Math.max(1, top.length ? top[0]._s : 1);
+
+  document.getElementById("rank-sub").innerHTML = q
+    ? esc(top.length + (top.length === 1 ? " arma encontrada" : " armas encontradas") +
+          ' para "' + busqueda.trim() + '"') + ". <b>Pincha cualquiera</b> para ver sus accesorios."
+    : (verTodas ? "Las " + filtrado.length + " armas del modo elegido."
+                : "Las 20 mejores del modo elegido.") +
+      " <b>Pincha cualquiera</b> para ver los accesorios exactos que hay que montar.";
+  document.getElementById("ver-todas").textContent = verTodas ? "Ver solo el top 20" : "Ver todas";
+  document.getElementById("ver-todas").hidden = !!q;
+
+  if(!top.length){
+    const tr = document.createElement("tr");
+    tr.innerHTML = '<td colspan="6"><div class="nores">Ninguna arma de este modo coincide con la búsqueda.</div></td>';
+    body.appendChild(tr);
+    return;
+  }
 
   top.forEach((w,i) => {
     const pos = w.positions.map(p => "#" + p.rank + " " + p.range).join(", ") || "—";
@@ -511,6 +592,11 @@ function renderRank(pool){
     const tr = document.createElement("tr");
     tr.className = "row" + (falta(w) ? " missing" : "");
     tr.dataset.slug = w.slug || w.name;
+    // Se abre con el ratón; sin esto no había forma de abrirla con el teclado.
+    tr.tabIndex = 0;
+    tr.setAttribute("role", "button");
+    tr.setAttribute("aria-expanded", abierto ? "true" : "false");
+    tr.setAttribute("aria-label", "Ver los accesorios de " + w.name);
     tr.innerHTML =
       '<td class="n"><span class="caret">' + (abierto ? "▾" : "▸") + '</span>' + (i+1) + '</td>' +
       '<td class="name">' + esc(w.name) + '</td>' +
@@ -555,21 +641,54 @@ function renderStamp(){
 }
 
 function renderAll(){
+  if(!modoValido()){
+    mostrarError("El archivo de datos no trae ningún modo. Es un fallo del raspado: " +
+                 "revisa la última ejecución del workflow en GitHub.");
+    return;
+  }
   const mode = DATA.modes[profile.mode];
-  const pool = mode.weapons.filter(allowed).map(w => Object.assign({_s:score(w)}, w))
-                           .sort((a,b) => b._s - a._s);
+  const pool = (mode.weapons || []).filter(allowed).map(w => Object.assign({_s:score(w)}, w))
+                                   .sort((a,b) => b._s - a._s);
   renderFilters();
+  renderAvisos();
   renderLoadout(pool);
   renderGoal(pool);
   renderRank(pool);
   renderChanges();
 }
 
+// Avisos de frescura: datos viejos porque el cron lleva días caído, o modos que
+// el scraper no pudo releer y viene arrastrando del día anterior.
+function renderAvisos(){
+  const host = document.getElementById("avisos");
+  const lista = [];
+
+  const gen = new Date(DATA.generated_at);
+  const horas = isNaN(gen) ? 0 : (Date.now() - gen.getTime()) / 36e5;
+  if(horas > 48){
+    lista.push("Estos datos tienen " + Math.floor(horas / 24) + " días. La actualización " +
+               "diaria no se está ejecutando; lo que ves puede no ser la meta de hoy.");
+  }
+  const mode = DATA.modes[profile.mode] || {};
+  if(mode.stale){
+    lista.push("No se pudo leer «" + mode.label + "» en la última actualización, " +
+               "así que se muestra el dato guardado" +
+               (mode.stale_since ? " del " + mode.stale_since.slice(0, 10) : "") + ".");
+  }
+  host.innerHTML = lista.map(t => '<div class="warn">' + esc(t) + '</div>').join("");
+  host.hidden = !lista.length;
+}
+
+function mostrarError(msg){
+  const box = document.getElementById("error");
+  box.hidden = false;
+  box.textContent = msg;
+}
+
 function renderTag(){
   const tag = (profile.tag || DEFAULTS.tag).trim();
   const h1 = document.getElementById("tag");
   const ini = document.getElementById("initials");
-  const btn = document.getElementById("edit-tag");
   const parts = tag.split("#");
   h1.innerHTML = esc(parts[0]) + (parts[1] ? '<span>#' + esc(parts[1]) + '</span>' : "");
   ini.textContent = parts[0].replace(/[^A-Za-z0-9ÁÉÍÓÚÑ]/gi,"").slice(0,2).toUpperCase() || "??";
@@ -582,16 +701,55 @@ document.getElementById("edit-tag").addEventListener("click", () => {
   if(v && v.trim()){ profile.tag = v.trim(); save(); renderTag(); }
 });
 
+// El buscador solo repinta la tabla: repintarlo todo en cada tecla haría saltar
+// las tarjetas de equipamiento mientras se escribe.
+document.getElementById("q").addEventListener("input", ev => {
+  busqueda = ev.target.value;
+  if(!DATA) return;
+  const mode = DATA.modes[profile.mode];
+  renderRank((mode.weapons || []).filter(allowed)
+    .map(w => Object.assign({_s:score(w)}, w)).sort((a,b) => b._s - a._s));
+});
+
+document.getElementById("ver-todas").addEventListener("click", () => {
+  verTodas = !verTodas;
+  renderAll();
+});
+
+// El navegador copia al portapapeles solo en contextos seguros. Si no se puede,
+// hay que decirlo: antes ponía "copiado" igualmente y el usuario se iba al juego
+// a pegar un codigo que no tenia.
+function copiarAlPortapapeles(texto){
+  if(navigator.clipboard && window.isSecureContext){
+    return navigator.clipboard.writeText(texto).then(() => true, () => respaldoCopiar(texto));
+  }
+  return Promise.resolve(respaldoCopiar(texto));
+}
+function respaldoCopiar(texto){
+  try{
+    const ta = document.createElement("textarea");
+    ta.value = texto;
+    ta.setAttribute("readonly", "");
+    ta.style.cssText = "position:fixed;top:-1000px;opacity:0";
+    document.body.appendChild(ta);
+    ta.select();
+    const ok = document.execCommand("copy");
+    document.body.removeChild(ta);
+    return ok;
+  }catch(e){ return false; }
+}
+
 document.addEventListener("click", ev => {
   if(!DATA) return;
 
   const copiar = ev.target.closest("[data-copy]");
   if(copiar){
     ev.stopPropagation();
-    const txt = copiar.getAttribute("data-copy");
     const antes = copiar.textContent;
-    const ok = () => { copiar.textContent = "copiado"; setTimeout(() => copiar.textContent = antes, 1400); };
-    if(navigator.clipboard) navigator.clipboard.writeText(txt).then(ok, ok); else ok();
+    copiarAlPortapapeles(copiar.getAttribute("data-copy")).then(ok => {
+      copiar.textContent = ok ? "copiado" : "no se pudo, cópialo a mano";
+      setTimeout(() => copiar.textContent = antes, ok ? 1400 : 2600);
+    });
     return;
   }
 
@@ -606,22 +764,54 @@ document.addEventListener("click", ev => {
   }
 
   const fila = ev.target.closest("tr.row");
-  if(fila){
-    openSlug = openSlug === fila.dataset.slug ? null : fila.dataset.slug;
-    renderAll();
-  }
+  if(fila) abrirFila(fila);
 });
 
-fetch("data/meta.json?v=" + Date.now())
+document.addEventListener("keydown", ev => {
+  if(ev.key !== "Enter" && ev.key !== " ") return;
+  const fila = ev.target.closest && ev.target.closest("tr.row");
+  if(!fila) return;
+  ev.preventDefault();
+  abrirFila(fila);
+});
+
+function abrirFila(fila){
+  const slug = fila.dataset.slug;
+  openSlug = openSlug === slug ? null : slug;
+  renderAll();
+  // Tras repintar, el foco se pierde: lo devolvemos a la fila que se abrió.
+  const vuelta = Array.prototype.find.call(
+    document.querySelectorAll("tr.row"), tr => tr.dataset.slug === slug);
+  if(vuelta && document.activeElement !== vuelta) vuelta.focus({preventScroll:true});
+}
+
+// "no-cache" no es "sin caché": guarda la respuesta y la revalida con el
+// servidor en cada carga. Si meta.json no ha cambiado, GitHub Pages contesta un
+// 304 vacío en vez de reenviar 680 KB. Antes, el "?v=" + Date.now() forzaba la
+// descarga completa cada vez, también con datos móviles.
+fetch("data/meta.json", {cache:"no-cache"})
   .then(r => { if(!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-  .then(d => { DATA = d; renderTag(); renderStamp(); renderAll(); })
-  .catch(e => {
-    const box = document.getElementById("error");
-    box.hidden = false;
-    box.textContent = "No se pudo cargar data/meta.json (" + e.message +
-      "). Si has abierto el archivo con doble clic, el navegador bloquea la lectura: sírvelo con «python -m http.server» desde la carpeta docs/.";
+  .then(d => {
+    DATA = d;
     renderTag();
+    renderStamp();
+    renderAll();
+  })
+  .catch(e => {
+    renderTag();
+    mostrarError("No se pudo cargar data/meta.json (" + e.message +
+      "). Si has abierto el archivo con doble clic, el navegador bloquea la lectura: " +
+      "sírvelo con «python -m http.server» desde la carpeta docs/.");
   });
+
+// Sin service worker, la app instalada en el móvil solo enseñaba el error de red
+// en cuanto fallaba la cobertura. Con él se puede consultar la última meta
+// descargada aunque no haya conexión.
+if("serviceWorker" in navigator){
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  });
+}
 </script>
 </body>
 </html>

@@ -23,17 +23,26 @@ JSON y republica la página. Funciona con el PC del usuario apagado.
 
 ```
 CLAUDE.md                          este fichero (contexto para retomar)
-README.md                     73L  documentación pública del repo
-resumen.md                         stub que apunta aquí (lo pide la config global del usuario)
+README.md                          documentación pública del repo
+resumen.md                         bitácora: estado, decisiones y próximos pasos
+documentacion/                     informes y documentación técnica (auditorías)
 _CUARENTENA/                       basura apartada para que el usuario la borre; en .gitignore
-scripts/scrape.py            415L  el scraper (única lógica de servidor)
+scripts/scrape.py                  el scraper (única lógica de servidor). Tiene CLI, ver --help
+scripts/validar_meta.py            invariantes del JSON generado; corre en el workflow
+scripts/pruebas.py                 pruebas del parser y del validador. Sin red, un segundo
 scripts/requirements.txt           requests + beautifulsoup4
 docs/index.html                    la app entera: HTML + CSS + JS, sin build ni dependencias
+docs/sw.js                         service worker (funciona sin cobertura). Subir VERSION al tocar la web
 docs/data/meta.json          680K  datos generados. NO EDITAR A MANO, NO LEER ENTERO
 docs/manifest.webmanifest          para "añadir a pantalla de inicio" en el móvil
 docs/icons/                        iconos generados con PIL (ver historial de git)
-.github/workflows/update-meta.yml  cron 06:10 UTC + push + manual
+.github/workflows/update-meta.yml  cron 06:10 UTC + push (solo despliega) + manual
 ```
+
+**`docs/` es la raíz web que publica GitHub Pages, no la documentación.** El
+estándar de proyectos del usuario reserva `docs/` para guías e informes, pero
+aquí está ocupado: la documentación vive en `documentacion/`. No renombrar `docs/`
+sin cambiar a la vez `path: docs` en el workflow.
 
 ## Formato de `docs/data/meta.json`
 
@@ -43,12 +52,14 @@ docs/icons/                        iconos generados con PIL (ver historial de gi
   "season": "Season 5 Reloaded, 2026",          // sacado de wzranked.com
   "source": "wzstats.gg",
   "previous_generated_at": "...",
+  "warnings": [ "Resurgence: no se pudo leer, se conserva el dato del 2026-08-19" ],
   "changes": [ {"mode","weapon","kind","from","to"} ],  // kind: sube|baja|entra|sale
   "modes": {
     "resurgence": {                              // + multiplayer, resurgence_ranked,
       "label": "Resurgence",                     //   multiplayer_ranked, battle_royale
       "url": "...",
       "context": "Warzone Resurgence",           // clave para casar con builds[].context
+      "stale": true, "stale_since": "...",       // solo si ese modo no se pudo releer
       "weapons": [{
         "name": "CBRS-3", "slug": "cbrs-3", "tier": "S",
         "positions": [{"range":"Close Range","rank":1,"role":"corto"}],
@@ -82,9 +93,25 @@ que no parezca que esos accesorios son los del modo activo.
 
 ```bash
 pip install -r scripts/requirements.txt
+
+python scripts/pruebas.py         # pruebas del parser y del validador. Sin red, 1 s
 python scripts/scrape.py          # ~4 min, ~70 peticiones. Regenera meta.json
+python scripts/validar_meta.py    # invariantes del JSON
+
 cd docs && python -m http.server 8765   # http://127.0.0.1:8765
 ```
+
+**Para tocar el parser, no lances los cinco modos.** El scraper tiene CLI:
+
+```bash
+python scripts/scrape.py --modo resurgence --sin-builds --simular   # segundos, 1 peticion
+python scripts/scrape.py --limite-builds 3 --salida prueba.json
+python scripts/scrape.py --help
+```
+
+Una ejecucion parcial (`--modo`, `--sin-builds`, `--limite-builds`) **se niega a
+sobrescribir** `docs/data/meta.json` y sale con codigo 2: usa `--simular` o
+`--salida`. Es a proposito, para que el bot no commitee datos a medias.
 
 Abrir `docs/index.html` con doble clic **no** funciona: el navegador bloquea el
 `fetch` del JSON en `file://`.
@@ -132,6 +159,27 @@ despliegues y `localStorage`.
   fusionan por slug al final de `parse_meta_page`.
 - Si no se puede raspar **ningún** modo, `main()` sale con 1 y **no toca**
   `meta.json`: la web sigue sirviendo el último dato bueno y el workflow avisa.
+
+## Qué pasa cuando falla algo (añadido en la auditoría del 2026-08-20)
+
+Antes, un modo que fallaba desaparecía del JSON en silencio, el workflow quedaba
+en verde y quien tuviera ese modo guardado se encontraba la web **en blanco**.
+Ahora:
+
+1. `recuperar_modo()` copia el bloque de ese modo del `meta.json` anterior y lo
+   marca `stale` + `stale_since`.
+2. El aviso se guarda en `payload["warnings"]` y la web lo enseña en cabecera
+   («se muestra el dato guardado del…»).
+3. `diff_modes()` **ignora** los modos `stale`: compararlos consigo mismos no
+   dice nada y taparía el diff bueno.
+4. El job `avisar` del workflow corre **después** de `deploy` y falla si hay
+   warnings: la web se publica igual, pero GitHub manda el correo.
+5. `modoValido()` en el frontend recoloca al modo por defecto si el guardado ya
+   no existe, en vez de reventar.
+
+Si dos ejecuciones caen el **mismo día UTC**, los `changes` se acumulan en vez de
+reemplazarse (`fusionar_cambios`). Sin eso, tocar `index.html` dejaba el panel
+«Movimientos del meta» vacío hasta el día siguiente.
 
 ## Lógica de recomendación (`score()` en index.html)
 
@@ -188,7 +236,30 @@ publicaría.
 Se instala como app desde el navegador del móvil: *Añadir a pantalla de inicio*.
 No hay nada que desplegar en los dispositivos, es una web.
 
+**Desde la auditoría del 2026-08-20 hay service worker** (`docs/sw.js`): la app
+instalada sigue funcionando sin cobertura con la última meta descargada.
+Verificado apagando el servidor local y recargando: armas, accesorios y códigos
+seguían saliendo. **Al tocar cualquier archivo de `docs/` hay que subir `VERSION`
+en `sw.js`**, o un usuario puede quedarse con la interfaz vieja cacheada.
+
+Al probar en local, acuérdate de desregistrar el service worker
+(`navigator.serviceWorker.getRegistrations()` → `unregister()`) o seguirás viendo
+la versión cacheada de `127.0.0.1`.
+
+## Datos personales
+
+El gamertag ya **no** está escrito en el código: `DEFAULTS.tag` es `"Jugador"` y
+cada usuario pone el suyo con «cambiar gamertag», que se guarda solo en el
+`localStorage` de su dispositivo. El repo y la web son públicos; no metas ahí
+nada personal. El gamertag anterior sigue en el historial de git (commits previos
+a `ef55288`) y se decidió no reescribir la historia por ello.
+
 ## Pendiente
 
 - El usuario pegó su contraseña de GitHub en texto plano en el chat el
   2026-08-20 y se le recomendó cambiarla. Sin confirmar que lo hiciera.
+  **No está en ningún archivo del repositorio** (verificado con `git grep` en la
+  auditoría del 2026-08-20).
+- `multiplayer_ranked` solo trae **5 armas**. Verificado el 2026-08-20 contra la
+  web en vivo: es lo que publica wzstats en esa página, no es un fallo del
+  parser. `validar_meta.py` tiene el mínimo en 3 por eso.

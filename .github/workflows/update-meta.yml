@@ -6,6 +6,9 @@ on:
     - cron: "10 6 * * *"
   push:
     branches: [main]
+    # Cambiar documentacion no justifica volver a raspar wzstats.
+    paths-ignore:
+      - "**.md"
   workflow_dispatch:
 
 permissions:

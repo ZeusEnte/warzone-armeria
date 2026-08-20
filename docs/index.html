@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Armería · Warzone Meta</title>
-<meta name="description" content="Qué armas usar en Warzone según tu estilo de juego, con la meta actualizada a diario.">
+<meta name="description" content="Qué armas usar en Warzone según tu estilo, con los accesorios exactos y la meta actualizada a diario.">
 <style>
   :root{
     --bg:#0b0e13; --panel:#141922; --panel-2:#1b2230; --line:#242d3d;
@@ -45,6 +45,7 @@
   .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:18px}
   .panel > h2{margin:0 0 4px;font-size:14px;letter-spacing:.9px;text-transform:uppercase;color:var(--acc)}
   .panel > p.sub{margin:0 0 16px;font-size:13px;color:var(--dim)}
+  .panel.goal > h2{color:var(--acc-2)}
 
   .field{margin-bottom:14px}
   .field:last-child{margin-bottom:0}
@@ -59,29 +60,48 @@
   .chip[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#1a1200;font-weight:600}
 
   .loadout{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
-  .slot{background:var(--panel-2);border:1px solid var(--line);border-radius:var(--radius);padding:16px;position:relative;overflow:hidden}
+  .slot{background:var(--panel-2);border:1px solid var(--line);border-radius:var(--radius);padding:16px;position:relative;overflow:hidden;display:flex;flex-direction:column}
   .slot::before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:var(--acc)}
+  .slot.next::before{background:var(--acc-2)}
   .slot .role{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
   .slot .gun{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-bottom:3px}
   .slot .gun strong{font-size:20px;letter-spacing:.3px}
   .slot .meta-line{font-size:12.5px;color:var(--dim);margin-bottom:12px}
+  .slot .empty{color:var(--faint);font-size:13.5px;padding:8px 0}
   /* Altura fija: las imagenes llegan con carga diferida y sin reservar sitio
-     las tres tarjetas bailan mientras cargan. */
+     las tarjetas bailan mientras cargan. */
   .slot .artbox{height:72px;margin-bottom:10px}
   .slot .artbox img{height:100%;width:auto;max-width:100%;display:block;
                     object-fit:contain;object-position:left center;opacity:.92}
-  .slot .empty{color:var(--faint);font-size:13.5px;padding:8px 0}
 
   .tier{font-size:11px;font-weight:800;padding:2px 8px;border-radius:5px;color:#0b0e13}
   .tier.S{background:var(--s)} .tier.A{background:var(--a)} .tier.B{background:var(--b)}
   .tier.C{background:var(--c);color:#e8edf5} .tier.D{background:var(--d);color:#e8edf5}
 
+  .buildlabel{font-size:11px;letter-spacing:.6px;text-transform:uppercase;color:var(--acc-2);margin:10px 0 6px}
+  .buildlabel:first-child{margin-top:0}
   .atts{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-  .atts li{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px solid rgba(36,45,61,.5);font-size:13px}
+  .atts li{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;
+           padding:7px 0;border-bottom:1px solid rgba(36,45,61,.5);font-size:13px}
   .atts li:last-child{border-bottom:0}
   .atts .sl{color:var(--faint);flex:0 0 auto;font-size:11.5px;text-transform:uppercase;letter-spacing:.5px;padding-top:2px}
-  .atts .at{text-align:right;font-weight:600}
-  .buildlabel{font-size:11px;letter-spacing:.6px;text-transform:uppercase;color:var(--acc-2);margin:2px 0 6px}
+  .atts .right{text-align:right}
+  .atts .at{font-weight:600;display:block}
+  .req{font-size:11px;margin-top:2px;display:inline-block;padding:1px 7px;border-radius:4px;
+       background:rgba(255,159,28,.13);color:var(--acc);border:1px solid rgba(255,159,28,.25)}
+  .req.free{background:rgba(74,222,128,.12);color:var(--good);border-color:rgba(74,222,128,.25)}
+
+  .code{margin-top:12px;display:flex;align-items:center;gap:9px;flex-wrap:wrap;
+        background:#0e1219;border:1px dashed var(--line);border-radius:9px;padding:9px 11px}
+  .code span.lbl{font-size:10.5px;letter-spacing:.7px;text-transform:uppercase;color:var(--faint)}
+  .code code{font-family:ui-monospace,Consolas,monospace;font-size:13.5px;color:var(--acc);letter-spacing:.5px}
+  .code button{margin-left:auto}
+
+  .btn{border:1px solid var(--line);background:var(--panel);color:var(--dim);
+       padding:5px 11px;border-radius:8px;font-size:12px;cursor:pointer;font-family:inherit;transition:.15s}
+  .btn:hover{border-color:#3a4759;color:var(--ink)}
+  .btn.have{border-color:rgba(74,222,128,.4);color:var(--good)}
+  .slot .actions{margin-top:auto;padding-top:12px}
 
   table.rank{width:100%;border-collapse:collapse;font-size:13.5px}
   table.rank th{
@@ -89,12 +109,17 @@
     font-weight:600;padding:0 10px 8px 0;border-bottom:1px solid var(--line)
   }
   table.rank td{padding:9px 10px 9px 0;border-bottom:1px solid rgba(36,45,61,.55);vertical-align:middle}
-  table.rank tr:last-child td{border-bottom:0}
+  table.rank tr.row{cursor:pointer}
+  table.rank tr.row:hover td{background:rgba(76,201,240,.05)}
+  table.rank tr.row.missing td.name{color:var(--faint);text-decoration:line-through}
   table.rank td.n{color:var(--faint);width:26px}
   table.rank td.name{font-weight:600}
   table.rank td.type,table.rank td.pos{color:var(--dim);font-size:12.5px}
+  table.rank td.detail{padding:0 0 14px}
   .bar{height:6px;border-radius:3px;background:var(--panel-2);min-width:70px;position:relative;overflow:hidden}
   .bar i{position:absolute;inset:0 auto 0 0;background:linear-gradient(90deg,var(--acc),#ff6b35);border-radius:3px}
+  .caret{color:var(--faint);font-size:11px;width:14px;display:inline-block}
+  .detailbox{background:var(--panel-2);border:1px solid var(--line);border-radius:11px;padding:14px 16px}
   .scroll{overflow-x:auto}
 
   ul.changes{list-style:none;margin:0;padding:0;columns:2;column-gap:26px}
@@ -106,9 +131,12 @@
   footer{color:var(--faint);font-size:12.5px;text-align:center;line-height:1.9;margin-top:26px}
   .err{background:#2a1416;border:1px solid #5b2226;color:#ffb4b4;padding:14px 16px;border-radius:var(--radius);font-size:13.5px}
   @media(max-width:640px){
+    .wrap{padding:14px 11px 48px}
     ul.changes{columns:1}
     .stamp{text-align:left}
     .who h1{font-size:17px}
+    .panel{padding:15px 14px}
+    table.rank td.pos,table.rank th.pos{display:none}
   }
 </style>
 </head>
@@ -155,11 +183,17 @@
     <div class="loadout" id="loadout"></div>
   </section>
 
+  <section class="panel goal">
+    <h2>A por la siguiente</h2>
+    <p class="sub" id="goal-sub"></p>
+    <div class="loadout" id="goal"></div>
+  </section>
+
   <section class="panel">
     <h2>Ranking completo para tu perfil</h2>
-    <p class="sub">Las 20 mejores del modo elegido, reordenadas según tu estilo.</p>
+    <p class="sub">Las 20 mejores del modo elegido. <b>Pincha cualquiera</b> para ver los accesorios exactos que hay que montar.</p>
     <div class="scroll"><table class="rank">
-      <thead><tr><th></th><th>Arma</th><th>Tipo</th><th>Puesto oficial</th><th>Tier</th><th>Encaje</th></tr></thead>
+      <thead><tr><th></th><th>Arma</th><th>Tipo</th><th class="pos">Puesto oficial</th><th>Tier</th><th>Encaje</th></tr></thead>
       <tbody id="rank"></tbody>
     </table></div>
   </section>
@@ -171,9 +205,9 @@
   </section>
 
   <footer>
-    Datos de tier list y accesorios: <a href="https://wzstats.gg/" target="_blank" rel="noopener">wzstats.gg</a> ·
+    Datos de tier list, accesorios y códigos: <a href="https://wzstats.gg/" target="_blank" rel="noopener">wzstats.gg</a> ·
     temporada vía <a href="https://wzranked.com/" target="_blank" rel="noopener">wzranked.com</a><br>
-    Se refresca solo cada día. Las recomendaciones se basan en la meta pública y en el perfil que has marcado, no en tus partidas.
+    Se refresca solo cada día. Las recomendaciones salen de la meta pública y del perfil que marcas, no de tus partidas.
   </footer>
 </div>
 
@@ -199,18 +233,32 @@ const TIER_SCORE = {S:100, A:78, B:55, C:35, D:18};
 // ("Assault Rifle") a estos tres papeles.
 const ROLE_LABEL = {largo:"Larga distancia", corto:"Corta distancia", sniper:"Francotirador"};
 
-const DEFAULTS = {mode:"resurgence", style:"agresivo", input:"mando", avoid:[], tag:"ZeusEnte#2497"};
+const DEFAULTS = {mode:"resurgence", style:"agresivo", input:"mando", avoid:[], tag:"ZeusEnte#2497", missing:[]};
 let profile = load();
 let DATA = null;
+let openSlug = null;
 
 function load(){
   try{
     const raw = localStorage.getItem("armeria-perfil");
-    return raw ? Object.assign({}, DEFAULTS, JSON.parse(raw)) : Object.assign({}, DEFAULTS);
-  }catch(e){ return Object.assign({}, DEFAULTS); }
+    const p = raw ? Object.assign({}, DEFAULTS, JSON.parse(raw)) : Object.assign({}, DEFAULTS);
+    if(!Array.isArray(p.missing)) p.missing = [];
+    if(!Array.isArray(p.avoid))   p.avoid = [];
+    return p;
+  }catch(e){ return Object.assign({}, DEFAULTS, {missing:[], avoid:[]}); }
 }
 function save(){
   try{ localStorage.setItem("armeria-perfil", JSON.stringify(profile)); }catch(e){}
+}
+
+// "No la tengo" no es un descarte definitivo: es un "todavía no". El arma sigue
+// puntuando y aparece en «A por la siguiente» como objetivo a desbloquear.
+const falta = w => profile.missing.indexOf(w.slug || w.name) !== -1;
+function toggleFalta(w){
+  const key = w.slug || w.name;
+  const i = profile.missing.indexOf(key);
+  if(i === -1) profile.missing.push(key); else profile.missing.splice(i, 1);
+  save(); renderAll();
 }
 
 /* ---------- puntuación ---------- */
@@ -252,14 +300,65 @@ function allowed(w){
   return !profile.avoid.some(t => w.weapon_type === t || w.tags.includes(t));
 }
 
-function buildFor(slug){
+/* ---------- builds ---------- */
+
+function modeContext(){ return (DATA.modes[profile.mode] || {}).context || ""; }
+
+// Todas las configuraciones de esa arma para el modo activo. Si wzstats no trae
+// ninguna del modo exacto, cae a las que haya para no dejar la ficha vacía.
+function buildsForMode(slug){
   const entry = DATA.builds[slug];
-  if(!entry) return null;
-  const ctx = (DATA.modes[profile.mode]||{}).context || "";
-  return entry.builds.find(b => b.context === ctx && /recommended/i.test(b.label))
-      || entry.builds.find(b => b.context === ctx)
-      || entry.builds.find(b => /recommended/i.test(b.label))
-      || entry.builds[0];
+  if(!entry) return [];
+  const ctx = modeContext();
+  const exact = entry.builds.filter(b => b.context === ctx);
+  return exact.length ? exact : entry.builds.slice(0, 3);
+}
+function mainBuild(slug){
+  const list = buildsForMode(slug);
+  return list.find(b => /recommended/i.test(b.label)) || list[0] || null;
+}
+
+// "Level 37" -> "Nv. 37"; "Armory" -> "Armería"; un nombre de arma -> "subir X".
+function reqLabel(unlock){
+  if(!unlock) return "";
+  const lvl = /^Level\s+(\d+)$/i.exec(unlock);
+  if(lvl) return "Nv. " + lvl[1];
+  if(/^armory$/i.test(unlock))   return "Armería";
+  if(/^prestige$/i.test(unlock)) return "Prestigio";
+  return "subir " + unlock;
+}
+
+// Sin slug no hay ficha en wzstats, así que no dejamos un enlace roto.
+function wzLink(w, texto){
+  if(!w.slug) return "";
+  return '<a href="https://wzstats.gg/best-loadouts/' + encodeURIComponent(w.slug) +
+         '" target="_blank" rel="noopener">' + texto + '</a>.';
+}
+
+function esc(s){
+  return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+}
+
+function attsHtml(build){
+  let h = '<ul class="atts">';
+  build.attachments.forEach(a => {
+    const r = reqLabel(a.unlock);
+    h += '<li><span class="sl">' + esc(a.slot || "—") + '</span>' +
+         '<span class="right"><span class="at">' + esc(a.name) + '</span>' +
+         (r ? '<span class="req">' + esc(r) + '</span>' : "") + '</span></li>';
+  });
+  return h + '</ul>';
+}
+
+function codeHtml(build){
+  if(!build.code) return "";
+  return '<div class="code"><span class="lbl">Código</span><code>' + esc(build.code) + '</code>' +
+         '<button class="btn" data-copy="' + esc(build.code) + '">copiar</button></div>';
+}
+
+function haveBtn(w){
+  return '<button class="btn' + (falta(w) ? "" : " have") + '" data-have="' + esc(w.slug || w.name) + '">' +
+         (falta(w) ? "✓ Ya la tengo" : "No la tengo") + '</button>';
 }
 
 /* ---------- render ---------- */
@@ -283,7 +382,7 @@ function renderFilters(){
   const modes = Object.entries(DATA.modes).map(([id,m]) => ({id, label:m.label}));
   if(!DATA.modes[profile.mode]) profile.mode = modes[0].id;
 
-  chips(document.getElementById("f-mode"), modes, profile.mode, id => { profile.mode=id; save(); renderAll(); });
+  chips(document.getElementById("f-mode"), modes, profile.mode, id => { profile.mode=id; openSlug=null; save(); renderAll(); });
   chips(document.getElementById("f-style"), STYLES, profile.style, id => { profile.style=id; save(); renderAll(); });
   chips(document.getElementById("f-input"), INPUTS, profile.input, id => { profile.input=id; save(); renderAll(); });
   chips(document.getElementById("f-avoid"), AVOIDABLE.map(t=>({id:t,label:t})), profile.avoid, id => {
@@ -292,30 +391,29 @@ function renderFilters(){
   }, true);
 }
 
-function slotCard(role, w){
+function slotCard(role, w, isGoal){
   const el = document.createElement("div");
-  el.className = "slot";
+  el.className = "slot" + (isGoal ? " next" : "");
   if(!w){
-    el.innerHTML = '<div class="role">'+role+'</div><div class="empty">Nada encaja con tu perfil en este hueco. Prueba a quitar alguna exclusión.</div>';
+    el.innerHTML = '<div class="role">' + esc(role) + '</div>' +
+      '<div class="empty">Nada encaja aquí con tu perfil. Prueba a quitar alguna exclusión o a marcar como tuya alguna arma.</div>';
     return el;
   }
-  const pos = w.positions.map(p => "#"+p.rank+" "+p.range).join(" · ");
-  const build = buildFor(w.slug);
+  const pos = w.positions.map(p => "#" + p.rank + " " + p.range).join(" · ");
+  const build = mainBuild(w.slug);
 
-  let html = '<div class="role">'+role+'</div>';
-  html += '<div class="artbox">' + (w.image ? '<img src="'+w.image+'" alt="">' : "") + '</div>';
-  html += '<div class="gun"><strong>'+w.name+'</strong><span class="tier '+w.tier+'">'+w.tier+'</span></div>';
-  html += '<div class="meta-line">'+(w.weapon_type||"—")+(pos ? " · "+pos : "")+'</div>';
+  let html = '<div class="role">' + esc(role) + '</div>';
+  html += '<div class="artbox">' + (w.image ? '<img src="' + esc(w.image) + '" alt="">' : "") + '</div>';
+  html += '<div class="gun"><strong>' + esc(w.name) + '</strong><span class="tier ' + w.tier + '">' + w.tier + '</span></div>';
+  html += '<div class="meta-line">' + esc(w.weapon_type || "—") + (pos ? " · " + esc(pos) : "") + '</div>';
 
   if(build){
-    html += '<div class="buildlabel">'+build.label+'</div><ul class="atts">';
-    build.attachments.forEach(a => {
-      html += '<li><span class="sl">'+(a.slot||"—")+'</span><span class="at">'+a.name+'</span></li>';
-    });
-    html += '</ul>';
+    html += '<div class="buildlabel">' + esc(build.label) + '</div>' + attsHtml(build) + codeHtml(build);
   }else{
-    html += '<div class="empty">Sin accesorios guardados para esta arma. <a href="https://wzstats.gg/best-loadouts/'+w.slug+'" target="_blank" rel="noopener">Verlos en wzstats</a>.</div>';
+    html += '<div class="empty">No tengo los accesorios de esta arma. ' +
+            wzLink(w, "Verlos en wzstats") + '</div>';
   }
+  html += '<div class="actions">' + haveBtn(w) + '</div>';
   el.innerHTML = html;
   return el;
 }
@@ -328,17 +426,56 @@ function renderLoadout(pool){
     ? ["corto","largo","sniper"]
     : ["largo","corto","sniper"];
 
+  const tengo = pool.filter(w => !falta(w));
   const used = new Set();
   wanted.forEach(role => {
-    const pick = pool.find(w => !used.has(w.name) && w.positions.some(p => p.role === role));
+    const pick = tengo.find(w => !used.has(w.name) && w.positions.some(p => p.role === role));
     if(pick) used.add(pick.name);
-    host.appendChild(slotCard(ROLE_LABEL[role], pick));
+    host.appendChild(slotCard(ROLE_LABEL[role], pick, false));
   });
 
   const m = DATA.modes[profile.mode];
   const st = (STYLES.find(s => s.id === profile.style) || {}).label || "";
   document.getElementById("loadout-sub").textContent =
-    m.label + " · perfil " + st.toLowerCase() + " · accesorios de la build recomendada para ese modo.";
+    m.label + " · perfil " + st.toLowerCase() + " · solo armas que puedes montar ya.";
+}
+
+function renderGoal(pool){
+  const host = document.getElementById("goal");
+  const sub  = document.getElementById("goal-sub");
+  host.innerHTML = "";
+
+  const objetivos = pool.filter(falta).slice(0, 3);
+  if(!objetivos.length){
+    sub.textContent = "Cuando marques un arma como «No la tengo», aquí te diré si merece la pena desbloquearla y qué llevaría montada.";
+    host.innerHTML = '<div class="slot next"><div class="empty">De momento cuento con que tienes todas. ' +
+                     'Marca las que no tengas en las tarjetas de arriba o en la tabla.</div></div>';
+    return;
+  }
+  sub.textContent = "Lo mejor que aún no tienes, por orden de lo que te aportaría en " +
+                    DATA.modes[profile.mode].label + ".";
+  objetivos.forEach((w,i) => {
+    const mejor = w.positions.reduce((a,b) => a.rank <= b.rank ? a : b, w.positions[0]);
+    const rotulo = i === 0 ? "Desbloquea esta primero" : "Después";
+    host.appendChild(slotCard(rotulo + (mejor ? " · #" + mejor.rank + " " + mejor.range : ""), w, true));
+  });
+}
+
+function detailHtml(w){
+  const list = buildsForMode(w.slug);
+  if(!list.length){
+    return '<div class="detailbox"><div class="empty">wzstats no publica accesorios de esta arma. ' +
+           wzLink(w, "Abrir su ficha") + '</div>' +
+           '<div class="actions" style="padding-top:10px">' + haveBtn(w) + '</div></div>';
+  }
+  const entry = DATA.builds[w.slug] || {};
+  let h = '<div class="detailbox">';
+  if(entry.max_level) h += '<div class="role" style="margin-bottom:10px">Nivel máximo del arma: ' + entry.max_level + '</div>';
+  list.forEach(b => {
+    h += '<div class="buildlabel">' + esc(b.label) + '</div>' + attsHtml(b) + codeHtml(b);
+  });
+  h += '<div class="actions" style="padding-top:12px">' + haveBtn(w) + '</div></div>';
+  return h;
 }
 
 function renderRank(pool){
@@ -346,17 +483,27 @@ function renderRank(pool){
   body.innerHTML = "";
   const top = pool.slice(0, 20);
   const max = top.length ? top[0]._s : 1;
+
   top.forEach((w,i) => {
-    const pos = w.positions.map(p => "#"+p.rank+" "+p.range).join(", ") || "—";
+    const pos = w.positions.map(p => "#" + p.rank + " " + p.range).join(", ") || "—";
+    const abierto = openSlug === (w.slug || w.name);
     const tr = document.createElement("tr");
+    tr.className = "row" + (falta(w) ? " missing" : "");
+    tr.dataset.slug = w.slug || w.name;
     tr.innerHTML =
-      '<td class="n">'+(i+1)+'</td>'+
-      '<td class="name">'+w.name+'</td>'+
-      '<td class="type">'+(w.weapon_type||"—")+'</td>'+
-      '<td class="pos">'+pos+'</td>'+
-      '<td><span class="tier '+w.tier+'">'+w.tier+'</span></td>'+
-      '<td><div class="bar"><i style="width:'+Math.round(w._s/max*100)+'%"></i></div></td>';
+      '<td class="n"><span class="caret">' + (abierto ? "▾" : "▸") + '</span>' + (i+1) + '</td>' +
+      '<td class="name">' + esc(w.name) + '</td>' +
+      '<td class="type">' + esc(w.weapon_type || "—") + '</td>' +
+      '<td class="pos">' + esc(pos) + '</td>' +
+      '<td><span class="tier ' + w.tier + '">' + w.tier + '</span></td>' +
+      '<td><div class="bar"><i style="width:' + Math.round(w._s/max*100) + '%"></i></div></td>';
     body.appendChild(tr);
+
+    if(abierto){
+      const dt = document.createElement("tr");
+      dt.innerHTML = '<td class="detail" colspan="6">' + detailHtml(w) + '</td>';
+      body.appendChild(dt);
+    }
   });
 }
 
@@ -373,7 +520,7 @@ function renderChanges(){
     const li = document.createElement("li");
     const detail = c.kind === "sube" || c.kind === "baja" ? c.from + " → " + c.to
                  : c.kind === "entra" ? "entra en " + c.to : "fuera de la lista";
-    li.innerHTML = '<span class="k '+c.kind+'">'+c.kind+'</span><b>'+c.weapon+'</b> · '+detail;
+    li.innerHTML = '<span class="k ' + c.kind + '">' + c.kind + '</span><b>' + esc(c.weapon) + '</b> · ' + detail;
     ul.appendChild(li);
   });
 }
@@ -383,7 +530,7 @@ function renderStamp(){
   const when = isNaN(d) ? DATA.generated_at
     : d.toLocaleString("es-ES",{day:"2-digit",month:"short",hour:"2-digit",minute:"2-digit"});
   document.getElementById("stamp").innerHTML =
-    '<span class="dot"></span><b>' + DATA.season + '</b><br>meta actualizada ' + when;
+    '<span class="dot"></span><b>' + esc(DATA.season) + '</b><br>meta actualizada ' + when;
 }
 
 function renderAll(){
@@ -392,21 +539,54 @@ function renderAll(){
                            .sort((a,b) => b._s - a._s);
   renderFilters();
   renderLoadout(pool);
+  renderGoal(pool);
   renderRank(pool);
   renderChanges();
 }
 
 function renderTag(){
   const tag = profile.tag || DEFAULTS.tag;
-  const [name, num] = tag.split("#");
-  document.getElementById("tag").innerHTML = name + (num ? '<span>#'+num+'</span>' : "");
+  const parts = tag.split("#");
+  document.getElementById("tag").innerHTML = esc(parts[0]) + (parts[1] ? '<span>#' + esc(parts[1]) + '</span>' : "");
   document.getElementById("initials").textContent =
-    name.replace(/[^A-Za-zÁÉÍÓÚÑ]/gi,"").slice(0,2).toUpperCase() || "??";
+    parts[0].replace(/[^A-Za-zÁÉÍÓÚÑ]/gi,"").slice(0,2).toUpperCase() || "??";
 }
+
+/* ---------- eventos ---------- */
 
 document.getElementById("edit-tag").addEventListener("click", () => {
   const v = prompt("Tu gamertag:", profile.tag || DEFAULTS.tag);
   if(v && v.trim()){ profile.tag = v.trim(); save(); renderTag(); }
+});
+
+document.addEventListener("click", ev => {
+  if(!DATA) return;
+
+  const copiar = ev.target.closest("[data-copy]");
+  if(copiar){
+    ev.stopPropagation();
+    const txt = copiar.getAttribute("data-copy");
+    const antes = copiar.textContent;
+    const ok = () => { copiar.textContent = "copiado"; setTimeout(() => copiar.textContent = antes, 1400); };
+    if(navigator.clipboard) navigator.clipboard.writeText(txt).then(ok, ok); else ok();
+    return;
+  }
+
+  const marcar = ev.target.closest("[data-have]");
+  if(marcar){
+    ev.stopPropagation();
+    const key = marcar.getAttribute("data-have");
+    const all = DATA.modes[profile.mode].weapons;
+    const w = all.find(x => (x.slug || x.name) === key) || {slug:key, name:key};
+    toggleFalta(w);
+    return;
+  }
+
+  const fila = ev.target.closest("tr.row");
+  if(fila){
+    openSlug = openSlug === fila.dataset.slug ? null : fila.dataset.slug;
+    renderAll();
+  }
 });
 
 fetch("data/meta.json?v=" + Date.now())

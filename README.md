@@ -19,8 +19,13 @@ docs/data/meta.json                 los datos: 5 modos, tiers, puestos y accesor
 
 - las armas con su **tier** (S/A/B/C/D) y su **puesto oficial** por categoría
   (`#1 Long Range`, `#2 Close Range`, `#1 Sniper`…),
-- los **accesorios** de la build recomendada de las ~26 mejores armas, separados
-  por modo (la build de Resurgence no es la de Battle Royale),
+- los **accesorios** de las ~66 armas de tier S y A, separados por modo (la build
+  de Resurgence no es la de Battle Royale) y por variante (Recommended, LOW
+  RECOIL, PRESTIGE…),
+- el **requisito de desbloqueo de cada accesorio**: `Level 37`, `Armory`,
+  `Prestige`, o el arma que hay que subir para conseguirlo,
+- el **código de canje** de cada build, para pegarlo en el juego,
+- el **nivel máximo** de cada arma,
 - un bloque `changes` con lo que **subió, bajó, entró o salió** respecto a la
   actualización anterior. De ahí sale el panel "Movimientos del meta".
 
@@ -45,6 +50,17 @@ cd docs && python -m http.server  # http://localhost:8000
 Abrir `docs/index.html` con doble clic **no** funciona: el navegador bloquea el
 `fetch` del JSON en `file://`. Hay que servirlo.
 
+## Qué armas tienes
+
+wzstats publica el requisito de cada **accesorio**, pero en ninguna parte consta
+qué **armas** posee un jugador concreto: depende de su pase de batalla, eventos y
+paquetes comprados. Se resuelve a mano y sin fricción: cada arma lleva un botón
+«No la tengo». Marcarla no es un descarte definitivo, es un «todavía no»:
+
+- «Tu equipamiento de hoy» solo usa armas disponibles,
+- «A por la siguiente» lista las mejores que aún no tienes, para saber cuál
+  desbloquear primero y con qué se monta.
+
 ## Límites que conviene tener claros
 
 - Las recomendaciones salen de la **meta pública** y del perfil que marcas a mano
@@ -54,4 +70,4 @@ Abrir `docs/index.html` con doble clic **no** funciona: el navegador bloquea el
 - El scraper depende del HTML de wzstats.gg. Si rediseñan la web, el parser puede
   dejar de encontrar armas; en ese caso **no sobrescribe** `meta.json` y la página
   sigue mostrando el último dato válido, pero el workflow falla y avisa.
-- Una petición por página y 1,5 s de pausa entre ellas: unas 30 peticiones al día.
+- Una petición por página y 1,5 s de pausa entre ellas: unas 70 peticiones al día.

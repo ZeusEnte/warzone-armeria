@@ -43,8 +43,10 @@ MODES = [
      "context": "Warzone Battle Royale"},
 ]
 
-# Cuantas fichas de arma abrimos para sacar los accesorios completos.
-BUILD_BUDGET = 26
+# Cuantas fichas de arma abrimos para sacar los accesorios completos. Cubrimos
+# todas las S y A porque la web deja pinchar cualquier arma de la tabla y hay
+# que tener su build lista.
+BUILD_BUDGET = 80
 REQUEST_PAUSE = 1.5
 
 TIER_ORDER = ["S", "A", "B", "C", "D", "E", "F"]
@@ -199,6 +201,7 @@ def parse_meta_page(html: str) -> list:
 
 
 CONTEXT_RE = re.compile(r"Loadout for (.+?) in Season", re.I)
+TRACKED_CONTEXTS = {m["context"] for m in MODES}
 
 
 def parse_builds(html: str) -> list:
@@ -235,21 +238,57 @@ def parse_builds(html: str) -> list:
         card = el.find_parent(class_="playstyle-card")
         label = (txt(card.select_one(".playstyle-text")) if card else "") or "Recommended"
         attachments = []
+        # .prestige-slot lleva tambien .attachment-slot-no-image, un selector basta.
         for slot in el.select(".attachment-slot-no-image"):
             att_name = txt(slot.select_one(".attachment-name-no-image"))
-            slot_name = txt(slot.select_one(".slot-name-no-image"))
-            if att_name:
-                attachments.append({"slot": slot_name, "name": att_name})
+            if not att_name:
+                continue
+            attachments.append(
+                {
+                    "slot": txt(slot.select_one(".slot-name-no-image")),
+                    "name": att_name,
+                    # "Level 37", "Armory", "Prestige" o el arma que hay que
+                    # subir para desbloquearlo ("Peacekeeper MK1").
+                    "unlock": txt(slot.select_one(".level-tag")),
+                }
+            )
         if not attachments:
             continue
+
+        # El codigo de canje vive junto a la lista, no dentro de ella.
+        code = ""
+        node = el
+        for _ in range(4):
+            node = node.parent
+            if node is None:
+                break
+            found = node.select_one(".weapon-build-code")
+            if found:
+                code = txt(found)
+                break
 
         key = (context, label, tuple(a["name"] for a in attachments))
         if key in seen:
             continue
         seen.add(key)
-        builds.append({"context": context, "label": label, "attachments": attachments})
+        builds.append(
+            {"context": context, "label": label, "code": code, "attachments": attachments}
+        )
 
-    return builds
+    # Solo guardamos las builds de los modos que seguimos: la ficha trae ademas
+    # Iron Gauntlet, Zombies y Black Ops Royale, que no usamos y ocupan sitio.
+    tracked = [b for b in builds if b["context"] in TRACKED_CONTEXTS]
+    return tracked or builds
+
+
+def parse_max_level(html: str) -> int:
+    """Nivel maximo del arma, para saber hasta donde hay que subirla."""
+    soup = BeautifulSoup(html, "html.parser")
+    for el in soup.select(".level-value"):
+        raw = txt(el)
+        if raw.isdigit():
+            return int(raw)
+    return 0
 
 
 def detect_season(session: requests.Session) -> str:
@@ -335,12 +374,17 @@ def main() -> int:
     print("-> accesorios de " + str(len(targets)) + " armas")
     for slug, name in targets:
         try:
-            found = parse_builds(get(BASE + "/best-loadouts/" + slug, session))
+            page = get(BASE + "/best-loadouts/" + slug, session)
+            found = parse_builds(page)
         except Exception as exc:
             print("   " + slug + ": " + str(exc), file=sys.stderr)
             continue
         if found:
-            builds[slug] = {"name": name, "builds": found}
+            builds[slug] = {
+                "name": name,
+                "max_level": parse_max_level(page),
+                "builds": found,
+            }
             print("   " + name + ": " + str(len(found)) + " builds")
         time.sleep(REQUEST_PAUSE)
 

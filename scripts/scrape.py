@@ -2,9 +2,16 @@
 
 Se ejecuta a diario desde GitHub Actions. Una sola peticion por pagina de meta
 y otra por arma del top (con pausa entre ellas) para no castigar la web origen.
+
+Para trabajar en el parser sin lanzar los cinco modos y ochenta fichas:
+
+    python scripts/scrape.py --modo resurgence --sin-builds --simular
+
+Ver todas las opciones con ``--help``.
 """
 from __future__ import annotations
 
+import argparse
 import json
 import pathlib
 import re
@@ -75,6 +82,15 @@ WEAPON_CLASSES = {
 }
 
 
+class ErrorDeDescarga(RuntimeError):
+    """No se pudo traer una pagina despues de los reintentos."""
+
+
+def aviso(mensaje: str) -> None:
+    """Mensaje a stderr. Los avisos tambien acaban dentro del meta.json."""
+    print(f"   {mensaje}", file=sys.stderr)
+
+
 def tier_rank(tier: str) -> int:
     """Menor es mejor. Los tiers desconocidos van al final."""
     return TIER_ORDER.index(tier) if tier in TIER_ORDER else len(TIER_ORDER)
@@ -85,15 +101,22 @@ def get(url: str, session: requests.Session, tries: int = 3) -> str:
     for attempt in range(tries):
         try:
             r = session.get(url, headers=HEADERS, timeout=45)
+            # Un 404 o un 403 no se arreglan esperando: reintentarlos solo gasta
+            # tiempo y peticiones. El 429 si, que es "vas demasiado rapido".
+            if 400 <= r.status_code < 500 and r.status_code != 429:
+                raise ErrorDeDescarga(f"{url}: HTTP {r.status_code}")
             r.raise_for_status()
             # La cabecera no siempre trae charset y los nombres llevan acentos
             # (JAGER 45, etc.), asi que forzamos utf-8.
             r.encoding = "utf-8"
             return r.text
+        except ErrorDeDescarga:
+            raise
         except Exception as exc:  # red inestable en el runner
             last = exc
-            time.sleep(2 + attempt * 3)
-    raise RuntimeError("no se pudo descargar " + url + ": " + str(last))
+            if attempt < tries - 1:
+                time.sleep(2 + attempt * 3)
+    raise ErrorDeDescarga(f"no se pudo descargar {url}: {last}")
 
 
 def txt(node) -> str:
@@ -197,6 +220,14 @@ def parse_meta_page(html: str) -> list:
         prev["positions"] += [p for p in w["positions"] if (p["range"], p["rank"]) not in have]
         if tier_rank(w["tier"]) < tier_rank(prev["tier"]):
             prev["tier"] = w["tier"]
+        # La primera aparicion puede venir sin tipo, sin imagen o sin slug (segun
+        # la categoria en la que salga); completamos con lo que traigan las otras.
+        for campo in ("weapon_type", "image", "slug"):
+            if not prev[campo] and w[campo]:
+                prev[campo] = w[campo]
+        for t in w["tags"]:
+            if t not in prev["tags"]:
+                prev["tags"].append(t)
     return list(merged.values())
 
 
@@ -299,11 +330,11 @@ def detect_season(session: requests.Session) -> str:
         if m:
             return m.group(0)
     except Exception as exc:
-        print("  aviso: no se pudo leer la temporada (" + str(exc) + ")", file=sys.stderr)
+        aviso(f"aviso: no se pudo leer la temporada ({exc})")
     return "Temporada actual"
 
 
-def pick_for_builds(modes: dict) -> list:
+def pick_for_builds(modes: dict, budget: int = BUILD_BUDGET) -> list:
     """Elige que armas merecen una peticion extra: las mejores de cada modo."""
     scored = {}
     for mode in modes.values():
@@ -316,13 +347,17 @@ def pick_for_builds(modes: dict) -> list:
             if prev is None or weight < prev[0]:
                 scored[w["slug"]] = (weight, w["name"])
     ordered = sorted(scored.items(), key=lambda kv: kv[1][0])
-    return [(slug, value[1]) for slug, value in ordered[:BUILD_BUDGET]]
+    return [(slug, value[1]) for slug, value in ordered[:budget]]
 
 
 def diff_modes(old: dict, new: dict) -> list:
     """Compara la meta anterior con la nueva para poder avisar de los cambios."""
     changes = []
     for mode_id, mode in new.items():
+        # Un modo que no se pudo raspar viene copiado del dia anterior: comparar
+        # su copia consigo misma no dice nada, y encima taparia el diff bueno.
+        if mode.get("stale"):
+            continue
         prev_mode = (old.get("modes") or {}).get(mode_id)
         if not prev_mode:
             continue
@@ -342,73 +377,182 @@ def diff_modes(old: dict, new: dict) -> list:
     return changes
 
 
-def main() -> int:
-    session = requests.Session()
-    modes = {}
+def fusionar_cambios(previos: list, nuevos: list) -> list:
+    """Une dos listas de cambios sin repetir, conservando el orden."""
+    salida, vistos = [], set()
+    for c in list(previos) + list(nuevos):
+        clave = (c.get("mode"), c.get("weapon"), c.get("kind"), c.get("from"), c.get("to"))
+        if clave in vistos:
+            continue
+        vistos.add(clave)
+        salida.append(c)
+    return salida
 
-    for mode in MODES:
-        print("-> " + mode["label"] + ": " + mode["url"])
+
+def cargar_previo(ruta: pathlib.Path) -> dict:
+    if not ruta.exists():
+        return {}
+    try:
+        return json.loads(ruta.read_text(encoding="utf-8"))
+    except Exception as exc:
+        aviso(f"aviso: no se pudo leer el meta.json anterior ({exc})")
+        return {}
+
+
+def parsear_argumentos(argv=None) -> argparse.Namespace:
+    ids = [m["id"] for m in MODES]
+    p = argparse.ArgumentParser(
+        description="Raspa wzstats.gg y genera el meta.json que lee la web.",
+        epilog="Ejemplo rapido para probar el parser: "
+               "python scripts/scrape.py --modo resurgence --sin-builds --simular",
+    )
+    p.add_argument("--modo", action="append", choices=ids, metavar="ID",
+                   help=f"raspar solo este modo (repetible). Validos: {', '.join(ids)}")
+    p.add_argument("--sin-builds", action="store_true",
+                   help="no abrir las fichas de arma: sin accesorios ni codigos, pero en segundos")
+    p.add_argument("--limite-builds", type=int, default=BUILD_BUDGET, metavar="N",
+                   help=f"cuantas fichas de arma abrir como maximo (por defecto {BUILD_BUDGET})")
+    p.add_argument("--pausa", type=float, default=REQUEST_PAUSE, metavar="SEG",
+                   help=f"pausa entre peticiones en segundos (por defecto {REQUEST_PAUSE})")
+    p.add_argument("--salida", type=pathlib.Path, default=OUT, metavar="RUTA",
+                   help="donde escribir el JSON (por defecto docs/data/meta.json)")
+    p.add_argument("--simular", action="store_true",
+                   help="hacerlo todo pero no escribir nada en disco")
+    return p.parse_args(argv)
+
+
+def main(argv=None) -> int:
+    args = parsear_argumentos(argv)
+    parcial = bool(args.modo) or args.sin_builds or args.limite_builds != BUILD_BUDGET
+    # Se comprueba antes de gastar peticiones: una pasada parcial no puede pisar
+    # el JSON bueno o el bot commitearia datos a medias como si fueran del dia.
+    if parcial and not args.simular and args.salida == OUT:
+        print("ERROR: una ejecucion parcial (--modo/--sin-builds/--limite-builds) no sobrescribe "
+              "docs/data/meta.json. Anade --simular para probar, o --salida para otro archivo.",
+              file=sys.stderr)
+        return 2
+    modos_pedidos = [m for m in MODES if not args.modo or m["id"] in args.modo]
+
+    session = requests.Session()
+    previo = cargar_previo(args.salida)
+    modes: dict = {}
+    avisos: list = []
+
+    for mode in modos_pedidos:
+        print(f"-> {mode['label']}: {mode['url']}")
+        weapons = []
         try:
             weapons = parse_meta_page(get(mode["url"], session))
         except Exception as exc:
-            print("   FALLO: " + str(exc), file=sys.stderr)
-            continue
+            aviso(f"FALLO: {exc}")
         if not weapons:
-            print("   sin armas (la estructura de la web pudo cambiar)", file=sys.stderr)
+            # Sin armas casi siempre significa que wzstats cambio el HTML.
+            recuperado = recuperar_modo(previo, mode)
+            if recuperado:
+                modes[mode["id"]] = recuperado
+                desde = recuperado.get("stale_since", "")[:10]
+                avisos.append(f"{mode['label']}: no se pudo leer, se conserva el dato del {desde}")
+                aviso(f"sin armas: se conserva el dato guardado del {desde}")
+            else:
+                avisos.append(f"{mode['label']}: no se pudo leer y no habia dato anterior")
+                aviso("sin armas y sin dato anterior que conservar")
             continue
-        print("   " + str(len(weapons)) + " armas")
+
+        print(f"   {len(weapons)} armas")
         modes[mode["id"]] = {
             "label": mode["label"],
             "url": mode["url"],
             "context": mode["context"],
             "weapons": weapons,
         }
-        time.sleep(REQUEST_PAUSE)
+        time.sleep(args.pausa)
 
-    if not modes:
-        print("ERROR: ningun modo se pudo raspar, no se sobrescribe meta.json", file=sys.stderr)
+    # Si solo se pidieron algunos modos, los demas se traen del JSON anterior
+    # para no publicar una web a la que le faltan pestanas.
+    for mode in MODES:
+        if mode["id"] not in modes:
+            heredado = recuperar_modo(previo, mode)
+            if heredado:
+                modes[mode["id"]] = heredado
+
+    if not any(not m.get("stale") for m in modes.values()):
+        print("ERROR: ningun modo se pudo raspar, no se sobrescribe el JSON", file=sys.stderr)
         return 1
 
-    builds = {}
-    targets = pick_for_builds(modes)
-    print("-> accesorios de " + str(len(targets)) + " armas")
-    for slug, name in targets:
-        try:
-            page = get(BASE + "/best-loadouts/" + slug, session)
-            found = parse_builds(page)
-        except Exception as exc:
-            print("   " + slug + ": " + str(exc), file=sys.stderr)
-            continue
-        if found:
-            builds[slug] = {
-                "name": name,
-                "max_level": parse_max_level(page),
-                "builds": found,
-            }
-            print("   " + name + ": " + str(len(found)) + " builds")
-        time.sleep(REQUEST_PAUSE)
+    builds = dict(previo.get("builds") or {}) if args.sin_builds else {}
+    if args.sin_builds:
+        print("-> accesorios: omitidos (--sin-builds), se conservan los del JSON anterior")
+    else:
+        frescos = {k: v for k, v in modes.items() if not v.get("stale")}
+        targets = pick_for_builds(frescos or modes, args.limite_builds)
+        print(f"-> accesorios de {len(targets)} armas")
+        for slug, name in targets:
+            try:
+                page = get(f"{BASE}/best-loadouts/{slug}", session)
+                found = parse_builds(page)
+            except Exception as exc:
+                aviso(f"{slug}: {exc}")
+                continue
+            if found:
+                builds[slug] = {
+                    "name": name,
+                    "max_level": parse_max_level(page),
+                    "builds": found,
+                }
+                print(f"   {name}: {len(found)} builds")
+            time.sleep(args.pausa)
+        if not builds and previo.get("builds"):
+            builds = dict(previo["builds"])
+            avisos.append("no se pudo leer ninguna ficha de arma, se conservan los accesorios anteriores")
+            aviso("ninguna ficha de arma legible: se conservan los accesorios anteriores")
 
-    previous = {}
-    if OUT.exists():
-        try:
-            previous = json.loads(OUT.read_text(encoding="utf-8"))
-        except Exception:
-            previous = {}
+    ahora = datetime.now(timezone.utc)
+    cambios = diff_modes(previo, modes)
+    anterior_ts = previo.get("generated_at", "")
+    # El workflow tambien se dispara al empujar codigo. Si hoy hay dos pasadas,
+    # la segunda no debe borrar los movimientos que detecto la primera: dentro
+    # del mismo dia UTC los cambios se acumulan en vez de reemplazarse.
+    if anterior_ts[:10] == ahora.isoformat()[:10]:
+        cambios = fusionar_cambios(previo.get("changes") or [], cambios)
+        anterior_ts = previo.get("previous_generated_at", "")
 
     payload = {
-        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "generated_at": ahora.isoformat(timespec="seconds"),
         "season": detect_season(session),
         "source": "wzstats.gg",
-        "previous_generated_at": previous.get("generated_at", ""),
-        "changes": diff_modes(previous, modes),
+        "previous_generated_at": anterior_ts,
+        "warnings": avisos,
+        "changes": cambios,
         "modes": modes,
         "builds": builds,
     }
 
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
-    print("escrito " + str(OUT) + " (" + str(OUT.stat().st_size // 1024) + " KB)")
+    if args.simular:
+        print(f"[simulacion] no se escribe nada. {len(modes)} modos, {len(builds)} armas con build, "
+              f"{len(cambios)} cambios, {len(avisos)} avisos")
+        return 0
+
+    args.salida.parent.mkdir(parents=True, exist_ok=True)
+    args.salida.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"escrito {args.salida} ({args.salida.stat().st_size // 1024} KB)")
+    for a in avisos:
+        print(f"AVISO: {a}", file=sys.stderr)
     return 0
+
+
+def recuperar_modo(previo: dict, mode: dict) -> dict:
+    """Copia el bloque de un modo del JSON anterior y lo marca como no fresco.
+
+    Sin esto, un modo que falla desaparece de la web sin avisar y quien lo
+    tuviera seleccionado se encontraba la pagina en blanco.
+    """
+    anterior = (previo.get("modes") or {}).get(mode["id"])
+    if not anterior or not anterior.get("weapons"):
+        return {}
+    copia = dict(anterior)
+    copia["stale"] = True
+    copia["stale_since"] = anterior.get("stale_since") or previo.get("generated_at", "")
+    return copia
 
 
 if __name__ == "__main__":

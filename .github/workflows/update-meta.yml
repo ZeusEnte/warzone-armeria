@@ -2,13 +2,18 @@ name: Actualizar meta y publicar
 
 on:
   schedule:
-    # 06:10 UTC todos los días (08:10 en España peninsular en verano).
+    # 06:10 UTC todos los dias (08:10 en Espana peninsular en verano).
     - cron: "10 6 * * *"
   push:
     branches: [main]
-    # Cambiar documentacion no justifica volver a raspar wzstats.
+    # Un push solo republica la web con el codigo nuevo: NO vuelve a raspar
+    # wzstats. Ademas de ahorrar ~70 peticiones, evita que el diff del dia se
+    # recalcule contra la pasada de hace diez minutos y "Movimientos del meta"
+    # se quede vacio hasta manana.
     paths-ignore:
       - "**.md"
+      - "documentacion/**"
+      - "_CUARENTENA/**"
   workflow_dispatch:
 
 permissions:
@@ -23,6 +28,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      avisos: ${{ steps.revisar.outputs.avisos }}
     steps:
       - uses: actions/checkout@v4
 
@@ -35,12 +42,26 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r scripts/requirements.txt
 
+      # Rapidas y sin red: si el parser esta roto, mejor enterarse antes de
+      # lanzar 70 peticiones contra wzstats.
+      - name: Pruebas del scraper
+        run: python scripts/pruebas.py
+
       # El scraper sale con codigo 1 si no pudo leer ningun modo, y en ese caso
-      # NO toca meta.json: la web sigue sirviendo el ultimo dato bueno.
+      # NO toca meta.json: la web sigue sirviendo el ultimo dato bueno. Si falla
+      # solo algun modo, conserva el dato anterior de ese modo y lo anota en
+      # "warnings".
       - name: Raspar la meta
+        if: github.event_name != 'push'
         run: python scripts/scrape.py
 
+      # Un JSON sintacticamente valido pero con basura dentro se publicaria sin
+      # que nadie se entere. Esto lo para antes del commit.
+      - name: Validar el JSON generado
+        run: python scripts/validar_meta.py
+
       - name: Guardar cambios
+        if: github.event_name != 'push'
         run: |
           git config user.name "meta-bot"
           git config user.email "actions@github.com"
@@ -51,6 +72,18 @@ jobs:
             git commit -m "meta: actualizacion $(date -u +%Y-%m-%d)"
             git push
           fi
+
+      - name: Revisar avisos del scraper
+        id: revisar
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, pathlib
+          d = json.loads(pathlib.Path("docs/data/meta.json").read_text(encoding="utf-8"))
+          avisos = d.get("warnings") or []
+          for a in avisos:
+              print(f"::warning::{a}")
+          print("avisos=" + json.dumps(avisos, ensure_ascii=False))
+          PY
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
@@ -66,3 +99,23 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Va DESPUES de desplegar a proposito: si un modo se cayo, la web se publica
+  # igual con el dato conservado, pero la ejecucion queda en rojo y GitHub manda
+  # el correo. Si esto fuera un paso de "build", el fallo impediria publicar.
+  avisar:
+    needs: [build, deploy]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fallar si el raspado dejo avisos
+        env:
+          AVISOS: ${{ needs.build.outputs.avisos }}
+        run: |
+          if [ "$AVISOS" = "[]" ] || [ -z "$AVISOS" ]; then
+            echo "Sin avisos: el raspado fue completo."
+          else
+            echo "El raspado dejo avisos:"
+            echo "$AVISOS"
+            echo "La web se publico con el dato conservado del dia anterior en esos modos."
+            exit 1
+          fi

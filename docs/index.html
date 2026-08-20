@@ -65,7 +65,11 @@
   .slot .gun{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-bottom:3px}
   .slot .gun strong{font-size:20px;letter-spacing:.3px}
   .slot .meta-line{font-size:12.5px;color:var(--dim);margin-bottom:12px}
-  .slot img.art{width:100%;max-width:230px;display:block;margin:0 0 10px;opacity:.92}
+  /* Altura fija: las imagenes llegan con carga diferida y sin reservar sitio
+     las tres tarjetas bailan mientras cargan. */
+  .slot .artbox{height:72px;margin-bottom:10px}
+  .slot .artbox img{height:100%;width:auto;max-width:100%;display:block;
+                    object-fit:contain;object-position:left center;opacity:.92}
   .slot .empty{color:var(--faint);font-size:13.5px;padding:8px 0}
 
   .tier{font-size:11px;font-weight:800;padding:2px 8px;border-radius:5px;color:#0b0e13}
@@ -186,6 +190,9 @@ const INPUTS = [
   {id:"teclado",label:"Teclado y ratón"},
 ];
 const AVOIDABLE = ["Sniper","Shotgun","LMG","Marksman","Pistol"];
+// Son secundarias: aunque wzstats las rankee ("#1 Pistol"), no compiten con un
+// arma principal, asi que no deben colarse por delante en el ranking.
+const SECUNDARIAS = ["Pistol","Melee","Launcher","Special"];
 
 const TIER_SCORE = {S:100, A:78, B:55, C:35, D:18};
 // El scraper normaliza las categorías de Warzone ("Long Range") y las de BO7
@@ -235,6 +242,8 @@ function score(w){
   // Heurística de dispositivo: el aim assist premia el corto, el ratón el apuntado fino.
   if(profile.input === "mando"   && near) s += 6;
   if(profile.input === "teclado" && (far || snip)) s += 6;
+
+  if(SECUNDARIAS.includes(w.weapon_type)) s -= 45;
 
   return Math.max(0, Math.round(s));
 }
@@ -294,7 +303,7 @@ function slotCard(role, w){
   const build = buildFor(w.slug);
 
   let html = '<div class="role">'+role+'</div>';
-  if(w.image) html += '<img class="art" src="'+w.image+'" alt="" loading="lazy">';
+  html += '<div class="artbox">' + (w.image ? '<img src="'+w.image+'" alt="">' : "") + '</div>';
   html += '<div class="gun"><strong>'+w.name+'</strong><span class="tier '+w.tier+'">'+w.tier+'</span></div>';
   html += '<div class="meta-line">'+(w.weapon_type||"—")+(pos ? " · "+pos : "")+'</div>';
 

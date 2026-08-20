@@ -24,7 +24,8 @@ JSON y republica la página. Funciona con el PC del usuario apagado.
 ```
 CLAUDE.md                          este fichero (contexto para retomar)
 README.md                     73L  documentación pública del repo
-resumen.md                         stub que apunta aquí
+resumen.md                         stub que apunta aquí (lo pide la config global del usuario)
+_CUARENTENA/                       basura apartada para que el usuario la borre; en .gitignore
 scripts/scrape.py            415L  el scraper (única lógica de servidor)
 scripts/requirements.txt           requests + beautifulsoup4
 docs/index.html              604L  la app entera: HTML + CSS + JS, sin build ni dependencias
@@ -69,6 +70,11 @@ docs/data/meta.json          680K  datos generados. NO EDITAR A MANO, NO LEER EN
 
 `unlock` es `"Level 37"`, `"Armory"`, `"Prestige"`, el nombre de otra arma que
 hay que subir, o `""`. El frontend lo traduce en `reqLabel()`.
+
+**No toda arma tiene build de todos los modos.** El VS RECON, por ejemplo, no
+tiene una de `Black Ops 7 Ranked`. `buildsForMode()` cae entonces a las que haya
+y `buildTitle()` lo avisa en la etiqueta («build de Warzone Battle Royale»), para
+que no parezca que esos accesorios son los del modo activo.
 
 ## Cómo ejecutarlo y probarlo
 

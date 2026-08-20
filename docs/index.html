@@ -80,6 +80,7 @@
 
   .buildlabel{font-size:11px;letter-spacing:.6px;text-transform:uppercase;color:var(--acc-2);margin:10px 0 6px}
   .buildlabel:first-child{margin-top:0}
+  .ctxwarn{color:var(--faint);text-transform:none;letter-spacing:0;font-size:11px;margin-left:7px}
   .atts{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
   .atts li{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;
            padding:7px 0;border-bottom:1px solid rgba(36,45,61,.5);font-size:13px}
@@ -89,7 +90,6 @@
   .atts .at{font-weight:600;display:block}
   .req{font-size:11px;margin-top:2px;display:inline-block;padding:1px 7px;border-radius:4px;
        background:rgba(255,159,28,.13);color:var(--acc);border:1px solid rgba(255,159,28,.25)}
-  .req.free{background:rgba(74,222,128,.12);color:var(--good);border-color:rgba(74,222,128,.25)}
 
   .code{margin-top:12px;display:flex;align-items:center;gap:9px;flex-wrap:wrap;
         background:#0e1219;border:1px dashed var(--line);border-radius:9px;padding:9px 11px}
@@ -313,6 +313,13 @@ function buildsForMode(slug){
   const exact = entry.builds.filter(b => b.context === ctx);
   return exact.length ? exact : entry.builds.slice(0, 3);
 }
+// Si la build no es del modo activo (wzstats no siempre publica una para cada
+// modo) hay que decirlo, o parecería que esos accesorios son los de este modo.
+function buildTitle(b){
+  const ajena = b.context && b.context !== modeContext();
+  return esc(b.label) + (ajena ? '<span class="ctxwarn">build de ' + esc(b.context) + '</span>' : "");
+}
+
 function mainBuild(slug){
   const list = buildsForMode(slug);
   return list.find(b => /recommended/i.test(b.label)) || list[0] || null;
@@ -408,7 +415,7 @@ function slotCard(role, w, isGoal){
   html += '<div class="meta-line">' + esc(w.weapon_type || "—") + (pos ? " · " + esc(pos) : "") + '</div>';
 
   if(build){
-    html += '<div class="buildlabel">' + esc(build.label) + '</div>' + attsHtml(build) + codeHtml(build);
+    html += '<div class="buildlabel">' + buildTitle(build) + '</div>' + attsHtml(build) + codeHtml(build);
   }else{
     html += '<div class="empty">No tengo los accesorios de esta arma. ' +
             wzLink(w, "Verlos en wzstats") + '</div>';
@@ -472,7 +479,7 @@ function detailHtml(w){
   let h = '<div class="detailbox">';
   if(entry.max_level) h += '<div class="role" style="margin-bottom:10px">Nivel máximo del arma: ' + entry.max_level + '</div>';
   list.forEach(b => {
-    h += '<div class="buildlabel">' + esc(b.label) + '</div>' + attsHtml(b) + codeHtml(b);
+    h += '<div class="buildlabel">' + buildTitle(b) + '</div>' + attsHtml(b) + codeHtml(b);
   });
   h += '<div class="actions" style="padding-top:12px">' + haveBtn(w) + '</div></div>';
   return h;

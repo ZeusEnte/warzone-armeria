@@ -1,4 +1,3 @@
 __pycache__/
 *.pyc
-.cache/
-*.html.tmp
+_CUARENTENA/

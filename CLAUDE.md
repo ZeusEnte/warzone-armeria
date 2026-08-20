@@ -28,8 +28,10 @@ resumen.md                         stub que apunta aquí (lo pide la config glob
 _CUARENTENA/                       basura apartada para que el usuario la borre; en .gitignore
 scripts/scrape.py            415L  el scraper (única lógica de servidor)
 scripts/requirements.txt           requests + beautifulsoup4
-docs/index.html              604L  la app entera: HTML + CSS + JS, sin build ni dependencias
+docs/index.html                    la app entera: HTML + CSS + JS, sin build ni dependencias
 docs/data/meta.json          680K  datos generados. NO EDITAR A MANO, NO LEER ENTERO
+docs/manifest.webmanifest          para "añadir a pantalla de inicio" en el móvil
+docs/icons/                        iconos generados con PIL (ver historial de git)
 .github/workflows/update-meta.yml  cron 06:10 UTC + push + manual
 ```
 
@@ -170,10 +172,23 @@ aportarían. Fue una petición explícita del usuario, no lo conviertas en filtr
 - Python 3.13 y git 2.55 sí.
 - El usuario escribe en español; responderle en español.
 
+## Móvil
+
+Verificado a 390 y 360 px: sin desbordes horizontales, tarjetas apiladas, la
+columna «puesto oficial» se oculta y la ficha desplegada cabe. Los botones tenían
+21-27 px de alto (intocables con el dedo) y ahora son de 44 px en móvil.
+
+**Cómo auditar la vista móvil** (`resize_window` de la extensión no afecta al
+viewport): crea una página temporal en `docs/` que cargue `index.html` en un
+`<iframe width="360">` — las media queries responden al ancho del iframe — y
+inspecciona `iframe.contentDocument` con `javascript_tool`. Hay una copia en
+`_CUARENTENA/test-movil-andamio.html`. **No dejar ese fichero en `docs/`**, se
+publicaría.
+
+Se instala como app desde el navegador del móvil: *Añadir a pantalla de inicio*.
+No hay nada que desplegar en los dispositivos, es una web.
+
 ## Pendiente
 
-- **La vista móvil nunca se ha verificado renderizada.** El
-  `@media (max-width:640px)` de `docs/index.html` está escrito pero no
-  comprobado; `resize_window` no llegó a aplicarse al viewport en las pruebas.
 - El usuario pegó su contraseña de GitHub en texto plano en el chat el
   2026-08-20 y se le recomendó cambiarla. Sin confirmar que lo hiciera.

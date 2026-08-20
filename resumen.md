@@ -31,12 +31,26 @@ Proyecto completo y commiteado en `main` (commit `e05db60`). Funciona de punta a
 - Hay que forzar `r.encoding = "utf-8"` o los nombres con acento se rompen (JÄGER 45).
 - El primer bloque de la tier list no lleva cabecera: es el S tier.
 
-## Pendiente
+## Publicado y funcionando
 
-1. El usuario debe dar su **usuario de GitHub** (o instalar `gh`) para crear el repo.
-2. Tras subirlo: Settings → Pages → Source = **GitHub Actions**, y
-   Settings → Actions → Workflow permissions = **Read and write**.
-3. Lanzar el workflow a mano una vez desde Actions.
+- Repo: https://github.com/ZeusEnte/warzone-armeria (público)
+- Web: https://zeusente.github.io/warzone-armeria/
+- Pages → Source = GitHub Actions ✅ · Actions → Read and write ✅
+- Run #1 en verde: el bot ya hizo su primer commit automático (`bbbdb07`),
+  o sea que el ciclo raspar → commit → desplegar funciona solo.
+
+El push necesitó que el usuario aprobara la ventana del Git Credential Manager
+("Connect to GitHub" → Browser). La credencial queda guardada, los siguientes
+push ya no preguntan. Ojo: el bot commitea sobre `main`, así que **antes de
+pushear en local hay que hacer `git pull --rebase`**.
+
+## Pendiente / sin verificar
+
+- **La vista móvil no está comprobada.** El `@media (max-width:640px)` de
+  `docs/index.html` está escrito pero nunca se vio renderizado: `resize_window`
+  no llegó a aplicarse al viewport en las pruebas.
+- El usuario debería cambiar su contraseña de GitHub: la pegó en texto plano
+  en el chat el 2026-08-20.
 
 ## Entorno
 

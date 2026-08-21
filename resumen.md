@@ -90,7 +90,7 @@ pasaron de 35 a 57.
 
 ## Próximos pasos sugeridos
 
-1. **Subir los 16 commits** (ver arriba) y vigilar la primera ejecución del cron.
+1. **Subir el trabajo** (ver arriba) y vigilar la primera ejecución del cron.
 2. **Historial largo de la meta.** Hoy se sabe desde cuándo lleva un arma en su
    tier, pero no por dónde ha pasado. Un `docs/data/historico.json` con un
    registro por día permitiría enseñar la curva («lleva tres semanas cayendo»).

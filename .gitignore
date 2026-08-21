@@ -19,3 +19,7 @@ desktop.ini
 *.log
 *.tmp
 *.bak
+
+# Notas personales del usuario en la raiz: se quedan en su disco, no se suben
+# ni se publican (docs/ es la raiz web). Anadido el 2026-08-21.
+Promy para empezar nuevas actualizaciones.txt

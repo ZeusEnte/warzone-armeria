@@ -14,12 +14,17 @@ Está **todo terminado y commiteado en el PC**, pero **no subido**. En GitHub
 sigue la versión del 20 de agosto por la mañana.
 
 Sin subir está **todo lo de las dos auditorías**, desde `a26b20d` en adelante.
-Sube en línea recta: no hay conflicto.
+
+El robot hizo su actualización diaria (`c24e394`) mientras la auditoría estaba en
+curso, así que ya se ha juntado con ella: se conservó el `meta.json` local, que es
+tres horas más nuevo y trae las imágenes y la antigüedad, y los movimientos del
+meta de ambos se unieron (resultaron ser los mismos 20). **El conflicto ya está
+resuelto**: solo queda empujar.
 
 Para subirlo, en la carpeta del proyecto:
 
 ```
-git pull --rebase origin main && git push origin main
+git push origin main
 ```
 
 Eso republica la web con todo lo nuevo. Después conviene mirar la pestaña

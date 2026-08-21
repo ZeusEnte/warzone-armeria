@@ -8,31 +8,29 @@ bitácora: en qué punto está, qué se decidió y qué viene después.
 
 ---
 
-## ⚠️ Lo único pendiente: subir el trabajo a GitHub
+## ✅ Subido y publicado
 
-Está **todo terminado y commiteado en el PC**, pero **no subido**. En GitHub
-sigue la versión del 20 de agosto por la mañana.
+**Ya no queda nada pendiente de subir.** Las dos auditorías están en GitHub y la
+web publicada las sirve. Verificado el 2026-08-21 desde fuera, sin fiarse del
+repositorio local:
 
-Sin subir está **todo lo de las dos auditorías**, desde `a26b20d` en adelante.
+| Comprobación | Resultado |
+|---|---|
+| `git status -sb` | `main...origin/main`, sin commits por delante ni por detrás |
+| HEAD remoto | `825e0bf`, el mismo que el local |
+| La web en vivo | enseña la sección **«Comparar dos armas»**, que no existía antes |
+| `data/meta.json` publicado | `generated_at` **2026-08-21T10:11:31Z**, temporada `Season 5 Reloaded, 2026` conservada, y los campos nuevos `imagen` y `desde` presentes |
 
 El robot hizo su actualización diaria (`c24e394`) mientras la auditoría estaba en
-curso, así que ya se ha juntado con ella: se conservó el `meta.json` local, que es
-tres horas más nuevo y trae las imágenes y la antigüedad, y los movimientos del
-meta de ambos se unieron (resultaron ser los mismos 20). **El conflicto ya está
-resuelto**: solo queda empujar.
+curso y se juntó con ella antes del push: se conservó el `meta.json` local, tres
+horas más nuevo y con las imágenes y la antigüedad, y los movimientos del meta de
+ambos se unieron (resultaron ser los mismos 20).
 
-Para subirlo, en la carpeta del proyecto:
-
-```
-git push origin main
-```
-
-Eso republica la web con todo lo nuevo. Después conviene mirar la pestaña
-**Actions** de GitHub: es la primera vez que corre el workflow con los tres
-trabajos encadenados (`build` → `deploy` → `avisar`).
-
-Si no se sube, no pasa nada malo: la web sigue funcionando con la versión
-anterior y el robot sigue actualizando los datos cada mañana.
+**Lo que sigue sin verse:** la ejecución del **cron** con los tres trabajos
+encadenados (`build` → `deploy` → `avisar`). El push solo despliega, no raspa, así
+que el workflow completo no se estrena hasta las **06:10 UTC**. Conviene mirar la
+pestaña *Actions* de GitHub esa mañana. Aquí no se puede comprobar: `gh` no está
+instalado.
 
 ---
 
@@ -95,7 +93,8 @@ pasaron de 35 a 57.
 
 ## Próximos pasos sugeridos
 
-1. **Subir el trabajo** (ver arriba) y vigilar la primera ejecución del cron.
+1. **Vigilar la primera ejecución del cron** (06:10 UTC), que es lo único de las
+   dos auditorías que todavía no se ha visto funcionar de verdad.
 2. **Historial largo de la meta.** Hoy se sabe desde cuándo lleva un arma en su
    tier, pero no por dónde ha pasado. Un `docs/data/historico.json` con un
    registro por día permitiría enseñar la curva («lleva tres semanas cayendo»).

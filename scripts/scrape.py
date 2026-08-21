@@ -18,6 +18,7 @@ import re
 import sys
 import time
 from datetime import datetime, timezone
+from urllib.parse import unquote
 
 import requests
 from bs4 import BeautifulSoup
@@ -312,6 +313,64 @@ def parse_builds(html: str) -> list:
     return tracked or builds
 
 
+# Las dos variantes de imagen de arma que sirve wzstats: la pequena que usa en
+# los listados y la grande de la ficha. El sufijo "_versionN" (de la 1 a la 7, y
+# a veces ausente) NO es deducible del slug, asi que no se construyen URL: solo
+# se recogen las que wzstats haya escrito.
+IMG_RE = re.compile(
+    r"https://img\.wzstats\.gg/([^/\"'\s]+)/(gunDisplayLoadouts|gunFullDisplay)")
+VERSION_RE = re.compile(r"_version\d+$")
+
+
+def cosechar_imagenes(html: str) -> dict:
+    """Indice slug -> URL de imagen con lo que traiga una pagina cualquiera.
+
+    La lista de tier solo trae imagen del primer bloque (el tier S): las demas
+    las carga el navegador despues, asi que no estan en el HTML que recibimos y
+    el 96% de las armas se quedaba sin foto.
+
+    La ficha de arma, que ya descargamos para los accesorios, si trae varias:
+    la del arma en cuestion y un bloque de "armas alternativas" con las de
+    otras, que sirven para rellenar armas cuya ficha ni siquiera abrimos.
+
+    Los adornos de la ficha (skins) van como "<slug>-wzstats-<hash>", que no
+    casa con ningun slug conocido: al indexar por el segmento limpio se
+    descartan solos.
+    """
+    encontrado: dict = {}
+    for segmento, variante in IMG_RE.findall(html):
+        slug = VERSION_RE.sub("", segmento)
+        # Los adornos ("kar98k-wzstats-d22486") no casan con ningun slug, pero se
+        # descartan aqui para no llenar el indice de entradas que no sirven.
+        if not slug or "-wzstats-" in slug:
+            continue
+        # La pequena es la que usa la web en las tarjetas; la grande solo se
+        # guarda si no hay otra cosa.
+        if variante == "gunDisplayLoadouts" or slug not in encontrado:
+            anterior = encontrado.get(slug, "")
+            if anterior and "gunDisplayLoadouts" in anterior and variante != "gunDisplayLoadouts":
+                continue
+            encontrado[slug] = f"https://img.wzstats.gg/{segmento}/{variante}"
+    return encontrado
+
+
+def rellenar_imagenes(modes: dict, indice: dict) -> int:
+    """Pone imagen a las armas que no la traigan. Devuelve cuantas se rellenaron."""
+    puestas = 0
+    for modo in modes.values():
+        if modo.get("stale"):
+            continue
+        for w in modo["weapons"]:
+            if w.get("image") or not w.get("slug"):
+                continue
+            # El href viene codificado ("j%C3%A4ger-45") y la URL de imagen no.
+            url = indice.get(unquote(w["slug"])) or indice.get(w["slug"])
+            if url:
+                w["image"] = url
+                puestas += 1
+    return puestas
+
+
 def parse_max_level(html: str) -> int:
     """Nivel maximo del arma, para saber hasta donde hay que subirla."""
     soup = BeautifulSoup(html, "html.parser")
@@ -449,12 +508,16 @@ def main(argv=None) -> int:
     previo = cargar_previo(args.salida)
     modes: dict = {}
     avisos: list = []
+    # slug -> URL de imagen, con lo que vaya apareciendo en cualquier pagina.
+    imagenes: dict = {}
 
     for mode in modos_pedidos:
         print(f"-> {mode['label']}: {mode['url']}")
         weapons = []
         try:
-            weapons = parse_meta_page(get(mode["url"], session))
+            html = get(mode["url"], session)
+            weapons = parse_meta_page(html)
+            imagenes.update(cosechar_imagenes(html))
         except Exception as exc:
             aviso(f"FALLO: {exc}")
         if not weapons:
@@ -512,6 +575,9 @@ def main(argv=None) -> int:
             try:
                 page = get(f"{BASE}/best-loadouts/{slug}", session)
                 found = parse_builds(page)
+                # La ficha es la unica fuente de imagenes que no se cargan por
+                # javascript, y ya la tenemos descargada: no cuesta una peticion.
+                imagenes.update(cosechar_imagenes(page))
             except Exception as exc:
                 fallos += 1
                 aviso(f"{slug}: {exc}")
@@ -536,6 +602,17 @@ def main(argv=None) -> int:
         # wzstats cambio el HTML de las fichas y hay que mirarlo.
         if targets and fallos >= max(3, len(targets) // 3):
             avisos.append(f"no se pudieron leer los accesorios de {fallos} de {len(targets)} armas")
+
+    # Las imagenes que ya conociamos ayer siguen valiendo hoy: sembrando el
+    # indice con ellas, el catalogo crece dia a dia en vez de depender de que
+    # hoy toque abrir la ficha de esa arma.
+    for modo_previo in (previo.get("modes") or {}).values():
+        for w in modo_previo.get("weapons") or []:
+            if w.get("image") and w.get("slug"):
+                imagenes.setdefault(unquote(w["slug"]), w["image"])
+    puestas = rellenar_imagenes(modes, imagenes)
+    if puestas:
+        print(f"-> {puestas} armas reciben imagen del catalogo ({len(imagenes)} conocidas)")
 
     ahora = datetime.now(timezone.utc)
     cambios = diff_modes(previo, modes)

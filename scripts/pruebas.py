@@ -158,6 +158,63 @@ comprobar("parse_max_level lee el nivel",
 comprobar("parse_max_level devuelve 0 si no hay nada", sc.parse_max_level("<div></div>") == 0)
 
 # --------------------------------------------------------------------------
+# Cosecha de imagenes. La lista de tier solo trae las del tier S; el resto hay
+# que sacarlas de las fichas de arma, que ya se descargan para los accesorios.
+# Los trozos de HTML son recortes reales de wzstats.
+# --------------------------------------------------------------------------
+
+FICHA_HTML = """
+<img src="https://img.wzstats.gg/kar98k-wzstats-d22486/gunFullDisplay">
+<img src="https://img.wzstats.gg/kar98k/gunFullDisplay">
+<img src="https://img.wzstats.gg/paranoia-warzone-bor/perksV2">
+<div class="weapon-alternative-image"><img src="https://img.wzstats.gg/fg42/gunDisplayLoadouts"></div>
+<div class="weapon-alternative-image"><img src="https://img.wzstats.gg/mors/gunDisplayLoadouts"></div>
+"""
+
+indice = sc.cosechar_imagenes(FICHA_HTML)
+comprobar("saca la imagen del arma de la ficha",
+          indice.get("kar98k") == "https://img.wzstats.gg/kar98k/gunFullDisplay")
+comprobar("aprovecha las imagenes de las armas alternativas",
+          indice.get("fg42") == "https://img.wzstats.gg/fg42/gunDisplayLoadouts" and "mors" in indice)
+comprobar("descarta los adornos (skins) del arma",
+          not any("-wzstats-" in k for k in indice))
+comprobar("no confunde los iconos de ventajas con armas", "paranoia-warzone-bor" not in indice)
+
+comprobar("quita el sufijo _versionN, que no es deducible del slug",
+          sc.cosechar_imagenes(
+              '<img src="https://img.wzstats.gg/m15-mod-0_version7/gunDisplayLoadouts">'
+          ) == {"m15-mod-0": "https://img.wzstats.gg/m15-mod-0_version7/gunDisplayLoadouts"})
+
+# La pequena es la que usa la web en las tarjetas: gana a la grande aunque llegue
+# despues, y el orden en que aparezcan en el HTML no debe cambiar el resultado.
+GRANDE = '<img src="https://img.wzstats.gg/vst/gunFullDisplay">'
+PEQUENA = '<img src="https://img.wzstats.gg/vst/gunDisplayLoadouts">'
+comprobar("prefiere la imagen pequena de listado",
+          sc.cosechar_imagenes(GRANDE + PEQUENA)["vst"].endswith("gunDisplayLoadouts"))
+comprobar("y tambien si llegan en el otro orden",
+          sc.cosechar_imagenes(PEQUENA + GRANDE)["vst"].endswith("gunDisplayLoadouts"))
+
+modos_sin_fotos = {
+    "m0": {"weapons": [
+        {"name": "FG42", "slug": "fg42", "image": ""},
+        {"name": "JAGER 45", "slug": "j%C3%A4ger-45", "image": ""},
+        {"name": "Ya tiene", "slug": "vst", "image": "https://img.wzstats.gg/vst/ya"},
+        {"name": "Sin ficha", "slug": "", "image": ""},
+    ]},
+    "viejo": {"stale": True, "weapons": [{"name": "FG42", "slug": "fg42", "image": ""}]},
+}
+puestas = sc.rellenar_imagenes(modos_sin_fotos, {
+    "fg42": "https://img.wzstats.gg/fg42/gunDisplayLoadouts",
+    "jäger-45": "https://img.wzstats.gg/jäger-45_version5/gunDisplayLoadouts",
+})
+armas = modos_sin_fotos["m0"]["weapons"]
+comprobar("rellena las armas que no traen imagen", puestas == 2 and armas[0]["image"].endswith("gunDisplayLoadouts"))
+comprobar("casa el slug aunque venga codificado en el href", armas[1]["image"] != "")
+comprobar("no pisa la imagen que ya tenia", armas[2]["image"].endswith("/ya"))
+comprobar("no toca un modo conservado del dia anterior",
+          modos_sin_fotos["viejo"]["weapons"][0]["image"] == "")
+
+# --------------------------------------------------------------------------
 # Recuperacion cuando un modo falla, y acumulacion de cambios el mismo dia.
 # --------------------------------------------------------------------------
 

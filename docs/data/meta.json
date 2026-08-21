@@ -1,8 +1,9 @@
 {
- "generated_at": "2026-08-21T07:06:58+00:00",
+ "generated_at": "2026-08-21T10:11:31+00:00",
  "season": "Season 5 Reloaded, 2026",
  "source": "wzstats.gg",
  "previous_generated_at": "2026-08-20T15:15:14+00:00",
+ "warnings": [],
  "changes": [
   {
    "mode": "resurgence",
@@ -368,7 +369,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/ak-27_version5/gunDisplayLoadouts"
     },
     {
      "name": "CBRS-3",
@@ -390,7 +391,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/cbrs-3_version2/gunFullDisplay"
     },
     {
      "name": "VX COMPACT",
@@ -407,7 +408,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/vx-compact/gunDisplayLoadouts"
     },
     {
      "name": "STURMWOLF 45",
@@ -424,7 +425,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/sturmwolf-45/gunDisplayLoadouts"
     },
     {
      "name": "VOYAK KT-3",
@@ -441,7 +442,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/voyak-kt-3_version2/gunDisplayLoadouts"
     },
     {
      "name": "PEACEKEEPER MK1",
@@ -458,7 +459,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/peacekeeper-mk1_version4/gunDisplayLoadouts"
     },
     {
      "name": "M15 MOD 0",
@@ -475,7 +476,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/m15-mod-0/gunDisplayLoadouts"
     },
     {
      "name": "EGRT-17",
@@ -492,7 +493,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/egrt-17_version2/gunDisplayLoadouts"
     },
     {
      "name": "MXR-17",
@@ -509,7 +510,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/mxr-17_version5/gunFullDisplay"
     },
     {
      "name": "KOGOT-7",
@@ -526,7 +527,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/kogot-7/gunDisplayLoadouts"
     },
     {
      "name": "X9 MAVERICK",
@@ -543,7 +544,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/x9-maverick_version4/gunFullDisplay"
     },
     {
      "name": "CARBON 57",
@@ -560,7 +561,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/carbon-57_version4/gunDisplayLoadouts"
     },
     {
      "name": "DRAVEC 45",
@@ -577,7 +578,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/dravec-45_version6/gunDisplayLoadouts"
     },
     {
      "name": "GREMLIN",
@@ -594,7 +595,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/gremlin_version1/gunFullDisplay"
     },
     {
      "name": "MK.78",
@@ -611,7 +612,7 @@
      "tags": [
       "LMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/mk78_version4/gunDisplayLoadouts"
     },
     {
      "name": "RAZOR 9MM",
@@ -628,7 +629,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/razor-9mm_version5/gunFullDisplay"
     },
     {
      "name": "MADDOX RFB",
@@ -645,7 +646,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/maddox-rfb_version3/gunFullDisplay"
     },
     {
      "name": "M8A1",
@@ -662,7 +663,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/m8a1_version4/gunFullDisplay"
     },
     {
      "name": "FJX IMPERIUM",
@@ -679,7 +680,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/fjx-imperium/gunFullDisplay"
     },
     {
      "name": "SWORDFISH A1",
@@ -696,7 +697,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/swordfish-a1_version2/gunDisplayLoadouts"
     },
     {
      "name": "XM325",
@@ -713,7 +714,7 @@
      "tags": [
       "LMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/xm325_version4/gunFullDisplay"
     },
     {
      "name": "AKITA",
@@ -730,7 +731,7 @@
      "tags": [
       "Shotgun"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/akita_version4/gunFullDisplay"
     },
     {
      "name": "SOKOL 545",
@@ -747,7 +748,7 @@
      "tags": [
       "LMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/sokol-545_version5/gunFullDisplay"
     },
     {
      "name": "HDR",
@@ -764,7 +765,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/hdr_version2/gunFullDisplay"
     },
     {
      "name": "XR-3 ION",
@@ -781,7 +782,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/xr-3-ion_version4/gunFullDisplay"
     },
     {
      "name": "MERRICK 556",
@@ -798,7 +799,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/merrick-556/gunFullDisplay"
     },
     {
      "name": "SG-12",
@@ -815,7 +816,7 @@
      "tags": [
       "Shotgun"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/sg-12_version2/gunFullDisplay"
     },
     {
      "name": "M10 BREACHER",
@@ -832,7 +833,7 @@
      "tags": [
       "Shotgun"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/m10-breacher/gunDisplayLoadouts"
     },
     {
      "name": "ECHO 12",
@@ -849,7 +850,7 @@
      "tags": [
       "Shotgun"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/echo-12_version4/gunFullDisplay"
     },
     {
      "name": "RK-9",
@@ -866,7 +867,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/rk-9_version4/gunFullDisplay"
     },
     {
      "name": "LW3A1 FROSTLINE",
@@ -883,7 +884,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/lw3a1-frostline/gunDisplayLoadouts"
     },
     {
      "name": "M34 NOVALINE",
@@ -900,7 +901,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/m34-novaline_version4/gunFullDisplay"
     },
     {
      "name": "TR2",
@@ -922,7 +923,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/tr2/gunFullDisplay"
     },
     {
      "name": "KILO 141",
@@ -939,7 +940,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/kilo-141_version1/gunFullDisplay"
     },
     {
      "name": "GPR 91",
@@ -956,7 +957,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/gpr-91/gunFullDisplay"
     },
     {
      "name": "SWAT 5.56",
@@ -973,7 +974,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/swat-556_version1/gunFullDisplay"
     },
     {
      "name": "CR-56 AMAX",
@@ -990,7 +991,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/cr-56-amax_version1/gunFullDisplay"
     },
     {
      "name": "X52 RESONATOR",
@@ -1007,7 +1008,7 @@
      "tags": [
       "Special"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/x52-resonator/gunFullDisplay"
     },
     {
      "name": "MX9",
@@ -1024,7 +1025,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/mx9/gunFullDisplay"
     },
     {
      "name": "STRIKER",
@@ -1041,7 +1042,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/striker/gunDisplayLoadouts"
     },
     {
      "name": "RECLAIMER 18",
@@ -1058,7 +1059,7 @@
      "tags": [
       "Shotgun"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/reclaimer-18/gunFullDisplay"
     },
     {
      "name": "LR 7.62",
@@ -1075,7 +1076,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/lr-762/gunFullDisplay"
     },
     {
      "name": "RENETTI",
@@ -1098,7 +1099,7 @@
       "Pistol",
       "Conversion Kit"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/renetti/gunFullDisplay"
     },
     {
      "name": "KATT-AMR",
@@ -1115,7 +1116,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/katt-amr/gunFullDisplay"
     },
     {
      "name": "MORS",
@@ -1132,7 +1133,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/mors/gunDisplayLoadouts"
     },
     {
      "name": "VICTUS XMR",
@@ -1149,7 +1150,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/victus-xmr/gunFullDisplay"
     },
     {
      "name": "XRK STALKER",
@@ -1166,7 +1167,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/xrk-stalker/gunFullDisplay"
     },
     {
      "name": "LOCKWOOD MK2",
@@ -1189,7 +1190,7 @@
       "Marksman",
       "Conversion Kit"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/lockwood-mk2/gunFullDisplay"
     },
     {
      "name": "KRS-7.62",
@@ -1206,7 +1207,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/krs-762_version1/gunFullDisplay"
     },
     {
      "name": "GREKHOVA",
@@ -1240,7 +1241,7 @@
      "tags": [
       "Pistol"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/velox-57_version4/gunFullDisplay"
     },
     {
      "name": "1911",
@@ -1257,7 +1258,7 @@
      "tags": [
       "Pistol"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/1911_version1/gunFullDisplay"
     },
     {
      "name": "CODA 9",
@@ -1291,7 +1292,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/warden-308_version4/gunFullDisplay"
     },
     {
      "name": "JÄGER 45",
@@ -1308,7 +1309,7 @@
      "tags": [
       "Pistol"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/jäger-45_version5/gunFullDisplay"
     },
     {
      "name": "AMES 85",
@@ -1376,7 +1377,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/shadow-sk/gunDisplayLoadouts"
     },
     {
      "name": "LADRA",
@@ -1444,7 +1445,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/ppsh-41/gunDisplayLoadouts"
     },
     {
      "name": "SAUG",
@@ -1495,7 +1496,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/ffar-1/gunDisplayLoadouts"
     },
     {
      "name": "M13B",
@@ -1529,7 +1530,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/ksv/gunDisplayLoadouts"
     },
     {
      "name": "LC10",
@@ -1546,7 +1547,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/lc10/gunDisplayLoadouts"
     },
     {
      "name": "MODEL L",
@@ -1597,7 +1598,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/krig-c/gunDisplayLoadouts"
     },
     {
      "name": "MARINE SP",
@@ -1668,7 +1669,8 @@
      ],
      "weapon_type": "Assault Rifle",
      "tags": [
-      "Assault Rifle"
+      "Assault Rifle",
+      "Conversion Kit"
      ],
      "image": ""
     },
@@ -1815,7 +1817,8 @@
      ],
      "weapon_type": "Shotgun",
      "tags": [
-      "Shotgun"
+      "Shotgun",
+      "Conversion Kit"
      ],
      "image": ""
     },
@@ -1908,7 +1911,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/stg44/gunDisplayLoadouts"
     },
     {
      "name": "AK-74",
@@ -1984,7 +1987,8 @@
      ],
      "weapon_type": "SMG",
      "tags": [
-      "SMG"
+      "SMG",
+      "Conversion Kit"
      ],
      "image": ""
     },
@@ -2088,7 +2092,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/superi-46/gunDisplayLoadouts"
     },
     {
      "name": "SIRIN 9MM",
@@ -2190,7 +2194,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/xm4/gunDisplayLoadouts"
     },
     {
      "name": "HOLGER 556",
@@ -2261,7 +2265,8 @@
      ],
      "weapon_type": "LMG",
      "tags": [
-      "LMG"
+      "LMG",
+      "Conversion Kit"
      ],
      "image": ""
     },
@@ -2334,7 +2339,8 @@
      ],
      "weapon_type": "LMG",
      "tags": [
-      "LMG"
+      "LMG",
+      "Conversion Kit"
      ],
      "image": ""
     },
@@ -2643,7 +2649,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/sva-545/gunDisplayLoadouts"
     },
     {
      "name": "BRUEN MK9",
@@ -2714,7 +2720,8 @@
      ],
      "weapon_type": "SMG",
      "tags": [
-      "SMG"
+      "SMG",
+      "Conversion Kit"
      ],
      "image": ""
     },
@@ -2818,7 +2825,7 @@
      "tags": [
       "BR"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/dtir-30-06/gunDisplayLoadouts"
     },
     {
      "name": "BRYSON 890",
@@ -2903,7 +2910,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/amr-mod-4/gunDisplayLoadouts"
     },
     {
      "name": "STRIKER 9",
@@ -2954,7 +2961,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/static-hv/gunDisplayLoadouts"
     },
     {
      "name": "WSP STINGER",
@@ -3439,7 +3446,8 @@
      ],
      "weapon_type": "LMG",
      "tags": [
-      "LMG"
+      "LMG",
+      "Conversion Kit"
      ],
      "image": ""
     },
@@ -3458,7 +3466,7 @@
      "tags": [
       "LMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/mammoth/gunFullDisplay"
     },
     {
      "name": "SIGNAL 50",
@@ -3492,7 +3500,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/svd/gunDisplayLoadouts"
     },
     {
      "name": "LONGBOW",
@@ -3509,7 +3517,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/longbow/gunDisplayLoadouts"
     },
     {
      "name": "9MM DAEMON",
@@ -3543,7 +3551,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/kv-inhibitor/gunDisplayLoadouts"
     },
     {
      "name": "DG-56",
@@ -4699,7 +4707,7 @@
      ],
      "weapon_type": "Marksman",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/m34-novaline_version4/gunFullDisplay"
     },
     {
      "name": "PEACEKEEPER MK1",
@@ -4714,7 +4722,7 @@
      ],
      "weapon_type": "Assault Rifle",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/peacekeeper-mk1_version4/gunDisplayLoadouts"
     },
     {
      "name": "MK35 ISR",
@@ -4729,7 +4737,7 @@
      ],
      "weapon_type": "Assault Rifle",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/mk35-isr/gunDisplayLoadouts"
     },
     {
      "name": "RAZOR 9MM",
@@ -4744,7 +4752,7 @@
      ],
      "weapon_type": "SMG",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/razor-9mm_version5/gunFullDisplay"
     },
     {
      "name": "DRAVEC 45",
@@ -4759,7 +4767,7 @@
      ],
      "weapon_type": "SMG",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/dravec-45_version6/gunDisplayLoadouts"
     },
     {
      "name": "MK.78",
@@ -4774,7 +4782,7 @@
      ],
      "weapon_type": "LMG",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/mk78_version4/gunDisplayLoadouts"
     },
     {
      "name": "VST",
@@ -4789,7 +4797,7 @@
      ],
      "weapon_type": "SMG",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/vst/gunDisplayLoadouts"
     },
     {
      "name": "MPC-25",
@@ -4804,7 +4812,7 @@
      ],
      "weapon_type": "SMG",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/mpc-25/gunDisplayLoadouts"
     },
     {
      "name": "EGRT-17",
@@ -4819,7 +4827,7 @@
      ],
      "weapon_type": "Assault Rifle",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/egrt-17_version2/gunDisplayLoadouts"
     },
     {
      "name": "MXR-17",
@@ -4834,7 +4842,7 @@
      ],
      "weapon_type": "Assault Rifle",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/mxr-17_version5/gunFullDisplay"
     },
     {
      "name": "REV-46",
@@ -4849,7 +4857,7 @@
      ],
      "weapon_type": "SMG",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/rev-46_version2/gunDisplayLoadouts"
     },
     {
      "name": "MADDOX RFB",
@@ -4864,7 +4872,7 @@
      ],
      "weapon_type": "Assault Rifle",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/maddox-rfb_version3/gunFullDisplay"
     },
     {
      "name": "CARBON 57",
@@ -4879,7 +4887,7 @@
      ],
      "weapon_type": "SMG",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/carbon-57_version4/gunDisplayLoadouts"
     },
     {
      "name": "DS20 MIRAGE",
@@ -4894,7 +4902,7 @@
      ],
      "weapon_type": "Assault Rifle",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/ds20-mirage_version4/gunDisplayLoadouts"
     },
     {
      "name": "SWORDFISH A1",
@@ -4909,7 +4917,7 @@
      ],
      "weapon_type": "Marksman",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/swordfish-a1_version2/gunDisplayLoadouts"
     },
     {
      "name": "KRS-7.62",
@@ -4924,7 +4932,7 @@
      ],
      "weapon_type": "Marksman",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/krs-762_version1/gunFullDisplay"
     },
     {
      "name": "XM325",
@@ -4939,7 +4947,7 @@
      ],
      "weapon_type": "LMG",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/xm325_version4/gunFullDisplay"
     },
     {
      "name": "CBRS-3",
@@ -4954,7 +4962,7 @@
      ],
      "weapon_type": "SMG",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/cbrs-3_version2/gunFullDisplay"
     },
     {
      "name": "AKITA",
@@ -4969,7 +4977,7 @@
      ],
      "weapon_type": "Shotgun",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/akita_version4/gunFullDisplay"
     },
     {
      "name": "M8A1",
@@ -4984,7 +4992,7 @@
      ],
      "weapon_type": "Marksman",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/m8a1_version4/gunFullDisplay"
     },
     {
      "name": "X9 MAVERICK",
@@ -4999,7 +5007,7 @@
      ],
      "weapon_type": "Assault Rifle",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/x9-maverick_version4/gunFullDisplay"
     },
     {
      "name": "HAWKER HX",
@@ -5014,7 +5022,7 @@
      ],
      "weapon_type": "Sniper",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/hawker-hx/gunDisplayLoadouts"
     },
     {
      "name": "STRIDER 300",
@@ -5029,7 +5037,7 @@
      ],
      "weapon_type": "Sniper",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/strider-300/gunDisplayLoadouts"
     },
     {
      "name": "VELOX 5.7",
@@ -5044,7 +5052,7 @@
      ],
      "weapon_type": "Pistol",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/velox-57_version4/gunFullDisplay"
     },
     {
      "name": "1911",
@@ -5059,7 +5067,7 @@
      ],
      "weapon_type": "Pistol",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/1911_version1/gunFullDisplay"
     },
     {
      "name": "VS RECON",
@@ -5074,7 +5082,7 @@
      ],
      "weapon_type": "Sniper",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/vs-recon/gunDisplayLoadouts"
     },
     {
      "name": "WARDEN 308",
@@ -5089,7 +5097,7 @@
      ],
      "weapon_type": "Marksman",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/warden-308_version4/gunFullDisplay"
     },
     {
      "name": "ECHO 12",
@@ -5104,7 +5112,7 @@
      ],
      "weapon_type": "Shotgun",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/echo-12_version4/gunFullDisplay"
     },
     {
      "name": "XR-3 ION",
@@ -5119,7 +5127,7 @@
      ],
      "weapon_type": "Sniper",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/xr-3-ion_version4/gunFullDisplay"
     },
     {
      "name": "CODA 9",
@@ -5149,7 +5157,7 @@
      ],
      "weapon_type": "LMG",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/sokol-545_version5/gunFullDisplay"
     },
     {
      "name": "RK-9",
@@ -5164,7 +5172,7 @@
      ],
      "weapon_type": "SMG",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/rk-9_version4/gunFullDisplay"
     },
     {
      "name": "JÄGER 45",
@@ -5179,7 +5187,7 @@
      ],
      "weapon_type": "Pistol",
      "tags": [],
-     "image": ""
+     "image": "https://img.wzstats.gg/jäger-45_version5/gunFullDisplay"
     },
     {
      "name": "NX RAVAGER",
@@ -5519,7 +5527,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/ak-27_version5/gunDisplayLoadouts"
     },
     {
      "name": "CBRS-3",
@@ -5541,7 +5549,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/cbrs-3_version2/gunFullDisplay"
     },
     {
      "name": "VOYAK KT-3",
@@ -5558,7 +5566,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/voyak-kt-3_version2/gunDisplayLoadouts"
     },
     {
      "name": "STURMWOLF 45",
@@ -5575,7 +5583,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/sturmwolf-45/gunDisplayLoadouts"
     },
     {
      "name": "VX COMPACT",
@@ -5592,7 +5600,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/vx-compact/gunDisplayLoadouts"
     },
     {
      "name": "PEACEKEEPER MK1",
@@ -5609,7 +5617,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/peacekeeper-mk1_version4/gunDisplayLoadouts"
     },
     {
      "name": "MXR-17",
@@ -5626,7 +5634,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/mxr-17_version5/gunFullDisplay"
     },
     {
      "name": "KOGOT-7",
@@ -5643,7 +5651,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/kogot-7/gunDisplayLoadouts"
     },
     {
      "name": "EGRT-17",
@@ -5660,7 +5668,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/egrt-17_version2/gunDisplayLoadouts"
     },
     {
      "name": "M15 MOD 0",
@@ -5677,7 +5685,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/m15-mod-0/gunDisplayLoadouts"
     },
     {
      "name": "MADDOX RFB",
@@ -5694,7 +5702,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/maddox-rfb_version3/gunFullDisplay"
     },
     {
      "name": "X9 MAVERICK",
@@ -5711,7 +5719,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/x9-maverick_version4/gunFullDisplay"
     },
     {
      "name": "CARBON 57",
@@ -5728,7 +5736,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/carbon-57_version4/gunDisplayLoadouts"
     },
     {
      "name": "DRAVEC 45",
@@ -5745,7 +5753,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/dravec-45_version6/gunDisplayLoadouts"
     },
     {
      "name": "GREMLIN",
@@ -5762,7 +5770,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/gremlin_version1/gunFullDisplay"
     },
     {
      "name": "RAZOR 9MM",
@@ -5779,7 +5787,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/razor-9mm_version5/gunFullDisplay"
     },
     {
      "name": "M8A1",
@@ -5796,7 +5804,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/m8a1_version4/gunFullDisplay"
     },
     {
      "name": "HAWKER HX",
@@ -5813,7 +5821,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/hawker-hx/gunDisplayLoadouts"
     },
     {
      "name": "VS RECON",
@@ -5830,7 +5838,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/vs-recon/gunDisplayLoadouts"
     },
     {
      "name": "STRIDER 300",
@@ -5847,7 +5855,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/strider-300/gunDisplayLoadouts"
     },
     {
      "name": "SOKOL 545",
@@ -5864,7 +5872,7 @@
      "tags": [
       "LMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/sokol-545_version5/gunFullDisplay"
     },
     {
      "name": "MK.78",
@@ -5881,7 +5889,7 @@
      "tags": [
       "LMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/mk78_version4/gunDisplayLoadouts"
     },
     {
      "name": "SWORDFISH A1",
@@ -5898,7 +5906,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/swordfish-a1_version2/gunDisplayLoadouts"
     },
     {
      "name": "RK-9",
@@ -5915,7 +5923,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/rk-9_version4/gunFullDisplay"
     },
     {
      "name": "XM325",
@@ -5932,7 +5940,7 @@
      "tags": [
       "LMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/xm325_version4/gunFullDisplay"
     },
     {
      "name": "XR-3 ION",
@@ -5949,7 +5957,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/xr-3-ion_version4/gunFullDisplay"
     },
     {
      "name": "KRS-7.62",
@@ -5966,7 +5974,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/krs-762_version1/gunFullDisplay"
     },
     {
      "name": "VELOX 5.7",
@@ -5983,7 +5991,7 @@
      "tags": [
       "Pistol"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/velox-57_version4/gunFullDisplay"
     },
     {
      "name": "M34 NOVALINE",
@@ -6000,7 +6008,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/m34-novaline_version4/gunFullDisplay"
     },
     {
      "name": "SHADOW SK",
@@ -6017,7 +6025,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/shadow-sk/gunDisplayLoadouts"
     },
     {
      "name": "WARDEN 308",
@@ -6034,7 +6042,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/warden-308_version4/gunFullDisplay"
     },
     {
      "name": "1911",
@@ -6051,7 +6059,7 @@
      "tags": [
       "Pistol"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/1911_version1/gunFullDisplay"
     },
     {
      "name": "CODA 9",
@@ -6085,7 +6093,7 @@
      "tags": [
       "Pistol"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/jäger-45_version5/gunFullDisplay"
     },
     {
      "name": "MAMMOTH",
@@ -6102,7 +6110,7 @@
      "tags": [
       "LMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/mammoth/gunFullDisplay"
     },
     {
      "name": "A.R.C. M1",
@@ -6599,7 +6607,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/ak-27_version5/gunDisplayLoadouts"
     },
     {
      "name": "CBRS-3",
@@ -6616,7 +6624,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/cbrs-3_version2/gunFullDisplay"
     },
     {
      "name": "VX COMPACT",
@@ -6638,7 +6646,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/vx-compact/gunDisplayLoadouts"
     },
     {
      "name": "STURMWOLF 45",
@@ -6655,7 +6663,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/sturmwolf-45/gunDisplayLoadouts"
     },
     {
      "name": "VOYAK KT-3",
@@ -6672,7 +6680,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/voyak-kt-3_version2/gunDisplayLoadouts"
     },
     {
      "name": "M15 MOD 0",
@@ -6689,7 +6697,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/m15-mod-0/gunDisplayLoadouts"
     },
     {
      "name": "MXR-17",
@@ -6706,7 +6714,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/mxr-17_version5/gunFullDisplay"
     },
     {
      "name": "PEACEKEEPER MK1",
@@ -6723,7 +6731,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/peacekeeper-mk1_version4/gunDisplayLoadouts"
     },
     {
      "name": "CARBON 57",
@@ -6740,7 +6748,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/carbon-57_version4/gunDisplayLoadouts"
     },
     {
      "name": "X9 MAVERICK",
@@ -6757,7 +6765,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/x9-maverick_version4/gunFullDisplay"
     },
     {
      "name": "KOGOT-7",
@@ -6774,7 +6782,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/kogot-7/gunDisplayLoadouts"
     },
     {
      "name": "EGRT-17",
@@ -6791,7 +6799,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/egrt-17_version2/gunDisplayLoadouts"
     },
     {
      "name": "SOKOL 545",
@@ -6808,7 +6816,7 @@
      "tags": [
       "LMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/sokol-545_version5/gunFullDisplay"
     },
     {
      "name": "DRAVEC 45",
@@ -6825,7 +6833,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/dravec-45_version6/gunDisplayLoadouts"
     },
     {
      "name": "GREMLIN",
@@ -6842,7 +6850,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/gremlin_version1/gunFullDisplay"
     },
     {
      "name": "RAZOR 9MM",
@@ -6859,7 +6867,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/razor-9mm_version5/gunFullDisplay"
     },
     {
      "name": "MK.78",
@@ -6876,7 +6884,7 @@
      "tags": [
       "LMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/mk78_version4/gunDisplayLoadouts"
     },
     {
      "name": "MADDOX RFB",
@@ -6893,7 +6901,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/maddox-rfb_version3/gunFullDisplay"
     },
     {
      "name": "HDR",
@@ -6910,7 +6918,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/hdr_version2/gunFullDisplay"
     },
     {
      "name": "XM325",
@@ -6927,7 +6935,7 @@
      "tags": [
       "LMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/xm325_version4/gunFullDisplay"
     },
     {
      "name": "M8A1",
@@ -6944,7 +6952,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/m8a1_version4/gunFullDisplay"
     },
     {
      "name": "SWORDFISH A1",
@@ -6961,7 +6969,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/swordfish-a1_version2/gunDisplayLoadouts"
     },
     {
      "name": "XR-3 ION",
@@ -6978,7 +6986,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/xr-3-ion_version4/gunFullDisplay"
     },
     {
      "name": "KILO 141",
@@ -6995,7 +7003,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/kilo-141_version1/gunFullDisplay"
     },
     {
      "name": "MERRICK 556",
@@ -7012,7 +7020,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/merrick-556/gunFullDisplay"
     },
     {
      "name": "AKITA",
@@ -7029,7 +7037,7 @@
      "tags": [
       "Shotgun"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/akita_version4/gunFullDisplay"
     },
     {
      "name": "M10 BREACHER",
@@ -7046,7 +7054,7 @@
      "tags": [
       "Shotgun"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/m10-breacher/gunDisplayLoadouts"
     },
     {
      "name": "M34 NOVALINE",
@@ -7063,7 +7071,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/m34-novaline_version4/gunFullDisplay"
     },
     {
      "name": "WARDEN 308",
@@ -7080,7 +7088,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/warden-308_version4/gunFullDisplay"
     },
     {
      "name": "RK-9",
@@ -7097,7 +7105,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/rk-9_version4/gunFullDisplay"
     },
     {
      "name": "SG-12",
@@ -7114,7 +7122,7 @@
      "tags": [
       "Shotgun"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/sg-12_version2/gunFullDisplay"
     },
     {
      "name": "ECHO 12",
@@ -7131,7 +7139,7 @@
      "tags": [
       "Shotgun"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/echo-12_version4/gunFullDisplay"
     },
     {
      "name": "KATT-AMR",
@@ -7148,7 +7156,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/katt-amr/gunFullDisplay"
     },
     {
      "name": "VICTUS XMR",
@@ -7165,7 +7173,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/victus-xmr/gunFullDisplay"
     },
     {
      "name": "FJX IMPERIUM",
@@ -7182,7 +7190,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/fjx-imperium/gunFullDisplay"
     },
     {
      "name": "LR 7.62",
@@ -7199,7 +7207,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/lr-762/gunFullDisplay"
     },
     {
      "name": "LW3A1 FROSTLINE",
@@ -7216,7 +7224,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/lw3a1-frostline/gunDisplayLoadouts"
     },
     {
      "name": "KAR98K",
@@ -7233,7 +7241,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/kar98k/gunDisplayLoadouts"
     },
     {
      "name": "SWAT 5.56",
@@ -7250,7 +7258,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/swat-556_version1/gunFullDisplay"
     },
     {
      "name": "TR2",
@@ -7272,7 +7280,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/tr2/gunFullDisplay"
     },
     {
      "name": "KRS-7.62",
@@ -7289,7 +7297,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/krs-762_version1/gunFullDisplay"
     },
     {
      "name": "C9",
@@ -7340,7 +7348,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/gpr-91/gunFullDisplay"
     },
     {
      "name": "JACKAL PDW",
@@ -7374,7 +7382,7 @@
      "tags": [
       "Special"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/x52-resonator/gunFullDisplay"
     },
     {
      "name": "CR-56 AMAX",
@@ -7391,7 +7399,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/cr-56-amax_version1/gunFullDisplay"
     },
     {
      "name": "AMES 85",
@@ -7442,7 +7450,7 @@
      "tags": [
       "Pistol"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/velox-57_version4/gunFullDisplay"
     },
     {
      "name": "1911",
@@ -7459,7 +7467,7 @@
      "tags": [
       "Pistol"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/1911_version1/gunFullDisplay"
     },
     {
      "name": "CODA 9",
@@ -7493,7 +7501,7 @@
      "tags": [
       "Pistol"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/jäger-45_version5/gunFullDisplay"
     },
     {
      "name": "LADRA",
@@ -7527,7 +7535,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/ppsh-41/gunDisplayLoadouts"
     },
     {
      "name": "KSV",
@@ -7544,7 +7552,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/ksv/gunDisplayLoadouts"
     },
     {
      "name": "SAUG",
@@ -7595,7 +7603,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/lc10/gunDisplayLoadouts"
     },
     {
      "name": "KOMPAKT 92",
@@ -7646,7 +7654,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/xm4/gunDisplayLoadouts"
     },
     {
      "name": "AS VAL",
@@ -7680,7 +7688,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/ffar-1/gunDisplayLoadouts"
     },
     {
      "name": "MODEL L",
@@ -7714,7 +7722,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/krig-c/gunDisplayLoadouts"
     },
     {
      "name": "M13B",
@@ -7765,7 +7773,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/striker/gunDisplayLoadouts"
     },
     {
      "name": "MX9",
@@ -7782,7 +7790,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/mx9/gunFullDisplay"
     },
     {
      "name": "BAS-P",
@@ -7887,7 +7895,8 @@
      ],
      "weapon_type": "Assault Rifle",
      "tags": [
-      "Assault Rifle"
+      "Assault Rifle",
+      "Conversion Kit"
      ],
      "image": ""
     },
@@ -7923,7 +7932,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/stg44/gunDisplayLoadouts"
     },
     {
      "name": "HRM-9",
@@ -7979,7 +7988,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/shadow-sk/gunDisplayLoadouts"
     },
     {
      "name": "PDSW 528",
@@ -8053,7 +8062,7 @@
      "tags": [
       "Shotgun"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/reclaimer-18/gunFullDisplay"
     },
     {
      "name": "FENG 82",
@@ -8104,7 +8113,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/amr-mod-4/gunDisplayLoadouts"
     },
     {
      "name": "PML 5.56",
@@ -8189,7 +8198,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/mors/gunDisplayLoadouts"
     },
     {
      "name": "XRK STALKER",
@@ -8206,7 +8215,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/xrk-stalker/gunFullDisplay"
     },
     {
      "name": "NAIL GUN",
@@ -8266,7 +8275,8 @@
      ],
      "weapon_type": "Shotgun",
      "tags": [
-      "Shotgun"
+      "Shotgun",
+      "Conversion Kit"
      ],
      "image": ""
     },
@@ -8288,7 +8298,8 @@
      ],
      "weapon_type": "LMG",
      "tags": [
-      "LMG"
+      "LMG",
+      "Conversion Kit"
      ],
      "image": ""
     },
@@ -8347,7 +8358,7 @@
       "Pistol",
       "Conversion Kit"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/renetti/gunFullDisplay"
     },
     {
      "name": "SUPERI 46",
@@ -8364,7 +8375,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/superi-46/gunDisplayLoadouts"
     },
     {
      "name": "FJX HORUS",
@@ -8384,7 +8395,8 @@
      ],
      "weapon_type": "SMG",
      "tags": [
-      "SMG"
+      "SMG",
+      "Conversion Kit"
      ],
      "image": ""
     },
@@ -8508,7 +8520,8 @@
      ],
      "weapon_type": "LMG",
      "tags": [
-      "LMG"
+      "LMG",
+      "Conversion Kit"
      ],
      "image": ""
     },
@@ -8817,7 +8830,7 @@
       "Marksman",
       "Conversion Kit"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/lockwood-mk2/gunFullDisplay"
     },
     {
      "name": "M16",
@@ -8891,7 +8904,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/sva-545/gunDisplayLoadouts"
     },
     {
      "name": "BRUEN MK9",
@@ -8959,7 +8972,7 @@
      "tags": [
       "BR"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/dtir-30-06/gunDisplayLoadouts"
     },
     {
      "name": "WSP-9",
@@ -8996,7 +9009,8 @@
      ],
      "weapon_type": "SMG",
      "tags": [
-      "SMG"
+      "SMG",
+      "Conversion Kit"
      ],
      "image": ""
     },
@@ -9015,7 +9029,7 @@
      "tags": [
       "LMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/mammoth/gunFullDisplay"
     },
     {
      "name": "PU-21",
@@ -9202,7 +9216,7 @@
      "tags": [
       "SMG"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/static-hv/gunDisplayLoadouts"
     },
     {
      "name": "WSP STINGER",
@@ -9704,7 +9718,8 @@
      ],
      "weapon_type": "LMG",
      "tags": [
-      "LMG"
+      "LMG",
+      "Conversion Kit"
      ],
      "image": ""
     },
@@ -9740,7 +9755,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/svd/gunDisplayLoadouts"
     },
     {
      "name": "LONGBOW",
@@ -9757,7 +9772,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/longbow/gunDisplayLoadouts"
     },
     {
      "name": "9MM DAEMON",
@@ -9791,7 +9806,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": ""
+     "image": "https://img.wzstats.gg/kv-inhibitor/gunDisplayLoadouts"
     },
     {
      "name": "DG-56",
@@ -10894,7 +10909,7 @@
     {
      "context": "Warzone Battle Royale",
      "label": "Recommended",
-     "code": "S01-3SUZ7-GB11",
+     "code": "S01-48M6H-QY11",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -10917,9 +10932,9 @@
        "unlock": "Level 27"
       },
       {
-       "slot": "Stock",
-       "name": "VENTRAL STOCK",
-       "unlock": "Level 9"
+       "slot": "Rear Grip",
+       "name": "BOUNTY GRIP",
+       "unlock": "Level 42"
       }
      ]
     },
@@ -11054,7 +11069,7 @@
     {
      "context": "Warzone Resurgence",
      "label": "Recommended",
-     "code": "S01-3SUZ7-GB11",
+     "code": "S01-48M6H-QY11",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -11077,9 +11092,9 @@
        "unlock": "Level 27"
       },
       {
-       "slot": "Stock",
-       "name": "VENTRAL STOCK",
-       "unlock": "Level 9"
+       "slot": "Rear Grip",
+       "name": "BOUNTY GRIP",
+       "unlock": "Level 42"
       }
      ]
     },
@@ -11214,7 +11229,7 @@
     {
      "context": "Warzone Resurgence Ranked",
      "label": "Recommended",
-     "code": "S01-3SUZ7-GB11",
+     "code": "S01-48M6H-QY11",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -11237,9 +11252,9 @@
        "unlock": "Level 27"
       },
       {
-       "slot": "Stock",
-       "name": "VENTRAL STOCK",
-       "unlock": "Level 9"
+       "slot": "Rear Grip",
+       "name": "BOUNTY GRIP",
+       "unlock": "Level 42"
       }
      ]
     },

@@ -13,8 +13,8 @@ bitácora: en qué punto está, qué se decidió y qué viene después.
 Está **todo terminado y commiteado en el PC**, pero **no subido**. En GitHub
 sigue la versión del 20 de agosto por la mañana.
 
-Hay **16 commits sin subir**, desde `a26b20d` hasta `710df16`. Suben en línea
-recta: no hay conflicto.
+Sin subir está **todo lo de las dos auditorías**, desde `a26b20d` en adelante.
+Sube en línea recta: no hay conflicto.
 
 Para subirlo, en la carpeta del proyecto:
 

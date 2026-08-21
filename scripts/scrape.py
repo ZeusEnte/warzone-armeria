@@ -322,16 +322,24 @@ def parse_max_level(html: str) -> int:
     return 0
 
 
-def detect_season(session: requests.Session) -> str:
+def detect_season(session: requests.Session, previa: str = "") -> str:
+    """La temporada sale de wzranked.com, que es un servidor ajeno mas.
+
+    Si hoy no contesta, se conserva la que ya teniamos: el literal generico
+    empeoraria la cabecera de la web ("Temporada actual" donde ponia "Season 5
+    Reloaded, 2026") y ese dato bueno se perderia para siempre. Misma politica
+    que con los modos y los accesorios.
+    """
     try:
         html = get("https://wzranked.com/games/call-of-duty-warzone/meta", session)
         text = BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
         m = re.search(r"Season\s+\d+(?:\s+Reloaded)?,?\s*20\d\d", text)
         if m:
             return m.group(0)
+        aviso("aviso: wzranked no traia el numero de temporada")
     except Exception as exc:
         aviso(f"aviso: no se pudo leer la temporada ({exc})")
-    return "Temporada actual"
+    return previa or "Temporada actual"
 
 
 def pick_for_builds(modes: dict, budget: int = BUILD_BUDGET) -> list:
@@ -424,9 +432,13 @@ def parsear_argumentos(argv=None) -> argparse.Namespace:
 def main(argv=None) -> int:
     args = parsear_argumentos(argv)
     parcial = bool(args.modo) or args.sin_builds or args.limite_builds != BUILD_BUDGET
+    # Se comparan rutas resueltas: OUT es absoluta y lo que teclea una persona no
+    # lo es, asi que "--salida docs/data/meta.json" se colaba por delante de la
+    # guarda justo cuando la nombraba.
+    salida_es_el_bueno = args.salida.resolve() == OUT.resolve()
     # Se comprueba antes de gastar peticiones: una pasada parcial no puede pisar
     # el JSON bueno o el bot commitearia datos a medias como si fueran del dia.
-    if parcial and not args.simular and args.salida == OUT:
+    if parcial and not args.simular and salida_es_el_bueno:
         print("ERROR: una ejecucion parcial (--modo/--sin-builds/--limite-builds) no sobrescribe "
               "docs/data/meta.json. Anade --simular para probar, o --salida para otro archivo.",
               file=sys.stderr)
@@ -537,7 +549,7 @@ def main(argv=None) -> int:
 
     payload = {
         "generated_at": ahora.isoformat(timespec="seconds"),
-        "season": detect_season(session),
+        "season": detect_season(session, previo.get("season", "")),
         "source": "wzstats.gg",
         "previous_generated_at": anterior_ts,
         "warnings": avisos,

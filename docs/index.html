@@ -8,9 +8,12 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Armería · Warzone Meta">
 <meta property="og:description" content="Qué armas usar en Warzone según tu estilo, con los accesorios exactos y la meta actualizada a diario.">
-<meta property="og:image" content="icons/icon-512.png">
+<meta property="og:image" content="https://zeusente.github.io/warzone-armeria/icons/icon-512.png">
+<meta property="og:url" content="https://zeusente.github.io/warzone-armeria/">
+<meta property="og:site_name" content="Armería">
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zeusente.github.io/warzone-armeria/icons/icon-512.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#0b0e13">
 <link rel="icon" href="icons/favicon.ico" sizes="any">
@@ -477,7 +480,9 @@ function slotCard(role, w, isGoal){
   const build = mainBuild(w.slug);
 
   let html = '<div class="role">' + esc(role) + '</div>';
-  html += '<div class="artbox">' + (w.image ? '<img src="' + esc(w.image) + '" alt="">' : "") + '</div>';
+  // Sin imagen no se pinta la caja: reservar sus 72 px dejaba un hueco vacío en
+  // la tarjeta, y hay muchas armas sin foto (wzstats solo la sirve para el top).
+  if(w.image) html += '<div class="artbox"><img src="' + esc(w.image) + '" alt="" loading="lazy"></div>';
   html += '<div class="gun"><strong>' + esc(w.name) + '</strong><span class="tier ' + w.tier + '">' + w.tier + '</span></div>';
   html += '<div class="meta-line">' + esc(w.weapon_type || "—") + (pos ? " · " + esc(pos) : "") + '</div>';
 
@@ -554,7 +559,7 @@ function detailHtml(w){
 
 // Quita acentos y pasa a minúsculas: buscar "jager" tiene que encontrar "JÄGER 45".
 function normaliza(s){
-  return String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  return String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 }
 
 function renderRank(pool){

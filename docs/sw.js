@@ -11,7 +11,7 @@
  * Al cambiar cualquier archivo de la web hay que subir VERSION: es lo que borra
  * la caché vieja y evita que un usuario se quede con la interfaz de antes.
  */
-const VERSION = "armeria-v1";
+const VERSION = "armeria-v2";
 
 // Lo mínimo para que la app arranque sin red. meta.json NO va aquí: se cachea
 // solo cuando el usuario ya lo ha descargado una vez, y pesa 680 KB.

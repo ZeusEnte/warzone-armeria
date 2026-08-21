@@ -158,7 +158,12 @@
     border:1px solid var(--line);border-radius:9px;padding:9px 12px;
     font:inherit;font-size:13.5px;
   }
-  .search input:focus{outline:none;border-color:var(--acc-2)}
+  .search select{
+    flex:1 1 180px;min-width:0;background:var(--panel-2);color:var(--ink);
+    border:1px solid var(--line);border-radius:9px;padding:9px 12px;
+    font:inherit;font-size:13.5px;cursor:pointer;
+  }
+  .search input:focus,.search select:focus{outline:none;border-color:var(--acc-2)}
   .search input::placeholder{color:var(--faint)}
   table.rank tr.row:focus-visible{outline:2px solid var(--acc-2);outline-offset:-2px}
   .nores{color:var(--faint);font-size:13.5px;padding:10px 0}
@@ -168,7 +173,7 @@
     .btn{min-height:44px;padding:10px 16px;font-size:13px}
     .chip{min-height:44px;display:inline-flex;align-items:center}
     .chip.tiny{min-height:44px;padding:10px 14px;font-size:12.5px}
-    .search input{min-height:44px}
+    .search input,.search select{min-height:44px}
     .code{padding:11px 13px}
     table.rank td{padding-top:13px;padding-bottom:13px}
     ul.changes{columns:1}
@@ -243,6 +248,18 @@
     </table></div>
   </section>
 
+  <section class="panel">
+    <h2>Comparar dos armas</h2>
+    <p class="sub">Para cuando dudas entre dos. Salen sus puestos, su racha y lo que hay que montarles.</p>
+    <div class="search">
+      <select id="cmp-a" aria-label="Primera arma a comparar"></select>
+      <select id="cmp-b" aria-label="Segunda arma a comparar"></select>
+      <button class="btn" id="cmp-limpiar" type="button" hidden>Limpiar</button>
+    </div>
+    <div id="cmp-veredicto"></div>
+    <div class="loadout" id="cmp"></div>
+  </section>
+
   <section class="panel" id="changes-panel" hidden>
     <h2>Movimientos del meta</h2>
     <p class="sub" id="changes-sub"></p>
@@ -295,6 +312,10 @@ let DATA = null;
 let openSlug = null;
 let busqueda = "";
 let verTodas = false;
+// El comparador no se guarda en el perfil: es una consulta de un rato,
+// no una preferencia. Al recargar vuelve vacío a propósito.
+let comparaA = "";
+let comparaB = "";
 
 function load(){
   try{
@@ -643,6 +664,102 @@ function renderRank(pool){
   });
 }
 
+/* ---------- comparador ---------- */
+
+// Dos armas lado a lado. Los datos ya estaban todos en meta.json: esto es solo
+// interfaz. Lo que aporta de verdad no es enseñar las dos fichas juntas, sino el
+// veredicto: la app existe para decidir por ti, no para darte dos tablas.
+function opcionesComparador(pool){
+  const sel = ["cmp-a","cmp-b"].map(id => document.getElementById(id));
+  const claves = new Set(pool.map(w => w.slug || w.name));
+  sel.forEach((s, i) => {
+    const elegido = i === 0 ? comparaA : comparaB;
+    // Al cambiar de modo el arma elegida puede no existir en el nuevo.
+    if(elegido && !claves.has(elegido)){ if(i === 0) comparaA = ""; else comparaB = ""; }
+    const valor = i === 0 ? comparaA : comparaB;
+    s.innerHTML = '<option value="">' + (i === 0 ? "Primera arma…" : "Segunda arma…") + '</option>' +
+      pool.map(w => {
+        const k = w.slug || w.name;
+        return '<option value="' + esc(k) + '"' + (k === valor ? " selected" : "") + '>' +
+               esc(w.name + " · " + w.tier) + '</option>';
+      }).join("");
+  });
+}
+
+function tarjetaComparada(w){
+  const el = document.createElement("div");
+  el.className = "slot";
+  const pos = w.positions.map(p => "#" + p.rank + " " + p.range).join(" · ") || "sin puesto oficial";
+  const racha = rachaTexto(w);
+  const build = mainBuild(w.slug);
+  const entry = DATA.builds[w.slug] || {};
+  let h = '<div class="role">Encaje contigo: ' + w._s + '</div>';
+  if(w.image) h += '<div class="artbox"><img src="' + esc(w.image) + '" alt="" loading="lazy"></div>';
+  h += '<div class="gun"><strong>' + esc(w.name) + '</strong><span class="tier ' + w.tier + '">' + w.tier + '</span></div>';
+  h += '<div class="meta-line">' + esc(w.weapon_type || "—") + ' · ' + esc(pos) +
+       (racha ? ' · <span class="racha">' + esc(racha) + '</span>' : "") +
+       (entry.max_level ? " · nivel máx. " + entry.max_level : "") +
+       (falta(w) ? ' · <span class="racha">no la tienes</span>' : "") + '</div>';
+  h += build ? '<div class="buildlabel">' + buildTitle(build) + '</div>' + attsHtml(build) + codeHtml(build)
+             : '<div class="empty">Sin accesorios publicados. ' + wzLink(w, "Verlos en wzstats") + '</div>';
+  el.innerHTML = h;
+  return el;
+}
+
+// Por qué una y no la otra, en una frase. Se apoya en lo mismo que el ranking
+// (score) para no contradecirlo, y avisa de lo que el número no ve.
+function veredicto(a, b){
+  if(a._s === b._s) return "Empate técnico para tu perfil: quédate con la que mejor te siente.";
+  const mejor = a._s >= b._s ? a : b;
+  const otra  = mejor === a ? b : a;
+  const tiene = (w, p) => w.positions.some(x => x.role === p);
+  const razones = [];
+
+  if(mejor.tier !== otra.tier) razones.push("está en tier " + mejor.tier + " y la otra en " + otra.tier);
+  const rMejor = mejor.positions.reduce((m,p) => Math.min(m, p.rank), 99);
+  const rOtra  = otra.positions.reduce((m,p) => Math.min(m, p.rank), 99);
+  if(rMejor < rOtra && rMejor < 99) razones.push("va más arriba en el ranking oficial (#" + rMejor + " frente a #" + rOtra + ")");
+
+  // El motivo suele estar en el perfil, no en el arma: hay que decirlo, o el
+  // veredicto parece un capricho cuando la otra rankea mejor.
+  if(profile.style === "agresivo"){
+    if(tiene(mejor,"corto") && !tiene(otra,"corto")) razones.push("cubre la corta distancia, que es lo tuyo");
+    else if(tiene(otra,"sniper") && !tiene(mejor,"sniper")) razones.push("la otra es de francotirador y tú juegas agresivo");
+  }else if(profile.style === "tactico"){
+    if(tiene(mejor,"largo") && !tiene(otra,"largo")) razones.push("aguanta la larga distancia, que es lo tuyo");
+    else if(tiene(mejor,"sniper") && !tiene(otra,"sniper")) razones.push("te deja abrir de lejos, que es lo tuyo");
+  }
+  if(SECUNDARIAS.includes(otra.weapon_type) && !SECUNDARIAS.includes(mejor.weapon_type))
+    razones.push("la otra es un arma secundaria, no una principal");
+
+  let t = "Para tu perfil, la " + mejor.name;
+  t += razones.length ? " gana porque " + razones.join(", y ") + "." : " encaja mejor, aunque sin nada que la despegue.";
+  if(Math.abs(a._s - b._s) <= 6 && razones.length) t += " Aun así van muy igualadas.";
+  if(falta(mejor) && !falta(otra)) t += " Ojo: la tienes marcada como «no la tengo», así que hoy juegas con la " + otra.name + ".";
+  return t;
+}
+
+function renderComparador(pool){
+  opcionesComparador(pool);
+  const host = document.getElementById("cmp");
+  const vere = document.getElementById("cmp-veredicto");
+  host.innerHTML = "";
+  vere.innerHTML = "";
+  document.getElementById("cmp-limpiar").hidden = !(comparaA || comparaB);
+
+  const busca = k => pool.find(w => (w.slug || w.name) === k);
+  const a = comparaA ? busca(comparaA) : null;
+  const b = comparaB ? busca(comparaB) : null;
+  if(!a || !b) return;
+  if(a === b){
+    vere.innerHTML = '<div class="warn">Has elegido la misma arma dos veces.</div>';
+    return;
+  }
+  vere.innerHTML = '<div class="warn">' + esc(veredicto(a, b)) + '</div>';
+  host.appendChild(tarjetaComparada(a));
+  host.appendChild(tarjetaComparada(b));
+}
+
 function renderChanges(){
   const panel = document.getElementById("changes-panel");
   const list = (DATA.changes||[]).filter(c => c.mode === profile.mode);
@@ -683,6 +800,7 @@ function renderAll(){
   renderLoadout(pool);
   renderGoal(pool);
   renderRank(pool);
+  renderComparador(pool);
   renderChanges();
 }
 
@@ -742,6 +860,17 @@ document.getElementById("q").addEventListener("input", ev => {
 
 document.getElementById("ver-todas").addEventListener("click", () => {
   verTodas = !verTodas;
+  renderAll();
+});
+
+["cmp-a","cmp-b"].forEach((id, i) => {
+  document.getElementById(id).addEventListener("change", ev => {
+    if(i === 0) comparaA = ev.target.value; else comparaB = ev.target.value;
+    renderAll();
+  });
+});
+document.getElementById("cmp-limpiar").addEventListener("click", () => {
+  comparaA = comparaB = "";
   renderAll();
 });
 

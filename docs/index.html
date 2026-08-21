@@ -85,6 +85,8 @@
   .slot .gun strong{font-size:20px;letter-spacing:.3px}
   .slot .meta-line{font-size:12.5px;color:var(--dim);margin-bottom:12px}
   .slot .empty{color:var(--faint);font-size:13.5px;padding:8px 0}
+  /* Cuánto lleva el arma en su tier: es lo que dice si merece la pena subirla. */
+  .meta-line .racha{color:var(--acc-2)}
   /* Altura fija: las imagenes llegan con carga diferida y sin reservar sitio
      las tarjetas bailan mientras cargan. */
   .slot .artbox{height:72px;margin-bottom:10px}
@@ -391,6 +393,21 @@ function reqLabel(unlock){
   return "subir " + unlock;
 }
 
+// Cuánto lleva el arma en su tier actual. El scraper solo escribe "desde" cuando
+// puede demostrarlo, así que si no viene no se enseña nada en vez de inventar.
+function rachaTexto(w){
+  if(!w.desde) return "";
+  const d = new Date(w.desde + "T00:00:00Z");
+  if(isNaN(d)) return "";
+  const dias = Math.floor((Date.now() - d.getTime()) / 864e5);
+  if(dias < 0)  return "";
+  if(dias === 0) return "entra hoy en " + w.tier;
+  if(dias === 1) return "en " + w.tier + " desde ayer";
+  if(dias < 14)  return dias + " días en " + w.tier;
+  if(dias < 60)  return Math.floor(dias / 7) + " semanas en " + w.tier;
+  return Math.floor(dias / 30) + " meses en " + w.tier;
+}
+
 // Sin slug no hay ficha en wzstats, así que no dejamos un enlace roto.
 function wzLink(w, texto){
   if(!w.slug) return "";
@@ -484,7 +501,9 @@ function slotCard(role, w, isGoal){
   // la tarjeta, y hay muchas armas sin foto (wzstats solo la sirve para el top).
   if(w.image) html += '<div class="artbox"><img src="' + esc(w.image) + '" alt="" loading="lazy"></div>';
   html += '<div class="gun"><strong>' + esc(w.name) + '</strong><span class="tier ' + w.tier + '">' + w.tier + '</span></div>';
-  html += '<div class="meta-line">' + esc(w.weapon_type || "—") + (pos ? " · " + esc(pos) : "") + '</div>';
+  const racha = rachaTexto(w);
+  html += '<div class="meta-line">' + esc(w.weapon_type || "—") + (pos ? " · " + esc(pos) : "") +
+          (racha ? ' · <span class="racha">' + esc(racha) + '</span>' : "") + '</div>';
 
   if(build){
     html += '<div class="buildlabel">' + buildTitle(build) + '</div>' + attsHtml(build) + codeHtml(build);
@@ -549,7 +568,11 @@ function detailHtml(w){
   }
   const entry = DATA.builds[w.slug] || {};
   let h = '<div class="detailbox">';
-  if(entry.max_level) h += '<div class="role" style="margin-bottom:10px">Nivel máximo del arma: ' + entry.max_level + '</div>';
+  const ficha = [];
+  if(entry.max_level) ficha.push("Nivel máximo del arma: " + entry.max_level);
+  const rachaDet = rachaTexto(w);
+  if(rachaDet) ficha.push(rachaDet);
+  if(ficha.length) h += '<div class="role" style="margin-bottom:10px">' + esc(ficha.join(" · ")) + '</div>';
   list.forEach(b => {
     h += '<div class="buildlabel">' + buildTitle(b) + '</div>' + attsHtml(b) + codeHtml(b);
   });

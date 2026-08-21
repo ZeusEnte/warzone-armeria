@@ -79,6 +79,17 @@ def validar(datos: dict) -> tuple[list, list]:
                 errores.append(f"{quien}: sin nombre")
             if w.get("tier") not in TIERS_VALIDOS:
                 errores.append(f"{quien}: tier invalido {w.get('tier')!r}")
+            # "desde" es opcional (no se inventa cuando no hay historia), pero si
+            # esta tiene que ser una fecha creible: una en el futuro haria que la
+            # web dijese tonterias del tipo "entra hoy" para siempre.
+            desde = w.get("desde")
+            if desde is not None:
+                try:
+                    dia = datetime.strptime(str(desde), "%Y-%m-%d").replace(tzinfo=timezone.utc)
+                    if (dia - datetime.now(timezone.utc)).days > 0:
+                        errores.append(f"{quien}: 'desde' esta en el futuro ({desde})")
+                except ValueError:
+                    errores.append(f"{quien}: 'desde' no es una fecha AAAA-MM-DD ({desde!r})")
             for p in w.get("positions") or []:
                 if p.get("role") not in ROLES_VALIDOS:
                     errores.append(f"{quien}: papel invalido {p.get('role')!r}")

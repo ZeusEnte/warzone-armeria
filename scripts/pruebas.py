@@ -215,6 +215,53 @@ comprobar("no toca un modo conservado del dia anterior",
           modos_sin_fotos["viejo"]["weapons"][0]["image"] == "")
 
 # --------------------------------------------------------------------------
+# Antiguedad en el tier. Lo delicado aqui no es contar dias: es NO inventar
+# fechas cuando no hay historia, que es lo que convertiria el dato en mentira.
+# --------------------------------------------------------------------------
+
+print("\nantiguedad en el tier")
+
+PREVIO_AYER = {
+    "generated_at": "2026-08-20T06:10:00+00:00",
+    "modes": {"m0": {"weapons": [
+        {"name": "FG42", "tier": "S", "desde": "2026-07-30"},
+        {"name": "MPC-25", "tier": "A"},
+        {"name": "VST", "tier": "B", "desde": "2026-08-01"},
+    ]}},
+}
+hoy = {"m0": {"weapons": [
+    {"name": "FG42", "tier": "S"},        # sigue igual y con fecha: se conserva
+    {"name": "MPC-25", "tier": "A"},      # sigue igual pero sin fecha: la del JSON de ayer
+    {"name": "VST", "tier": "S"},         # ha subido: hoy
+    {"name": "NUEVA", "tier": "A"},       # no estaba: hoy
+]}}
+marcadas = sc.marcar_antiguedad(hoy, PREVIO_AYER, "2026-08-21")
+por_nombre = {w["name"]: w for w in hoy["m0"]["weapons"]}
+comprobar("conserva la fecha de la que no se ha movido", por_nombre["FG42"]["desde"] == "2026-07-30")
+comprobar("sin fecha previa usa la del JSON anterior, que es lo demostrable",
+          por_nombre["MPC-25"]["desde"] == "2026-08-20")
+comprobar("la que cambia de tier empieza a contar hoy", por_nombre["VST"]["desde"] == "2026-08-21")
+comprobar("un arma que entra hoy tiene fecha de hoy", por_nombre["NUEVA"]["desde"] == "2026-08-21")
+comprobar("cuenta las que quedan marcadas", marcadas == 4)
+
+primera_vez = {"m0": {"weapons": [{"name": "FG42", "tier": "S"}]}}
+sc.marcar_antiguedad(primera_vez, {}, "2026-08-21")
+comprobar("sin historia no se inventa ninguna fecha",
+          "desde" not in primera_vez["m0"]["weapons"][0])
+
+sin_fecha_previa = {"m0": {"weapons": [{"name": "FG42", "tier": "S"}]}}
+sc.marcar_antiguedad(sin_fecha_previa,
+                     {"modes": {"m0": {"weapons": [{"name": "FG42", "tier": "S"}]}}},
+                     "2026-08-21")
+comprobar("tampoco si el JSON anterior no tenia ni fecha de generacion",
+          "desde" not in sin_fecha_previa["m0"]["weapons"][0])
+
+conservado = {"m0": {"stale": True, "weapons": [{"name": "FG42", "tier": "S", "desde": "2026-07-30"}]}}
+sc.marcar_antiguedad(conservado, PREVIO_AYER, "2026-08-21")
+comprobar("un modo conservado no recalcula sus fechas contra si mismo",
+          conservado["m0"]["weapons"][0]["desde"] == "2026-07-30")
+
+# --------------------------------------------------------------------------
 # Recuperacion cuando un modo falla, y acumulacion de cambios el mismo dia.
 # --------------------------------------------------------------------------
 
@@ -320,6 +367,20 @@ comprobar("caza una build sin accesorios", any("sin accesorios" in e for e in va
 malo = copy.deepcopy(BUENO)
 del malo["modes"]
 comprobar("caza que falte una clave de la raiz", any("faltan claves" in e for e in va.validar(malo)[0]))
+
+malo = copy.deepcopy(BUENO)
+malo["modes"]["m0"]["weapons"][0]["desde"] = "el martes"
+comprobar("caza una fecha de 'desde' que no es fecha",
+          any("no es una fecha" in e for e in va.validar(malo)[0]))
+
+malo = copy.deepcopy(BUENO)
+malo["modes"]["m0"]["weapons"][0]["desde"] = "2099-01-01"
+comprobar("caza un 'desde' en el futuro",
+          any("esta en el futuro" in e for e in va.validar(malo)[0]))
+
+bien = copy.deepcopy(BUENO)
+bien["modes"]["m0"]["weapons"][0]["desde"] = "2026-08-01"
+comprobar("un 'desde' correcto no molesta", va.validar(bien)[0] == [])
 
 malo = copy.deepcopy(BUENO)
 malo["modes"]["m0"]["stale"] = True

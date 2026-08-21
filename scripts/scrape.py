@@ -444,6 +444,54 @@ def diff_modes(old: dict, new: dict) -> list:
     return changes
 
 
+def marcar_antiguedad(modes: dict, previo: dict, hoy: str) -> int:
+    """Anota en cada arma desde que dia lleva en el tier que tiene ahora.
+
+    Es la pregunta que decide en que arma merece la pena gastar horas de subida
+    de nivel: una S que lleva tres semanas no dice lo mismo que una que entro
+    ayer y manana parchean.
+
+    No hace falta un archivo aparte ni una descarga mas: el dato se arrastra del
+    meta.json anterior, que ya se lee para calcular los cambios.
+
+    Importa mucho **no inventar la fecha**. La primera vez que esto corre no hay
+    historia, y poner "hoy" en todas seria decirle al usuario que la meta entera
+    acaba de cambiar. Asi que:
+
+    - Modo sin dato anterior: no se anota nada y la web no ensena nada.
+    - El arma ya estaba ayer en este tier y traia fecha: se conserva.
+    - Ya estaba ayer en este tier pero sin fecha: se anota la fecha del JSON
+      anterior, que es lo unico demostrable ("al menos desde"). Se queda fija
+      mientras el tier no cambie, que es justo lo que se quiere.
+    - Cambio de tier, o arma nueva: hoy, que ahi si consta.
+
+    Devuelve cuantas armas quedaron con fecha.
+    """
+    antes = previo.get("modes") or {}
+    demostrable = (previo.get("generated_at") or "")[:10]
+    marcadas = 0
+    for mode_id, modo in modes.items():
+        # Un modo conservado viene copiado entero del dia anterior: sus fechas ya
+        # son las buenas y recalcularlas contra si mismo no aportaria nada.
+        if modo.get("stale"):
+            marcadas += sum(1 for w in modo["weapons"] if w.get("desde"))
+            continue
+        ayer = {w["name"]: w for w in (antes.get(mode_id) or {}).get("weapons") or []}
+        if not ayer:
+            continue
+        for w in modo["weapons"]:
+            anterior = ayer.get(w["name"])
+            if anterior is None or anterior.get("tier") != w["tier"]:
+                w["desde"] = hoy
+            else:
+                fecha = anterior.get("desde") or demostrable
+                if not fecha:
+                    continue
+                w["desde"] = fecha
+            marcadas += 1
+    return marcadas
+
+
 def fusionar_cambios(previos: list, nuevos: list) -> list:
     """Une dos listas de cambios sin repetir, conservando el orden."""
     salida, vistos = [], set()
@@ -615,6 +663,9 @@ def main(argv=None) -> int:
         print(f"-> {puestas} armas reciben imagen del catalogo ({len(imagenes)} conocidas)")
 
     ahora = datetime.now(timezone.utc)
+    marcadas = marcar_antiguedad(modes, previo, ahora.isoformat()[:10])
+    if marcadas:
+        print(f"-> {marcadas} armas con fecha de entrada en su tier")
     cambios = diff_modes(previo, modes)
     anterior_ts = previo.get("generated_at", "")
     # El workflow tambien se dispara al empujar codigo. Si hoy hay dos pasadas,

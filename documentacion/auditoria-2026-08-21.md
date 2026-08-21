@@ -164,4 +164,69 @@ ayer siguen igual y con la misma recomendación; no se repiten aquí.
 
 ## Lo aplicado hoy, y cómo se comprobó
 
-Se rellena al cerrar la sesión, al final de este documento.
+| Commit | Qué |
+|---|---|
+| `d690539` | punto de partida (árbol limpio, no hizo falta commit previo) |
+| `960b7ae` | este plan |
+| `8e236d2` | A13–A18: og absolutas, temporada, guarda de `--salida`, caja vacía, regex, sw v2, timeouts |
+| `0ee62f7` | **mejora** B9: imágenes de todas las armas del top |
+| `512762c` | **mejora** B10: antigüedad en el tier |
+| `9deed6e` | **mejora** B11: comparador con veredicto |
+| `710df16` | README y CLAUDE.md |
+
+Los tres bloques de mejora llevan su propio commit con el mensaje empezando por
+`mejora:`, como pide el guion. (La primera vuelta no lo hizo y lo dejó anotado
+como desviación; esta sí.)
+
+### Comprobado de verdad
+
+- `python scripts/pruebas.py` → **57 comprobaciones**, todas pasan (eran 35).
+  Las 22 nuevas cubren la cosecha de imágenes y, sobre todo, que la antigüedad
+  **no invente fechas** cuando no hay historia.
+- `python scripts/validar_meta.py` sobre el `meta.json` publicado → OK: 5 modos,
+  615 armas, 66 con accesorios.
+- **Pasada completa en vivo** contra wzstats escribiendo fuera del proyecto:
+  248/59/55/5/248 armas, 66 fichas, código 0, sin avisos. De ahí salió el
+  `meta.json` que se publica, ya validado.
+- **Imágenes:** 46 → 257 entradas con foto, y **100 % de los tiers S y A** de los
+  cinco modos, que es de donde salen todas las tarjetas. Las cuatro formas de URL
+  se comprobaron con una petición real: las cuatro responden 200 `image/avif`.
+- **Antigüedad:** aplicada al JSON de hoy comparándolo con el de ayer (sacado de
+  git): 18 armas se movieron de tier, 597 constan desde el día 20. Ninguna fecha
+  inventada.
+- **Web en el navegador** (servida en `127.0.0.1:8765`): cero errores de consola,
+  cero cajas de imagen vacías, cero barras `NaN`, buscador con acentos («jager» →
+  JÄGER 45) y armas fuera del top 20 (KAR98K), rachas correctas en tarjetas y en
+  ficha desplegada.
+- **Comparador:** ejercidas las cinco ramas del veredicto (diferencia de tier,
+  puesto oficial, estilo agresivo contra un francotirador, estilo táctico y arma
+  secundaria), más los casos borde: misma arma dos veces, botón de limpiar y
+  cambio de modo con un arma elegida que no existe en el nuevo.
+- **Móvil a 360 px** con el andamio de iframes: sin desbordes, tarjetas del
+  comparador apiladas a ancho completo, ningún elemento pulsable por debajo de
+  44 px. El andamio se retiró a `_CUARENTENA/` (en `docs/` se publicaría).
+- **Sin conexión:** con el servidor local **apagado**, recarga completa y la app
+  siguió mostrando armas, accesorios, códigos, rachas y el comparador con sus 249
+  opciones. Después se desregistró el service worker y se vació la caché para no
+  dejar el navegador del usuario apuntando a `127.0.0.1`.
+- **Secretos:** `git grep` de contraseñas, tokens, claves, IP y correos sobre los
+  archivos versionados. Cero. Detalle en el informe final.
+- **Enlaces:** los 5 enlaces relativos de los `.md` y las 9 rutas citadas en
+  README y CLAUDE.md existen.
+- YAML del workflow validado con `yaml.safe_load`; `index.html` y `sw.js` con
+  `esprima`; los tres scripts con `py_compile`.
+
+### No comprobado
+
+- **El workflow de GitHub Actions sigue sin ejecutarse nunca.** Es el mismo punto
+  que dejó abierto la primera vuelta y no se puede cerrar desde aquí: los tres
+  jobs encadenados solo se ven funcionando en GitHub, y los commits siguen sin
+  subir. Los `timeout-minutes` añadidos hoy tampoco se han ejercido.
+- **La copia al portapapeles con una pulsación real.** Igual que ayer: en la
+  prueba sintética no hay activación de usuario, así que solo se ejerce la rama
+  de fallo.
+- **El service worker en un móvil de verdad.** Verificado en Chrome de
+  escritorio, incluido el modo sin conexión. iOS se comporta distinto.
+- **La vista previa del enlace en WhatsApp.** Las etiquetas `og:` ya son
+  absolutas y apuntan a la URL publicada, que es lo que faltaba, pero no se puede
+  comprobar hasta que la web esté publicada con este cambio.

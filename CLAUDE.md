@@ -25,7 +25,7 @@ JSON y republica la página. Funciona con el PC del usuario apagado.
 CLAUDE.md                          este fichero (contexto para retomar)
 README.md                          documentación pública del repo
 resumen.md                         bitácora: estado, decisiones y próximos pasos
-documentacion/                     informes y documentación técnica (auditorías)
+documentacion/                     informes y documentación técnica (auditorías 08-20 y 08-21)
 _CUARENTENA/                       basura apartada para que el usuario la borre; en .gitignore
 scripts/scrape.py                  el scraper (única lógica de servidor). Tiene CLI, ver --help
 scripts/validar_meta.py            invariantes del JSON generado; corre en el workflow
@@ -63,7 +63,8 @@ sin cambiar a la vez `path: docs` en el workflow.
       "weapons": [{
         "name": "CBRS-3", "slug": "cbrs-3", "tier": "S",
         "positions": [{"range":"Close Range","rank":1,"role":"corto"}],
-        "weapon_type": "SMG", "tags": [], "image": "https://img.wzstats.gg/..."
+        "weapon_type": "SMG", "tags": [], "image": "https://img.wzstats.gg/...",
+        "desde": "2026-07-30"                    // en este tier desde ese dia
       }]
     }
   },
@@ -159,6 +160,12 @@ despliegues y `localStorage`.
   fusionan por slug al final de `parse_meta_page`.
 - Si no se puede raspar **ningún** modo, `main()` sale con 1 y **no toca**
   `meta.json`: la web sigue sirviendo el último dato bueno y el workflow avisa.
+- **La lista de tier solo trae imagen del tier S.** Las demás las carga el
+  navegador después, así que no están en el HTML: 12 URL para 248 armas. Las que
+  faltan salen de las fichas de arma, que ya se descargan para los accesorios
+  (`cosechar_imagenes` + `rellenar_imagenes`, ver la auditoría del 2026-08-21).
+  **El sufijo `_versionN` de la URL no es deducible del slug**, así que no se
+  construyen URL: solo se guardan las que wzstats haya escrito.
 
 ## Qué pasa cuando falla algo (añadido en la auditoría del 2026-08-20)
 
@@ -179,6 +186,10 @@ Ahora:
 6. Las armas cuya **ficha** falle hoy conservan los accesorios de la
    actualizacion anterior (solo las que siguen en la lista del dia, para que el
    JSON no crezca sin control). Si falla un tercio o mas, se anota un warning.
+7. Si **wzranked.com** no contesta, se conserva la temporada del JSON anterior
+   en vez de degradarla al literal `"Temporada actual"`.
+8. Las **imagenes** conocidas se arrastran del JSON anterior, asi que el
+   catalogo crece dia a dia aunque hoy no toque abrir la ficha de esa arma.
 
 Si dos ejecuciones caen el **mismo día UTC**, los `changes` se acumulan en vez de
 reemplazarse (`fusionar_cambios`). Sin eso, tocar `index.html` dejaba el panel
@@ -194,6 +205,22 @@ secundaria** (`Pistol`, `Melee`, `Launcher`, `Special`).
 Esa penalización es necesaria: wzstats rankea las pistolas en su propia
 categoría, así que un `#1 Pistol` sumaba tanto como un `#1 Assault Rifle` y las
 pistolas salían por delante del FG42.
+
+## Antigüedad en el tier y comparador (auditoría del 2026-08-21)
+
+Cada arma lleva `desde`: el día en que llegó al tier que tiene ahora. Lo calcula
+`marcar_antiguedad()` arrastrando el dato del `meta.json` anterior, sin archivo
+nuevo ni descarga extra. **La regla es no inventar fechas**: si no hay historia
+el campo no se escribe y `rachaTexto()` no enseña nada; si el arma ya estaba ayer
+en ese tier pero sin fecha, se anota la del JSON anterior, que es lo único
+demostrable. `validar_meta.py` rechaza fechas mal formadas o futuras.
+
+El comparador (`renderComparador`) es solo interfaz sobre datos que ya estaban.
+Lo que aporta es `veredicto()`: explica **por qué** gana una, y en particular
+cuando el motivo está en el perfil y no en el arma («la otra es de francotirador
+y tú juegas agresivo»), que es el caso en que la ganadora rankea peor y el
+resultado parecería arbitrario. Su estado no se guarda en el perfil a propósito:
+es una consulta de un rato, no una preferencia.
 
 ## Posesión de armas
 

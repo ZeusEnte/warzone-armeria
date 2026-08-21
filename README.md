@@ -38,6 +38,8 @@ documentacion/                      informes y documentación técnica del proye
   `Prestige`, o el arma que hay que subir para conseguirlo,
 - el **código de canje** de cada build, para pegarlo en el juego,
 - el **nivel máximo** de cada arma,
+- **desde cuándo lleva cada arma en su tier**, para saber si esa S es sólida o
+  acaba de llegar,
 - un bloque `changes` con lo que **subió, bajó, entró o salió** respecto a la
   actualización anterior. De ahí sale el panel "Movimientos del meta".
 
@@ -50,6 +52,10 @@ documentacion/                      informes y documentación técnica del proye
 - **Marcar las que no tienes**: no es un descarte, es un «todavía no». El
   equipamiento del día solo usa las disponibles y el panel «A por la siguiente»
   ordena las que faltan por lo que te aportarían.
+- **Comparar dos armas** lado a lado, con sus accesorios y un veredicto que te
+  dice cuál encaja mejor con tu perfil **y por qué**.
+- **Ver cuánto lleva un arma en su tier** («3 semanas en S»), que es lo que
+  decide si merece la pena gastar horas subiéndola de nivel.
 - **Instalarla en el móvil** (*Añadir a pantalla de inicio*) y consultarla
   **aunque no tengas cobertura**: guarda la última meta descargada.
 
@@ -104,6 +110,9 @@ de cada arma. Se guarda en el navegador de cada dispositivo, no sale de ahí.
   sirviendo el último dato bueno.
 - Si el JSON generado no pasa `validar_meta.py`, no se commitea.
 - Si el cron lleva más de 48 h sin actualizar, la web lo dice en cabecera.
+- Si **wzranked.com** (de donde sale el nombre de la temporada) no contesta, se
+  conserva el nombre anterior en vez de degradarlo a un texto genérico.
+- Si una **ficha de arma** falla, se conservan sus accesorios del día anterior.
 
 ## Límites que conviene tener claros
 
@@ -113,5 +122,9 @@ de cada arma. Se guarda en el navegador de cada dispositivo, no sale de ahí.
   así que se dejaron fuera para que esto no necesite mantenimiento.
 - El scraper depende del HTML de wzstats.gg. Si rediseñan la web, el parser puede
   dejar de encontrar armas.
+- Las **imágenes** de las armas las sirve wzstats y solo vienen en el HTML del
+  tier S; las demás se recogen de las fichas que ya se descargan, así que el
+  catálogo se completa solo con los días. Un arma recién salida puede tardar en
+  tener foto.
 - Una petición por página y 1,5 s de pausa entre ellas: unas 70 peticiones al día.
   Un push de código ya **no** vuelve a raspar, solo republica.

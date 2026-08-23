@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-22T06:59:40+00:00",
+ "generated_at": "2026-08-23T07:00:43+00:00",
  "season": "Season 5 Reloaded, 2026",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-08-21T10:11:31+00:00",
+ "previous_generated_at": "2026-08-22T06:59:40+00:00",
  "warnings": [],
  "changes": [
   {
@@ -12,32 +12,8 @@
    "to": "D"
   },
   {
-   "mode": "resurgence",
-   "weapon": "MACE",
-   "kind": "entra",
-   "to": "D"
-  },
-  {
-   "mode": "multiplayer",
-   "weapon": "MACE",
-   "kind": "entra",
-   "to": "D"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "MACE",
-   "kind": "entra",
-   "to": "D"
-  },
-  {
    "mode": "battle_royale",
    "weapon": "KNIFE",
-   "kind": "entra",
-   "to": "D"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "MACE",
    "kind": "entra",
    "to": "D"
   }
@@ -17365,7 +17341,7 @@
       },
       {
        "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
        "unlock": "Armory"
       },
       {

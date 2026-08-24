@@ -16,10 +16,10 @@ on:
       - "_CUARENTENA/**"
   workflow_dispatch:
 
+# Minimo por defecto: cada job pide abajo solo lo que usa. Asi ni el
+# despliegue ni el aviso pueden escribir en el repositorio.
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: read
 
 concurrency:
   group: pages
@@ -28,6 +28,12 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # write porque el bot comitea meta.json; pages/id-token, para preparar y
+    # subir el artefacto de Pages.
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     # ~70 peticiones a 45 s de espera cada una: 20 minutos es de sobra.
     # Sin esto, un wzstats que responde a medias ocupa el runner 6 horas y
     # bloquea el grupo de concurrencia, asi que manana tampoco se publica.
@@ -79,14 +85,23 @@ jobs:
 
       - name: Revisar avisos del scraper
         id: revisar
+        # OJO: solo la linea "avisos=" va a GITHUB_OUTPUT. Si se redirige todo
+        # el script, las lineas "::warning::" caen tambien ahi, no tienen
+        # formato clave=valor y el paso revienta -> "deploy" no corre y la web
+        # NO se republica, justo el dia que hubo un fallo de raspado.
         run: |
-          python - <<'PY' >> "$GITHUB_OUTPUT"
-          import json, pathlib
+          python - <<'PY'
+          import json, os, pathlib
           d = json.loads(pathlib.Path("docs/data/meta.json").read_text(encoding="utf-8"))
           avisos = d.get("warnings") or []
           for a in avisos:
-              print(f"::warning::{a}")
-          print("avisos=" + json.dumps(avisos, ensure_ascii=False))
+              # El texto viene de fuera: sin saltos de linea no puede colar
+              # ordenes ::...:: propias en el registro.
+              limpio = " ".join(str(a).splitlines())
+              print(f"::warning::{limpio}")
+          # json.dumps siempre sale en una linea, asi que la salida es segura.
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              print("avisos=" + json.dumps(avisos, ensure_ascii=False), file=f)
           PY
 
       - uses: actions/configure-pages@v5
@@ -98,6 +113,9 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -112,6 +130,8 @@ jobs:
     needs: [build, deploy]
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    # Solo lee una salida del job anterior: no necesita nada.
+    permissions: {}
     steps:
       - name: Fallar si el raspado dejo avisos
         env:

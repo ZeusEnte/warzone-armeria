@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-25T07:07:50+00:00",
+ "generated_at": "2026-08-26T07:07:59+00:00",
  "season": "Season 5 Reloaded, 2026",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-08-24T07:24:38+00:00",
+ "previous_generated_at": "2026-08-25T07:07:50+00:00",
  "warnings": [],
  "changes": [
   {
@@ -512,7 +512,7 @@
      "tags": [
       "LMG"
      ],
-     "image": "https://img.wzstats.gg/mk78_version4/gunFullDisplay",
+     "image": "https://img.wzstats.gg/mk78_version4/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
@@ -602,7 +602,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": "https://img.wzstats.gg/swordfish-a1_version2/gunFullDisplay",
+     "image": "https://img.wzstats.gg/swordfish-a1_version2/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
@@ -4941,7 +4941,7 @@
      ],
      "weapon_type": "LMG",
      "tags": [],
-     "image": "https://img.wzstats.gg/mk78_version4/gunFullDisplay",
+     "image": "https://img.wzstats.gg/mk78_version4/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
@@ -5085,7 +5085,7 @@
      ],
      "weapon_type": "Marksman",
      "tags": [],
-     "image": "https://img.wzstats.gg/swordfish-a1_version2/gunFullDisplay",
+     "image": "https://img.wzstats.gg/swordfish-a1_version2/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
@@ -6133,7 +6133,7 @@
      "tags": [
       "LMG"
      ],
-     "image": "https://img.wzstats.gg/mk78_version4/gunFullDisplay",
+     "image": "https://img.wzstats.gg/mk78_version4/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
@@ -6151,7 +6151,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": "https://img.wzstats.gg/swordfish-a1_version2/gunFullDisplay",
+     "image": "https://img.wzstats.gg/swordfish-a1_version2/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
@@ -7204,7 +7204,7 @@
      "tags": [
       "LMG"
      ],
-     "image": "https://img.wzstats.gg/mk78_version4/gunFullDisplay",
+     "image": "https://img.wzstats.gg/mk78_version4/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
@@ -7294,7 +7294,7 @@
      "tags": [
       "Marksman"
      ],
-     "image": "https://img.wzstats.gg/swordfish-a1_version2/gunFullDisplay",
+     "image": "https://img.wzstats.gg/swordfish-a1_version2/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
@@ -32504,14 +32504,14 @@
      "code": "",
      "attachments": [
       {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Mpc 25"
+      },
+      {
        "slot": "Muzzle",
        "name": "HAWKER STABILIZER MK.II",
        "unlock": "Level 12"
-      },
-      {
-       "slot": "Barrel",
-       "name": "13.6\" MERCURIAL BARREL",
-       "unlock": "Level 11"
       },
       {
        "slot": "Underbarrel",

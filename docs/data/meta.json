@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-26T07:07:59+00:00",
+ "generated_at": "2026-08-27T17:38:33+00:00",
  "season": "Season 5 Reloaded, 2026",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-08-25T07:07:50+00:00",
+ "previous_generated_at": "2026-08-26T07:07:59+00:00",
  "warnings": [],
  "changes": [
   {
@@ -61,24 +61,6 @@
      "desde": "2026-08-21"
     },
     {
-     "name": "MK35 ISR",
-     "slug": "mk35-isr",
-     "tier": "S",
-     "positions": [
-      {
-       "range": "Long Range",
-       "rank": 2,
-       "role": "largo"
-      }
-     ],
-     "weapon_type": "Assault Rifle",
-     "tags": [
-      "Assault Rifle"
-     ],
-     "image": "https://img.wzstats.gg/mk35-isr_version1/gunDisplayLoadouts",
-     "desde": "2026-08-20"
-    },
-    {
      "name": "VST",
      "slug": "vst",
      "tier": "S",
@@ -94,6 +76,24 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vst_version1/gunDisplayLoadouts",
+     "desde": "2026-08-20"
+    },
+    {
+     "name": "MK35 ISR",
+     "slug": "mk35-isr",
+     "tier": "S",
+     "positions": [
+      {
+       "range": "Long Range",
+       "rank": 2,
+       "role": "largo"
+      }
+     ],
+     "weapon_type": "Assault Rifle",
+     "tags": [
+      "Assault Rifle"
+     ],
+     "image": "https://img.wzstats.gg/mk35-isr_version1/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
@@ -115,8 +115,8 @@
      "desde": "2026-08-20"
     },
     {
-     "name": "MPC-25",
-     "slug": "mpc-25",
+     "name": "REV-46",
+     "slug": "rev-46",
      "tier": "S",
      "positions": [
       {
@@ -129,8 +129,8 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/mpc-25_version4/gunDisplayLoadouts",
-     "desde": "2026-08-21"
+     "image": "https://img.wzstats.gg/rev-46_version2/gunDisplayLoadouts",
+     "desde": "2026-08-20"
     },
     {
      "name": "DS20 MIRAGE",
@@ -151,8 +151,8 @@
      "desde": "2026-08-20"
     },
     {
-     "name": "REV-46",
-     "slug": "rev-46",
+     "name": "MPC-25",
+     "slug": "mpc-25",
      "tier": "S",
      "positions": [
       {
@@ -165,8 +165,8 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/rev-46_version2/gunDisplayLoadouts",
-     "desde": "2026-08-20"
+     "image": "https://img.wzstats.gg/mpc-25_version4/gunDisplayLoadouts",
+     "desde": "2026-08-21"
     },
     {
      "name": "KAR98K",
@@ -187,8 +187,8 @@
      "desde": "2026-08-20"
     },
     {
-     "name": "VS RECON",
-     "slug": "vs-recon",
+     "name": "HAWKER HX",
+     "slug": "hawker-hx",
      "tier": "S",
      "positions": [
       {
@@ -201,12 +201,12 @@
      "tags": [
       "Sniper"
      ],
-     "image": "https://img.wzstats.gg/vs-recon_version4/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/hawker-hx_version3/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
-     "name": "HAWKER HX",
-     "slug": "hawker-hx",
+     "name": "VS RECON",
+     "slug": "vs-recon",
      "tier": "S",
      "positions": [
       {
@@ -219,7 +219,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": "https://img.wzstats.gg/hawker-hx_version3/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/vs-recon_version4/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
@@ -264,11 +264,6 @@
      "tier": "A",
      "positions": [
       {
-       "range": "Sniper Support",
-       "rank": 1,
-       "role": "corto"
-      },
-      {
        "range": "Close Range",
        "rank": 5,
        "role": "corto"
@@ -304,6 +299,11 @@
      "slug": "sturmwolf-45",
      "tier": "A",
      "positions": [
+      {
+       "range": "Sniper Support",
+       "rank": 1,
+       "role": "corto"
+      },
       {
        "range": "Close Range",
        "rank": 6,
@@ -5021,7 +5021,7 @@
      ],
      "weapon_type": "SMG",
      "tags": [],
-     "image": "https://img.wzstats.gg/rev-46_version2/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/rev-46/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
@@ -5628,24 +5628,6 @@
      "desde": "2026-08-21"
     },
     {
-     "name": "MK35 ISR",
-     "slug": "mk35-isr",
-     "tier": "S",
-     "positions": [
-      {
-       "range": "Long Range",
-       "rank": 2,
-       "role": "largo"
-      }
-     ],
-     "weapon_type": "Assault Rifle",
-     "tags": [
-      "Assault Rifle"
-     ],
-     "image": "https://img.wzstats.gg/mk35-isr_version1/gunDisplayLoadouts",
-     "desde": "2026-08-20"
-    },
-    {
      "name": "VST",
      "slug": "vst",
      "tier": "S",
@@ -5661,6 +5643,24 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vst_version1/gunDisplayLoadouts",
+     "desde": "2026-08-20"
+    },
+    {
+     "name": "MK35 ISR",
+     "slug": "mk35-isr",
+     "tier": "S",
+     "positions": [
+      {
+       "range": "Long Range",
+       "rank": 2,
+       "role": "largo"
+      }
+     ],
+     "weapon_type": "Assault Rifle",
+     "tags": [
+      "Assault Rifle"
+     ],
+     "image": "https://img.wzstats.gg/mk35-isr_version1/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
@@ -5682,8 +5682,8 @@
      "desde": "2026-08-20"
     },
     {
-     "name": "MPC-25",
-     "slug": "mpc-25",
+     "name": "REV-46",
+     "slug": "rev-46",
      "tier": "S",
      "positions": [
       {
@@ -5696,8 +5696,8 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/mpc-25_version4/gunDisplayLoadouts",
-     "desde": "2026-08-21"
+     "image": "https://img.wzstats.gg/rev-46_version2/gunDisplayLoadouts",
+     "desde": "2026-08-20"
     },
     {
      "name": "DS20 MIRAGE",
@@ -5718,8 +5718,8 @@
      "desde": "2026-08-20"
     },
     {
-     "name": "REV-46",
-     "slug": "rev-46",
+     "name": "MPC-25",
+     "slug": "mpc-25",
      "tier": "S",
      "positions": [
       {
@@ -5732,8 +5732,8 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/rev-46_version2/gunDisplayLoadouts",
-     "desde": "2026-08-20"
+     "image": "https://img.wzstats.gg/mpc-25_version4/gunDisplayLoadouts",
+     "desde": "2026-08-21"
     },
     {
      "name": "AK-27",
@@ -5758,11 +5758,6 @@
      "slug": "cbrs-3",
      "tier": "A",
      "positions": [
-      {
-       "range": "Sniper Support",
-       "rank": 1,
-       "role": "corto"
-      },
       {
        "range": "Close Range",
        "rank": 5,
@@ -5799,6 +5794,11 @@
      "slug": "sturmwolf-45",
      "tier": "A",
      "positions": [
+      {
+       "range": "Sniper Support",
+       "rank": 1,
+       "role": "corto"
+      },
       {
        "range": "Close Range",
        "rank": 6,
@@ -6735,24 +6735,6 @@
      "desde": "2026-08-21"
     },
     {
-     "name": "MK35 ISR",
-     "slug": "mk35-isr",
-     "tier": "S",
-     "positions": [
-      {
-       "range": "Long Range",
-       "rank": 2,
-       "role": "largo"
-      }
-     ],
-     "weapon_type": "Assault Rifle",
-     "tags": [
-      "Assault Rifle"
-     ],
-     "image": "https://img.wzstats.gg/mk35-isr_version1/gunDisplayLoadouts",
-     "desde": "2026-08-20"
-    },
-    {
      "name": "VST",
      "slug": "vst",
      "tier": "S",
@@ -6768,6 +6750,24 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vst_version1/gunDisplayLoadouts",
+     "desde": "2026-08-20"
+    },
+    {
+     "name": "MK35 ISR",
+     "slug": "mk35-isr",
+     "tier": "S",
+     "positions": [
+      {
+       "range": "Long Range",
+       "rank": 2,
+       "role": "largo"
+      }
+     ],
+     "weapon_type": "Assault Rifle",
+     "tags": [
+      "Assault Rifle"
+     ],
+     "image": "https://img.wzstats.gg/mk35-isr_version1/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
@@ -6789,8 +6789,8 @@
      "desde": "2026-08-20"
     },
     {
-     "name": "MPC-25",
-     "slug": "mpc-25",
+     "name": "REV-46",
+     "slug": "rev-46",
      "tier": "S",
      "positions": [
       {
@@ -6803,8 +6803,8 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/mpc-25_version4/gunDisplayLoadouts",
-     "desde": "2026-08-21"
+     "image": "https://img.wzstats.gg/rev-46_version2/gunDisplayLoadouts",
+     "desde": "2026-08-20"
     },
     {
      "name": "DS20 MIRAGE",
@@ -6825,8 +6825,8 @@
      "desde": "2026-08-20"
     },
     {
-     "name": "REV-46",
-     "slug": "rev-46",
+     "name": "MPC-25",
+     "slug": "mpc-25",
      "tier": "S",
      "positions": [
       {
@@ -6839,8 +6839,8 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/rev-46_version2/gunDisplayLoadouts",
-     "desde": "2026-08-20"
+     "image": "https://img.wzstats.gg/mpc-25_version4/gunDisplayLoadouts",
+     "desde": "2026-08-21"
     },
     {
      "name": "STRIDER 300",
@@ -6861,8 +6861,8 @@
      "desde": "2026-08-20"
     },
     {
-     "name": "VS RECON",
-     "slug": "vs-recon",
+     "name": "HAWKER HX",
+     "slug": "hawker-hx",
      "tier": "S",
      "positions": [
       {
@@ -6875,12 +6875,12 @@
      "tags": [
       "Sniper"
      ],
-     "image": "https://img.wzstats.gg/vs-recon_version4/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/hawker-hx_version3/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
-     "name": "HAWKER HX",
-     "slug": "hawker-hx",
+     "name": "VS RECON",
+     "slug": "vs-recon",
      "tier": "S",
      "positions": [
       {
@@ -6893,7 +6893,7 @@
      "tags": [
       "Sniper"
      ],
-     "image": "https://img.wzstats.gg/hawker-hx_version3/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/vs-recon_version4/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
@@ -11468,17 +11468,17 @@
     {
      "context": "Warzone Battle Royale",
      "label": "Recommended",
-     "code": "S01-48M6H-QY11",
+     "code": "S01-AV27L-9QD91-1",
      "attachments": [
+      {
+       "slot": "Optic",
+       "name": "LETHAL TOOLS ELO",
+       "unlock": "Dravec 45"
+      },
       {
        "slot": "Muzzle",
        "name": "LTI STENTORIAN BRAKE",
        "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "12\" VIENNA BARREL",
-       "unlock": "Level 23"
       },
       {
        "slot": "Underbarrel",
@@ -11628,17 +11628,17 @@
     {
      "context": "Warzone Resurgence",
      "label": "Recommended",
-     "code": "S01-48M6H-QY11",
+     "code": "S01-AV27L-9QD91-1",
      "attachments": [
+      {
+       "slot": "Optic",
+       "name": "LETHAL TOOLS ELO",
+       "unlock": "Dravec 45"
+      },
       {
        "slot": "Muzzle",
        "name": "LTI STENTORIAN BRAKE",
        "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "12\" VIENNA BARREL",
-       "unlock": "Level 23"
       },
       {
        "slot": "Underbarrel",
@@ -11788,17 +11788,17 @@
     {
      "context": "Warzone Resurgence Ranked",
      "label": "Recommended",
-     "code": "S01-48M6H-QY11",
+     "code": "S01-AV27L-9QD91-1",
      "attachments": [
+      {
+       "slot": "Optic",
+       "name": "LETHAL TOOLS ELO",
+       "unlock": "Dravec 45"
+      },
       {
        "slot": "Muzzle",
        "name": "LTI STENTORIAN BRAKE",
        "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "12\" VIENNA BARREL",
-       "unlock": "Level 23"
       },
       {
        "slot": "Underbarrel",
@@ -12047,6 +12047,11 @@
      "code": "",
      "attachments": [
       {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Mpc 25"
+      },
+      {
        "slot": "Barrel",
        "name": "12\" VIENNA BARREL",
        "unlock": "Level 23"
@@ -12057,14 +12062,9 @@
        "unlock": "Level 17"
       },
       {
-       "slot": "Rear Grip",
-       "name": "ERUPTION GRIP",
-       "unlock": "Level 37"
-      },
-      {
-       "slot": "Stock",
-       "name": "COLLAPSIBLE STOCK",
-       "unlock": "Level 41"
+       "slot": "Magazine",
+       "name": "TORCH EXTENDED MAG",
+       "unlock": "Level 13"
       },
       {
        "slot": "Fire Mods",
@@ -13112,12 +13112,12 @@
     {
      "context": "Black Ops 7 Ranked",
      "label": "Recommended",
-     "code": "S06-8E469-UY51",
+     "code": "S06-8E469-UQ51",
      "attachments": [
       {
        "slot": "Barrel",
-       "name": "13.1\" RAZORBACK BARREL",
-       "unlock": "Level 2"
+       "name": "14.5\" VAS ASHE BARREL",
+       "unlock": "Level 15"
       },
       {
        "slot": "Underbarrel",
@@ -14533,38 +14533,6 @@
        "slot": "Stock",
        "name": "WANDER-3V STOCK",
        "unlock": "Level 25"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "BUFFER SPRING",
-       "unlock": "Level 26"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Ranked",
-     "label": "LOW RECOIL",
-     "code": "A01-7165Y-U151",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "18\" BOWEN WATCHTOWER BARREL",
-       "unlock": "Level 11"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "AXIS SHIFT VERTICAL FOREGRIP",
-       "unlock": "Level 28"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "CARAVAN-H2 GRIP",
-       "unlock": "Level 43"
       },
       {
        "slot": "Fire Mods",
@@ -16845,524 +16813,6 @@
     }
    ]
   },
-  "mk35-isr": {
-   "name": "MK35 ISR",
-   "max_level": 43,
-   "builds": [
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Recommended",
-     "code": "A12-34FBS-SSY4B-11",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 39"
-      },
-      {
-       "slot": "Barrel",
-       "name": "16.5\" GREAVES BELLUM BARREL",
-       "unlock": "Level 14"
-      },
-      {
-       "slot": "Magazine",
-       "name": "BOWEN SIREN DRUM",
-       "unlock": "Level 29"
-      },
-      {
-       "slot": "Stock",
-       "name": "GREAVES CASSIN STOCK",
-       "unlock": "Level 8"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "SNIPER SUPPORT",
-     "code": "A12-9CKYY-L151",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "19\" MFS NIGHTFALL SUPPRESSED BARREL",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Magazine",
-       "name": "GEN-X04 EXTENDED MAG",
-       "unlock": "Level 13"
-      },
-      {
-       "slot": "Stock",
-       "name": "EAM STENTOR TAC STOCK",
-       "unlock": "Level 26"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "BUFFER SPRING",
-       "unlock": "Level 30"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "LOW RECOIL",
-     "code": "A12-9CKZ1-8S51",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "16.5\" GREAVES BELLUM BARREL",
-       "unlock": "Level 14"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Magazine",
-       "name": "BOWEN SIREN DRUM",
-       "unlock": "Level 29"
-      },
-      {
-       "slot": "Stock",
-       "name": "GREAVES CASSIN STOCK",
-       "unlock": "Level 8"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "BUFFER SPRING",
-       "unlock": "Level 30"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "CLOSE RANGE",
-     "code": "A12-5LUL2-5L11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "TITAN-R 5.56 COMPENSATOR",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "ENVOY FOREGRIP",
-       "unlock": "Level 37"
-      },
-      {
-       "slot": "Magazine",
-       "name": "GEN-X04 EXTENDED MAG",
-       "unlock": "Level 13"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "SARSEN SPRINT GRIP",
-       "unlock": "Level 7"
-      },
-      {
-       "slot": "Stock",
-       "name": "BOWEN ST-MOVE STOCK",
-       "unlock": "Level 38"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Recommended",
-     "code": "A12-34FBS-SSY4B-11",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 39"
-      },
-      {
-       "slot": "Barrel",
-       "name": "16.5\" GREAVES BELLUM BARREL",
-       "unlock": "Level 14"
-      },
-      {
-       "slot": "Magazine",
-       "name": "BOWEN SIREN DRUM",
-       "unlock": "Level 29"
-      },
-      {
-       "slot": "Stock",
-       "name": "GREAVES CASSIN STOCK",
-       "unlock": "Level 8"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "SNIPER SUPPORT",
-     "code": "A12-9CKYY-L151",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "19\" MFS NIGHTFALL SUPPRESSED BARREL",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Magazine",
-       "name": "GEN-X04 EXTENDED MAG",
-       "unlock": "Level 13"
-      },
-      {
-       "slot": "Stock",
-       "name": "EAM STENTOR TAC STOCK",
-       "unlock": "Level 26"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "BUFFER SPRING",
-       "unlock": "Level 30"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "LOW RECOIL",
-     "code": "A12-9CKZ1-8S51",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "16.5\" GREAVES BELLUM BARREL",
-       "unlock": "Level 14"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Magazine",
-       "name": "BOWEN SIREN DRUM",
-       "unlock": "Level 29"
-      },
-      {
-       "slot": "Stock",
-       "name": "GREAVES CASSIN STOCK",
-       "unlock": "Level 8"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "BUFFER SPRING",
-       "unlock": "Level 30"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "CLOSE RANGE",
-     "code": "A12-5LUL2-5L11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "TITAN-R 5.56 COMPENSATOR",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "ENVOY FOREGRIP",
-       "unlock": "Level 37"
-      },
-      {
-       "slot": "Magazine",
-       "name": "GEN-X04 EXTENDED MAG",
-       "unlock": "Level 13"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "SARSEN SPRINT GRIP",
-       "unlock": "Level 7"
-      },
-      {
-       "slot": "Stock",
-       "name": "BOWEN ST-MOVE STOCK",
-       "unlock": "Level 38"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence Ranked",
-     "label": "Recommended",
-     "code": "A12-34FBS-SSY4B-11",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 39"
-      },
-      {
-       "slot": "Barrel",
-       "name": "16.5\" GREAVES BELLUM BARREL",
-       "unlock": "Level 14"
-      },
-      {
-       "slot": "Magazine",
-       "name": "BOWEN SIREN DRUM",
-       "unlock": "Level 29"
-      },
-      {
-       "slot": "Stock",
-       "name": "GREAVES CASSIN STOCK",
-       "unlock": "Level 8"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence Ranked",
-     "label": "SNIPER SUPPORT",
-     "code": "A12-9SD69-RW11",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "19\" MFS NIGHTFALL SUPPRESSED BARREL",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Magazine",
-       "name": "GEN-X04 EXTENDED MAG",
-       "unlock": "Level 13"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "SARSEN SPRINT GRIP",
-       "unlock": "Level 7"
-      },
-      {
-       "slot": "Stock",
-       "name": "BOWEN ST-MOVE STOCK",
-       "unlock": "Level 38"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence Ranked",
-     "label": "LOW RECOIL",
-     "code": "A12-9CKZ1-8S51",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "16.5\" GREAVES BELLUM BARREL",
-       "unlock": "Level 14"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Magazine",
-       "name": "BOWEN SIREN DRUM",
-       "unlock": "Level 29"
-      },
-      {
-       "slot": "Stock",
-       "name": "GREAVES CASSIN STOCK",
-       "unlock": "Level 8"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "BUFFER SPRING",
-       "unlock": "Level 30"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence Ranked",
-     "label": "CLOSE RANGE",
-     "code": "A12-5LUL2-5L11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "TITAN-R 5.56 COMPENSATOR",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "ENVOY FOREGRIP",
-       "unlock": "Level 37"
-      },
-      {
-       "slot": "Magazine",
-       "name": "GEN-X04 EXTENDED MAG",
-       "unlock": "Level 13"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "SARSEN SPRINT GRIP",
-       "unlock": "Level 7"
-      },
-      {
-       "slot": "Stock",
-       "name": "BOWEN ST-MOVE STOCK",
-       "unlock": "Level 38"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "Recommended",
-     "code": "A12-9SJFH-1Y31",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "17\" LTI FIRETAIL BARREL",
-       "unlock": "Level 35"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "SARSEN SPRINT GRIP",
-       "unlock": "Level 7"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "BOLT CARRIER GROUP",
-       "unlock": "Level 19"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "PRESTIGE",
-     "code": "A12-6HQ8C-ZZB31",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "19\" MFS NIGHTFALL SUPPRESSED BARREL",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "SARSEN SPRINT GRIP",
-       "unlock": "Level 7"
-      },
-      {
-       "slot": "Laser",
-       "name": "1MW INSTINCT LASER ARRAY",
-       "unlock": "Level 17"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "BOLT CARRIER GROUP",
-       "unlock": "Level 19"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "LOW RECOIL",
-     "code": "A12-34FK5-C72K7-51",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "17\" LTI FIRETAIL BARREL",
-       "unlock": "Level 35"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "BUFFER SPRING",
-       "unlock": "Level 30"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Ranked",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Mxr 17"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "AXIS SHIFT VERTICAL FOREGRIP",
-       "unlock": "Level 15"
-      },
-      {
-       "slot": "Stock",
-       "name": "GREAVES CASSIN STOCK",
-       "unlock": "Level 8"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "BUFFER SPRING",
-       "unlock": "Level 30"
-      }
-     ]
-    }
-   ]
-  },
   "vst": {
    "name": "VST",
    "max_level": 39,
@@ -18132,6 +17582,850 @@
        "slot": "Stock",
        "name": "VAS BLENCH PAD",
        "unlock": "Level 3"
+      }
+     ]
+    }
+   ]
+  },
+  "mk35-isr": {
+   "name": "MK35 ISR",
+   "max_level": 43,
+   "builds": [
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Recommended",
+     "code": "A12-34FBS-SSY4B-11",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 39"
+      },
+      {
+       "slot": "Barrel",
+       "name": "16.5\" GREAVES BELLUM BARREL",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Magazine",
+       "name": "BOWEN SIREN DRUM",
+       "unlock": "Level 29"
+      },
+      {
+       "slot": "Stock",
+       "name": "GREAVES CASSIN STOCK",
+       "unlock": "Level 8"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "SNIPER SUPPORT",
+     "code": "A12-9CKYY-L151",
+     "attachments": [
+      {
+       "slot": "Barrel",
+       "name": "19\" MFS NIGHTFALL SUPPRESSED BARREL",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Magazine",
+       "name": "GEN-X04 EXTENDED MAG",
+       "unlock": "Level 13"
+      },
+      {
+       "slot": "Stock",
+       "name": "EAM STENTOR TAC STOCK",
+       "unlock": "Level 26"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BUFFER SPRING",
+       "unlock": "Level 30"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "LOW RECOIL",
+     "code": "A12-9CKZ1-8S51",
+     "attachments": [
+      {
+       "slot": "Barrel",
+       "name": "16.5\" GREAVES BELLUM BARREL",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Magazine",
+       "name": "BOWEN SIREN DRUM",
+       "unlock": "Level 29"
+      },
+      {
+       "slot": "Stock",
+       "name": "GREAVES CASSIN STOCK",
+       "unlock": "Level 8"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BUFFER SPRING",
+       "unlock": "Level 30"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "CLOSE RANGE",
+     "code": "A12-5LUL2-5L11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "TITAN-R 5.56 COMPENSATOR",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "ENVOY FOREGRIP",
+       "unlock": "Level 37"
+      },
+      {
+       "slot": "Magazine",
+       "name": "GEN-X04 EXTENDED MAG",
+       "unlock": "Level 13"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "SARSEN SPRINT GRIP",
+       "unlock": "Level 7"
+      },
+      {
+       "slot": "Stock",
+       "name": "BOWEN ST-MOVE STOCK",
+       "unlock": "Level 38"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Recommended",
+     "code": "A12-34FBS-SSY4B-11",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 39"
+      },
+      {
+       "slot": "Barrel",
+       "name": "16.5\" GREAVES BELLUM BARREL",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Magazine",
+       "name": "BOWEN SIREN DRUM",
+       "unlock": "Level 29"
+      },
+      {
+       "slot": "Stock",
+       "name": "GREAVES CASSIN STOCK",
+       "unlock": "Level 8"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "SNIPER SUPPORT",
+     "code": "A12-9CKYY-L151",
+     "attachments": [
+      {
+       "slot": "Barrel",
+       "name": "19\" MFS NIGHTFALL SUPPRESSED BARREL",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Magazine",
+       "name": "GEN-X04 EXTENDED MAG",
+       "unlock": "Level 13"
+      },
+      {
+       "slot": "Stock",
+       "name": "EAM STENTOR TAC STOCK",
+       "unlock": "Level 26"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BUFFER SPRING",
+       "unlock": "Level 30"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "LOW RECOIL",
+     "code": "A12-9CKZ1-8S51",
+     "attachments": [
+      {
+       "slot": "Barrel",
+       "name": "16.5\" GREAVES BELLUM BARREL",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Magazine",
+       "name": "BOWEN SIREN DRUM",
+       "unlock": "Level 29"
+      },
+      {
+       "slot": "Stock",
+       "name": "GREAVES CASSIN STOCK",
+       "unlock": "Level 8"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BUFFER SPRING",
+       "unlock": "Level 30"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "CLOSE RANGE",
+     "code": "A12-5LUL2-5L11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "TITAN-R 5.56 COMPENSATOR",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "ENVOY FOREGRIP",
+       "unlock": "Level 37"
+      },
+      {
+       "slot": "Magazine",
+       "name": "GEN-X04 EXTENDED MAG",
+       "unlock": "Level 13"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "SARSEN SPRINT GRIP",
+       "unlock": "Level 7"
+      },
+      {
+       "slot": "Stock",
+       "name": "BOWEN ST-MOVE STOCK",
+       "unlock": "Level 38"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "Recommended",
+     "code": "A12-34FBS-SSY4B-11",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 39"
+      },
+      {
+       "slot": "Barrel",
+       "name": "16.5\" GREAVES BELLUM BARREL",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Magazine",
+       "name": "BOWEN SIREN DRUM",
+       "unlock": "Level 29"
+      },
+      {
+       "slot": "Stock",
+       "name": "GREAVES CASSIN STOCK",
+       "unlock": "Level 8"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "SNIPER SUPPORT",
+     "code": "A12-9SD69-RW11",
+     "attachments": [
+      {
+       "slot": "Barrel",
+       "name": "19\" MFS NIGHTFALL SUPPRESSED BARREL",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Magazine",
+       "name": "GEN-X04 EXTENDED MAG",
+       "unlock": "Level 13"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "SARSEN SPRINT GRIP",
+       "unlock": "Level 7"
+      },
+      {
+       "slot": "Stock",
+       "name": "BOWEN ST-MOVE STOCK",
+       "unlock": "Level 38"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "LOW RECOIL",
+     "code": "A12-9CKZ1-8S51",
+     "attachments": [
+      {
+       "slot": "Barrel",
+       "name": "16.5\" GREAVES BELLUM BARREL",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Magazine",
+       "name": "BOWEN SIREN DRUM",
+       "unlock": "Level 29"
+      },
+      {
+       "slot": "Stock",
+       "name": "GREAVES CASSIN STOCK",
+       "unlock": "Level 8"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BUFFER SPRING",
+       "unlock": "Level 30"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "CLOSE RANGE",
+     "code": "A12-5LUL2-5L11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "TITAN-R 5.56 COMPENSATOR",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "ENVOY FOREGRIP",
+       "unlock": "Level 37"
+      },
+      {
+       "slot": "Magazine",
+       "name": "GEN-X04 EXTENDED MAG",
+       "unlock": "Level 13"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "SARSEN SPRINT GRIP",
+       "unlock": "Level 7"
+      },
+      {
+       "slot": "Stock",
+       "name": "BOWEN ST-MOVE STOCK",
+       "unlock": "Level 38"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "Recommended",
+     "code": "A12-9SJFH-1Y31",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "17\" LTI FIRETAIL BARREL",
+       "unlock": "Level 35"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "SARSEN SPRINT GRIP",
+       "unlock": "Level 7"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BOLT CARRIER GROUP",
+       "unlock": "Level 19"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "PRESTIGE",
+     "code": "A12-6HQ8C-ZZB31",
+     "attachments": [
+      {
+       "slot": "Barrel",
+       "name": "19\" MFS NIGHTFALL SUPPRESSED BARREL",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "SARSEN SPRINT GRIP",
+       "unlock": "Level 7"
+      },
+      {
+       "slot": "Laser",
+       "name": "1MW INSTINCT LASER ARRAY",
+       "unlock": "Level 17"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BOLT CARRIER GROUP",
+       "unlock": "Level 19"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "LOW RECOIL",
+     "code": "A12-34FK5-C72K7-51",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "17\" LTI FIRETAIL BARREL",
+       "unlock": "Level 35"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BUFFER SPRING",
+       "unlock": "Level 30"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Ranked",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Mxr 17"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "AXIS SHIFT VERTICAL FOREGRIP",
+       "unlock": "Level 15"
+      },
+      {
+       "slot": "Stock",
+       "name": "GREAVES CASSIN STOCK",
+       "unlock": "Level 8"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BUFFER SPRING",
+       "unlock": "Level 30"
+      }
+     ]
+    }
+   ]
+  },
+  "hawker-hx": {
+   "name": "HAWKER HX",
+   "max_level": 40,
+   "builds": [
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Recommended",
+     "code": "R05-21WSG-JNW9S-V711",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 35"
+      },
+      {
+       "slot": "Barrel",
+       "name": "23.7\" COMPOSITE-11 BARREL",
+       "unlock": "Level 22"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "KNITLINE FOCUS GRIP",
+       "unlock": "Level 17"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "AURORAL LIGHT GRIP",
+       "unlock": "Level 30"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": ".338 LM OVERPRESSURED",
+       "unlock": "Level 38"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "PRESTIGE",
+     "code": "R05-694ZZ-5KB11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 35"
+      },
+      {
+       "slot": "Barrel",
+       "name": "MFS 25\" VOTIVE BARREL",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "AURORAL LIGHT GRIP",
+       "unlock": "Level 30"
+      },
+      {
+       "slot": "Laser",
+       "name": "1MW INSTINCT LASER ARRAY",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "LIGHT BOLT",
+       "unlock": "Level 18"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Recommended",
+     "code": "R05-21WSL-NFYHD-XS11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 35"
+      },
+      {
+       "slot": "Barrel",
+       "name": "23.7\" COMPOSITE-11 BARREL",
+       "unlock": "Level 22"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "AURORAL LIGHT GRIP",
+       "unlock": "Level 30"
+      },
+      {
+       "slot": "Laser",
+       "name": "1MW INSTINCT LASER ARRAY",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": ".338 LM OVERPRESSURED",
+       "unlock": "Level 38"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "PRESTIGE",
+     "code": "R05-694ZZ-5KB11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 35"
+      },
+      {
+       "slot": "Barrel",
+       "name": "MFS 25\" VOTIVE BARREL",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "AURORAL LIGHT GRIP",
+       "unlock": "Level 30"
+      },
+      {
+       "slot": "Laser",
+       "name": "1MW INSTINCT LASER ARRAY",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "LIGHT BOLT",
+       "unlock": "Level 18"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "Recommended",
+     "code": "R05-21WSL-NFYHD-XS11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 35"
+      },
+      {
+       "slot": "Barrel",
+       "name": "23.7\" COMPOSITE-11 BARREL",
+       "unlock": "Level 22"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "AURORAL LIGHT GRIP",
+       "unlock": "Level 30"
+      },
+      {
+       "slot": "Laser",
+       "name": "1MW INSTINCT LASER ARRAY",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": ".338 LM OVERPRESSURED",
+       "unlock": "Level 38"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "PRESTIGE",
+     "code": "R05-694ZZ-5KB11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 35"
+      },
+      {
+       "slot": "Barrel",
+       "name": "MFS 25\" VOTIVE BARREL",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "AURORAL LIGHT GRIP",
+       "unlock": "Level 30"
+      },
+      {
+       "slot": "Laser",
+       "name": "1MW INSTINCT LASER ARRAY",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "LIGHT BOLT",
+       "unlock": "Level 18"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "Recommended",
+     "code": "R05-E41LI-5SD11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "SWF TISHINA-11",
+       "unlock": "Level 11"
+      },
+      {
+       "slot": "Barrel",
+       "name": "MFS 25\" VOTIVE BARREL",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "AURORAL LIGHT GRIP",
+       "unlock": "Level 30"
+      },
+      {
+       "slot": "Laser",
+       "name": "5MW LOCKSTEP LASER",
+       "unlock": "Level 21"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "LIGHT BOLT",
+       "unlock": "Level 18"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "NON PRESTIGE",
+     "code": "R05-E41LI-5T311",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "SWF TISHINA-11",
+       "unlock": "Level 11"
+      },
+      {
+       "slot": "Barrel",
+       "name": "26.1\" ABSOLUTION BARREL",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "AURORAL LIGHT GRIP",
+       "unlock": "Level 30"
+      },
+      {
+       "slot": "Laser",
+       "name": "5MW LOCKSTEP LASER",
+       "unlock": "Level 21"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "LIGHT BOLT",
+       "unlock": "Level 18"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Ranked",
+     "label": "Recommended",
+     "code": "R05-78WWC-B11",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "EAM IR-VIZ REFLEX",
+       "unlock": "Week 3 Challenge"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "MFS 25\" VOTIVE BARREL",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "AURORAL LIGHT GRIP",
+       "unlock": "Level 30"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "LIGHT BOLT",
+       "unlock": "Level 18"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Ranked",
+     "label": "NON PRESTIGE",
+     "code": "R05-3YRWG-ZJ11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "26.1\" ABSOLUTION BARREL",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FLATTOP GRIP",
+       "unlock": "Level 20"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "AURORAL LIGHT GRIP",
+       "unlock": "Level 30"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "LIGHT BOLT",
+       "unlock": "Level 18"
       }
      ]
     }
@@ -19676,275 +19970,147 @@
     }
    ]
   },
-  "hawker-hx": {
-   "name": "HAWKER HX",
-   "max_level": 40,
+  "rev-46": {
+   "name": "REV-46",
+   "max_level": 34,
    "builds": [
     {
      "context": "Warzone Battle Royale",
      "label": "Recommended",
-     "code": "R05-21WSG-JNW9S-V711",
+     "code": "S09-AUXZB-3U913-1",
      "attachments": [
       {
+       "slot": "Optic",
+       "name": "LETHAL TOOLS ELO",
+       "unlock": "Dravec 45"
+      },
+      {
        "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 35"
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
       },
       {
        "slot": "Barrel",
-       "name": "23.7\" COMPOSITE-11 BARREL",
-       "unlock": "Level 22"
+       "name": "CAUDAL TARGET BARREL",
+       "unlock": "Level 12"
       },
       {
-       "slot": "Underbarrel",
-       "name": "KNITLINE FOCUS GRIP",
-       "unlock": "Level 17"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "AURORAL LIGHT GRIP",
-       "unlock": "Level 30"
+       "slot": "Magazine",
+       "name": "KOMODO DRUM MAG",
+       "unlock": "Level 34"
       },
       {
        "slot": "Fire Mods",
-       "name": ".338 LM OVERPRESSURED",
-       "unlock": "Level 38"
+       "name": "RECOIL SYNC UNIT",
+       "unlock": "Level 27"
       }
      ]
     },
     {
      "context": "Warzone Battle Royale",
      "label": "PRESTIGE",
-     "code": "R05-694ZZ-5KB11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 35"
-      },
-      {
-       "slot": "Barrel",
-       "name": "MFS 25\" VOTIVE BARREL",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "AURORAL LIGHT GRIP",
-       "unlock": "Level 30"
-      },
-      {
-       "slot": "Laser",
-       "name": "1MW INSTINCT LASER ARRAY",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "LIGHT BOLT",
-       "unlock": "Level 18"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Recommended",
-     "code": "R05-21WSL-NFYHD-XS11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 35"
-      },
-      {
-       "slot": "Barrel",
-       "name": "23.7\" COMPOSITE-11 BARREL",
-       "unlock": "Level 22"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "AURORAL LIGHT GRIP",
-       "unlock": "Level 30"
-      },
-      {
-       "slot": "Laser",
-       "name": "1MW INSTINCT LASER ARRAY",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": ".338 LM OVERPRESSURED",
-       "unlock": "Level 38"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "PRESTIGE",
-     "code": "R05-694ZZ-5KB11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 35"
-      },
-      {
-       "slot": "Barrel",
-       "name": "MFS 25\" VOTIVE BARREL",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "AURORAL LIGHT GRIP",
-       "unlock": "Level 30"
-      },
-      {
-       "slot": "Laser",
-       "name": "1MW INSTINCT LASER ARRAY",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "LIGHT BOLT",
-       "unlock": "Level 18"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence Ranked",
-     "label": "Recommended",
-     "code": "R05-21WSL-NFYHD-XS11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 35"
-      },
-      {
-       "slot": "Barrel",
-       "name": "23.7\" COMPOSITE-11 BARREL",
-       "unlock": "Level 22"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "AURORAL LIGHT GRIP",
-       "unlock": "Level 30"
-      },
-      {
-       "slot": "Laser",
-       "name": "1MW INSTINCT LASER ARRAY",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": ".338 LM OVERPRESSURED",
-       "unlock": "Level 38"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence Ranked",
-     "label": "PRESTIGE",
-     "code": "R05-694ZZ-5KB11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 35"
-      },
-      {
-       "slot": "Barrel",
-       "name": "MFS 25\" VOTIVE BARREL",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "AURORAL LIGHT GRIP",
-       "unlock": "Level 30"
-      },
-      {
-       "slot": "Laser",
-       "name": "1MW INSTINCT LASER ARRAY",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "LIGHT BOLT",
-       "unlock": "Level 18"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "Recommended",
-     "code": "R05-E41LI-5SD11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "SWF TISHINA-11",
-       "unlock": "Level 11"
-      },
-      {
-       "slot": "Barrel",
-       "name": "MFS 25\" VOTIVE BARREL",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "AURORAL LIGHT GRIP",
-       "unlock": "Level 30"
-      },
-      {
-       "slot": "Laser",
-       "name": "5MW LOCKSTEP LASER",
-       "unlock": "Level 21"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "LIGHT BOLT",
-       "unlock": "Level 18"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "NON PRESTIGE",
-     "code": "R05-E41LI-5T311",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "SWF TISHINA-11",
-       "unlock": "Level 11"
-      },
-      {
-       "slot": "Barrel",
-       "name": "26.1\" ABSOLUTION BARREL",
-       "unlock": "Level 16"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "AURORAL LIGHT GRIP",
-       "unlock": "Level 30"
-      },
-      {
-       "slot": "Laser",
-       "name": "5MW LOCKSTEP LASER",
-       "unlock": "Level 21"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "LIGHT BOLT",
-       "unlock": "Level 18"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Ranked",
-     "label": "Recommended",
-     "code": "R05-78WWC-B11",
+     "code": "S09-JUC52-L69IN-31",
      "attachments": [
       {
        "slot": "Optic",
-       "name": "EAM IR-VIZ REFLEX",
-       "unlock": "Week 3 Challenge"
+       "name": "LETHAL TOOLS ELO",
+       "unlock": "Dravec 45"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Magazine",
+       "name": "KOMODO DRUM MAG",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Stock",
+       "name": "MFS REFORGE FLIP STOCK",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "RECOIL SYNC UNIT",
+       "unlock": "Level 27"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Mobility",
+     "code": "S09-AUYHS-V8BY1-1",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "LETHAL TOOLS ELO",
+       "unlock": "Dravec 45"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER HYBRID .45",
+       "unlock": "Level 25"
+      },
+      {
+       "slot": "Barrel",
+       "name": "REDWELL ANOLIS BARREL",
+       "unlock": "Level 31"
+      },
+      {
+       "slot": "Magazine",
+       "name": "KOMODO DRUM MAG",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "TRAVERSAL GRIP",
+       "unlock": "Level 30"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "LOW RECOIL",
+     "code": "S09-2RD6H-FU31",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FORCE STABILIZER HANDSTOP",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Magazine",
+       "name": "KOMODO DRUM MAG",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "LTI INTEGRITY GRIP",
+       "unlock": "Level 10"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "RECOIL SYNC UNIT",
+       "unlock": "Level 27"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Recommended",
+     "code": "S09-AUXZB-3U913-1",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "LETHAL TOOLS ELO",
+       "unlock": "Dravec 45"
       },
       {
        "slot": "Muzzle",
@@ -19953,50 +20119,338 @@
       },
       {
        "slot": "Barrel",
-       "name": "MFS 25\" VOTIVE BARREL",
-       "unlock": "Prestige"
+       "name": "CAUDAL TARGET BARREL",
+       "unlock": "Level 12"
       },
       {
-       "slot": "Rear Grip",
-       "name": "AURORAL LIGHT GRIP",
-       "unlock": "Level 30"
+       "slot": "Magazine",
+       "name": "KOMODO DRUM MAG",
+       "unlock": "Level 34"
       },
       {
        "slot": "Fire Mods",
-       "name": "LIGHT BOLT",
-       "unlock": "Level 18"
+       "name": "RECOIL SYNC UNIT",
+       "unlock": "Level 27"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "PRESTIGE",
+     "code": "S09-JUC52-L69IN-31",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "LETHAL TOOLS ELO",
+       "unlock": "Dravec 45"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Magazine",
+       "name": "KOMODO DRUM MAG",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Stock",
+       "name": "MFS REFORGE FLIP STOCK",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "RECOIL SYNC UNIT",
+       "unlock": "Level 27"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Mobility",
+     "code": "S09-AUYHS-V8BY1-1",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "LETHAL TOOLS ELO",
+       "unlock": "Dravec 45"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER HYBRID .45",
+       "unlock": "Level 25"
+      },
+      {
+       "slot": "Barrel",
+       "name": "REDWELL ANOLIS BARREL",
+       "unlock": "Level 31"
+      },
+      {
+       "slot": "Magazine",
+       "name": "KOMODO DRUM MAG",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "TRAVERSAL GRIP",
+       "unlock": "Level 30"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "LOW RECOIL",
+     "code": "S09-2RD6H-FU31",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FORCE STABILIZER HANDSTOP",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Magazine",
+       "name": "KOMODO DRUM MAG",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "LTI INTEGRITY GRIP",
+       "unlock": "Level 10"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "RECOIL SYNC UNIT",
+       "unlock": "Level 27"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "Recommended",
+     "code": "S09-AUXZB-3U913-1",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "LETHAL TOOLS ELO",
+       "unlock": "Dravec 45"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "CAUDAL TARGET BARREL",
+       "unlock": "Level 12"
+      },
+      {
+       "slot": "Magazine",
+       "name": "KOMODO DRUM MAG",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "RECOIL SYNC UNIT",
+       "unlock": "Level 27"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "PRESTIGE",
+     "code": "S09-JUC52-L69IN-31",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "LETHAL TOOLS ELO",
+       "unlock": "Dravec 45"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Magazine",
+       "name": "KOMODO DRUM MAG",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Stock",
+       "name": "MFS REFORGE FLIP STOCK",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "RECOIL SYNC UNIT",
+       "unlock": "Level 27"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "Recommended",
+     "code": "S09-AUZDI-IDGB1-1",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "LETHAL TOOLS ELO",
+       "unlock": "Dravec 45"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "CAUDAL TARGET BARREL",
+       "unlock": "Level 12"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FORCE STABILIZER HANDSTOP",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Magazine",
+       "name": "CAWDOR EXTENDED MAG",
+       "unlock": "Level 9"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "LOW RECOIL",
+     "code": "S09-2RD6K-ZB31",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FORCE STABILIZER HANDSTOP",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Magazine",
+       "name": "CAWDOR EXTENDED MAG",
+       "unlock": "Level 9"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "LTI INTEGRITY GRIP",
+       "unlock": "Level 10"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "RECOIL SYNC UNIT",
+       "unlock": "Level 27"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "Mobility",
+     "code": "S09-7431P-2S11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "REDWELL ANOLIS BARREL",
+       "unlock": "Level 31"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 24"
+      },
+      {
+       "slot": "Magazine",
+       "name": "CAWDOR EXTENDED MAG",
+       "unlock": "Level 9"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "TRAVERSAL GRIP",
+       "unlock": "Level 30"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "PRESTIGE",
+     "code": "S09-JUC6F-TKSQY-11",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "LETHAL TOOLS ELO",
+       "unlock": "Dravec 45"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FORCE STABILIZER HANDSTOP",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Magazine",
+       "name": "CAWDOR EXTENDED MAG",
+       "unlock": "Level 9"
+      },
+      {
+       "slot": "Stock",
+       "name": "MFS REFORGE FLIP STOCK",
+       "unlock": "Prestige"
       }
      ]
     },
     {
      "context": "Black Ops 7 Ranked",
-     "label": "NON PRESTIGE",
-     "code": "R05-3YRWG-ZJ11",
+     "label": "Recommended",
+     "code": "",
      "attachments": [
       {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Mpc 25"
+      },
+      {
        "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
+       "name": "HAWKER SERIES 45",
+       "unlock": "Level 18"
       },
       {
        "slot": "Barrel",
-       "name": "26.1\" ABSOLUTION BARREL",
-       "unlock": "Level 16"
+       "name": "CAUDAL TARGET BARREL",
+       "unlock": "Level 12"
       },
       {
        "slot": "Underbarrel",
-       "name": "FLATTOP GRIP",
-       "unlock": "Level 20"
+       "name": "FORCE STABILIZER HANDSTOP",
+       "unlock": "Level 14"
       },
       {
-       "slot": "Rear Grip",
-       "name": "AURORAL LIGHT GRIP",
-       "unlock": "Level 30"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "LIGHT BOLT",
-       "unlock": "Level 18"
+       "slot": "Laser",
+       "name": "EMT3 AGILE LASER",
+       "unlock": "Level 23"
       }
      ]
     }
@@ -21033,492 +21487,6 @@
        "slot": "Fire Mods",
        "name": "RECOIL SYNC UNIT",
        "unlock": "Level 7"
-      }
-     ]
-    }
-   ]
-  },
-  "rev-46": {
-   "name": "REV-46",
-   "max_level": 34,
-   "builds": [
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Recommended",
-     "code": "S09-AUXZB-3U913-1",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "LETHAL TOOLS ELO",
-       "unlock": "Dravec 45"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "CAUDAL TARGET BARREL",
-       "unlock": "Level 12"
-      },
-      {
-       "slot": "Magazine",
-       "name": "KOMODO DRUM MAG",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "RECOIL SYNC UNIT",
-       "unlock": "Level 27"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "PRESTIGE",
-     "code": "S09-JUC52-L69IN-31",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "LETHAL TOOLS ELO",
-       "unlock": "Dravec 45"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Magazine",
-       "name": "KOMODO DRUM MAG",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Stock",
-       "name": "MFS REFORGE FLIP STOCK",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "RECOIL SYNC UNIT",
-       "unlock": "Level 27"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Mobility",
-     "code": "S09-AUYHS-V8BY1-1",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "LETHAL TOOLS ELO",
-       "unlock": "Dravec 45"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "HAWKER HYBRID .45",
-       "unlock": "Level 25"
-      },
-      {
-       "slot": "Barrel",
-       "name": "REDWELL ANOLIS BARREL",
-       "unlock": "Level 31"
-      },
-      {
-       "slot": "Magazine",
-       "name": "KOMODO DRUM MAG",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "TRAVERSAL GRIP",
-       "unlock": "Level 30"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "LOW RECOIL",
-     "code": "S09-2RD6H-FU31",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FORCE STABILIZER HANDSTOP",
-       "unlock": "Level 14"
-      },
-      {
-       "slot": "Magazine",
-       "name": "KOMODO DRUM MAG",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "LTI INTEGRITY GRIP",
-       "unlock": "Level 10"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "RECOIL SYNC UNIT",
-       "unlock": "Level 27"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Recommended",
-     "code": "S09-AUXZB-3U913-1",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "LETHAL TOOLS ELO",
-       "unlock": "Dravec 45"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "CAUDAL TARGET BARREL",
-       "unlock": "Level 12"
-      },
-      {
-       "slot": "Magazine",
-       "name": "KOMODO DRUM MAG",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "RECOIL SYNC UNIT",
-       "unlock": "Level 27"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "PRESTIGE",
-     "code": "S09-JUC52-L69IN-31",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "LETHAL TOOLS ELO",
-       "unlock": "Dravec 45"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Magazine",
-       "name": "KOMODO DRUM MAG",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Stock",
-       "name": "MFS REFORGE FLIP STOCK",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "RECOIL SYNC UNIT",
-       "unlock": "Level 27"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Mobility",
-     "code": "S09-AUYHS-V8BY1-1",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "LETHAL TOOLS ELO",
-       "unlock": "Dravec 45"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "HAWKER HYBRID .45",
-       "unlock": "Level 25"
-      },
-      {
-       "slot": "Barrel",
-       "name": "REDWELL ANOLIS BARREL",
-       "unlock": "Level 31"
-      },
-      {
-       "slot": "Magazine",
-       "name": "KOMODO DRUM MAG",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "TRAVERSAL GRIP",
-       "unlock": "Level 30"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "LOW RECOIL",
-     "code": "S09-2RD6H-FU31",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FORCE STABILIZER HANDSTOP",
-       "unlock": "Level 14"
-      },
-      {
-       "slot": "Magazine",
-       "name": "KOMODO DRUM MAG",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "LTI INTEGRITY GRIP",
-       "unlock": "Level 10"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "RECOIL SYNC UNIT",
-       "unlock": "Level 27"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence Ranked",
-     "label": "Recommended",
-     "code": "S09-AUXZB-3U913-1",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "LETHAL TOOLS ELO",
-       "unlock": "Dravec 45"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "CAUDAL TARGET BARREL",
-       "unlock": "Level 12"
-      },
-      {
-       "slot": "Magazine",
-       "name": "KOMODO DRUM MAG",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "RECOIL SYNC UNIT",
-       "unlock": "Level 27"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence Ranked",
-     "label": "PRESTIGE",
-     "code": "S09-JUC52-L69IN-31",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "LETHAL TOOLS ELO",
-       "unlock": "Dravec 45"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Magazine",
-       "name": "KOMODO DRUM MAG",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Stock",
-       "name": "MFS REFORGE FLIP STOCK",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "RECOIL SYNC UNIT",
-       "unlock": "Level 27"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "Recommended",
-     "code": "S09-AUZDI-IDGB1-1",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "LETHAL TOOLS ELO",
-       "unlock": "Dravec 45"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "CAUDAL TARGET BARREL",
-       "unlock": "Level 12"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FORCE STABILIZER HANDSTOP",
-       "unlock": "Level 14"
-      },
-      {
-       "slot": "Magazine",
-       "name": "CAWDOR EXTENDED MAG",
-       "unlock": "Level 9"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "LOW RECOIL",
-     "code": "S09-2RD6K-ZB31",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FORCE STABILIZER HANDSTOP",
-       "unlock": "Level 14"
-      },
-      {
-       "slot": "Magazine",
-       "name": "CAWDOR EXTENDED MAG",
-       "unlock": "Level 9"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "LTI INTEGRITY GRIP",
-       "unlock": "Level 10"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "RECOIL SYNC UNIT",
-       "unlock": "Level 27"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "Mobility",
-     "code": "S09-7431P-2S11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "REDWELL ANOLIS BARREL",
-       "unlock": "Level 31"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "SAPPER GUARD HANDSTOP",
-       "unlock": "Level 24"
-      },
-      {
-       "slot": "Magazine",
-       "name": "CAWDOR EXTENDED MAG",
-       "unlock": "Level 9"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "TRAVERSAL GRIP",
-       "unlock": "Level 30"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "PRESTIGE",
-     "code": "S09-JUC6F-TKSQY-11",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "LETHAL TOOLS ELO",
-       "unlock": "Dravec 45"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FORCE STABILIZER HANDSTOP",
-       "unlock": "Level 14"
-      },
-      {
-       "slot": "Magazine",
-       "name": "CAWDOR EXTENDED MAG",
-       "unlock": "Level 9"
-      },
-      {
-       "slot": "Stock",
-       "name": "MFS REFORGE FLIP STOCK",
-       "unlock": "Prestige"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Ranked",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Mpc 25"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "HAWKER SERIES 45",
-       "unlock": "Level 18"
-      },
-      {
-       "slot": "Barrel",
-       "name": "CAUDAL TARGET BARREL",
-       "unlock": "Level 12"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FORCE STABILIZER HANDSTOP",
-       "unlock": "Level 14"
-      },
-      {
-       "slot": "Laser",
-       "name": "EMT3 AGILE LASER",
-       "unlock": "Level 23"
       }
      ]
     }
@@ -22689,396 +22657,6 @@
        "slot": "Fire Mods",
        "name": "BUFFER SPRING",
        "unlock": "Level 13"
-      }
-     ]
-    }
-   ]
-  },
-  "cbrs-3": {
-   "name": "CBRS-3",
-   "max_level": 36,
-   "builds": [
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Recommended",
-     "code": "S15-2W2AD-Q3QN5-11",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "11\" GAUNT BARREL",
-       "unlock": "Level 31"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "SAPPER GUARD HANDSTOP",
-       "unlock": "Level 33"
-      },
-      {
-       "slot": "Magazine",
-       "name": "MFS CAROUSEL FAST MAG",
-       "unlock": "Prestige"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "SNIPER SUPPORT",
-     "code": "S15-21YNH-J5K45-AW11",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "BOWEN 9MM SUPPRESSOR",
-       "unlock": "Level 10"
-      },
-      {
-       "slot": "Barrel",
-       "name": "15\" REDWELL PARLAY BARREL",
-       "unlock": "Level 11"
-      },
-      {
-       "slot": "Magazine",
-       "name": "MFS CAROUSEL FAST MAG",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "9MM PARABELLUM FMJ",
-       "unlock": "Level 9"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "NON PRESTIGE",
-     "code": "S15-2W2AD-Q3SFD-11",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "11\" GAUNT BARREL",
-       "unlock": "Level 31"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "SAPPER GUARD HANDSTOP",
-       "unlock": "Level 33"
-      },
-      {
-       "slot": "Magazine",
-       "name": "REDWELL SPROCKET MAG",
-       "unlock": "Level 7"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Recommended",
-     "code": "S15-2W2AD-Q3QN5-11",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "11\" GAUNT BARREL",
-       "unlock": "Level 31"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "SAPPER GUARD HANDSTOP",
-       "unlock": "Level 33"
-      },
-      {
-       "slot": "Magazine",
-       "name": "MFS CAROUSEL FAST MAG",
-       "unlock": "Prestige"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "SNIPER SUPPORT",
-     "code": "S15-21YNH-J5K45-AW11",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "BOWEN 9MM SUPPRESSOR",
-       "unlock": "Level 10"
-      },
-      {
-       "slot": "Barrel",
-       "name": "15\" REDWELL PARLAY BARREL",
-       "unlock": "Level 11"
-      },
-      {
-       "slot": "Magazine",
-       "name": "MFS CAROUSEL FAST MAG",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "9MM PARABELLUM FMJ",
-       "unlock": "Level 9"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "NON PRESTIGE",
-     "code": "S15-2W2AD-Q3SFD-11",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "11\" GAUNT BARREL",
-       "unlock": "Level 31"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "SAPPER GUARD HANDSTOP",
-       "unlock": "Level 33"
-      },
-      {
-       "slot": "Magazine",
-       "name": "REDWELL SPROCKET MAG",
-       "unlock": "Level 7"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence Ranked",
-     "label": "Recommended",
-     "code": "S15-2W2AD-Q3QN5-11",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "11\" GAUNT BARREL",
-       "unlock": "Level 31"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "SAPPER GUARD HANDSTOP",
-       "unlock": "Level 33"
-      },
-      {
-       "slot": "Magazine",
-       "name": "MFS CAROUSEL FAST MAG",
-       "unlock": "Prestige"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence Ranked",
-     "label": "SNIPER SUPPORT",
-     "code": "S15-21YNH-J5K45-AW11",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "BOWEN 9MM SUPPRESSOR",
-       "unlock": "Level 10"
-      },
-      {
-       "slot": "Barrel",
-       "name": "15\" REDWELL PARLAY BARREL",
-       "unlock": "Level 11"
-      },
-      {
-       "slot": "Magazine",
-       "name": "MFS CAROUSEL FAST MAG",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "9MM PARABELLUM FMJ",
-       "unlock": "Level 9"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence Ranked",
-     "label": "NON PRESTIGE",
-     "code": "S15-2W2AD-Q3SFD-11",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "11\" GAUNT BARREL",
-       "unlock": "Level 31"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "SAPPER GUARD HANDSTOP",
-       "unlock": "Level 33"
-      },
-      {
-       "slot": "Magazine",
-       "name": "REDWELL SPROCKET MAG",
-       "unlock": "Level 7"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "Recommended",
-     "code": "S15-3LZ3B-QHQ11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "15\" REDWELL PARLAY BARREL",
-       "unlock": "Level 11"
-      },
-      {
-       "slot": "Magazine",
-       "name": "REDWELL SPROCKET MAG",
-       "unlock": "Level 7"
-      },
-      {
-       "slot": "Stock",
-       "name": "CORINTH CONTROL STOCK",
-       "unlock": "Level 14"
-      },
-      {
-       "slot": "Laser",
-       "name": "EMT3 AGILE LASER",
-       "unlock": "Level 24"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "Recommended",
-     "code": "S15-3LZ3B-NQH11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "15\" REDWELL PARLAY BARREL",
-       "unlock": "Level 11"
-      },
-      {
-       "slot": "Magazine",
-       "name": "MFS CAROUSEL FAST MAG",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Stock",
-       "name": "CORINTH CONTROL STOCK",
-       "unlock": "Level 14"
-      },
-      {
-       "slot": "Laser",
-       "name": "EMT3 AGILE LASER",
-       "unlock": "Level 24"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Ranked",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Mpc 25"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "HAWKER SERIES 45",
-       "unlock": "Level 26"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "LATERAL PRECISION GRIP",
-       "unlock": "Level 21"
-      },
-      {
-       "slot": "Stock",
-       "name": "CORINTH CONTROL STOCK",
-       "unlock": "Level 14"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "ACCELERATED RECOIL SYSTEM",
-       "unlock": "Level 15"
       }
      ]
     }
@@ -26435,6 +26013,396 @@
        "slot": "Fire Mods",
        "name": "108MM OVERPRESSURED",
        "unlock": "Level 9"
+      }
+     ]
+    }
+   ]
+  },
+  "cbrs-3": {
+   "name": "CBRS-3",
+   "max_level": 36,
+   "builds": [
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Recommended",
+     "code": "S15-2W2AD-Q3QN5-11",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "11\" GAUNT BARREL",
+       "unlock": "Level 31"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 33"
+      },
+      {
+       "slot": "Magazine",
+       "name": "MFS CAROUSEL FAST MAG",
+       "unlock": "Prestige"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "SNIPER SUPPORT",
+     "code": "S15-21YNH-J5K45-AW11",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "BOWEN 9MM SUPPRESSOR",
+       "unlock": "Level 10"
+      },
+      {
+       "slot": "Barrel",
+       "name": "15\" REDWELL PARLAY BARREL",
+       "unlock": "Level 11"
+      },
+      {
+       "slot": "Magazine",
+       "name": "MFS CAROUSEL FAST MAG",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "9MM PARABELLUM FMJ",
+       "unlock": "Level 9"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "NON PRESTIGE",
+     "code": "S15-2W2AD-Q3SFD-11",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "11\" GAUNT BARREL",
+       "unlock": "Level 31"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 33"
+      },
+      {
+       "slot": "Magazine",
+       "name": "REDWELL SPROCKET MAG",
+       "unlock": "Level 7"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Recommended",
+     "code": "S15-2W2AD-Q3QN5-11",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "11\" GAUNT BARREL",
+       "unlock": "Level 31"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 33"
+      },
+      {
+       "slot": "Magazine",
+       "name": "MFS CAROUSEL FAST MAG",
+       "unlock": "Prestige"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "SNIPER SUPPORT",
+     "code": "S15-21YNH-J5K45-AW11",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "BOWEN 9MM SUPPRESSOR",
+       "unlock": "Level 10"
+      },
+      {
+       "slot": "Barrel",
+       "name": "15\" REDWELL PARLAY BARREL",
+       "unlock": "Level 11"
+      },
+      {
+       "slot": "Magazine",
+       "name": "MFS CAROUSEL FAST MAG",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "9MM PARABELLUM FMJ",
+       "unlock": "Level 9"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "NON PRESTIGE",
+     "code": "S15-2W2AD-Q3SFD-11",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "11\" GAUNT BARREL",
+       "unlock": "Level 31"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 33"
+      },
+      {
+       "slot": "Magazine",
+       "name": "REDWELL SPROCKET MAG",
+       "unlock": "Level 7"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "Recommended",
+     "code": "S15-2W2AD-Q3QN5-11",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "11\" GAUNT BARREL",
+       "unlock": "Level 31"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 33"
+      },
+      {
+       "slot": "Magazine",
+       "name": "MFS CAROUSEL FAST MAG",
+       "unlock": "Prestige"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "SNIPER SUPPORT",
+     "code": "S15-21YNH-J5K45-AW11",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "BOWEN 9MM SUPPRESSOR",
+       "unlock": "Level 10"
+      },
+      {
+       "slot": "Barrel",
+       "name": "15\" REDWELL PARLAY BARREL",
+       "unlock": "Level 11"
+      },
+      {
+       "slot": "Magazine",
+       "name": "MFS CAROUSEL FAST MAG",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "9MM PARABELLUM FMJ",
+       "unlock": "Level 9"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "NON PRESTIGE",
+     "code": "S15-2W2AD-Q3SFD-11",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "11\" GAUNT BARREL",
+       "unlock": "Level 31"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 33"
+      },
+      {
+       "slot": "Magazine",
+       "name": "REDWELL SPROCKET MAG",
+       "unlock": "Level 7"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "Recommended",
+     "code": "S15-3LZ3B-QHQ11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "15\" REDWELL PARLAY BARREL",
+       "unlock": "Level 11"
+      },
+      {
+       "slot": "Magazine",
+       "name": "REDWELL SPROCKET MAG",
+       "unlock": "Level 7"
+      },
+      {
+       "slot": "Stock",
+       "name": "CORINTH CONTROL STOCK",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Laser",
+       "name": "EMT3 AGILE LASER",
+       "unlock": "Level 24"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "Recommended",
+     "code": "S15-3LZ3B-NQH11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "15\" REDWELL PARLAY BARREL",
+       "unlock": "Level 11"
+      },
+      {
+       "slot": "Magazine",
+       "name": "MFS CAROUSEL FAST MAG",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Stock",
+       "name": "CORINTH CONTROL STOCK",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Laser",
+       "name": "EMT3 AGILE LASER",
+       "unlock": "Level 24"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Ranked",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Mpc 25"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER SERIES 45",
+       "unlock": "Level 26"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "LATERAL PRECISION GRIP",
+       "unlock": "Level 21"
+      },
+      {
+       "slot": "Stock",
+       "name": "CORINTH CONTROL STOCK",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "ACCELERATED RECOIL SYSTEM",
+       "unlock": "Level 15"
       }
      ]
     }
@@ -32504,14 +32472,14 @@
      "code": "",
      "attachments": [
       {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Mpc 25"
-      },
-      {
        "slot": "Muzzle",
        "name": "HAWKER STABILIZER MK.II",
        "unlock": "Level 12"
+      },
+      {
+       "slot": "Barrel",
+       "name": "13.6\" MERCURIAL BARREL",
+       "unlock": "Level 11"
       },
       {
        "slot": "Underbarrel",

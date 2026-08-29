@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-28T18:39:16+00:00",
+ "generated_at": "2026-08-29T12:41:17+00:00",
  "season": "Season 5 Reloaded, 2026",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-08-27T17:38:33+00:00",
+ "previous_generated_at": "2026-08-28T18:39:16+00:00",
  "warnings": [],
  "changes": [
   {
@@ -10,34 +10,6 @@
    "weapon": "KNIFE",
    "kind": "entra",
    "to": "D"
-  },
-  {
-   "mode": "multiplayer",
-   "weapon": "PEACEKEEPER MK1",
-   "kind": "sube",
-   "from": "A",
-   "to": "S"
-  },
-  {
-   "mode": "multiplayer",
-   "weapon": "GREMLIN",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "multiplayer",
-   "weapon": "SG-12",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "multiplayer",
-   "weapon": "MAMMOTH",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
   },
   {
    "mode": "battle_royale",

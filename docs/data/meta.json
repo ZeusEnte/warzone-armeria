@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-29T12:41:17+00:00",
+ "generated_at": "2026-08-30T11:52:47+00:00",
  "season": "Season 5 Reloaded, 2026",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-08-28T18:39:16+00:00",
+ "previous_generated_at": "2026-08-29T12:41:17+00:00",
  "warnings": [],
  "changes": [
   {
@@ -30446,24 +30446,24 @@
      "code": "",
      "attachments": [
       {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Level 22"
+      },
+      {
        "slot": "Barrel",
-       "name": "17\" GREAVES SCOURGE BARREL",
-       "unlock": "Level 35"
+       "name": "15\" WRAITH BARREL",
+       "unlock": "Level 8"
       },
       {
        "slot": "Underbarrel",
-       "name": "EAM STEADY-90 GRIP",
-       "unlock": "Level 38"
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 9"
       },
       {
        "slot": "Rear Grip",
-       "name": "FISSURE GRIP",
-       "unlock": "Level 25"
-      },
-      {
-       "slot": "Stock",
-       "name": "GREAVES COVENANT STOCK",
-       "unlock": "Level 7"
+       "name": "BELL-H81 GRIP",
+       "unlock": "Level 4"
       },
       {
        "slot": "Fire Mods",

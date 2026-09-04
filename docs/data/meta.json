@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-03T11:10:40+00:00",
+ "generated_at": "2026-09-04T11:14:52+00:00",
  "season": "Season 5 Reloaded, 2026",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-09-02T11:15:04+00:00",
+ "previous_generated_at": "2026-09-03T11:10:40+00:00",
  "warnings": [],
  "changes": [
   {
@@ -12047,11 +12047,6 @@
      "code": "",
      "attachments": [
       {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Mpc 25"
-      },
-      {
        "slot": "Barrel",
        "name": "12\" VIENNA BARREL",
        "unlock": "Level 23"
@@ -12062,9 +12057,14 @@
        "unlock": "Level 17"
       },
       {
-       "slot": "Magazine",
-       "name": "TORCH EXTENDED MAG",
-       "unlock": "Level 13"
+       "slot": "Rear Grip",
+       "name": "ERUPTION GRIP",
+       "unlock": "Level 37"
+      },
+      {
+       "slot": "Stock",
+       "name": "COLLAPSIBLE STOCK",
+       "unlock": "Level 41"
       },
       {
        "slot": "Fire Mods",

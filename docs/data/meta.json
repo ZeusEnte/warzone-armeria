@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-05T10:32:23+00:00",
+ "generated_at": "2026-09-06T10:52:54+00:00",
  "season": "Season 5 Reloaded, 2026",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-09-04T11:14:52+00:00",
+ "previous_generated_at": "2026-09-05T10:32:23+00:00",
  "warnings": [],
  "changes": [
   {
@@ -18624,64 +18624,256 @@
     {
      "context": "Black Ops 7 Multiplayer",
      "label": "Recommended",
-     "code": "",
+     "code": "S07-2JD6Z-MRN3V-7Q11",
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "HAWKER STABILIZER MK.II",
-       "unlock": ""
+       "name": "BOWEN .45 SUPPRESSOR",
+       "unlock": "Level 9"
       },
       {
        "slot": "Barrel",
        "name": "14.8\" PERIGEE BARREL",
-       "unlock": ""
+       "unlock": "Level 4"
       },
       {
        "slot": "Underbarrel",
        "name": "LATERAL PRECISION GRIP",
-       "unlock": ""
+       "unlock": "Level 29"
       },
       {
-       "slot": "Stock",
-       "name": "CORPUS-X3 STOCK",
-       "unlock": ""
+       "slot": "Laser",
+       "name": "EMT3 AGILE LASER",
+       "unlock": "Level 24"
       },
       {
        "slot": "Fire Mods",
-       "name": "BOLT CARRIER GROUP",
-       "unlock": ""
+       "name": ".45 CAL OVERPRESSURED",
+       "unlock": "Level 12"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "PRESTIGE",
+     "code": "S07-BIA9U-36F11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "LATERAL PRECISION GRIP",
+       "unlock": "Level 29"
+      },
+      {
+       "slot": "Magazine",
+       "name": "MFS TIGRIS .40 CAL MAG",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Stock",
+       "name": "MINK STABILITY STOCK",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Laser",
+       "name": "EMT3 AGILE LASER",
+       "unlock": "Level 24"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "LOW RECOIL",
+     "code": "S07-2X27C-4F51",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER STABILIZER MK.II",
+       "unlock": "Level 18"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "LATERAL PRECISION GRIP",
+       "unlock": "Level 29"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "ASPIRE COMFORT GRIP",
+       "unlock": "Level 28"
+      },
+      {
+       "slot": "Stock",
+       "name": "MINK STABILITY STOCK",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "RECOIL SPRING ASSEMBLY",
+       "unlock": "Level 11"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "Mobility",
+     "code": "S07-91TNJ-2QL11",
+     "attachments": [
+      {
+       "slot": "Barrel",
+       "name": "11.5\" LTI ASCENDANCY BARREL",
+       "unlock": "Level 2"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "ENVOY FOREGRIP",
+       "unlock": "Level 23"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "SELENE ROVER GRIP",
+       "unlock": "Level 36"
+      },
+      {
+       "slot": "Stock",
+       "name": "ITINERANT LIGHT STOCK",
+       "unlock": "Level 37"
+      },
+      {
+       "slot": "Laser",
+       "name": "LTI SWIFTPOINT LASER",
+       "unlock": "Level 35"
       }
      ]
     },
     {
      "context": "Black Ops 7 Ranked",
      "label": "Recommended",
-     "code": "",
+     "code": "S07-2N6VR-8W11",
      "attachments": [
       {
        "slot": "Muzzle",
        "name": "HAWKER STABILIZER MK.II",
-       "unlock": ""
+       "unlock": "Level 18"
       },
       {
        "slot": "Barrel",
        "name": "14.8\" PERIGEE BARREL",
-       "unlock": ""
+       "unlock": "Level 4"
       },
       {
        "slot": "Underbarrel",
        "name": "LATERAL PRECISION GRIP",
-       "unlock": ""
+       "unlock": "Level 29"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "SANCTUM SPEED GRIP",
+       "unlock": "Level 16"
       },
       {
        "slot": "Stock",
-       "name": "CORPUS-X3 STOCK",
-       "unlock": ""
+       "name": "MINK STABILITY STOCK",
+       "unlock": "Level 14"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Ranked",
+     "label": "PRESTIGE",
+     "code": "S07-2EBKD-F511",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER STABILIZER MK.II",
+       "unlock": "Level 18"
+      },
+      {
+       "slot": "Barrel",
+       "name": "14.8\" PERIGEE BARREL",
+       "unlock": "Level 4"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "LATERAL PRECISION GRIP",
+       "unlock": "Level 29"
+      },
+      {
+       "slot": "Magazine",
+       "name": "MFS TIGRIS .40 CAL MAG",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Stock",
+       "name": "MINK STABILITY STOCK",
+       "unlock": "Level 14"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Ranked",
+     "label": "LOW RECOIL",
+     "code": "S07-2X27C-4F51",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER STABILIZER MK.II",
+       "unlock": "Level 18"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "LATERAL PRECISION GRIP",
+       "unlock": "Level 29"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "ASPIRE COMFORT GRIP",
+       "unlock": "Level 28"
+      },
+      {
+       "slot": "Stock",
+       "name": "MINK STABILITY STOCK",
+       "unlock": "Level 14"
       },
       {
        "slot": "Fire Mods",
-       "name": "BOLT CARRIER GROUP",
-       "unlock": ""
+       "name": "RECOIL SPRING ASSEMBLY",
+       "unlock": "Level 11"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Ranked",
+     "label": "Mobility",
+     "code": "S07-6X1FP-DL11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER HYBRID .45",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Barrel",
+       "name": "11.5\" LTI ASCENDANCY BARREL",
+       "unlock": "Level 2"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "ENVOY FOREGRIP",
+       "unlock": "Level 23"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "SELENE ROVER GRIP",
+       "unlock": "Level 36"
+      },
+      {
+       "slot": "Stock",
+       "name": "ITINERANT LIGHT STOCK",
+       "unlock": "Level 37"
       }
      ]
     }

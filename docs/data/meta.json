@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-06T10:52:54+00:00",
+ "generated_at": "2026-09-07T12:25:42+00:00",
  "season": "Season 5 Reloaded, 2026",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-09-05T10:32:23+00:00",
+ "previous_generated_at": "2026-09-06T10:52:54+00:00",
  "warnings": [],
  "changes": [
   {
@@ -12047,11 +12047,6 @@
      "code": "",
      "attachments": [
       {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Mpc 25"
-      },
-      {
        "slot": "Barrel",
        "name": "12\" VIENNA BARREL",
        "unlock": "Level 23"
@@ -12062,9 +12057,14 @@
        "unlock": "Level 17"
       },
       {
-       "slot": "Magazine",
-       "name": "TORCH EXTENDED MAG",
-       "unlock": "Level 13"
+       "slot": "Rear Grip",
+       "name": "ERUPTION GRIP",
+       "unlock": "Level 37"
+      },
+      {
+       "slot": "Stock",
+       "name": "COLLAPSIBLE STOCK",
+       "unlock": "Level 41"
       },
       {
        "slot": "Fire Mods",
@@ -21318,14 +21318,14 @@
        "unlock": "Mxr 17"
       },
       {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
        "slot": "Underbarrel",
        "name": "FORCE STABILIZER HANDSTOP",
        "unlock": "Level 10"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "INITIATOR GRIP",
+       "unlock": "Level 4"
       },
       {
        "slot": "Stock",
@@ -21962,7 +21962,7 @@
     {
      "context": "Warzone Battle Royale",
      "label": "Recommended",
-     "code": "A06-34FBS-SSSMX-11",
+     "code": "A06-34FBS-SSSNE-11",
      "attachments": [
       {
        "slot": "Optic",
@@ -21975,6 +21975,11 @@
        "unlock": "Level 27"
       },
       {
+       "slot": "Barrel",
+       "name": "25\" EAM HEAVY BARREL",
+       "unlock": "Level 35"
+      },
+      {
        "slot": "Magazine",
        "name": "BARRAGE EXTENDED MAG",
        "unlock": "Level 40"
@@ -21983,18 +21988,13 @@
        "slot": "Stock",
        "name": "MFS COUNTERFORCE-C1 STOCK",
        "unlock": "Prestige"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "PEACEKEEPER MK1 GAUSS ACCELERATOR",
-       "unlock": "Week 6 Challenge"
       }
      ]
     },
     {
      "context": "Warzone Battle Royale",
      "label": "SNIPER SUPPORT",
-     "code": "A06-34FK5-5WQTT-11",
+     "code": "A06-34FBS-UD5UB-11",
      "attachments": [
       {
        "slot": "Optic",
@@ -22002,9 +22002,14 @@
        "unlock": "Armory"
       },
       {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
        "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "19.4\" STIMULUS BARREL",
+       "unlock": "Level 15"
       },
       {
        "slot": "Magazine",
@@ -22015,18 +22020,13 @@
        "slot": "Stock",
        "name": "MFS COUNTERFORCE-C1 STOCK",
        "unlock": "Prestige"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "PEACEKEEPER MK1 GAUSS ACCELERATOR",
-       "unlock": "Week 6 Challenge"
       }
      ]
     },
     {
      "context": "Warzone Battle Royale",
      "label": "NON PRESTIGE",
-     "code": "A06-34FBS-SSSVF-11",
+     "code": "A06-34FBS-SSSVW-11",
      "attachments": [
       {
        "slot": "Optic",
@@ -22037,6 +22037,11 @@
        "slot": "Muzzle",
        "name": "MONOLITHIC SUPPRESSOR",
        "unlock": "Level 27"
+      },
+      {
+       "slot": "Barrel",
+       "name": "25\" EAM HEAVY BARREL",
+       "unlock": "Level 35"
       },
       {
        "slot": "Magazine",
@@ -22047,11 +22052,6 @@
        "slot": "Stock",
        "name": "EAM BLITZFIRE STOCK",
        "unlock": "Level 44"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "PEACEKEEPER MK1 GAUSS ACCELERATOR",
-       "unlock": "Week 6 Challenge"
       }
      ]
     },
@@ -22090,7 +22090,7 @@
     {
      "context": "Warzone Resurgence",
      "label": "Recommended",
-     "code": "A06-34FBS-SSSMX-11",
+     "code": "A06-34FBS-SSSNE-11",
      "attachments": [
       {
        "slot": "Optic",
@@ -22103,6 +22103,11 @@
        "unlock": "Level 27"
       },
       {
+       "slot": "Barrel",
+       "name": "25\" EAM HEAVY BARREL",
+       "unlock": "Level 35"
+      },
+      {
        "slot": "Magazine",
        "name": "BARRAGE EXTENDED MAG",
        "unlock": "Level 40"
@@ -22111,18 +22116,13 @@
        "slot": "Stock",
        "name": "MFS COUNTERFORCE-C1 STOCK",
        "unlock": "Prestige"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "PEACEKEEPER MK1 GAUSS ACCELERATOR",
-       "unlock": "Week 6 Challenge"
       }
      ]
     },
     {
      "context": "Warzone Resurgence",
      "label": "SNIPER SUPPORT",
-     "code": "A06-34FK5-5WQTT-11",
+     "code": "A06-34FBS-UD5UB-11",
      "attachments": [
       {
        "slot": "Optic",
@@ -22130,9 +22130,14 @@
        "unlock": "Armory"
       },
       {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
        "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "19.4\" STIMULUS BARREL",
+       "unlock": "Level 15"
       },
       {
        "slot": "Magazine",
@@ -22143,18 +22148,13 @@
        "slot": "Stock",
        "name": "MFS COUNTERFORCE-C1 STOCK",
        "unlock": "Prestige"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "PEACEKEEPER MK1 GAUSS ACCELERATOR",
-       "unlock": "Week 6 Challenge"
       }
      ]
     },
     {
      "context": "Warzone Resurgence",
      "label": "NON PRESTIGE",
-     "code": "A06-34FBS-SSSVF-11",
+     "code": "A06-34FBS-SSSVW-11",
      "attachments": [
       {
        "slot": "Optic",
@@ -22165,6 +22165,11 @@
        "slot": "Muzzle",
        "name": "MONOLITHIC SUPPRESSOR",
        "unlock": "Level 27"
+      },
+      {
+       "slot": "Barrel",
+       "name": "25\" EAM HEAVY BARREL",
+       "unlock": "Level 35"
       },
       {
        "slot": "Magazine",
@@ -22175,11 +22180,6 @@
        "slot": "Stock",
        "name": "EAM BLITZFIRE STOCK",
        "unlock": "Level 44"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "PEACEKEEPER MK1 GAUSS ACCELERATOR",
-       "unlock": "Week 6 Challenge"
       }
      ]
     },
@@ -22218,7 +22218,7 @@
     {
      "context": "Warzone Resurgence Ranked",
      "label": "Recommended",
-     "code": "A06-34FBS-SSSMX-11",
+     "code": "A06-34FBS-SSSNE-11",
      "attachments": [
       {
        "slot": "Optic",
@@ -22229,6 +22229,11 @@
        "slot": "Muzzle",
        "name": "MONOLITHIC SUPPRESSOR",
        "unlock": "Level 27"
+      },
+      {
+       "slot": "Barrel",
+       "name": "25\" EAM HEAVY BARREL",
+       "unlock": "Level 35"
       },
       {
        "slot": "Magazine",
@@ -22239,18 +22244,13 @@
        "slot": "Stock",
        "name": "MFS COUNTERFORCE-C1 STOCK",
        "unlock": "Prestige"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "PEACEKEEPER MK1 GAUSS ACCELERATOR",
-       "unlock": "Week 6 Challenge"
       }
      ]
     },
     {
      "context": "Warzone Resurgence Ranked",
      "label": "NON PRESTIGE",
-     "code": "A06-34FBS-SSSVF-11",
+     "code": "A06-34FBS-SSSVW-11",
      "attachments": [
       {
        "slot": "Optic",
@@ -22263,6 +22263,11 @@
        "unlock": "Level 27"
       },
       {
+       "slot": "Barrel",
+       "name": "25\" EAM HEAVY BARREL",
+       "unlock": "Level 35"
+      },
+      {
        "slot": "Magazine",
        "name": "BARRAGE EXTENDED MAG",
        "unlock": "Level 40"
@@ -22271,11 +22276,6 @@
        "slot": "Stock",
        "name": "EAM BLITZFIRE STOCK",
        "unlock": "Level 44"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "PEACEKEEPER MK1 GAUSS ACCELERATOR",
-       "unlock": "Week 6 Challenge"
       }
      ]
     },

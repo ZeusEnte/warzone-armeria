@@ -1,10 +1,34 @@
 # Resumen de estado — Armería Warzone
 
-**Última actualización: 2026-08-21** (segunda vuelta de auditoría, terminada).
+**Última actualización: 2026-09-08** (informe de viabilidad, sin tocar código).
 
 El contexto técnico detallado vive en **[CLAUDE.md](CLAUDE.md)**: arquitectura,
 formato de los datos, trampas del scraping y cómo probarlo. Este fichero es la
 bitácora: en qué punto está, qué se decidió y qué viene después.
+
+---
+
+## 2026-09-08 — Informe pendiente de decisión del usuario
+
+El usuario preguntó si la web puede detectar sola su nivel y sus desbloqueos,
+explicar a un novato cómo desbloquear cada cosa, recomendar ventajas por estilo, y
+qué es la «zona nueva» de Warzone. La respuesta completa está en
+[`documentacion/informe-2026-09-08-nivel-desbloqueos-ventajas-zodiac.md`](documentacion/informe-2026-09-08-nivel-desbloqueos-ventajas-zodiac.md).
+En corto:
+
+- **Detección automática: imposible.** Activision no publica desbloqueos por ninguna
+  vía; lo viable es pedir dos números (nivel de jugador y nivel del arma) y deducir.
+- **Explicar el desbloqueo: sí, el dato ya está en el JSON.** Falta texto. Dos
+  etiquetas salen mal hoy («subir Week 2 Challenge») y otra saldrá mal en noviembre («Apex»).
+- **Ventajas: raspables de wzstats** (tres tier lists, misma estructura que las de
+  armas). La parte «por estilo» sería tabla a mano.
+- **La zona nueva es Zodiac** (Resurgence, solo en la beta de MW4 del 28-08 al 01-09).
+  **Modern Warfare 4 sale el 23-10-2026 y en noviembre Warzone cambia de juego base:**
+  todo lo hecho a mano sobre Black Ops 7 caduca entonces. Recomendación: hacer ahora
+  solo lo que no caduca (textos, dos números, cabecera con el juego base) y el resto
+  después de noviembre.
+
+**No se ha tocado código.** Nada de esto está decidido.
 
 ---
 

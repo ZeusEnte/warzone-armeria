@@ -31,7 +31,12 @@ ARMAS_MINIMAS_POR_MODO = 3
 BUILDS_MINIMAS = 20
 TIERS_VALIDOS = {"S", "A", "B", "C", "D", "E", "F"}
 ROLES_VALIDOS = {"largo", "corto", "sniper", "otro"}
-CLAVES_RAIZ = {"generated_at", "season", "base_game", "source", "changes", "modes", "builds"}
+CLAVES_RAIZ = {"generated_at", "season", "base_game", "source", "changes", "modes", "perks", "builds"}
+
+# Las tier lists de ventajas empiezan en META, no en S.
+PERK_TIERS_VALIDOS = {"META", "A", "B", "C", "D"}
+PERK_KINDS_VALIDOS = {"perk", "lethal", "tactical", "wildcard", "field_upgrade", "scorestreak"}
+PERKS_MINIMAS_POR_MODO = 3
 
 
 def validar(datos: dict) -> tuple[list, list]:
@@ -105,6 +110,32 @@ def validar(datos: dict) -> tuple[list, list]:
         if not papeles & {"largo", "corto", "sniper"}:
             errores.append(f"modo {mid}: ningun arma tiene papel (largo/corto/sniper)")
 
+    # Ventajas. Una lista por modo. Que FALTEN es una nota, no un error: si
+    # wzstats tumba esas paginas, la web debe publicarse igual con las armas,
+    # que es lo principal. Lo que si es error es que lleguen con basura dentro.
+    perks = datos.get("perks") or {}
+    for mid in modos:
+        if mid not in perks:
+            notas.append(f"modo {mid}: sin ventajas")
+    for mid, lista in perks.items():
+        quien = f"ventajas de {mid}"
+        if mid not in modos:
+            notas.append(f"{quien}: no corresponde a ningun modo")
+        if lista.get("stale"):
+            notas.append(f"{quien}: dato conservado del {str(lista.get('stale_since'))[:10]}")
+        items = lista.get("items") or []
+        if len(items) < PERKS_MINIMAS_POR_MODO:
+            notas.append(f"{quien}: solo {len(items)}")
+        for it in items:
+            if not it.get("name"):
+                errores.append(f"{quien}: una ventaja sin nombre")
+            if it.get("tier") not in PERK_TIERS_VALIDOS:
+                errores.append(f"{quien}, {it.get('name', '?')!r}: tier invalido {it.get('tier')!r}")
+            if not it.get("slot"):
+                errores.append(f"{quien}, {it.get('name', '?')!r}: sin ranura")
+            if it.get("kind") not in PERK_KINDS_VALIDOS:
+                errores.append(f"{quien}, {it.get('name', '?')!r}: tipo invalido {it.get('kind')!r}")
+
     builds = datos.get("builds") or {}
     if len(builds) < BUILDS_MINIMAS:
         errores.append(f"solo {len(builds)} armas con accesorios, se esperaban {BUILDS_MINIMAS}+")
@@ -159,7 +190,9 @@ def main(argv=None) -> int:
         return 1
     modos = len(datos.get("modes") or {})
     armas = sum(len(m.get("weapons") or []) for m in (datos.get("modes") or {}).values())
-    print(f"OK: {modos} modos, {armas} armas, {len(datos.get('builds') or {})} armas con accesorios.")
+    ventajas = sum(len(p.get("items") or []) for p in (datos.get("perks") or {}).values())
+    print(f"OK: {modos} modos, {armas} armas, {len(datos.get('builds') or {})} armas con accesorios, "
+          f"{ventajas} ventajas.")
     return 1 if (notas and args.avisos_fallan) else 0
 
 

@@ -38,17 +38,27 @@ HEADERS = {
 # Modos que seguimos. El orden es el de las pestanas en la web.
 # "context" es como titula wzstats la build de ese modo dentro de la ficha del
 # arma ("Best FG42 Loadout for Warzone Resurgence in Season 5").
+# "perks_url" es la tier list de ventajas de ESE modo. wzstats publica una por
+# modo y NO son la misma lista: comprobado el 2026-09-08, Battle Royale y
+# Resurgence se intercambian cuatro ventajas entre META y A, y las dos Ranked
+# van por su cuenta. Servir una sola para todos seria ensenar el dato de otro
+# modo, que es justo lo que la web evita en las builds.
 MODES = [
     {"id": "resurgence", "label": "Resurgence", "url": BASE + "/warzone/meta/resurgence",
-     "context": "Warzone Resurgence"},
+     "context": "Warzone Resurgence",
+     "perks_url": BASE + "/warzone-2/loadouts/best-perks-tier-list/resurgence"},
     {"id": "multiplayer", "label": "Multijugador (BO7)", "url": BASE + "/bo7/meta",
-     "context": "Black Ops 7 Multiplayer"},
+     "context": "Black Ops 7 Multiplayer",
+     "perks_url": BASE + "/bo7/loadouts/best-perks-tier-list"},
     {"id": "resurgence_ranked", "label": "Resurgence Ranked", "url": BASE + "/warzone/meta/ranked/resurgence",
-     "context": "Warzone Resurgence Ranked"},
+     "context": "Warzone Resurgence Ranked",
+     "perks_url": BASE + "/warzone-2/loadouts/best-perks-tier-list/ranked/resurgence"},
     {"id": "multiplayer_ranked", "label": "MP Ranked (BO7)", "url": BASE + "/bo7/ranked/meta",
-     "context": "Black Ops 7 Ranked"},
+     "context": "Black Ops 7 Ranked",
+     "perks_url": BASE + "/bo7/ranked/loadouts/best-perks-tier-list"},
     {"id": "battle_royale", "label": "Battle Royale", "url": BASE + "/",
-     "context": "Warzone Battle Royale"},
+     "context": "Warzone Battle Royale",
+     "perks_url": BASE + "/warzone-2/loadouts/best-perks-tier-list"},
 ]
 
 # Cuantas fichas de arma abrimos para sacar los accesorios completos. Cubrimos
@@ -426,6 +436,78 @@ def pick_for_builds(modes: dict, budget: int = BUILD_BUDGET) -> list:
     return [(slug, value[1]) for slug, value in ordered[:budget]]
 
 
+# Las tier lists de ventajas no usan S/A/B/C/D como las de armas: la primera se
+# llama META. La clase va junto a "tier-header" y el orden de las dos varia
+# ("tier-header tier-meta" pero "tier-a tier-header"), asi que se busca cual de
+# las clases es de tier en vez de mirar una posicion fija.
+PERK_TIERS = {"tier-meta": "META", "tier-a": "A", "tier-b": "B", "tier-c": "C", "tier-d": "D"}
+
+
+def parse_perks(html: str) -> list:
+    """Saca las ventajas de una tier list de wzstats.
+
+    Estructura (comprobada el 2026-09-08 en las cinco paginas que usamos):
+
+        .tier-list
+          <app-tier-header>  .tier-header.tier-meta  ->  "META"
+          .tier-content        .tierlist-card
+                                 .content-name  ->  "Sprinter"
+                                 .content-tag   ->  "Perk 2"
+
+    El ".tier-content" es HERMANO del bloque de la cabecera, no descendiente,
+    asi que hay que subir buscandolo igual que se hace con el codigo de canje.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    items = []
+    vistos = set()
+
+    for cabecera in soup.select(".tier-header"):
+        tier = next((PERK_TIERS[c] for c in (cabecera.get("class") or []) if c in PERK_TIERS), "")
+        if not tier:
+            continue
+
+        contenido = None
+        nodo = cabecera
+        for _ in range(3):
+            if nodo is None:
+                break
+            hermano = nodo.find_next_sibling(class_="tier-content")
+            if hermano is not None:
+                contenido = hermano
+                break
+            nodo = nodo.parent
+        if contenido is None:
+            continue
+
+        for card in contenido.select(".tierlist-card"):
+            name = txt(card.select_one(".content-name"))
+            if not name:
+                continue
+            slot = txt(card.select_one(".content-tag"))
+            if (name, slot) in vistos:
+                continue
+            vistos.add((name, slot))
+            # "kind" queda fijo porque hoy solo raspamos paginas de ventajas.
+            # Los letales, tacticos, comodines y mejoras de campo tienen cada
+            # uno su propia URL (ver CLAUDE.md) y no se raspan.
+            items.append({"name": name, "slot": slot, "tier": tier, "kind": "perk"})
+    return items
+
+
+def recuperar_perks(previo: dict, mode_id: str) -> dict:
+    """Conserva las ventajas del dia anterior cuando hoy no se pueden leer.
+
+    Misma politica que recuperar_modo(): nada que falle borra un dato bueno.
+    """
+    anterior = (previo.get("perks") or {}).get(mode_id)
+    if not anterior or not anterior.get("items"):
+        return {}
+    copia = dict(anterior)
+    copia["stale"] = True
+    copia["stale_since"] = anterior.get("stale_since") or previo.get("generated_at", "")
+    return copia
+
+
 def detectar_mw4(modes: dict) -> bool:
     """True si algun modo de Warzone (no Black Ops 7) ya trae armas de Modern
     Warfare 4. wzstats les pone el sufijo "-mw4" en el slug: verlo ahi es el
@@ -684,6 +766,41 @@ def main(argv=None) -> int:
         if targets and fallos >= max(3, len(targets) // 3):
             avisos.append(f"no se pudieron leer los accesorios de {fallos} de {len(targets)} armas")
 
+    # Ventajas: una tier list por modo, porque wzstats publica una distinta para
+    # cada uno (ver el comentario de MODES). Solo se piden las de los modos que
+    # se han raspado hoy; las demas se heredan del JSON anterior.
+    perks: dict = {}
+    pedidos = {m["id"] for m in modos_pedidos}
+    for mode in MODES:
+        mid = mode["id"]
+        fresco = mid in pedidos and not modes.get(mid, {}).get("stale")
+        items = []
+        if fresco:
+            try:
+                items = parse_perks(get(mode["perks_url"], session))
+            except Exception as exc:
+                aviso(f"FALLO ventajas de {mode['label']}: {exc}")
+            time.sleep(args.pausa)
+
+        if items:
+            perks[mid] = {"label": mode["label"], "url": mode["perks_url"], "items": items}
+            print(f"-> ventajas de {mode['label']}: {len(items)}")
+            continue
+
+        heredado = recuperar_perks(previo, mid)
+        if heredado:
+            perks[mid] = heredado
+            # Si no se pidio (ejecucion parcial), heredar es lo normal y no hay
+            # nada que avisar: solo es noticia cuando se pidio y fallo.
+            if fresco:
+                desde = heredado.get("stale_since", "")[:10]
+                avisos.append(
+                    f"Ventajas de {mode['label']}: no se pudieron leer, se conserva el dato del {desde}")
+                aviso(f"ventajas sin leer: se conserva el dato guardado del {desde}")
+        elif fresco:
+            avisos.append(f"Ventajas de {mode['label']}: no se pudieron leer y no habia dato anterior")
+            aviso("ventajas sin leer y sin dato anterior que conservar")
+
     # Las imagenes que ya conociamos ayer siguen valiendo hoy: sembrando el
     # indice con ellas, el catalogo crece dia a dia en vez de depender de que
     # hoy toque abrir la ficha de esa arma.
@@ -717,11 +834,13 @@ def main(argv=None) -> int:
         "warnings": avisos,
         "changes": cambios,
         "modes": modes,
+        "perks": perks,
         "builds": builds,
     }
 
     if args.simular:
         print(f"[simulacion] no se escribe nada. {len(modes)} modos, {len(builds)} armas con build, "
+              f"{sum(len(p.get('items') or []) for p in perks.values())} ventajas, "
               f"{len(cambios)} cambios, {len(avisos)} avisos")
         return 0
 

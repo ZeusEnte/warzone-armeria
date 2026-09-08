@@ -96,6 +96,8 @@
   .tier{font-size:11px;font-weight:800;padding:2px 8px;border-radius:5px;color:#0b0e13}
   .tier.S{background:var(--s)} .tier.A{background:var(--a)} .tier.B{background:var(--b)}
   .tier.C{background:var(--c);color:#e8edf5} .tier.D{background:var(--d);color:#e8edf5}
+  /* Las tier lists de ventajas empiezan en META, no en S. */
+  .tier.META{background:var(--s)}
 
   .buildlabel{font-size:11px;letter-spacing:.6px;text-transform:uppercase;color:var(--acc-2);margin:10px 0 6px}
   .buildlabel:first-child{margin-top:0}
@@ -239,6 +241,12 @@
     <div class="loadout" id="loadout"></div>
   </section>
 
+  <section class="panel" id="perks-panel" hidden>
+    <h2>Ventajas meta por ranura</h2>
+    <p class="sub" id="perks-sub"></p>
+    <div class="loadout" id="perks"></div>
+  </section>
+
   <section class="panel goal">
     <h2>A por la siguiente</h2>
     <p class="sub" id="goal-sub"></p>
@@ -319,8 +327,10 @@ const ROLE_LABEL = {largo:"Larga distancia", corto:"Corta distancia", sniper:"Fr
 // queda en el localStorage de su dispositivo, sin salir de ahí.
 const DEFAULTS = {mode:"resurgence", style:"agresivo", input:"mando", avoid:[], tag:"Jugador", missing:[], levels:{}};
 // Fecha del último cambio de interfaz, visible en el pie: es lo que el usuario
-// mira desde el Windows Gamer para saber si ya tiene la versión publicada.
-const UI_VERSION = "2026-09-08";
+// mira desde el Windows Gamer para saber si ya tiene la versión publicada. Si
+// hay más de una publicación el mismo día se añade letra (b, c...), o desde
+// Gamer no habría forma de distinguirlas.
+const UI_VERSION = "2026-09-08b";
 let profile = load();
 let DATA = null;
 let openSlug = null;
@@ -881,6 +891,58 @@ function renderComparador(pool){
   host.appendChild(tarjetaComparada(b));
 }
 
+/* ---------- ventajas ---------- */
+
+// wzstats publica una tier list de ventajas por modo, y no son la misma: entre
+// Battle Royale y Resurgence cambian cuatro de sitio. Por eso se busca la del
+// modo activo y no hay una lista global.
+const PERK_TIER_ORDEN = {META:0, A:1, B:2, C:3, D:4};
+function ordenTier(t){ return t in PERK_TIER_ORDEN ? PERK_TIER_ORDEN[t] : 9; }
+// "Perk 1", "Perk 2", "Perk 3" y al final lo que no sea numerado (la
+// "Speciality" de Black Ops 7).
+function ordenRanura(slot){
+  const m = /^Perk\s+(\d+)$/i.exec(slot || "");
+  return m ? parseInt(m[1], 10) : 90;
+}
+
+function renderPerks(){
+  const panel = document.getElementById("perks-panel");
+  const lista = (DATA.perks || {})[profile.mode];
+  const items = (lista && lista.items) || [];
+  // Solo META y A: esto es "qué llevar", no el catálogo entero.
+  const buenas = items.filter(p => p.tier === "META" || p.tier === "A");
+  if(!buenas.length){ panel.hidden = true; return; }
+  panel.hidden = false;
+
+  const porRanura = new Map();
+  buenas.forEach(p => {
+    if(!porRanura.has(p.slot)) porRanura.set(p.slot, []);
+    porRanura.get(p.slot).push(p);
+  });
+
+  const host = document.getElementById("perks");
+  host.innerHTML = "";
+  Array.from(porRanura.keys())
+    .sort((a,b) => ordenRanura(a) - ordenRanura(b) || String(a).localeCompare(String(b)))
+    .forEach(slot => {
+      const el = document.createElement("div");
+      el.className = "slot";
+      const dentro = porRanura.get(slot).slice()
+        .sort((a,b) => ordenTier(a.tier) - ordenTier(b.tier));
+      el.innerHTML = '<div class="role">' + esc(slot || "—") + '</div>' +
+        '<ul class="atts">' + dentro.map(p =>
+          '<li><span class="at">' + esc(p.name) + '</span>' +
+          '<span class="tier ' + esc(p.tier) + '">' + esc(p.tier) + '</span></li>').join("") +
+        '</ul>';
+      host.appendChild(el);
+    });
+
+  document.getElementById("perks-sub").textContent =
+    "Lo que se lleva en " + DATA.modes[profile.mode].label + ", por ranura. Solo META y A." +
+    (lista.stale ? " No se pudieron leer en la última actualización: es el dato guardado" +
+                   (lista.stale_since ? " del " + lista.stale_since.slice(0, 10) : "") + "." : "");
+}
+
 function renderChanges(){
   const panel = document.getElementById("changes-panel");
   const list = (DATA.changes||[]).filter(c => c.mode === profile.mode);
@@ -923,6 +985,7 @@ function renderAll(){
   renderFilters();
   renderAvisos();
   renderLoadout(pool);
+  renderPerks();
   renderGoal(pool);
   renderRank(pool);
   renderComparador(pool);

@@ -304,6 +304,94 @@ comprobar("detecta que un arma baja de tier",
           bajada == [{"mode": "resurgence", "weapon": "FG42", "kind": "baja", "from": "S", "to": "A"}],
           str(bajada))
 
+# --------------------------------------------------------------------------
+# Ventajas (perks). Recorte real de wzstats: el ".tier-content" es HERMANO del
+# bloque de la cabecera, y el orden de las clases del tier cambia de un bloque
+# a otro ("tier-header tier-meta" pero "tier-a tier-header").
+# --------------------------------------------------------------------------
+
+PERKS_HTML = """
+<div class="tier-list">
+  <div><div>
+    <app-tier-header>
+      <div class="tier-header tier-meta"><h2>META</h2></div>
+    </app-tier-header>
+    <div class="tier-content"><div>
+      <div class="tierlist-card">
+        <div class="tierlist-card-header">
+          <img class="perk-item-img" src="https://img.wzstats.gg/sprinter-warzone-bo7/perksV2">
+          <div class="tierlist-card-header-content">
+            <div class="content-name">Sprinter</div>
+            <div class="content-tag">Perk 2</div>
+          </div>
+        </div>
+      </div>
+      <div class="tierlist-card">
+        <div class="tierlist-card-header-content">
+          <div class="content-name">Ghost</div>
+          <div class="content-tag">Perk 3</div>
+        </div>
+      </div>
+    </div></div>
+  </div></div>
+  <div><div>
+    <app-tier-header>
+      <div class="tier-a tier-header"><h2>TIER A</h2></div>
+    </app-tier-header>
+    <div class="tier-content"><div>
+      <div class="tierlist-card">
+        <div class="tierlist-card-header-content">
+          <div class="content-name">Quick Fix</div>
+          <div class="content-tag">Perk 2</div>
+        </div>
+      </div>
+      <div class="tierlist-card">
+        <div class="tierlist-card-header-content">
+          <div class="content-name">Overkill</div>
+          <div class="content-tag">Speciality</div>
+        </div>
+      </div>
+    </div></div>
+  </div></div>
+</div>
+"""
+
+print("\nparse_perks")
+ventajas = sc.parse_perks(PERKS_HTML)
+por_ventaja = {v["name"]: v for v in ventajas}
+comprobar("lee todas las ventajas de los dos bloques", len(ventajas) == 4, f"salieron {len(ventajas)}")
+comprobar("el primer bloque es META, no S", por_ventaja["Sprinter"]["tier"] == "META")
+comprobar("saca la ranura de la etiqueta", por_ventaja["Sprinter"]["slot"] == "Perk 2")
+comprobar("el tier sale aunque las clases vengan en otro orden",
+          por_ventaja["Quick Fix"]["tier"] == "A")
+comprobar("la ranura 'Speciality' de BO7 tambien vale",
+          por_ventaja["Overkill"]["slot"] == "Speciality")
+comprobar("marca el tipo, que hoy es siempre perk",
+          all(v["kind"] == "perk" for v in ventajas))
+comprobar("una pagina sin tier list devuelve lista vacia", sc.parse_perks("<div>nada</div>") == [])
+comprobar("una cabecera sin su .tier-content no revienta",
+          sc.parse_perks('<div class="tier-header tier-meta">META</div>') == [])
+
+PREVIO_PERKS = {
+    "generated_at": "2026-09-07T06:10:00+00:00",
+    "perks": {"resurgence": {"label": "Resurgence", "url": "u",
+                             "items": [{"name": "Ghost", "slot": "Perk 3", "tier": "META", "kind": "perk"}]}},
+}
+rec = sc.recuperar_perks(PREVIO_PERKS, "resurgence")
+comprobar("conserva las ventajas del dia anterior", len(rec["items"]) == 1)
+comprobar("las marca como no frescas", rec["stale"] is True)
+comprobar("guarda desde cuando estan viejas", rec["stale_since"] == "2026-09-07T06:10:00+00:00")
+comprobar("sin dato anterior no inventa ventajas", sc.recuperar_perks({}, "resurgence") == {})
+comprobar("un modo sin ventajas ayer tampoco",
+          sc.recuperar_perks({"perks": {"resurgence": {"items": []}}}, "resurgence") == {})
+
+# Cada modo tiene su propia tier list de ventajas: wzstats publica una distinta
+# por modo y servir la misma a todos seria ensenar el dato de otro modo.
+comprobar("todos los modos declaran su pagina de ventajas",
+          all(m.get("perks_url") for m in sc.MODES))
+comprobar("y ninguna se repite entre modos",
+          len({m["perks_url"] for m in sc.MODES}) == len(sc.MODES))
+
 print("\ndetector de Modern Warfare 4 en Warzone")
 sin_mw4 = {"resurgence": {"weapons": [{"slug": "fg42"}, {"slug": "kar98k"}]}}
 con_mw4 = {"resurgence": {"weapons": [{"slug": "fg42"}, {"slug": "nueva-mw4"}]}}
@@ -344,6 +432,13 @@ BUENO = {
             ],
         } for i in range(3)
     },
+    "perks": {
+        f"m{i}": {"label": f"Modo {i}", "url": "u", "items": [
+            {"name": "Ghost", "slot": "Perk 3", "tier": "META", "kind": "perk"},
+            {"name": "Sprinter", "slot": "Perk 2", "tier": "A", "kind": "perk"},
+            {"name": "Tempered", "slot": "Perk 3", "tier": "B", "kind": "perk"},
+        ]} for i in range(3)
+    },
     "builds": {
         f"arma{i}": {"name": f"Arma {i}", "max_level": 30, "builds": [
             {"context": "ctx0", "label": "Recommended", "code": "",
@@ -382,6 +477,34 @@ comprobar("caza que falte una clave de la raiz", any("faltan claves" in e for e 
 malo = copy.deepcopy(BUENO)
 malo["base_game"] = ""
 comprobar("caza un base_game vacio", any("base_game" in e for e in va.validar(malo)[0]))
+
+malo = copy.deepcopy(BUENO)
+malo["perks"]["m0"]["items"][0]["tier"] = "S"
+comprobar("caza un tier de ventaja que no existe (las ventajas empiezan en META)",
+          any("tier invalido" in e for e in va.validar(malo)[0]))
+
+malo = copy.deepcopy(BUENO)
+malo["perks"]["m0"]["items"][0]["slot"] = ""
+comprobar("caza una ventaja sin ranura", any("sin ranura" in e for e in va.validar(malo)[0]))
+
+malo = copy.deepcopy(BUENO)
+malo["perks"]["m0"]["items"][0]["kind"] = "gadget"
+comprobar("caza un tipo de ventaja inventado", any("tipo invalido" in e for e in va.validar(malo)[0]))
+
+# Que wzstats tumbe las paginas de ventajas no puede impedir publicar las armas,
+# que es lo principal de la web.
+sin_perks = copy.deepcopy(BUENO)
+sin_perks["perks"] = {}
+errores, notas = va.validar(sin_perks)
+comprobar("quedarse sin ventajas avisa pero no bloquea la publicacion",
+          errores == [] and any("sin ventajas" in n for n in notas), str(errores))
+
+conservadas = copy.deepcopy(BUENO)
+conservadas["perks"]["m0"]["stale"] = True
+conservadas["perks"]["m0"]["stale_since"] = "2026-09-07T06:10:00+00:00"
+errores, notas = va.validar(conservadas)
+comprobar("unas ventajas conservadas avisan pero no bloquean",
+          errores == [] and any("conservado" in n for n in notas))
 
 malo = copy.deepcopy(BUENO)
 malo["modes"]["m0"]["weapons"][0]["desde"] = "el martes"

@@ -69,6 +69,13 @@ sin cambiar a la vez `path: docs` en el workflow.
       }]
     }
   },
+  "perks": {                                     // una tier list por modo, NO una global
+    "resurgence": {
+      "label": "Resurgence", "url": "...",
+      "stale": true, "stale_since": "...",       // solo si hoy no se pudo leer
+      "items": [{"name":"Sprinter","slot":"Perk 2","tier":"META","kind":"perk"}]
+    }
+  },
   "builds": {                                    // solo las ~66 armas de tier S y A
     "fg42": {
       "name": "FG42", "max_level": 41,
@@ -112,7 +119,7 @@ cd docs && python -m http.server 8765   # http://127.0.0.1:8765
 **Para tocar el parser, no lances los cinco modos.** El scraper tiene CLI:
 
 ```bash
-python scripts/scrape.py --modo resurgence --sin-builds --simular   # segundos, 1 peticion
+python scripts/scrape.py --modo resurgence --sin-builds --simular   # segundos, 2 peticiones
 python scripts/scrape.py --limite-builds 3 --salida prueba.json
 python scripts/scrape.py --help
 ```
@@ -201,6 +208,41 @@ Ahora:
 Si dos ejecuciones caen el **mismo día UTC**, los `changes` se acumulan en vez de
 reemplazarse (`fusionar_cambios`). Sin eso, tocar `index.html` dejaba el panel
 «Movimientos del meta» vacío hasta el día siguiente.
+
+## Ventajas (perks), añadidas en la fase B el 2026-09-08
+
+`parse_perks()` raspa las tier lists de ventajas. **Hay una por modo y no son la
+misma lista**: comprobado el 2026-09-08, Battle Royale y Resurgence llevan las
+mismas 15 ventajas pero intercambian cuatro entre META y A, y las dos Ranked van
+por su cuenta. Por eso cada entrada de `MODES` tiene su `perks_url` y el JSON
+guarda `perks[<id de modo>]`, en vez de una lista «de Warzone» y otra «de BO7».
+
+Trampas de estas páginas, que no son las de armas:
+
+- **Los tiers empiezan en META**, no en S: `META`, `A`, `B`, `C`, `D`
+  (`PERK_TIERS`). Un `S` ahí es un error y el validador lo caza.
+- **La clase de tier va junto a `tier-header` y el orden cambia** de un bloque a
+  otro: `tier-header tier-meta` pero `tier-a tier-header`. Hay que buscar cuál de
+  las clases es de tier, no mirar una posición fija.
+- **`.tier-content` es hermano del bloque de la cabecera**, no descendiente: se
+  sube buscándolo, igual que con el código de canje en `parse_builds`.
+- El nombre está en `.content-name` y la ranura en `.content-tag` (`Perk 1/2/3`,
+  y `Speciality` solo en Black Ops 7).
+- **Las pestañas de esas páginas NO vienen en el mismo HTML**: cada una es una
+  URL propia. Hoy solo se raspan las de ventajas. Si algún día hacen falta:
+  `/warzone-2/loadouts/best-lethals-tier-list`, `.../best-tacticals-tier-list`, y
+  en BO7 además `/bo7/loadouts/best-wildcards-tier-list` y
+  `.../best-field-upgrades-tier-list`. Por eso `kind` existe en el JSON aunque
+  hoy valga siempre `"perk"`.
+- **No usar los bloques «Best X Perks» de las fichas de arma**: son de Black Ops
+  Royale y del multijugador, no de Battle Royale ni Resurgence.
+
+Si una página falla, `recuperar_perks()` conserva la del día anterior con
+`stale`/`stale_since` y se anota un warning, igual que con los modos. **Que
+falten ventajas es una nota del validador, no un error**: un fallo ahí no puede
+impedir publicar las armas, que son lo principal de la web.
+
+Son 5 peticiones más al día (una por modo), sobre las ~70 que ya se hacían.
 
 ## Juego base y el aviso del cambio a Modern Warfare 4 (añadido en la fase A, 2026-09-08)
 
@@ -296,7 +338,10 @@ No hay nada que desplegar en los dispositivos, es una web.
 instalada sigue funcionando sin cobertura con la última meta descargada.
 Verificado apagando el servidor local y recargando: armas, accesorios y códigos
 seguían saliendo. **Al tocar cualquier archivo de `docs/` hay que subir `VERSION`
-en `sw.js`**, o un usuario puede quedarse con la interfaz vieja cacheada.
+en `sw.js`**, o un usuario puede quedarse con la interfaz vieja cacheada. Y a la
+vez `UI_VERSION` en `index.html`, que es lo que el usuario lee en el pie para
+saber desde el Gamer si ya tiene lo nuevo: **si hay dos publicaciones el mismo
+día se le añade letra** (`2026-09-08b`), o las dos se leerían igual.
 
 Al probar en local, acuérdate de desregistrar el service worker
 (`navigator.serviceWorker.getRegistrations()` → `unregister()`) o seguirás viendo
@@ -317,7 +362,9 @@ a `ef55288`) y se decidió no reescribir la historia por ello.
   etiquetas, nivel del arma, versión visible, juego base y detector del cambio
   a MW4. Pendiente que el usuario la confirme **desde el Windows Gamer**
   (versión de interfaz en el pie y la función nueva) antes de darla por
-  cerrada. **Fase B** (opus · high): ventajas raspadas de wzstats, siguiente.
+  cerrada. **Fase B (opus · high): hecha el 2026-09-08** — ventajas raspadas de
+  wzstats, una tier list por modo, y la sección «Ventajas meta por ranura».
+  Pendiente la misma confirmación desde Gamer.
   **Fase C** (fable · high), noviembre de 2026: Modern Warfare 4 sale el
   23-10-2026 y en su temporada 1 Warzone cambia de juego base; la avisa sola
   el detector de la fase A (`detectar_mw4()`). Cada fase empieza diciendo

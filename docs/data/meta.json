@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-08T17:04:05+00:00",
+ "generated_at": "2026-09-08T17:29:22+00:00",
  "season": "Season 5 Reloaded, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
@@ -11291,6 +11291,500 @@
      ],
      "image": "",
      "desde": "2026-08-22"
+    }
+   ]
+  }
+ },
+ "perks": {
+  "resurgence": {
+   "label": "Resurgence",
+   "url": "https://wzstats.gg/warzone-2/loadouts/best-perks-tier-list/resurgence",
+   "items": [
+    {
+     "name": "Sprinter",
+     "slot": "Perk 2",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Ghost",
+     "slot": "Perk 3",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Hunter",
+     "slot": "Perk 3",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Momentum",
+     "slot": "Perk 2",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Drill Instructor",
+     "slot": "Perk 1",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Tempered",
+     "slot": "Perk 3",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Quick Fix",
+     "slot": "Perk 2",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Berserker",
+     "slot": "Perk 2",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Field Medic",
+     "slot": "Perk 1",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Scavenger",
+     "slot": "Perk 1",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Adaptive",
+     "slot": "Perk 3",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Mountaineer",
+     "slot": "Perk 1",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Survivor",
+     "slot": "Perk 3",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Surveyor",
+     "slot": "Perk 1",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Reactive Armor",
+     "slot": "Perk 2",
+     "tier": "B",
+     "kind": "perk"
+    }
+   ]
+  },
+  "multiplayer": {
+   "label": "Multijugador (BO7)",
+   "url": "https://wzstats.gg/bo7/loadouts/best-perks-tier-list",
+   "items": [
+    {
+     "name": "Ninja",
+     "slot": "Perk 1",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Ghost",
+     "slot": "Perk 1",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Lightweight",
+     "slot": "Perk 1",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Vigilance",
+     "slot": "Perk 2",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Scavenger",
+     "slot": "Perk 2",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Cold-Blooded",
+     "slot": "Perk 3",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Enforcer",
+     "slot": "Speciality",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Recon",
+     "slot": "Speciality",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Scout",
+     "slot": "Speciality",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Flak Jacket",
+     "slot": "Perk 1",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Tracker",
+     "slot": "Perk 3",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Strategist",
+     "slot": "Speciality",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Looper",
+     "slot": "Perk 3",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Bankroll",
+     "slot": "Perk 3",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Fast Hands",
+     "slot": "Perk 2",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Gung Ho",
+     "slot": "Perk 1",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Assassin",
+     "slot": "Perk 2",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Blast Link",
+     "slot": "Perk 2",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Dexterity",
+     "slot": "Perk 3",
+     "tier": "B",
+     "kind": "perk"
+    },
+    {
+     "name": "Operative",
+     "slot": "Speciality",
+     "tier": "B",
+     "kind": "perk"
+    },
+    {
+     "name": "Tactician",
+     "slot": "Speciality",
+     "tier": "B",
+     "kind": "perk"
+    },
+    {
+     "name": "Charge Link",
+     "slot": "Perk 3",
+     "tier": "B",
+     "kind": "perk"
+    },
+    {
+     "name": "Tech Mask",
+     "slot": "Perk 2",
+     "tier": "B",
+     "kind": "perk"
+    },
+    {
+     "name": "Guardian",
+     "slot": "Perk 3",
+     "tier": "B",
+     "kind": "perk"
+    },
+    {
+     "name": "Gearhead",
+     "slot": "Perk 1",
+     "tier": "B",
+     "kind": "perk"
+    },
+    {
+     "name": "Engineer",
+     "slot": "Perk 2",
+     "tier": "B",
+     "kind": "perk"
+    },
+    {
+     "name": "Close Shave",
+     "slot": "Perk 2",
+     "tier": "C",
+     "kind": "perk"
+    },
+    {
+     "name": "Tac Sprinter",
+     "slot": "Perk 1",
+     "tier": "D",
+     "kind": "perk"
+    }
+   ]
+  },
+  "resurgence_ranked": {
+   "label": "Resurgence Ranked",
+   "url": "https://wzstats.gg/warzone-2/loadouts/best-perks-tier-list/ranked/resurgence",
+   "items": [
+    {
+     "name": "Sprinter",
+     "slot": "Perk 2",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Ghost",
+     "slot": "Perk 3",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Drill Instructor",
+     "slot": "Perk 1",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Field Medic",
+     "slot": "Perk 1",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Tempered",
+     "slot": "Perk 3",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Momentum",
+     "slot": "Perk 2",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Scavenger",
+     "slot": "Perk 1",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Quick Fix",
+     "slot": "Perk 2",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Mountaineer",
+     "slot": "Perk 1",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Adaptive",
+     "slot": "Perk 3",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Surveyor",
+     "slot": "Perk 1",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Survivor",
+     "slot": "Perk 3",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Reactive Armor",
+     "slot": "Perk 2",
+     "tier": "B",
+     "kind": "perk"
+    }
+   ]
+  },
+  "multiplayer_ranked": {
+   "label": "MP Ranked (BO7)",
+   "url": "https://wzstats.gg/bo7/ranked/loadouts/best-perks-tier-list",
+   "items": [
+    {
+     "name": "Ninja",
+     "slot": "Perk 1",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Lightweight",
+     "slot": "Perk 1",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Flak Jacket",
+     "slot": "Perk 1",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Dexterity",
+     "slot": "Perk 3",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Tech Mask",
+     "slot": "Perk 2",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Fast Hands",
+     "slot": "Perk 2",
+     "tier": "A",
+     "kind": "perk"
+    }
+   ]
+  },
+  "battle_royale": {
+   "label": "Battle Royale",
+   "url": "https://wzstats.gg/warzone-2/loadouts/best-perks-tier-list",
+   "items": [
+    {
+     "name": "Sprinter",
+     "slot": "Perk 2",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Ghost",
+     "slot": "Perk 3",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Hunter",
+     "slot": "Perk 3",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Momentum",
+     "slot": "Perk 2",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Drill Instructor",
+     "slot": "Perk 1",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Tempered",
+     "slot": "Perk 3",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Scavenger",
+     "slot": "Perk 1",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Field Medic",
+     "slot": "Perk 1",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Quick Fix",
+     "slot": "Perk 2",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Survivor",
+     "slot": "Perk 3",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Adaptive",
+     "slot": "Perk 3",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Berserker",
+     "slot": "Perk 2",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Mountaineer",
+     "slot": "Perk 1",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Surveyor",
+     "slot": "Perk 1",
+     "tier": "A",
+     "kind": "perk"
+    },
+    {
+     "name": "Reactive Armor",
+     "slot": "Perk 2",
+     "tier": "B",
+     "kind": "perk"
     }
    ]
   }

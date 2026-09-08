@@ -1,10 +1,64 @@
 # Resumen de estado — Armería Warzone
 
-**Última actualización: 2026-09-08** (Fase A del plan, ejecutada y publicada).
+**Última actualización: 2026-09-08** (Fases A y B del plan, ejecutadas y publicadas).
 
 El contexto técnico detallado vive en **[CLAUDE.md](CLAUDE.md)**: arquitectura,
 formato de los datos, trampas del scraping y cómo probarlo. Este fichero es la
 bitácora: en qué punto está, qué se decidió y qué viene después.
+
+---
+
+## 2026-09-08 — Fase B ejecutada (opus · high)
+
+La web ya dice **qué ventajas (perks) llevar**, en una sección nueva «Ventajas
+meta por ranura» junto al equipamiento del día: META y A por cada ranura
+(Perk 1, 2, 3 y la «Speciality» de Black Ops 7).
+
+**El hallazgo que cambió el plan.** El plan pedía dos listas, una «de Warzone» y
+otra «de BO7». Al mirar las páginas de verdad resultó que **wzstats publica una
+tier list de ventajas por cada modo, y las cinco son distintas entre sí**: entre
+Battle Royale y Resurgence —los dos modos que el usuario juega— cambian cuatro
+ventajas de sitio (Quick Fix y Berserker son META en Resurgence y bajan a A en
+Battle Royale; Scavenger y Field Medic al revés). Con dos listas, tres de los
+cinco modos habrían enseñado el dato de otro modo. Así que hay **una lista por
+modo**, que además encaja con cómo ya estaban definidos los modos en el scraper:
+cada uno tiene su `perks_url` y el JSON guarda `perks[<id de modo>]`. Cuesta 5
+peticiones más al día sobre las ~70 de siempre.
+
+Lo hecho, con las 81 pruebas en verde, el validador OK y el JS comprobado con
+esprima:
+
+- **B1.** `parse_perks()` en `scrape.py`. Trampas nuevas anotadas en `CLAUDE.md`:
+  los tiers empiezan en **META** (no en S), la clase del tier va junto a
+  `tier-header` y **en orden variable**, y el `.tier-content` es **hermano** de la
+  cabecera, no descendiente.
+- **Comprobado lo que el plan mandaba comprobar:** las pestañas (Lethal,
+  Tactical, Wildcards, Field Upgrades) **no vienen en el mismo HTML**, cada una
+  es una URL propia. Hoy no se raspan; sus rutas quedan anotadas en `CLAUDE.md`
+  por si algún día hacen falta, y por eso el campo `kind` existe aunque hoy valga
+  siempre `"perk"`.
+- **B2.** `payload["perks"]`, con `recuperar_perks()`: si una página falla se
+  conserva la del día anterior con `stale`/`stale_since` y se avisa. Misma regla
+  de siempre: nada que falle borra un dato bueno.
+- **B3.** Invariantes en `validar_meta.py` (tiers META/A/B/C/D, ranura y tipo
+  válidos) y pruebas del parser con un recorte real de HTML. **Quedarse sin
+  ventajas es una nota, no un error**: un fallo ahí no puede impedir que se
+  publiquen las armas, que son lo principal.
+- **B4.** La sección en la web, con aviso si el dato viene del día anterior.
+- **B5.** `CLAUDE.md` y `resumen.md` al día; `sw.js` a `armeria-v6` y
+  `UI_VERSION` a **`2026-09-08b`** — con letra, porque es la segunda publicación
+  del mismo día y desde Gamer las dos se leerían igual.
+
+Como en la fase A, hubo que **regenerar `meta.json`** antes de commitear: el
+workflow no rasca en un `push` y ahora se exige la clave `perks`. El JSON pasa de
+709 a 718 KB (77 ventajas).
+
+**Falta cerrar la fase:** verificación desde el **Windows Gamer**. Que el pie
+diga «interfaz 2026-09-08b» y que aparezca la sección «Ventajas meta por ranura».
+
+**Siguiente:** Fase C (fable · high), pero **es de noviembre de 2026**, cuando
+wzstats pase Warzone a Modern Warfare 4. La avisa sola el detector de la fase A;
+no hay nada que hacer hasta entonces.
 
 ---
 
@@ -50,18 +104,7 @@ confirmar dos cosas: que el pie dice «interfaz 2026-09-08» y que puede
 desplegar la ayuda de un accesorio o poner el nivel de un arma. La fase no se
 da por cerrada sin ese OK.
 
-**Siguiente:** Fase B (opus · high) — ventajas raspadas de wzstats. Para
-empezarla en una ventana nueva:
-
-```
-/model opus
-/effort high
-```
-
-> Lee CLAUDE.md, resumen.md y documentacion/plan-2026-09-08-fases.md de esta
-> carpeta y ejecuta la fase B del plan. Primera línea: modelo y potencia que
-> tocan para esta fase; si no son los que hay, para y pídemelos antes de tocar
-> nada.
+**Siguiente:** la fase B, hecha ese mismo día (arriba).
 
 ---
 
@@ -214,18 +257,19 @@ está en `.gitignore`: no se sube ni se publica.
 
 ## Cómo retomar esto en una ventana nueva
 
-Abrir Claude Code en `F:\COMPARTIDO\Claude\Warezone`. Primero el modelo y la potencia de la
-fase que toque (para la fase B, siguiente):
+Abrir Claude Code en `F:\COMPARTIDO\Claude\Warezone`.
+
+**Las fases A y B están hechas. La C es de noviembre de 2026** y la avisa sola el
+detector (correo del workflow, cabecera de la web y repaso de las 09:00). Cuando
+salte, o si el 15-11-2026 no ha saltado:
 
 ```
-/model opus
+/model fable
 /effort high
 ```
 
-Y después pegar:
-
 > Lee CLAUDE.md, resumen.md y documentacion/plan-2026-09-08-fases.md de esta carpeta y
-> ejecuta la fase B del plan. Primera línea: modelo y potencia que tocan para esta fase; si no
+> ejecuta la fase C del plan. Primera línea: modelo y potencia que tocan para esta fase; si no
 > son los que hay, para y pídemelos antes de tocar nada.
 
 Para solo mirar en qué punto está, sin ejecutar nada:

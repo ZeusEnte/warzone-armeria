@@ -286,6 +286,15 @@ a `ef55288`) y se decidió no reescribir la historia por ello.
 
 ## Pendiente
 
+- **Plan por fases aprobado el 2026-09-08, sin empezar:**
+  `documentacion/plan-2026-09-08-fases.md`. Fase A (sonnet · high): textos de
+  desbloqueo, etiquetas, nivel del arma, versión visible, juego base y detector
+  del cambio a MW4. Fase B (opus · high): ventajas raspadas de wzstats. **Fase C
+  (fable · high), noviembre de 2026:** Modern Warfare 4 sale el 23-10-2026 y en
+  su temporada 1 Warzone cambia de juego base; hay que revisar modos, desbloqueos
+  y etiquetas. Cada fase empieza diciendo modelo y potencia, y se cierra cuando el
+  usuario ve el cambio **desde el Windows Gamer**, que es desde donde usa el panel.
+  El informe que lo justifica: `documentacion/informe-2026-09-08-nivel-desbloqueos-ventajas-zodiac.md`.
 - El usuario pegó su contraseña de GitHub en texto plano en el chat el
   2026-08-20 y se le recomendó cambiarla. Sin confirmar que lo hiciera.
   **No está en ningún archivo del repositorio** (verificado con `git grep` en la

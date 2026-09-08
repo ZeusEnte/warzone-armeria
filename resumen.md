@@ -28,7 +28,20 @@ En corto:
   solo lo que no caduca (textos, dos números, cabecera con el juego base) y el resto
   después de noviembre.
 
-**No se ha tocado código.** Nada de esto está decidido.
+**No se ha tocado código.** El usuario aprobó el planteamiento ese mismo día y pidió
+ejecutarlo **por fases, decidiendo modelo y potencia antes de cada una**. El plan, con lo que
+hace cada fase y con qué modelo, está en
+[`documentacion/plan-2026-09-08-fases.md`](documentacion/plan-2026-09-08-fases.md):
+
+- **Fase A** (sonnet · high): textos de desbloqueo, etiquetas, nivel del arma, versión visible,
+  juego base en cabecera y el detector del cambio a MW4. Es la siguiente.
+- **Fase B** (opus · high): ventajas raspadas de wzstats.
+- **Fase C** (fable · high): **noviembre de 2026**, cuando wzstats pase Warzone a Modern
+  Warfare 4. La avisa sola el detector de la fase A.
+
+**Verificación desde Gamer:** el usuario usa el panel desde el Windows Gamer (`E:`), no desde
+este. Cada fase se cierra cuando él la ve allí. Comprobado hoy: lo publicado es byte a byte lo
+del repositorio, y el service worker carga red primero, así que Gamer ve lo publicado al abrir.
 
 ---
 
@@ -144,7 +157,21 @@ está en `.gitignore`: no se sube ni se publica.
 
 ## Cómo retomar esto en una ventana nueva
 
-Abrir Claude Code en `F:\COMPARTIDO\Claude\Warezone` y pegar:
+Abrir Claude Code en `F:\COMPARTIDO\Claude\Warezone`. Primero el modelo y la potencia de la
+fase que toque (para la fase A):
+
+```
+/model sonnet
+/effort high
+```
+
+Y después pegar:
+
+> Lee CLAUDE.md, resumen.md y documentacion/plan-2026-09-08-fases.md de esta carpeta y
+> ejecuta la fase A del plan. Primera línea: modelo y potencia que tocan para esta fase; si no
+> son los que hay, para y pídemelos antes de tocar nada.
+
+Para solo mirar en qué punto está, sin ejecutar nada:
 
 > Lee `CLAUDE.md` y `resumen.md` de esta carpeta y dime en qué punto está el
 > proyecto y qué queda pendiente.

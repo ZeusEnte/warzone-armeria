@@ -99,6 +99,12 @@ al pulsar el chip `.req`). El nivel que el usuario pone para cada arma vive en
 `profile.levels[slug]` y marca los accesorios de `Level N` ya alcanzados
 (`done`) y cuántos quedan (`nivelResumen()`).
 
+**El campo del nivel (`levelFieldHtml`) va en las tarjetas de «Tu equipamiento
+de hoy» y en la ficha desplegada del ranking, no solo en la ficha.** El
+2026-09-08 estuvo un rato solo en la ficha y el usuario no lo encontró: hay que
+pedirlo donde se están leyendo los «Nv. 37» de los accesorios. En «A por la
+siguiente» no se pone, que son armas que aún no tiene.
+
 **No toda arma tiene build de todos los modos.** El VS RECON, por ejemplo, no
 tiene una de `Black Ops 7 Ranked`. `buildsForMode()` cae entonces a las que haya
 y `buildTitle()` lo avisa en la etiqueta («build de Warzone Battle Royale»), para

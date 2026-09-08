@@ -330,7 +330,7 @@ const DEFAULTS = {mode:"resurgence", style:"agresivo", input:"mando", avoid:[], 
 // mira desde el Windows Gamer para saber si ya tiene la versión publicada. Si
 // hay más de una publicación el mismo día se añade letra (b, c...), o desde
 // Gamer no habría forma de distinguirlas.
-const UI_VERSION = "2026-09-08b";
+const UI_VERSION = "2026-09-08c";
 let profile = load();
 let DATA = null;
 let openSlug = null;
@@ -648,6 +648,10 @@ function slotCard(role, w, isGoal){
     html += '<div class="empty">No tengo los accesorios de esta arma. ' +
             wzLink(w, "Verlos en wzstats") + '</div>';
   }
+  // El nivel se pide aquí, que es donde estás leyendo los "Nv. 37" de los
+  // accesorios. Antes solo estaba dentro de la ficha desplegada del ranking y
+  // no lo encontraba nadie. En «A por la siguiente» no: esas no las tienes.
+  if(build && !isGoal) html += levelFieldHtml(w, DATA.builds[w.slug] || {});
   html += '<div class="actions">' + haveBtn(w) + '</div>';
   el.innerHTML = html;
   return el;
@@ -756,7 +760,8 @@ function renderRank(pool){
           ' para "' + busqueda.trim() + '"') + ". <b>Pincha cualquiera</b> para ver sus accesorios."
     : (verTodas ? "Las " + filtrado.length + " armas del modo elegido."
                 : "Las 20 mejores del modo elegido.") +
-      " <b>Pincha cualquiera</b> para ver los accesorios exactos que hay que montar.";
+      " <b>Pincha cualquiera</b> para ver los accesorios exactos que hay que montar" +
+      " y decirle el nivel que llevas con ella.";
   document.getElementById("ver-todas").textContent = verTodas ? "Ver solo el top 20" : "Ver todas";
   document.getElementById("ver-todas").hidden = !!q;
 

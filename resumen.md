@@ -8,6 +8,24 @@ bitácora: en qué punto está, qué se decidió y qué viene después.
 
 ---
 
+## 2026-09-08 — Ajuste después de las fases: el nivel del arma, donde se ve
+
+El usuario abrió su panel y **no encontró dónde poner el nivel del arma**. No era
+un fallo: estaba dentro de la ficha desplegada de cada arma, en el ranking, que
+es donde tenía sentido técnico pero no donde se busca. Arreglado: el campo sale
+ahora **en las tarjetas de «Tu equipamiento de hoy»**, justo debajo de los
+accesorios que dicen «Nv. 37», que es donde se está mirando cuando surge la
+pregunta. En «A por la siguiente» no, que son armas que todavía no tiene.
+`UI_VERSION` a `2026-09-08c`, `sw.js` a `armeria-v7`.
+
+**Decidido en el mismo momento, por el usuario:** el **nivel de jugador** (el
+general, distinto del nivel de cada arma) **sigue aplazado a la fase C de
+noviembre**, como estaba en el plan. El motivo: para que ese número sirva hace
+falta una tabla a mano de qué arma se abre a qué nivel, y esa tabla caduca con
+Modern Warfare 4. No está descartado, está esperando a la tabla que sí valdrá.
+
+---
+
 ## 2026-09-08 — Fase B ejecutada (opus · high)
 
 La web ya dice **qué ventajas (perks) llevar**, en una sección nueva «Ventajas

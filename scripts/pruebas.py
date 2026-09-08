@@ -304,6 +304,17 @@ comprobar("detecta que un arma baja de tier",
           bajada == [{"mode": "resurgence", "weapon": "FG42", "kind": "baja", "from": "S", "to": "A"}],
           str(bajada))
 
+print("\ndetector de Modern Warfare 4 en Warzone")
+sin_mw4 = {"resurgence": {"weapons": [{"slug": "fg42"}, {"slug": "kar98k"}]}}
+con_mw4 = {"resurgence": {"weapons": [{"slug": "fg42"}, {"slug": "nueva-mw4"}]}}
+solo_bo7 = {"multiplayer": {"weapons": [{"slug": "arma-mw4"}]}}
+conservado_mw4 = {"resurgence": {"stale": True, "weapons": [{"slug": "nueva-mw4"}]}}
+comprobar("sin slugs -mw4 no dispara el aviso", sc.detectar_mw4(sin_mw4) is False)
+comprobar("un slug -mw4 en un modo de Warzone dispara el aviso", sc.detectar_mw4(con_mw4) is True)
+comprobar("un slug -mw4 en Black Ops 7 (no es modo de Warzone) no cuenta",
+          sc.detectar_mw4(solo_bo7) is False)
+comprobar("un modo conservado (stale) no dispara el aviso", sc.detectar_mw4(conservado_mw4) is False)
+
 print("\nacumulacion de cambios dentro del mismo dia")
 fusion = sc.fusionar_cambios(PREVIO["changes"], bajada)
 comprobar("suma los cambios de las dos pasadas", len(fusion) == 2)
@@ -316,7 +327,7 @@ comprobar("no repite el mismo cambio dos veces",
 
 BUENO = {
     "generated_at": "2026-08-20T06:10:00+00:00",
-    "season": "Season 5", "source": "wzstats.gg", "changes": [],
+    "season": "Season 5", "base_game": "Black Ops 7", "source": "wzstats.gg", "changes": [],
     "modes": {
         f"m{i}": {
             "label": f"Modo {i}", "url": "u", "context": f"ctx{i}",
@@ -367,6 +378,10 @@ comprobar("caza una build sin accesorios", any("sin accesorios" in e for e in va
 malo = copy.deepcopy(BUENO)
 del malo["modes"]
 comprobar("caza que falte una clave de la raiz", any("faltan claves" in e for e in va.validar(malo)[0]))
+
+malo = copy.deepcopy(BUENO)
+malo["base_game"] = ""
+comprobar("caza un base_game vacio", any("base_game" in e for e in va.validar(malo)[0]))
 
 malo = copy.deepcopy(BUENO)
 malo["modes"]["m0"]["weapons"][0]["desde"] = "el martes"

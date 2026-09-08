@@ -50,6 +50,7 @@ sin cambiar a la vez `path: docs` en el workflow.
 {
   "generated_at": "2026-08-20T14:42:59+00:00",
   "season": "Season 5 Reloaded, 2026",          // sacado de wzranked.com
+  "base_game": "Black Ops 7",                   // ver "Juego base y el aviso de MW4" abajo
   "source": "wzstats.gg",
   "previous_generated_at": "...",
   "warnings": [ "Resurgence: no se pudo leer, se conserva el dato del 2026-08-19" ],
@@ -82,8 +83,14 @@ sin cambiar a la vez `path: docs` en el workflow.
 }
 ```
 
-`unlock` es `"Level 37"`, `"Armory"`, `"Prestige"`, el nombre de otra arma que
-hay que subir, o `""`. El frontend lo traduce en `reqLabel()`.
+`unlock` es `"Level 37"`, `"Armory"`, `"Prestige"`, `"Apex"` (accesorio de
+Modern Warfare 4, aún no aparece en Warzone), `"Week N Challenge"`, el nombre
+de otra arma que hay que subir, o `""` (wzstats no publica el requisito). El
+frontend lo clasifica en `parseUnlock()`, lo traduce en `reqLabel()` y da el
+texto de "¿cómo se desbloquea?" en `unlockHelp()` / `UNLOCK_HELP` (se despliega
+al pulsar el chip `.req`). El nivel que el usuario pone para cada arma vive en
+`profile.levels[slug]` y marca los accesorios de `Level N` ya alcanzados
+(`done`) y cuántos quedan (`nivelResumen()`).
 
 **No toda arma tiene build de todos los modos.** El VS RECON, por ejemplo, no
 tiene una de `Black Ops 7 Ranked`. `buildsForMode()` cae entonces a las que haya
@@ -195,6 +202,25 @@ Si dos ejecuciones caen el **mismo día UTC**, los `changes` se acumulan en vez 
 reemplazarse (`fusionar_cambios`). Sin eso, tocar `index.html` dejaba el panel
 «Movimientos del meta» vacío hasta el día siguiente.
 
+## Juego base y el aviso del cambio a Modern Warfare 4 (añadido en la fase A, 2026-09-08)
+
+`BASE_GAME` en `scrape.py` (hoy `"Black Ops 7"`) se escribe en el JSON como
+`base_game` y la web lo enseña junto a la temporada («Warzone · Black Ops 7 ·
+Season 5 Reloaded, 2026»), para que un «Season 1» de Modern Warfare 4 en
+noviembre no se lea igual que el «Season 1» de Black Ops 7 de hace un año.
+`validar_meta.py` exige que no esté vacío.
+
+`detectar_mw4()` mira, tras cada raspado, si algún arma de los modos de
+Warzone (`WARZONE_MODE_IDS`: `resurgence`, `resurgence_ranked`,
+`battle_royale` — no los de Black Ops 7) trae ya el sufijo `-mw4` en su slug.
+Si lo ve y `BASE_GAME` todavía no es `"Modern Warfare 4"`, añade un aviso a
+`payload["warnings"]`: sale en la cabecera de la web (`renderAvisos()` en
+`index.html` ahora sí lee `DATA.warnings`, además de las dos comprobaciones de
+frescura que ya hacía), hace fallar el job `avisar` del workflow (manda
+correo) y el repaso de las 09:00. **Es el recordatorio de la fase C** del plan
+`documentacion/plan-2026-09-08-fases.md`; se apaga haciendo esa fase (cambiar
+`BASE_GAME` a `"Modern Warfare 4"`).
+
 ## Lógica de recomendación (`score()` en index.html)
 
 `tier` (S=100…D=18) + bonus por puesto oficial `max(0, 28 - rank*3)` + ajustes de
@@ -286,15 +312,17 @@ a `ef55288`) y se decidió no reescribir la historia por ello.
 
 ## Pendiente
 
-- **Plan por fases aprobado el 2026-09-08, sin empezar:**
-  `documentacion/plan-2026-09-08-fases.md`. Fase A (sonnet · high): textos de
-  desbloqueo, etiquetas, nivel del arma, versión visible, juego base y detector
-  del cambio a MW4. Fase B (opus · high): ventajas raspadas de wzstats. **Fase C
-  (fable · high), noviembre de 2026:** Modern Warfare 4 sale el 23-10-2026 y en
-  su temporada 1 Warzone cambia de juego base; hay que revisar modos, desbloqueos
-  y etiquetas. Cada fase empieza diciendo modelo y potencia, y se cierra cuando el
-  usuario ve el cambio **desde el Windows Gamer**, que es desde donde usa el panel.
-  El informe que lo justifica: `documentacion/informe-2026-09-08-nivel-desbloqueos-ventajas-zodiac.md`.
+- **Plan por fases aprobado el 2026-09-08:** `documentacion/plan-2026-09-08-fases.md`.
+  **Fase A (sonnet · high): hecha el 2026-09-08** — textos de desbloqueo,
+  etiquetas, nivel del arma, versión visible, juego base y detector del cambio
+  a MW4. Pendiente que el usuario la confirme **desde el Windows Gamer**
+  (versión de interfaz en el pie y la función nueva) antes de darla por
+  cerrada. **Fase B** (opus · high): ventajas raspadas de wzstats, siguiente.
+  **Fase C** (fable · high), noviembre de 2026: Modern Warfare 4 sale el
+  23-10-2026 y en su temporada 1 Warzone cambia de juego base; la avisa sola
+  el detector de la fase A (`detectar_mw4()`). Cada fase empieza diciendo
+  modelo y potencia. El informe que lo justifica:
+  `documentacion/informe-2026-09-08-nivel-desbloqueos-ventajas-zodiac.md`.
 - El usuario pegó su contraseña de GitHub en texto plano en el chat el
   2026-08-20 y se le recomendó cambiarla. Sin confirmar que lo hiciera.
   **No está en ningún archivo del repositorio** (verificado con `git grep` en la

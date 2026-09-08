@@ -59,6 +59,15 @@ REQUEST_PAUSE = 1.5
 
 TIER_ORDER = ["S", "A", "B", "C", "D", "E", "F"]
 
+# Juego sobre el que corre Warzone hoy. En noviembre de 2026 wzstats debe pasar
+# a servir Warzone sobre Modern Warfare 4 (ver detectar_mw4): ese dia toca la
+# fase C del plan del 2026-09-08, y este valor es lo primero que cambia.
+BASE_GAME = "Black Ops 7"
+
+# Los modos de Warzone (no los de Black Ops 7 multijugador), para el detector
+# de Modern Warfare 4: solo importa si SUS armas ya llevan el sufijo "-mw4".
+WARZONE_MODE_IDS = {"resurgence", "resurgence_ranked", "battle_royale"}
+
 # Warzone ordena sus rankings por alcance ("Long Range") y Black Ops 7 por tipo
 # de arma ("Assault Rifle"). Normalizamos ambos vocabularios a tres papeles para
 # que la web pueda tratar todos los modos igual.
@@ -417,6 +426,24 @@ def pick_for_builds(modes: dict, budget: int = BUILD_BUDGET) -> list:
     return [(slug, value[1]) for slug, value in ordered[:budget]]
 
 
+def detectar_mw4(modes: dict) -> bool:
+    """True si algun modo de Warzone (no Black Ops 7) ya trae armas de Modern
+    Warfare 4. wzstats les pone el sufijo "-mw4" en el slug: verlo ahi es el
+    aviso de que hay que hacer la fase C del plan del 2026-09-08.
+
+    Los modos "conservados" (stale) son una copia del dia anterior, asi que no
+    dicen nada nuevo sobre lo que sirve wzstats hoy.
+    """
+    for mode_id in WARZONE_MODE_IDS:
+        modo = modes.get(mode_id) or {}
+        if modo.get("stale"):
+            continue
+        for w in modo.get("weapons") or []:
+            if (w.get("slug") or "").endswith("-mw4"):
+                return True
+    return False
+
+
 def diff_modes(old: dict, new: dict) -> list:
     """Compara la meta anterior con la nueva para poder avisar de los cambios."""
     changes = []
@@ -602,6 +629,12 @@ def main(argv=None) -> int:
         print("ERROR: ningun modo se pudo raspar, no se sobrescribe el JSON", file=sys.stderr)
         return 1
 
+    if BASE_GAME != "Modern Warfare 4" and detectar_mw4(modes):
+        avisos.append(
+            "wzstats ya sirve armas de Modern Warfare 4 en Warzone: toca la fase C "
+            "del plan del 2026-09-08"
+        )
+
     builds = dict(previo.get("builds") or {}) if args.sin_builds else {}
     if args.sin_builds:
         print("-> accesorios: omitidos (--sin-builds), se conservan los del JSON anterior")
@@ -678,6 +711,7 @@ def main(argv=None) -> int:
     payload = {
         "generated_at": ahora.isoformat(timespec="seconds"),
         "season": detect_season(session, previo.get("season", "")),
+        "base_game": BASE_GAME,
         "source": "wzstats.gg",
         "previous_generated_at": anterior_ts,
         "warnings": avisos,

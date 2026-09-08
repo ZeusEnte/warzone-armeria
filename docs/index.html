@@ -108,7 +108,16 @@
   .atts .right{text-align:right}
   .atts .at{font-weight:600;display:block}
   .req{font-size:11px;margin-top:2px;display:inline-block;padding:1px 7px;border-radius:4px;
-       background:rgba(255,159,28,.13);color:var(--acc);border:1px solid rgba(255,159,28,.25)}
+       background:rgba(255,159,28,.13);color:var(--acc);border:1px solid rgba(255,159,28,.25);
+       font-family:inherit;cursor:pointer}
+  .req.done{background:rgba(74,222,128,.13);color:var(--good);border-color:rgba(74,222,128,.3)}
+  .help{margin-top:6px;font-size:12px;line-height:1.5;color:var(--dim);text-align:left}
+  .lvlsum{color:var(--acc-2);text-transform:none;letter-spacing:0;font-size:11px;margin-left:7px}
+  .levelfield{margin:10px 0 14px}
+  .levelfield label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--faint);margin-bottom:6px}
+  .levelfield input{width:110px;background:var(--panel);color:var(--ink);border:1px solid var(--line);
+                     border-radius:8px;padding:7px 10px;font:inherit;font-size:13.5px}
+  .levelfield input:focus{outline:none;border-color:var(--acc-2)}
 
   .code{margin-top:12px;display:flex;align-items:center;gap:9px;flex-wrap:wrap;
         background:#0e1219;border:1px dashed var(--line);border-radius:9px;padding:9px 11px}
@@ -174,6 +183,8 @@
     .chip{min-height:44px;display:inline-flex;align-items:center}
     .chip.tiny{min-height:44px;padding:10px 14px;font-size:12.5px}
     .search input,.search select{min-height:44px}
+    .req{min-height:44px;padding:0 10px}
+    .levelfield input{min-height:44px}
     .code{padding:11px 13px}
     table.rank td{padding-top:13px;padding-bottom:13px}
     ul.changes{columns:1}
@@ -306,7 +317,10 @@ const ROLE_LABEL = {largo:"Larga distancia", corto:"Corta distancia", sniper:"Fr
 // El gamertag por defecto es genérico a propósito: esto se publica en un repo y
 // en una web públicos. Cada usuario pone el suyo con «cambiar gamertag» y se
 // queda en el localStorage de su dispositivo, sin salir de ahí.
-const DEFAULTS = {mode:"resurgence", style:"agresivo", input:"mando", avoid:[], tag:"Jugador", missing:[]};
+const DEFAULTS = {mode:"resurgence", style:"agresivo", input:"mando", avoid:[], tag:"Jugador", missing:[], levels:{}};
+// Fecha del último cambio de interfaz, visible en el pie: es lo que el usuario
+// mira desde el Windows Gamer para saber si ya tiene la versión publicada.
+const UI_VERSION = "2026-09-08";
 let profile = load();
 let DATA = null;
 let openSlug = null;
@@ -323,8 +337,9 @@ function load(){
     const p = raw ? Object.assign({}, DEFAULTS, JSON.parse(raw)) : Object.assign({}, DEFAULTS);
     if(!Array.isArray(p.missing)) p.missing = [];
     if(!Array.isArray(p.avoid))   p.avoid = [];
+    if(!p.levels || typeof p.levels !== "object" || Array.isArray(p.levels)) p.levels = {};
     return p;
-  }catch(e){ return Object.assign({}, DEFAULTS, {missing:[], avoid:[]}); }
+  }catch(e){ return Object.assign({}, DEFAULTS, {missing:[], avoid:[], levels:{}}); }
 }
 function save(){
   try{ localStorage.setItem("armeria-perfil", JSON.stringify(profile)); }catch(e){}
@@ -404,14 +419,90 @@ function mainBuild(slug){
   return list.find(b => /recommended/i.test(b.label)) || list[0] || null;
 }
 
+// Identifica el tipo de requisito de un accesorio. "Week N Challenge" y "Apex"
+// caían antes en "es el nombre de otra arma" (salía "subir Week 2 Challenge");
+// Apex es la etiqueta que wzstats ya usa en Modern Warfare 4 para el accesorio
+// que se gana al máximo nivel del arma, y todavía no aparece en Warzone.
+function parseUnlock(unlock){
+  if(!unlock) return {kind:"vacio"};
+  let m = /^Level\s+(\d+)$/i.exec(unlock);
+  if(m) return {kind:"nivel", n:parseInt(m[1], 10)};
+  if(/^armory$/i.test(unlock))   return {kind:"armeria"};
+  if(/^prestige$/i.test(unlock)) return {kind:"prestigio"};
+  if(/^apex$/i.test(unlock))     return {kind:"apex"};
+  m = /^Week\s+(\d+)\s+Challenge$/i.exec(unlock);
+  if(m) return {kind:"semanal", n:parseInt(m[1], 10)};
+  return {kind:"otraArma", arma:unlock};
+}
+
 // "Level 37" -> "Nv. 37"; "Armory" -> "Armería"; un nombre de arma -> "subir X".
 function reqLabel(unlock){
-  if(!unlock) return "";
-  const lvl = /^Level\s+(\d+)$/i.exec(unlock);
-  if(lvl) return "Nv. " + lvl[1];
-  if(/^armory$/i.test(unlock))   return "Armería";
-  if(/^prestige$/i.test(unlock)) return "Prestigio";
-  return "subir " + unlock;
+  const p = parseUnlock(unlock);
+  switch(p.kind){
+    case "vacio":     return "sin dato";
+    case "nivel":     return "Nv. " + p.n;
+    case "armeria":   return "Armería";
+    case "prestigio": return "Prestigio";
+    case "apex":      return "Apex";
+    case "semanal":   return "Desafío semana " + p.n;
+    default:          return "subir " + p.arma;
+  }
+}
+
+// Un texto por tipo de requisito, para quien no sabe cómo se desbloquea algo.
+// Textos tomados del informe del 2026-09-08, no reinventados.
+const UNLOCK_HELP = {
+  nivel: (p, slug) => {
+    const entry = DATA.builds[slug] || {};
+    let t = "Este accesorio se abre cuando esta arma llega al nivel " + p.n +
+      ". El nivel del arma sube jugando con ella (matar, asistir, completar contratos)." +
+      (entry.max_level ? " El arma llega hasta el nivel " + entry.max_level + "." : "");
+    const mio = profile.levels[slug];
+    if(mio !== undefined && mio !== null && mio !== ""){
+      const restan = p.n - mio;
+      t += restan > 0 ? " Estás en " + mio + ": te faltan " + restan + " niveles."
+                       : " Ya tienes el nivel necesario.";
+    }
+    return t;
+  },
+  armeria: () => "Es contenido de una temporada pasada que ya no se puede conseguir por su vía " +
+    "original. En el juego: Carrera > Desafíos > Armería. Activas el objeto y completas su " +
+    "desafío de experiencia; las guías hablan de 250.000 a 750.000 XP por objeto. Es lento: si " +
+    "el objeto aún está en su evento o pase de batalla, consíguelo por ahí antes.",
+  prestigio: () => "Accesorio exclusivo del arma. Hay que subir el arma al máximo y hacerle " +
+    "prestigio (se reinician sus niveles y sus accesorios, salvo las miras). Después queda " +
+    "desbloqueado para siempre.",
+  semanal: () => "Se consigue completando el desafío semanal de esa semana de la temporada. " +
+    "Si la semana ya pasó, va a parar a la Armería.",
+  otraArma: p => "Este accesorio se desbloquea subiendo de nivel la " + p.arma +
+    ", no esta arma. wzstats no dice a qué nivel.",
+  apex: () => "Apex es un accesorio especial que se gana subiendo esta arma a su nivel máximo, " +
+    "uno por arma. Es propio de Modern Warfare 4; en Warzone hoy todavía no se desbloquea así.",
+  vacio: () => "wzstats no publica el requisito de este accesorio.",
+};
+
+function unlockHelp(unlock, slug){
+  const p = parseUnlock(unlock);
+  return UNLOCK_HELP[p.kind](p, slug);
+}
+
+// Cuántos accesorios de "Level N" de esta build siguen por encima del nivel que
+// el jugador ha escrito para el arma, y cuántos niveles hay hasta el último.
+function nivelResumen(build, slug){
+  const mio = profile.levels[slug];
+  if(mio === undefined || mio === null || mio === "") return "";
+  let faltan = 0, maxN = 0;
+  build.attachments.forEach(a => {
+    const p = parseUnlock(a.unlock);
+    if(p.kind === "nivel" && p.n > mio){
+      faltan++;
+      if(p.n > maxN) maxN = p.n;
+    }
+  });
+  if(!faltan) return "";
+  const niveles = maxN - mio;
+  return "te faltan " + faltan + (faltan === 1 ? " accesorio" : " accesorios") +
+    (niveles > 0 ? " (" + niveles + " niveles hasta el último)" : "");
 }
 
 // Cuánto lleva el arma en su tier actual. El scraper solo escribe "desde" cuando
@@ -441,15 +532,30 @@ function esc(s){
     c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 }
 
-function attsHtml(build){
+function attsHtml(build, slug){
   let h = '<ul class="atts">';
   build.attachments.forEach(a => {
-    const r = reqLabel(a.unlock);
+    const p = parseUnlock(a.unlock);
+    const mio = profile.levels[slug];
+    const cumplido = p.kind === "nivel" && mio !== undefined && mio !== null && mio !== "" && p.n <= mio;
+    const r = (cumplido ? "✓ " : "") + reqLabel(a.unlock);
     h += '<li><span class="sl">' + esc(a.slot || "—") + '</span>' +
          '<span class="right"><span class="at">' + esc(a.name) + '</span>' +
-         (r ? '<span class="req">' + esc(r) + '</span>' : "") + '</span></li>';
+         '<button class="req' + (cumplido ? " done" : "") + '" type="button">' + esc(r) + '</button>' +
+         '<div class="help" hidden>' + esc(unlockHelp(a.unlock, slug)) + '</div>' +
+         '</span></li>';
   });
   return h + '</ul>';
+}
+
+// Junta el rótulo de la build, el resumen de niveles pendientes y los
+// accesorios: se repetía igual en la tarjeta de equipamiento, en la fila
+// desplegada y en el comparador.
+function buildBlockHtml(build, slug){
+  const resumen = nivelResumen(build, slug);
+  return '<div class="buildlabel">' + buildTitle(build) +
+         (resumen ? ' <span class="lvlsum">' + esc(resumen) + '</span>' : '') + '</div>' +
+         attsHtml(build, slug) + codeHtml(build);
 }
 
 function codeHtml(build){
@@ -527,7 +633,7 @@ function slotCard(role, w, isGoal){
           (racha ? ' · <span class="racha">' + esc(racha) + '</span>' : "") + '</div>';
 
   if(build){
-    html += '<div class="buildlabel">' + buildTitle(build) + '</div>' + attsHtml(build) + codeHtml(build);
+    html += buildBlockHtml(build, w.slug);
   }else{
     html += '<div class="empty">No tengo los accesorios de esta arma. ' +
             wzLink(w, "Verlos en wzstats") + '</div>';
@@ -594,11 +700,26 @@ function detailHtml(w){
   const rachaDet = rachaTexto(w);
   if(rachaDet) ficha.push(rachaDet);
   if(ficha.length) h += '<div class="role" style="margin-bottom:10px">' + esc(ficha.join(" · ")) + '</div>';
+  h += levelFieldHtml(w, entry);
   list.forEach(b => {
-    h += '<div class="buildlabel">' + buildTitle(b) + '</div>' + attsHtml(b) + codeHtml(b);
+    h += buildBlockHtml(b, w.slug);
   });
   h += '<div class="actions" style="padding-top:12px">' + haveBtn(w) + '</div></div>';
   return h;
+}
+
+// Nivel de esta arma, para saber exactamente qué accesorios faltan y cuántos
+// niveles quedan (nivelResumen y el estado "cumplido" de cada accesorio leen
+// profile.levels). Sin tope si la ficha no trae nivel máximo.
+function levelFieldHtml(w, entry){
+  const max = entry.max_level || 0;
+  const val = profile.levels[w.slug];
+  const tieneValor = val !== undefined && val !== null && val !== "";
+  return '<div class="levelfield"><label>Nivel de esta arma' + (max ? " (0–" + max + ")" : "") + '</label>' +
+    '<input type="number" class="lvlinput" data-slug="' + esc(w.slug) + '" min="0"' +
+    (max ? ' max="' + max + '"' : "") +
+    (tieneValor ? ' value="' + esc(val) + '"' : "") +
+    ' placeholder="sin poner"></div>';
 }
 
 // Quita acentos y pasa a minúsculas: buscar "jager" tiene que encontrar "JÄGER 45".
@@ -700,7 +821,7 @@ function tarjetaComparada(w){
        (racha ? ' · <span class="racha">' + esc(racha) + '</span>' : "") +
        (entry.max_level ? " · nivel máx. " + entry.max_level : "") +
        (falta(w) ? ' · <span class="racha">no la tienes</span>' : "") + '</div>';
-  h += build ? '<div class="buildlabel">' + buildTitle(build) + '</div>' + attsHtml(build) + codeHtml(build)
+  h += build ? buildBlockHtml(build, w.slug)
              : '<div class="empty">Sin accesorios publicados. ' + wzLink(w, "Verlos en wzstats") + '</div>';
   el.innerHTML = h;
   return el;
@@ -782,8 +903,12 @@ function renderStamp(){
   const d = new Date(DATA.generated_at);
   const when = isNaN(d) ? DATA.generated_at
     : d.toLocaleString("es-ES",{day:"2-digit",month:"short",hour:"2-digit",minute:"2-digit"});
+  // El juego base junto a la temporada: sin él, "Season 1" de Modern Warfare 4
+  // en noviembre se leería igual que "Season 1" de Black Ops 7 en diciembre de 2025.
+  const cabecera = DATA.base_game ? "Warzone · " + DATA.base_game + " · " + DATA.season : DATA.season;
   document.getElementById("stamp").innerHTML =
-    '<span class="dot"></span><b>' + esc(DATA.season) + '</b><br>meta actualizada ' + when;
+    '<span class="dot"></span><b>' + esc(cabecera) + '</b><br>meta actualizada ' + when +
+    '<br>interfaz ' + esc(UI_VERSION);
 }
 
 function renderAll(){
@@ -822,6 +947,13 @@ function renderAvisos(){
                "así que se muestra el dato guardado" +
                (mode.stale_since ? " del " + mode.stale_since.slice(0, 10) : "") + ".");
   }
+  // Avisos generales del scraper (temporada, accesorios fallidos, el cambio a
+  // Modern Warfare 4...). El de "no se pudo leer" de este modo ya sale arriba;
+  // no repetirlo con otra redacción.
+  (DATA.warnings || []).forEach(w => {
+    if(mode.stale && w.indexOf(mode.label) !== -1) return;
+    lista.push(w);
+  });
   host.innerHTML = lista.map(t => '<div class="warn">' + esc(t) + '</div>').join("");
   host.hidden = !lista.length;
 }
@@ -874,6 +1006,18 @@ document.getElementById("cmp-limpiar").addEventListener("click", () => {
   renderAll();
 });
 
+// "change" y no "input": que no repinte toda la página en cada dígito que se teclea.
+document.addEventListener("change", ev => {
+  const inp = ev.target.closest(".lvlinput");
+  if(!inp) return;
+  const slug = inp.dataset.slug;
+  const v = inp.value.trim();
+  if(v === "") delete profile.levels[slug];
+  else profile.levels[slug] = Math.max(0, parseInt(v, 10) || 0);
+  save();
+  renderAll();
+});
+
 // El navegador copia al portapapeles solo en contextos seguros. Si no se puede,
 // hay que decirlo: antes ponía "copiado" igualmente y el usuario se iba al juego
 // a pegar un codigo que no tenia.
@@ -899,6 +1043,15 @@ function respaldoCopiar(texto){
 
 document.addEventListener("click", ev => {
   if(!DATA) return;
+
+  // El "¿cómo se desbloquea?": despliega el texto que cuelga justo debajo.
+  const req = ev.target.closest(".req");
+  if(req){
+    ev.stopPropagation();
+    const ayuda = req.nextElementSibling;
+    if(ayuda && ayuda.classList.contains("help")) ayuda.hidden = !ayuda.hidden;
+    return;
+  }
 
   const copiar = ev.target.closest("[data-copy]");
   if(copiar){

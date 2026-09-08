@@ -1,6 +1,6 @@
 # Resumen de estado — Armería Warzone
 
-**Última actualización: 2026-09-08** (informe de viabilidad, sin tocar código).
+**Última actualización: 2026-09-08** (Fase A del plan, ejecutada y publicada).
 
 El contexto técnico detallado vive en **[CLAUDE.md](CLAUDE.md)**: arquitectura,
 formato de los datos, trampas del scraping y cómo probarlo. Este fichero es la
@@ -8,7 +8,64 @@ bitácora: en qué punto está, qué se decidió y qué viene después.
 
 ---
 
-## 2026-09-08 — Informe pendiente de decisión del usuario
+## 2026-09-08 — Fase A ejecutada (sonnet · high)
+
+Hecho, con `python scripts/pruebas.py` (66 pruebas, todas pasan),
+`python scripts/validar_meta.py` (OK, sin avisos) y el chequeo de sintaxis del
+JS con esprima, todos en verde:
+
+- **A1.** `Week N Challenge` ya no sale como «subir Week 2 Challenge»: ahora
+  «Desafío semana 2». Añadido `Apex` (accesorio de Modern Warfare 4).
+- **A2.** Cada accesorio tiene un chip `.req` clicable que despliega el texto
+  de «¿cómo se desbloquea?» (`UNLOCK_HELP` en `index.html`), con los textos del
+  informe. Comprobado a mano en el navegador (nivel, Armería, desafío semanal,
+  vacío).
+- **A3.** Campo «Nivel de esta arma» en la ficha desplegada. Con el nivel
+  puesto, los accesorios ya alcanzados se marcan `done` (✓) y la build dice
+  «te faltan N accesorios (M niveles hasta el último)». Probado en el
+  navegador: nivel 10 en la 1911 marcó Nv. 4 y Nv. 10 como hechos y calculó
+  bien los que faltan.
+- **A4.** `UI_VERSION = "2026-09-08"` visible en el pie, junto al sello de
+  datos. `VERSION` de `sw.js` subido a `armeria-v5`.
+- **A5.** Cabecera con el juego base («Warzone · Black Ops 7 · Season 5
+  Reloaded, 2026»). `BASE_GAME` en `scrape.py` y `detectar_mw4()` comprueban
+  si wzstats ya sirve armas de MW4 en los modos de Warzone; si es así, avisan
+  en `payload["warnings"]`. **De paso se corrigió que `renderAvisos()` nunca
+  leía `DATA.warnings`**: sin eso, este aviso nuevo (y cualquier otro del
+  scraper que no fuera la frescura o el modo actual) no habría llegado nunca a
+  la cabecera de la web. Comprobado hoy: `detectar_mw4()` no encuentra ningún
+  slug `-mw4` todavía, como toca antes de noviembre.
+- **A6.** `CLAUDE.md` al día (formato del JSON, `reqLabel`/`unlockHelp`, juego
+  base, «Pendiente»).
+
+**Para publicar el cambio de código hacía falta regenerar `meta.json`**: el
+workflow, en un `push`, no vuelve a raspar (solo valida y despliega), y el
+`meta.json` de ayer no traía `base_game`. Se lanzó `python scripts/scrape.py`
+completo (619 armas, 66 con accesorios) antes de commitear, para que el `push`
+no rompiera `validar_meta.py`.
+
+**Falta cerrar la fase:** verificación desde el **Windows Gamer** (arranca en
+`E:`). Cuando el usuario abra el panel publicado desde ahí, tiene que
+confirmar dos cosas: que el pie dice «interfaz 2026-09-08» y que puede
+desplegar la ayuda de un accesorio o poner el nivel de un arma. La fase no se
+da por cerrada sin ese OK.
+
+**Siguiente:** Fase B (opus · high) — ventajas raspadas de wzstats. Para
+empezarla en una ventana nueva:
+
+```
+/model opus
+/effort high
+```
+
+> Lee CLAUDE.md, resumen.md y documentacion/plan-2026-09-08-fases.md de esta
+> carpeta y ejecuta la fase B del plan. Primera línea: modelo y potencia que
+> tocan para esta fase; si no son los que hay, para y pídemelos antes de tocar
+> nada.
+
+---
+
+## 2026-09-08 — Informe que dio origen al plan por fases
 
 El usuario preguntó si la web puede detectar sola su nivel y sus desbloqueos,
 explicar a un novato cómo desbloquear cada cosa, recomendar ventajas por estilo, y
@@ -158,17 +215,17 @@ está en `.gitignore`: no se sube ni se publica.
 ## Cómo retomar esto en una ventana nueva
 
 Abrir Claude Code en `F:\COMPARTIDO\Claude\Warezone`. Primero el modelo y la potencia de la
-fase que toque (para la fase A):
+fase que toque (para la fase B, siguiente):
 
 ```
-/model sonnet
+/model opus
 /effort high
 ```
 
 Y después pegar:
 
 > Lee CLAUDE.md, resumen.md y documentacion/plan-2026-09-08-fases.md de esta carpeta y
-> ejecuta la fase A del plan. Primera línea: modelo y potencia que tocan para esta fase; si no
+> ejecuta la fase B del plan. Primera línea: modelo y potencia que tocan para esta fase; si no
 > son los que hay, para y pídemelos antes de tocar nada.
 
 Para solo mirar en qué punto está, sin ejecutar nada:

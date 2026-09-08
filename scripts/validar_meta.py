@@ -31,7 +31,7 @@ ARMAS_MINIMAS_POR_MODO = 3
 BUILDS_MINIMAS = 20
 TIERS_VALIDOS = {"S", "A", "B", "C", "D", "E", "F"}
 ROLES_VALIDOS = {"largo", "corto", "sniper", "otro"}
-CLAVES_RAIZ = {"generated_at", "season", "source", "changes", "modes", "builds"}
+CLAVES_RAIZ = {"generated_at", "season", "base_game", "source", "changes", "modes", "builds"}
 
 
 def validar(datos: dict) -> tuple[list, list]:
@@ -43,6 +43,9 @@ def validar(datos: dict) -> tuple[list, list]:
     if faltan:
         errores.append(f"faltan claves en la raiz: {', '.join(sorted(faltan))}")
         return errores, notas
+
+    if not str(datos.get("base_game") or "").strip():
+        errores.append("'base_game' esta vacio")
 
     try:
         generado = datetime.fromisoformat(datos["generated_at"])

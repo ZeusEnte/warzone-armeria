@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-09T11:19:16+00:00",
+ "generated_at": "2026-09-10T11:15:37+00:00",
  "season": "Season 5 Reloaded, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-09-08T17:29:22+00:00",
+ "previous_generated_at": "2026-09-09T11:19:16+00:00",
  "warnings": [],
  "changes": [
   {
@@ -2059,7 +2059,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": "",
+     "image": "https://img.wzstats.gg/mtz-556/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
@@ -8577,7 +8577,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": "",
+     "image": "https://img.wzstats.gg/mtz-556/gunDisplayLoadouts",
      "desde": "2026-08-20"
     },
     {
@@ -17478,7 +17478,7 @@
       },
       {
        "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "name": "LTI STENTORIAN BRAKE",
        "unlock": "Armory"
       },
       {

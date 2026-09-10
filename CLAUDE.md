@@ -322,6 +322,22 @@ aportarían. Fue una petición explícita del usuario, no lo conviertas en filtr
   porque la unidad F: pertenece a otro usuario de red.
 - **Node NO está instalado. `gh` NO está instalado.** Ninguno hace falta.
 - Python 3.13 y git 2.55 sí.
+
+**Son dos Windows, y solo uno tiene Python.** El usuario trabaja en `Worker`
+(donde está Python 3.13 y se ejecuta el scraper) y juega en `DESPACHO_GAMER`,
+que es desde donde mira el panel. **En Gamer NO hay Python instalado**
+—comprobado el 2026-09-10: ni instalación, ni registro, ni `py`—, y lo que
+responde a `python` es el señuelo de 0 bytes de la Microsoft Store
+(`%LOCALAPPDATA%\Microsoft\WindowsApps\python.exe`).
+
+Consecuencia práctica: el acceso directo **«Panel de Warezone»**
+(`F:\COMPARTIDO\Claude\...Accesos directos\`, fuera de este proyecto) lanza
+`python -m http.server 8765` sobre `docs/` y **solo funciona en Worker**. En
+Gamer escribe su mensaje y muere en la línea siguiente. **Para ver el panel
+desde Gamer no hace falta servidor**: se abre la web publicada,
+https://zeusente.github.io/warzone-armeria/. El servidor local es únicamente
+para probar cambios antes de publicarlos.
+
 - El usuario escribe en español; responderle en español.
 
 ## Móvil

@@ -1,10 +1,71 @@
 # Resumen de estado — Armería Warzone
 
-**Última actualización: 2026-09-08** (Fases A y B del plan, ejecutadas y publicadas).
+**Última actualización: 2026-09-10** (fases A y B cerradas; fallo del despliegue detectado).
 
 El contexto técnico detallado vive en **[CLAUDE.md](CLAUDE.md)**: arquitectura,
 formato de los datos, trampas del scraping y cómo probarlo. Este fichero es la
 bitácora: en qué punto está, qué se decidió y qué viene después.
+
+---
+
+## 2026-09-10 — Verificación desde Gamer: fases A y B cerradas, y dos cosas rotas
+
+Primera sesión desde el **Windows Gamer**, que es justo lo que faltaba para cerrar
+las fases.
+
+### ✅ Las fases A y B quedan cerradas
+
+Abierta la web publicada en el navegador de Gamer y leído el DOM:
+
+| Qué había que confirmar | Resultado |
+|---|---|
+| Versión de interfaz en el pie | `interfaz 2026-09-08c`, coincide con `UI_VERSION` |
+| Nivel del arma en las tarjetas del día | presente en las tres («NIVEL DE ESTA ARMA (0–34)») |
+| Sección «Ventajas meta por ranura» (fase B) | presente, Perk 1/2/3 con META y A |
+| Cabecera con el juego base (fase A) | «Warzone · Black Ops 7 · Season 5 Reloaded, 2026» |
+| Textos de desbloqueo (fase A) | «subir Dravec 45», «Armería», «Nv. 12» |
+
+**No hay PWA instalada en Gamer**, así que no hay caché vieja que pueda engañar.
+
+### 🔧 En Gamer no hay Python (y eso rompía el panel)
+
+Ni instalación, ni registro, ni `py`: lo que responde a `python` es el señuelo de
+0 bytes de la Microsoft Store. Por eso el acceso directo **«Panel de Warezone»**
+—que lanzaba `python -m http.server 8765` sobre `docs/`— escribía su mensaje y
+moría. **Arreglado con autorización del usuario**: ahora abre directamente la web
+publicada, sin Python ni servidor. Probado, abre el panel en Brave.
+
+El servidor local sigue siendo útil, pero **solo en Worker** y solo para probar
+cambios antes de publicarlos. Nunca fue la forma de mirar el panel.
+
+**Queda abierto:** `scripts\comprobar.ps1` da **falsa alarma triple en Gamer**,
+porque sus tres pasos llaman a `python -B`. Salen los tres en rojo con el proyecto
+perfectamente sano. El propio script ya evita ese mal con la falta de red («no
+concluyente», no cuenta como fallo); le falta hacer lo mismo con la falta de Python.
+
+### 🔴 El despliegue de hoy expiró, y no avisó nadie
+
+Lo gordo del día. El cron de las 06:10 UTC corrió (run #34) y:
+
+- `build` → **success**: raspó y commiteó `adbab17` (`meta: actualizacion 2026-09-10`)
+- `deploy` → **cancelled**: `deploy-pages@v4` estuvo `in_progress` de 11:15:47 a
+  11:25:50 — **exactamente los 10 minutos** de `timeout-minutes: 10` del job
+- `avisar` → **skipped**, porque depende de `deploy`
+- El despliegue de Pages figura en estado **`error`**
+
+Resultado: **los datos de hoy están en `main` pero no publicados**. La web sirve los
+de ayer (1,0 días de antigüedad; el límite son 3, así que no es urgente).
+
+**El agujero de verdad es el silencio.** GitHub manda correo de los runs en
+`failure`, no de los `cancelled`; y `avisar`, que es quien debía chillar, se saltó
+por `needs: deploy`. Es el modo de fallo que este proyecto tiene escrito como el
+peligroso —«la web sigue en pie con datos viejos y nadie se entera»— pero por una
+vía no prevista: **no falla el raspado, falla el publicado**. La comprobación de las
+09:00 tampoco lo caza hoy: juzga por antigüedad y 1 día está dentro del límite; lo
+vería al tercer día.
+
+**Nada de esto se ha arreglado por cuenta propia**: tocar el workflow y republicar
+son decisiones del usuario.
 
 ---
 

@@ -144,6 +144,33 @@ ser un fichero de **0 bytes** que solo abre la Store (y `Get-Command` lo da por
 bueno), y que tras instalar Python **el PATH no se recarga en las ventanas ya
 abiertas** — hay que abrir una nueva o el señuelo sigue ganando.
 
+### ❓ «¿Por qué me recomienda armas que no puedo desbloquear?»
+
+Pregunta del usuario al final del día, con un ejemplo concreto: el **FG42**, que
+viene del **pase de batalla T5 de Black Ops 7** y es **tier S en los cuatro modos**,
+así que la web se lo propone constantemente.
+
+**Se investigó en la fuente antes de decidir nada.** Las únicas etiquetas que
+wzstats usa son `Level N`, `Armory`, otra arma, `Prestige` y el desafío semanal, y
+**todas hablan del accesorio, ninguna del arma**. Las claves por arma del JSON
+tampoco traen el origen. O sea: **el dato no existe en la fuente**, igual que ya
+pasaba con «qué armas posee el jugador».
+
+**Decisión del usuario: no se hace tabla de orígenes a mano.** Se valoró anotar las
+~25 del top y se descartó por dos motivos, y el segundo pesa más que el primero:
+caduca en noviembre con MW4, y sobre todo **nadie tiene el dato** — ni el modelo
+(Black Ops 7 es posterior a lo que sabe) ni el usuario, que no va a mirar arma por
+arma. Escribirla habría sido inventarla, y este proyecto no inventa datos.
+
+Lo que cubre el hueco es el botón **«No la tengo»**, que ya existe y es reactivo: se
+marca cuando aparece una que no tienes, sin inventario previo. El panel decía «de
+momento cuento con que tienes todas», así que **no había ninguna marcada**.
+
+**Cabo suelto para la fase C:** en el CSS de wzstats existen las clases
+`unlock-battlepass` y `unlock-event`, con estilos definidos y **hoy sin usar**. Si
+las estrenan con Modern Warfare 4, el dato llegaría solo y `parse_builds` lo
+recogería sin tocar nada. Merece una mirada en noviembre.
+
 ---
 
 ## 2026-09-08 — Ajuste después de las fases: el nivel del arma, donde se ve

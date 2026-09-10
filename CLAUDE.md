@@ -200,7 +200,8 @@ Ahora:
 3. `diff_modes()` **ignora** los modos `stale`: compararlos consigo mismos no
    dice nada y taparía el diff bueno.
 4. El job `avisar` del workflow corre **después** de `deploy` y falla si hay
-   warnings: la web se publica igual, pero GitHub manda el correo.
+   warnings: la web se publica igual, pero GitHub manda el correo. Lleva
+   **`if: always()`**, y eso no es decorativo — ver abajo.
 5. `modoValido()` en el frontend recoloca al modo por defecto si el guardado ya
    no existe, en vez de reventar.
 6. Las armas cuya **ficha** falle hoy conservan los accesorios de la
@@ -214,6 +215,38 @@ Ahora:
 Si dos ejecuciones caen el **mismo día UTC**, los `changes` se acumulan en vez de
 reemplazarse (`fusionar_cambios`). Sin eso, tocar `index.html` dejaba el panel
 «Movimientos del meta» vacío hasta el día siguiente.
+
+### Cuando lo que falla es el *publicado*, no el raspado (2026-09-10)
+
+Todo lo de arriba protege del raspado que falla. El **2026-09-10** falló la otra
+mitad y no estaba cubierta: `build` raspó y commiteó bien, pero `deploy-pages@v4`
+tardó más que el `timeout-minutes: 10` del job `deploy` y GitHub lo mató. Los datos
+de ese día quedaron **en `main` pero sin publicar**, y la web siguió sirviendo los
+de la víspera.
+
+**Lo grave fue el silencio, y son dos cosas encadenadas:**
+
+- Un job que agota su `timeout-minutes` deja el run en **`cancelled`**, no en
+  `failure`. **GitHub solo manda correo de los `failure`.**
+- Y `avisar` —el que debía chillar— **se saltaba**, porque un job con
+  `needs: [build, deploy]` no corre si alguno de los dos no acaba en success.
+  Es decir: se saltaba justo el día en que había algo que contar.
+
+Arreglado poniéndole a `avisar` **`if: always()`** y un primer paso que falla si
+`needs.deploy.result != 'success'`. Ahora un despliegue cortado deja el run en rojo
+y sale el correo. **No quitar ese `if: always()`**: sin él, este job solo avisa
+cuando todo ha ido bien, que es cuando no hace falta.
+
+Efecto secundario aceptado: si se cancela un run **a mano**, también llega correo.
+Se prefiere eso al silencio.
+
+Cuando pase, se arregla **relanzando el workflow a mano** (*Actions → Run
+workflow*): al ser `workflow_dispatch` no vuelve a raspar, solo valida y publica lo
+que ya hay en `main`.
+
+**Ojo con la antigüedad como red de seguridad:** `comprobar.ps1` tolera 3 días, así
+que un fallo de publicado no se ve hasta el tercero. Es a propósito, pero significa
+que **el correo es la única alerta rápida**.
 
 ## Ventajas (perks), añadidas en la fase B el 2026-09-08
 
@@ -314,6 +347,38 @@ aportarían. Fue una petición explícita del usuario, no lo conviertas en filtr
   versión y deja que el workflow lo regenere. En rebase, tu versión local es
   `--theirs`.
 - Los push de solo `.md` no disparan el scraping (`paths-ignore` en el workflow).
+  Un push que toque `.github/workflows/` **sí** dispara el workflow (y republica).
+
+## La comprobación declarada: `scripts\comprobar.ps1`
+
+Tres pasos. Los dos primeros lanzan `pruebas.py` y `validar_meta.py` con Python; el
+tercero mira **el `meta.json` ya publicado**, que es el único que ve el producto de
+verdad. Sale 0 si todo va bien.
+
+**Dos situaciones se declaran «no concluyente» y NO cuentan como fallo**, porque una
+alarma que salta cuando no pasa nada enseña a no mirar la alarma:
+
+- **Sin red**, el paso 3 no se puede hacer.
+- **Sin Python**, los pasos 1 y 2 no se pueden hacer. Pasa en Gamer (ver «Entorno»).
+
+**El paso 3 está en PowerShell y no en Python a propósito** (desde el 2026-09-10):
+así se comprueba igual en la máquina que no tiene Python, que además es desde donde
+se usa la web. De paso se fue la sonda de Python embebida en un heredoc y su fichero
+temporal.
+
+> **Trampa de fechas, que costó una prueba descubrir y se reintroduce sola.**
+> `ConvertFrom-Json` **no** deja `generated_at` como texto: reconoce el ISO-8601 y lo
+> convierte a `[datetime]`. Si después se llama a `[datetimeoffset]::Parse($marca)`,
+> ese `DateTime` se vuelve a texto con la cultura de la máquina (**es-ES**,
+> `dd/MM/yyyy`) y se re-parsea con la invariante (`MM/dd/yyyy`): **`02/09` se lee como
+> 9 de febrero**. Un JSON de hace 8 días daba «213 días». No se veía a simple vista
+> porque ese día la fecha era `09/09`, simétrica. Y el caso peligroso es el contrario:
+> una marca vieja leída como reciente, con el cron parado y nadie avisando. Se
+> resuelve usando `[datetimeoffset]::new($marca)` cuando ya es `[datetime]`, y
+> `Parse` con `InvariantCulture` + `RoundtripKind` solo cuando es texto.
+>
+> **Al tocar ese cálculo, probarlo con una fecha cuyo día sea ≤ 12**, o el error pasa
+> desapercibido.
 
 ## Entorno del usuario
 

@@ -64,8 +64,35 @@ vía no prevista: **no falla el raspado, falla el publicado**. La comprobación 
 09:00 tampoco lo caza hoy: juzga por antigüedad y 1 día está dentro del límite; lo
 vería al tercer día.
 
-**Nada de esto se ha arreglado por cuenta propia**: tocar el workflow y republicar
-son decisiones del usuario.
+### ✅ Arreglado ese mismo día, con las tres decisiones del usuario
+
+**1. El workflow ya avisa cuando el despliegue falla.** `avisar` lleva ahora
+`if: always()` y un primer paso que falla si `deploy` no acabó en `success`. Sin
+`always()`, ese job se saltaba justo el día en que había algo que contar. Efecto
+secundario aceptado: cancelar un run a mano también manda correo; se prefiere eso
+al silencio.
+
+**2. `comprobar.ps1` ya no da falsa alarma sin Python.** Los pasos 1 y 2 se omiten
+diciéndolo, y el **paso 3 —el único que mira el producto de verdad— pasó a
+PowerShell**, así que se comprueba igual en las dos máquinas. De paso se fue la
+sonda de Python embebida en un heredoc y su fichero temporal: una pieza menos.
+
+**3. Y esa reescritura tenía un bug, que la prueba destapó.** `ConvertFrom-Json` no
+deja `generated_at` como texto: lo convierte a `[datetime]`. Al re-parsearlo con
+`[datetimeoffset]::Parse()` se pasaba por texto con la cultura de la máquina
+(es-ES, `dd/MM`) y se leía con la invariante (`MM/dd`): **`02/09` se interpretaba
+como 9 de febrero**, y un JSON de hace 8 días daba «213 días». No se veía a simple
+vista porque la fecha de ese día, `09/09`, es simétrica. **El caso peligroso es el
+contrario**: una marca vieja leída como reciente, con el cron parado y sin avisar.
+Arreglado, y anotado en `CLAUDE.md` porque se reintroduce solo.
+
+**Comprobado que sabe fallar**, que es la mitad que suele faltar: siete JSON falsos
+—cron parado, warning, un modo de menos, un modo `stale`, `generated_at` ilegible,
+JSON sano y **una fecha reciente pero ambigua (día ≤ 12)**, que es el que caza el
+bug de arriba— y los siete se comportan como deben.
+
+**Queda en manos del usuario:** relanzar el workflow para publicar los datos de hoy
+(*Actions → Run workflow*; al ser `workflow_dispatch` no vuelve a raspar).
 
 ---
 

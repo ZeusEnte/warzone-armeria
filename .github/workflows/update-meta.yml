@@ -130,9 +130,37 @@ jobs:
     needs: [build, deploy]
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    # Solo lee una salida del job anterior: no necesita nada.
+    # OJO, esto es lo que hace que el aviso llegue de verdad. Sin "always()"
+    # este job se SALTA cuando "deploy" no acaba en success, que es justo el
+    # dia en que hay algo que contar. Y un run "cancelled" no genera correo de
+    # GitHub: solo lo generan los "failure". Resultado el 2026-09-10: el cron
+    # rasco y comiteo bien, "deploy" agoto sus 10 minutos contra Pages, el run
+    # quedo en "cancelled", este job se salto y NADIE se entero de que la web
+    # se habia quedado con los datos del dia anterior. Con always() el job
+    # corre igual y falla, y entonces si sale el correo.
+    if: always()
+    # Solo lee salidas de los jobs anteriores: no necesita nada.
     permissions: {}
     steps:
+      # Primero lo del despliegue: si la web no se ha republicado, da igual que
+      # el raspado fuera perfecto, porque nadie lo esta viendo.
+      - name: Fallar si el despliegue no salio bien
+        env:
+          ESTADO_BUILD: ${{ needs.build.result }}
+          ESTADO_DEPLOY: ${{ needs.deploy.result }}
+        run: |
+          if [ "$ESTADO_BUILD" != "success" ]; then
+            echo "::error::El job 'build' termino en '$ESTADO_BUILD': no hay nada publicado hoy."
+            exit 1
+          fi
+          if [ "$ESTADO_DEPLOY" != "success" ]; then
+            echo "::error::El job 'deploy' termino en '$ESTADO_DEPLOY'. Los datos de hoy estan en main pero la web sigue sirviendo los del dia anterior."
+            echo "Si pone 'cancelled', lo normal es que Pages tardara mas que el timeout-minutes de 'deploy'."
+            echo "Se arregla relanzando el workflow a mano (Actions -> Run workflow): no vuelve a raspar, solo publica lo que ya hay en main."
+            exit 1
+          fi
+          echo "Despliegue correcto: la web sirve los datos de hoy."
+
       - name: Fallar si el raspado dejo avisos
         env:
           AVISOS: ${{ needs.build.outputs.avisos }}

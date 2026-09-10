@@ -331,6 +331,44 @@ y tú juegas agresivo»), que es el caso en que la ganadora rankea peor y el
 resultado parecería arbitrario. Su estado no se guarda en el perfil a propósito:
 es una consulta de un rato, no una preferencia.
 
+## De dónde sale un arma: comprobado que wzstats NO lo dice (2026-09-10)
+
+El usuario preguntó por qué la web le recomienda armas que no se desbloquean solo
+jugando —su ejemplo: el **FG42**, que viene del **pase de batalla T5 de Black Ops
+7**— y si eso es correcto. **Se investigó en la fuente antes de decidir nada, y el
+dato no está.**
+
+Estas son **todas** las etiquetas `.level-tag` que wzstats usa de verdad, contadas
+sobre cuatro fichas (`fg42`, `an-94`, `rev-46`, `peacekeeper-mk1`):
+
+| Clase | Texto | De qué habla |
+|---|---|---|
+| *(sin clase extra)* | `Level 33` | accesorio |
+| `unlock-armory` | `Armory` | accesorio |
+| `cross-weapon-tag` | `Peacekeeper MK1` | accesorio |
+| `unlock-prestige` | `Prestige` | accesorio |
+| `unlock-weekly` | desafío semanal | accesorio |
+
+**Todas son del accesorio; ninguna del arma.** Y las claves por arma en el JSON son
+`desde, image, name, positions, slug, tags, tier, weapon_type`: **ninguna dice el
+origen**. Confirma lo que ya concluyó el informe del 2026-09-08 — qué armas posee un
+jugador no existe en fuente pública—, ahora también para *cómo se consigue* el arma.
+
+> **Un cabo suelto que puede desatarse solo:** en el CSS de wzstats existen las
+> clases **`unlock-battlepass`** y **`unlock-event`**, con sus estilos definidos,
+> pero **hoy no se usan en ninguna ficha**. Si algún día las usan, el dato llegaría
+> como texto de la etiqueta y `parse_builds` lo recogería sin tocar nada. Merece una
+> mirada al llegar Modern Warfare 4.
+
+**Decisión del usuario, el 2026-09-10: no se hace tabla de orígenes a mano.** Se
+valoró anotar el origen de las ~25 armas del top, y se descartó por dos motivos que
+conviene no olvidar: **caduca en noviembre** con el cambio a Modern Warfare 4, y
+sobre todo **nadie tiene el dato** — ni el modelo (Black Ops 7 es posterior a lo que
+sabe) ni el usuario, que no va a mirarlas una a una. Escribir esa tabla habría sido
+inventarla. **Que no se vuelva a proponer sin una fuente detrás.**
+
+Lo que cubre el hueco mientras tanto es el botón **«No la tengo»**, que ya existe.
+
 ## Posesión de armas
 
 wzstats da el requisito de cada **accesorio**, pero **qué armas posee un jugador

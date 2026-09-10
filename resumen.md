@@ -106,6 +106,44 @@ Manager intentaba abrir su ventana de autenticación y nadie la atendía. Se res
 lanzando el push desde una **ventana de PowerShell normal**, fuera de Claude Code,
 donde sí se puede responder al navegador. Queda guardada: en este PC ya no la pedirá.
 
+### 🖥️ Y a partir de hoy, Warezone se gestiona entero desde Gamer
+
+Petición del usuario ese mismo día. La pregunta que hizo era la buena —«¿o son
+cosas que conviene hacer desde Worker porque se comparten con más proyectos?»— y
+**la respuesta, comprobada y no supuesta, es que no arrastra a nadie**:
+
+- Este proyecto es **estanco**: no depende de ningún otro y nadie depende de él.
+- Su cron vive en **los servidores de GitHub**, no en ningún PC.
+- **Python no se comparte por el disco `F:`**: es una instalación local de cada
+  Windows. Tenerlo en los dos no le quita nada a ninguno.
+- **En Gamer no corre ninguna tarea programada de la casa** (verificado): el repaso
+  de las 09:00 y el respaldo de las 03:00 siguen en Worker, y ahí se quedan, porque
+  esos sí sirven a todos los proyectos.
+
+Instalado **Python 3.12.10** con winget (`--scope user`), la misma versión que usa
+el robot de GitHub, para que lo que se pruebe aquí se comporte igual que allí. Más
+`requests` y `beautifulsoup4`. Verificado en esta máquina:
+
+| | |
+|---|---|
+| `pruebas.py` | **81 pruebas, todas pasan** |
+| `validar_meta.py` | OK: 5 modos, 619 armas, 66 con accesorios, 77 ventajas |
+| `comprobar.ps1` | **los tres pasos en verde**, «Warezone: bien», código 0 |
+| `scrape.py --simular` | raspa wzstats: 249 armas, 15 ventajas, sin escribir nada |
+| servidor de pruebas | sirve `index.html` y `meta.json` de la copia local |
+
+**Dos accesos directos, con dos oficios distintos**, para que no se confundan:
+**«Panel de Warezone»** abre la web publicada (uso diario, no necesita nada) y
+**«Warezone - servidor de pruebas»** levanta el servidor local para ver un cambio
+antes de subirlo. La lógica del segundo vive en `scripts\servidor-pruebas.ps1`, no
+dentro del `.lnk`: así está versionada y, si algún día falta Python, lo dice a la
+cara en vez de morir con el mensaje críptico de la Microsoft Store.
+
+**Dos trampas anotadas en `CLAUDE.md` porque reaparecen:** que `python.exe` puede
+ser un fichero de **0 bytes** que solo abre la Store (y `Get-Command` lo da por
+bueno), y que tras instalar Python **el PATH no se recarga en las ventanas ya
+abiertas** — hay que abrir una nueva o el señuelo sigue ganando.
+
 ---
 
 ## 2026-09-08 — Ajuste después de las fases: el nivel del arma, donde se ve

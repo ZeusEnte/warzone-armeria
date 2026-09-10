@@ -31,6 +31,8 @@ scripts/scrape.py                  el scraper (única lógica de servidor). Tien
 scripts/validar_meta.py            invariantes del JSON generado; corre en el workflow
 scripts/pruebas.py                 pruebas del parser y del validador. Sin red, un segundo
 scripts/requirements.txt           requests + beautifulsoup4
+scripts/comprobar.ps1              comprobacion declarada. Solo lee. 0 si va bien
+scripts/servidor-pruebas.ps1       sirve docs\ en local para ver un cambio sin publicarlo
 docs/index.html                    la app entera: HTML + CSS + JS, sin build ni dependencias
 docs/sw.js                         service worker (funciona sin cobertura). Subir VERSION al tocar la web
 docs/data/meta.json          680K  datos generados. NO EDITAR A MANO, NO LEER ENTERO
@@ -359,7 +361,10 @@ verdad. Sale 0 si todo va bien.
 alarma que salta cuando no pasa nada enseña a no mirar la alarma:
 
 - **Sin red**, el paso 3 no se puede hacer.
-- **Sin Python**, los pasos 1 y 2 no se pueden hacer. Pasa en Gamer (ver «Entorno»).
+- **Sin Python**, los pasos 1 y 2 no se pueden hacer. Desde el 2026-09-10 las dos
+  máquinas lo tienen, así que hoy no debería saltar; se queda porque la detección
+  es lo que evita el mensaje críptico de la Microsoft Store, y porque una máquina
+  nueva empieza sin Python.
 
 **El paso 3 está en PowerShell y no en Python a propósito** (desde el 2026-09-10):
 así se comprueba igual en la máquina que no tiene Python, que además es desde donde
@@ -388,20 +393,42 @@ temporal.
 - **Node NO está instalado. `gh` NO está instalado.** Ninguno hace falta.
 - Python 3.13 y git 2.55 sí.
 
-**Son dos Windows, y solo uno tiene Python.** El usuario trabaja en `Worker`
-(donde está Python 3.13 y se ejecuta el scraper) y juega en `DESPACHO_GAMER`,
-que es desde donde mira el panel. **En Gamer NO hay Python instalado**
-—comprobado el 2026-09-10: ni instalación, ni registro, ni `py`—, y lo que
-responde a `python` es el señuelo de 0 bytes de la Microsoft Store
-(`%LOCALAPPDATA%\Microsoft\WindowsApps\python.exe`).
+**Son dos Windows, y este proyecto se gestiona entero desde cualquiera de los
+dos** (decidido por el usuario el 2026-09-10). `Worker` tiene Python 3.13;
+`DESPACHO_GAMER` —desde donde se juega y se mira el panel— tiene **Python 3.12
+desde el 2026-09-10**, la misma versión que usa el CI, instalada con
+`winget install --id Python.Python.3.12 --scope user`.
 
-Consecuencia práctica: el acceso directo **«Panel de Warezone»**
-(`F:\COMPARTIDO\Claude\...Accesos directos\`, fuera de este proyecto) lanza
-`python -m http.server 8765` sobre `docs/` y **solo funciona en Worker**. En
-Gamer escribe su mensaje y muere en la línea siguiente. **Para ver el panel
-desde Gamer no hace falta servidor**: se abre la web publicada,
-https://zeusente.github.io/warzone-armeria/. El servidor local es únicamente
-para probar cambios antes de publicarlos.
+Que se pueda es porque **este proyecto es estanco**: no depende de ningún otro,
+nadie depende de él y su cron vive en los servidores de GitHub, no en un PC.
+Python no se comparte por el disco `F:` —es una instalación local de cada
+Windows—, así que tenerlo en los dos no le quita nada a ninguno. **Lo que sigue
+siendo solo de Worker son las tareas programadas de la casa** (el repaso de las
+09:00 y el respaldo de las 03:00), que sirven a todos los proyectos; en Gamer no
+hay ninguna.
+
+> **La trampa del `python.exe` de 0 bytes, que reaparece cada vez.** Aunque no
+> haya Python, el PATH trae igualmente
+> `%LOCALAPPDATA%\Microsoft\WindowsApps\python.exe`: un fichero de **cero bytes**
+> que solo abre la Microsoft Store. `Get-Command python` lo encuentra y dice que
+> sí. Para saber si hay Python de verdad hay que **mirar el tamaño o ejecutarlo**
+> (lo hacen `comprobar.ps1` y `servidor-pruebas.ps1`).
+>
+> Y tras instalarlo, **el PATH no se recarga en las ventanas ya abiertas**: hay
+> que abrir una nueva, o el señuelo sigue ganando. Costó un rato el 2026-09-10.
+
+**Dos accesos directos, con dos oficios distintos**, en
+`F:\COMPARTIDO\Claude\...Accesos directos\` (fuera de este proyecto; se tocan
+solo con permiso del usuario):
+
+| Acceso directo | Qué hace |
+|---|---|
+| **Panel de Warezone** | abre la web publicada. Es el uso diario y no necesita nada instalado |
+| **Warezone - servidor de pruebas** | lanza `scripts\servidor-pruebas.ps1`: sirve tu `docs\` local para ver un cambio **antes** de publicarlo |
+
+La lógica del segundo vive en `scripts\servidor-pruebas.ps1` y no dentro del
+`.lnk` a propósito: así está versionada y se puede arreglar. Si no encuentra
+Python, lo dice a la cara en vez de morir con el mensaje críptico de la Store.
 
 - El usuario escribe en español; responderle en español.
 

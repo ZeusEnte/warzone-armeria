@@ -91,8 +91,20 @@ Arreglado, y anotado en `CLAUDE.md` porque se reintroduce solo.
 JSON sano y **una fecha reciente pero ambigua (día ≤ 12)**, que es el que caza el
 bug de arriba— y los siete se comportan como deben.
 
-**Queda en manos del usuario:** relanzar el workflow para publicar los datos de hoy
-(*Actions → Run workflow*; al ser `workflow_dispatch` no vuelve a raspar).
+### ✅ Publicado y verificado el mismo día
+
+El push de los tres commits disparó el **run #35** (evento `push`, así que no volvió
+a raspar: solo validó y publicó). **Los tres jobs en verde, `avisar` incluido** —el
+que ahora corre con `if: always()`—, y la web pasó a servir los datos de hoy
+(`generated_at` 2026-09-10T11:15:37Z). La comprobación declarada sale **0** desde
+Gamer, con los dos pasos locales omitidos por falta de Python y el paso 3 en verde.
+
+**Una traba que costó encontrar y conviene recordar:** el `git push` se colgaba dos
+minutos y expiraba, tanto desde Claude Code como desde `!`. La causa es que **en
+Gamer no hay ninguna credencial de GitHub guardada** (en Worker sí): Git Credential
+Manager intentaba abrir su ventana de autenticación y nadie la atendía. Se resolvió
+lanzando el push desde una **ventana de PowerShell normal**, fuera de Claude Code,
+donde sí se puede responder al navegador. Queda guardada: en este PC ya no la pedirá.
 
 ---
 

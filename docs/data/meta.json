@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-10T11:15:37+00:00",
+ "generated_at": "2026-09-11T11:16:36+00:00",
  "season": "Season 5 Reloaded, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-09-09T11:19:16+00:00",
+ "previous_generated_at": "2026-09-10T11:15:37+00:00",
  "warnings": [],
  "changes": [
   {
@@ -11,6 +11,48 @@
    "weapon": "KNIFE",
    "kind": "entra",
    "to": "D"
+  },
+  {
+   "mode": "resurgence_ranked",
+   "weapon": "DS20 MIRAGE",
+   "kind": "baja",
+   "from": "S",
+   "to": "A"
+  },
+  {
+   "mode": "resurgence_ranked",
+   "weapon": "MPC-25",
+   "kind": "baja",
+   "from": "S",
+   "to": "A"
+  },
+  {
+   "mode": "battle_royale",
+   "weapon": "DS20 MIRAGE",
+   "kind": "baja",
+   "from": "S",
+   "to": "A"
+  },
+  {
+   "mode": "battle_royale",
+   "weapon": "MPC-25",
+   "kind": "baja",
+   "from": "S",
+   "to": "A"
+  },
+  {
+   "mode": "battle_royale",
+   "weapon": "VS RECON",
+   "kind": "baja",
+   "from": "S",
+   "to": "A"
+  },
+  {
+   "mode": "battle_royale",
+   "weapon": "HAWKER HX",
+   "kind": "baja",
+   "from": "S",
+   "to": "A"
   },
   {
    "mode": "battle_royale",
@@ -5703,7 +5745,7 @@
     {
      "name": "DS20 MIRAGE",
      "slug": "ds20-mirage",
-     "tier": "S",
+     "tier": "A",
      "positions": [
       {
        "range": "Long Range",
@@ -5716,12 +5758,12 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/ds20-mirage_version4/gunDisplayLoadouts",
-     "desde": "2026-08-20"
+     "desde": "2026-09-11"
     },
     {
      "name": "MPC-25",
      "slug": "mpc-25",
-     "tier": "S",
+     "tier": "A",
      "positions": [
       {
        "range": "Close Range",
@@ -5733,8 +5775,8 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/mpc-25_version4/gunDisplayLoadouts",
-     "desde": "2026-08-21"
+     "image": "https://img.wzstats.gg/mpc-25/gunDisplayLoadouts",
+     "desde": "2026-09-11"
     },
     {
      "name": "AK-27",
@@ -6808,42 +6850,6 @@
      "desde": "2026-08-20"
     },
     {
-     "name": "DS20 MIRAGE",
-     "slug": "ds20-mirage",
-     "tier": "S",
-     "positions": [
-      {
-       "range": "Long Range",
-       "rank": 4,
-       "role": "largo"
-      }
-     ],
-     "weapon_type": "Assault Rifle",
-     "tags": [
-      "Assault Rifle"
-     ],
-     "image": "https://img.wzstats.gg/ds20-mirage_version4/gunDisplayLoadouts",
-     "desde": "2026-08-20"
-    },
-    {
-     "name": "MPC-25",
-     "slug": "mpc-25",
-     "tier": "S",
-     "positions": [
-      {
-       "range": "Close Range",
-       "rank": 4,
-       "role": "corto"
-      }
-     ],
-     "weapon_type": "SMG",
-     "tags": [
-      "SMG"
-     ],
-     "image": "https://img.wzstats.gg/mpc-25_version4/gunDisplayLoadouts",
-     "desde": "2026-08-21"
-    },
-    {
      "name": "STRIDER 300",
      "slug": "strider-300",
      "tier": "S",
@@ -6862,40 +6868,40 @@
      "desde": "2026-08-20"
     },
     {
-     "name": "HAWKER HX",
-     "slug": "hawker-hx",
-     "tier": "S",
+     "name": "DS20 MIRAGE",
+     "slug": "ds20-mirage",
+     "tier": "A",
      "positions": [
       {
-       "range": "Sniper",
-       "rank": 2,
-       "role": "sniper"
+       "range": "Long Range",
+       "rank": 4,
+       "role": "largo"
       }
      ],
-     "weapon_type": "Sniper",
+     "weapon_type": "Assault Rifle",
      "tags": [
-      "Sniper"
+      "Assault Rifle"
      ],
-     "image": "https://img.wzstats.gg/hawker-hx_version3/gunDisplayLoadouts",
-     "desde": "2026-08-20"
+     "image": "https://img.wzstats.gg/ds20-mirage_version4/gunDisplayLoadouts",
+     "desde": "2026-09-11"
     },
     {
-     "name": "VS RECON",
-     "slug": "vs-recon",
-     "tier": "S",
+     "name": "MPC-25",
+     "slug": "mpc-25",
+     "tier": "A",
      "positions": [
       {
-       "range": "Sniper",
-       "rank": 3,
-       "role": "sniper"
+       "range": "Close Range",
+       "rank": 4,
+       "role": "corto"
       }
      ],
-     "weapon_type": "Sniper",
+     "weapon_type": "SMG",
      "tags": [
-      "Sniper"
+      "SMG"
      ],
-     "image": "https://img.wzstats.gg/vs-recon_version4/gunDisplayLoadouts",
-     "desde": "2026-08-20"
+     "image": "https://img.wzstats.gg/mpc-25/gunDisplayLoadouts",
+     "desde": "2026-09-11"
     },
     {
      "name": "AK-27",
@@ -7027,6 +7033,42 @@
      ],
      "image": "https://img.wzstats.gg/peacekeeper-mk1_version4/gunDisplayLoadouts",
      "desde": "2026-08-20"
+    },
+    {
+     "name": "VS RECON",
+     "slug": "vs-recon",
+     "tier": "A",
+     "positions": [
+      {
+       "range": "Sniper",
+       "rank": 2,
+       "role": "sniper"
+      }
+     ],
+     "weapon_type": "Sniper",
+     "tags": [
+      "Sniper"
+     ],
+     "image": "https://img.wzstats.gg/vs-recon/gunDisplayLoadouts",
+     "desde": "2026-09-11"
+    },
+    {
+     "name": "HAWKER HX",
+     "slug": "hawker-hx",
+     "tier": "A",
+     "positions": [
+      {
+       "range": "Sniper",
+       "rank": 3,
+       "role": "sniper"
+      }
+     ],
+     "weapon_type": "Sniper",
+     "tags": [
+      "Sniper"
+     ],
+     "image": "https://img.wzstats.gg/hawker-hx/gunDisplayLoadouts",
+     "desde": "2026-09-11"
     },
     {
      "name": "MXR-17",
@@ -11319,6 +11361,18 @@
      "kind": "perk"
     },
     {
+     "name": "Field Medic",
+     "slot": "Perk 1",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Tempered",
+     "slot": "Perk 3",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
      "name": "Momentum",
      "slot": "Perk 2",
      "tier": "META",
@@ -11327,12 +11381,6 @@
     {
      "name": "Drill Instructor",
      "slot": "Perk 1",
-     "tier": "META",
-     "kind": "perk"
-    },
-    {
-     "name": "Tempered",
-     "slot": "Perk 3",
      "tier": "META",
      "kind": "perk"
     },
@@ -11346,12 +11394,6 @@
      "name": "Berserker",
      "slot": "Perk 2",
      "tier": "META",
-     "kind": "perk"
-    },
-    {
-     "name": "Field Medic",
-     "slot": "Perk 1",
-     "tier": "A",
      "kind": "perk"
     },
     {
@@ -11583,12 +11625,6 @@
      "kind": "perk"
     },
     {
-     "name": "Drill Instructor",
-     "slot": "Perk 1",
-     "tier": "META",
-     "kind": "perk"
-    },
-    {
      "name": "Field Medic",
      "slot": "Perk 1",
      "tier": "META",
@@ -11601,15 +11637,21 @@
      "kind": "perk"
     },
     {
-     "name": "Momentum",
-     "slot": "Perk 2",
+     "name": "Drill Instructor",
+     "slot": "Perk 1",
      "tier": "META",
      "kind": "perk"
     },
     {
      "name": "Scavenger",
      "slot": "Perk 1",
-     "tier": "A",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Momentum",
+     "slot": "Perk 2",
+     "tier": "META",
      "kind": "perk"
     },
     {
@@ -11715,14 +11757,20 @@
      "kind": "perk"
     },
     {
-     "name": "Momentum",
-     "slot": "Perk 2",
+     "name": "Scavenger",
+     "slot": "Perk 1",
      "tier": "META",
      "kind": "perk"
     },
     {
-     "name": "Drill Instructor",
+     "name": "Field Medic",
      "slot": "Perk 1",
+     "tier": "META",
+     "kind": "perk"
+    },
+    {
+     "name": "Momentum",
+     "slot": "Perk 2",
      "tier": "META",
      "kind": "perk"
     },
@@ -11733,15 +11781,9 @@
      "kind": "perk"
     },
     {
-     "name": "Scavenger",
+     "name": "Drill Instructor",
      "slot": "Perk 1",
-     "tier": "META",
-     "kind": "perk"
-    },
-    {
-     "name": "Field Medic",
-     "slot": "Perk 1",
-     "tier": "META",
+     "tier": "A",
      "kind": "perk"
     },
     {
@@ -13479,12 +13521,12 @@
     {
      "context": "Black Ops 7 Ranked",
      "label": "Recommended",
-     "code": "S06-8E469-UQ51",
+     "code": "S06-8E469-UY51",
      "attachments": [
       {
        "slot": "Barrel",
-       "name": "14.5\" VAS ASHE BARREL",
-       "unlock": "Level 15"
+       "name": "13.1\" RAZORBACK BARREL",
+       "unlock": "Level 2"
       },
       {
        "slot": "Underbarrel",
@@ -17478,7 +17520,7 @@
       },
       {
        "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
        "unlock": "Armory"
       },
       {
@@ -30941,24 +30983,24 @@
      "code": "",
      "attachments": [
       {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Level 22"
+      },
+      {
        "slot": "Barrel",
-       "name": "17\" GREAVES SCOURGE BARREL",
-       "unlock": "Level 35"
+       "name": "15\" WRAITH BARREL",
+       "unlock": "Level 8"
       },
       {
        "slot": "Underbarrel",
-       "name": "EAM STEADY-90 GRIP",
-       "unlock": "Level 38"
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 9"
       },
       {
        "slot": "Rear Grip",
-       "name": "FISSURE GRIP",
-       "unlock": "Level 25"
-      },
-      {
-       "slot": "Stock",
-       "name": "GREAVES COVENANT STOCK",
-       "unlock": "Level 7"
+       "name": "BELL-H81 GRIP",
+       "unlock": "Level 4"
       },
       {
        "slot": "Fire Mods",

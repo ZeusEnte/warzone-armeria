@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-11T11:16:36+00:00",
+ "generated_at": "2026-09-12T10:43:19+00:00",
  "season": "Season 5 Reloaded, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-09-10T11:15:37+00:00",
+ "previous_generated_at": "2026-09-11T11:16:36+00:00",
  "warnings": [],
  "changes": [
   {
@@ -11,48 +11,6 @@
    "weapon": "KNIFE",
    "kind": "entra",
    "to": "D"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "DS20 MIRAGE",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "MPC-25",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "DS20 MIRAGE",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "MPC-25",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "VS RECON",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "HAWKER HX",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
   },
   {
    "mode": "battle_royale",
@@ -30983,24 +30941,24 @@
      "code": "",
      "attachments": [
       {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Level 22"
-      },
-      {
        "slot": "Barrel",
-       "name": "15\" WRAITH BARREL",
-       "unlock": "Level 8"
+       "name": "17\" GREAVES SCOURGE BARREL",
+       "unlock": "Level 35"
       },
       {
        "slot": "Underbarrel",
-       "name": "SENTRY PRO HANDSTOP",
-       "unlock": "Level 9"
+       "name": "EAM STEADY-90 GRIP",
+       "unlock": "Level 38"
       },
       {
        "slot": "Rear Grip",
-       "name": "BELL-H81 GRIP",
-       "unlock": "Level 4"
+       "name": "FISSURE GRIP",
+       "unlock": "Level 25"
+      },
+      {
+       "slot": "Stock",
+       "name": "GREAVES COVENANT STOCK",
+       "unlock": "Level 7"
       },
       {
        "slot": "Fire Mods",
@@ -33204,12 +33162,12 @@
     {
      "context": "Warzone Resurgence Ranked",
      "label": "Recommended",
-     "code": "C02-3MHZ8-ZGF11",
+     "code": "C02-3MHSY-JVN11",
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
+       "name": "ECHO MODIFIED CHOKE",
+       "unlock": "Level 10"
       },
       {
        "slot": "Barrel",

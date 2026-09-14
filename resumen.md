@@ -1,10 +1,62 @@
 # Resumen de estado — Armería Warzone
 
-**Última actualización: 2026-09-10** (fases A y B cerradas; fallo del despliegue detectado).
+**Última actualización: 2026-09-14** (auditoría de autonomía: desde el 16-09-2026 el proyecto funciona sin Claude).
 
 El contexto técnico detallado vive en **[CLAUDE.md](CLAUDE.md)**: arquitectura,
 formato de los datos, trampas del scraping y cómo probarlo. Este fichero es la
 bitácora: en qué punto está, qué se decidió y qué viene después.
+
+---
+
+## 2026-09-14 — Auditoría de autonomía: listo para funcionar solo desde el 16-09-2026
+
+El usuario avisó de que a partir del **16-09-2026** el proyecto va a funcionar **sin
+Claude**. Se repasó, comprobando y no suponiendo, todo lo que tiene que andar solo.
+
+### ✅ Lo que se comprobó y está bien
+
+| Qué | Resultado |
+|---|---|
+| Cron de GitHub, runs #37 a #40 (11 al 14 de septiembre) | los cuatro en verde, los tres jobs cada día, `avisar` incluido |
+| JSON publicado en Pages | `generated_at` 2026-09-14T12:40Z, sin warnings, 5 modos y 5 listas de ventajas, ninguno `stale`, 66 armas con accesorios |
+| `scripts\comprobar.ps1` desde Worker | los tres pasos en verde, código 0 |
+| Repaso de las 09:00 en Worker | corrió hoy y **Warezone sale «bien»** (falla por otros proyectos, no por este) |
+| Correo de GitHub | llega a la cuenta Gmail del usuario: hay un correo de GitHub del 2026-08-20 en esa bandeja |
+| Copia local | al día con `origin/main` tras `git pull --rebase` (traía los cuatro commits del bot) |
+
+**El arreglo del 10-09 funciona en producción:** cuatro días seguidos con el job
+`avisar` corriendo después del despliegue y en verde.
+
+**Un dato que conviene saber y no es un fallo:** el cron está a las 06:10 UTC pero
+GitHub lo lanzó entre las **10:40 y las 12:37 UTC** esos cuatro días. Es el retraso
+normal de GitHub en horas cargadas; el margen de 3 días de la comprobación lo absorbe.
+
+### ⚠️ Lo que NO se pudo comprobar, y le toca al usuario
+
+**Que la cuenta de GitHub tenga activado el correo de workflows fallidos.** Es la
+única alerta rápida del proyecto y **nunca se ha visto llegar**, porque en 40 runs no
+ha habido ningún `failure` (el #34 fue `cancelled`, que no manda correo). El navegador
+de Worker no tiene sesión abierta en GitHub, así que no se pudo mirar. Es un vistazo:
+`github.com/settings/notifications` → *Actions* → que esté marcado el correo para
+*failed workflows only*. GitHub lo trae activado por defecto.
+
+### 📝 Lo que se dejó escrito para operar sin Claude
+
+Sección nueva en `README.md`, **«Qué hacer tú cuando llegue un aviso»**, con los cuatro
+casos que pueden pedir una mano y cómo resolverlos desde github.com sin programar:
+relanzar el workflow si `deploy` se corta, qué hacer (nada) si `avisar` falla por un
+modo conservado, cómo apagar el aviso de Modern Warfare 4 cambiando una línea con el
+editor web de GitHub, y qué mirar si el cron aparece deshabilitado.
+
+**La fase C sigue siendo de noviembre y sigue necesitando a alguien.** Lo que ya no
+necesita a nadie es *enterarse* (el detector avisa por cabecera y correo) ni *apagar
+el aviso* (una línea). Los mapas, modos y textos nuevos se harán cuando el usuario
+vuelva a abrir una ventana.
+
+### Lo que NO se ha tocado
+
+Ni código, ni workflow, ni datos. Solo documentación: `README.md`, esta bitácora y la
+ficha de `_CONTRATOS`. El push de `.md` no dispara el workflow.
 
 ---
 

@@ -114,6 +114,57 @@ de cada arma. Se guarda en el navegador de cada dispositivo, no sale de ahí.
   conserva el nombre anterior en vez de degradarlo a un texto genérico.
 - Si una **ficha de arma** falla, se conservan sus accesorios del día anterior.
 
+## Qué hacer tú cuando llegue un aviso (sin nadie detrás)
+
+Todo lo de arriba lo hace la web sola. Lo único que puede necesitar una mano son
+estos cuatro casos, y ninguno requiere programar nada:
+
+**1. Correo de GitHub «Run failed» del workflow.** Abre *Actions* en el repo y mira
+qué job está en rojo:
+
+- `deploy` en `cancelled` o `failure`: los datos están en `main` pero la web sirve
+  los de ayer. Pulsa **Run workflow** (botón en la pestaña del workflow): no vuelve a
+  raspar, solo publica lo que ya hay. Pasó el 2026-09-10 y así se arregló.
+- `avisar` en rojo por «El raspado dejó avisos»: la web ya se publicó con el dato
+  conservado del día anterior en ese modo. **No hay que hacer nada** ese día. Si el
+  mismo aviso se repite tres o cuatro días, wzstats ha cambiado su HTML y el parser
+  necesita a alguien que lo toque; mientras tanto la web sigue en pie con lo último bueno.
+- `build` en rojo: nada se ha publicado hoy y la web sigue con lo de ayer. Mira el
+  paso que falló; si es «Raspar la meta» con ningún modo leído, wzstats está caída o
+  cambiada. Un día suelto no importa; varios seguidos, lo mismo que el punto anterior.
+
+**2. La cabecera de la web (y el correo diario) dicen que ya hay armas de Modern
+Warfare 4.** Es el aviso previsto para noviembre de 2026. Mientras no se atienda,
+la web funciona igual, pero la cabecera sigue diciendo «Black Ops 7» y el correo
+llega **cada día**. Para apagarlo, sin Claude ni PC: en github.com abre
+`scripts/scrape.py`, pulsa el lápiz (*Edit*), cambia la línea
+
+```python
+BASE_GAME = "Black Ops 7"
+```
+
+por `BASE_GAME = "Modern Warfare 4"` y guarda (*Commit changes*). Ese push
+republica la web al momento y el cron del día siguiente ya sale sin aviso. Lo que
+sí quedará por hacer con calma es la fase C del plan (`documentacion/plan-2026-09-08-fases.md`):
+mapas, modos y textos nuevos. Eso no es urgente.
+
+**3. Sin correo, pero la web dice que los datos tienen más de 48 h.** Abre *Actions*.
+Si el workflow aparece como **disabled** (GitHub apaga los cron tras 60 días sin
+actividad en el repo; con el bot commiteando a diario no debería pasar), pulsa
+**Enable workflow** y luego **Run workflow**. Si simplemente no ha corrido, ten en
+cuenta que GitHub retrasa los cron horas en días cargados: entre el 11 y el 14 de
+septiembre de 2026 corrió entre las 10:40 y las 12:37 UTC en vez de a las 06:10.
+
+**4. Quieres comprobarlo a mano desde cualquiera de los dos PC:**
+
+```powershell
+F:\COMPARTIDO\Claude\Warezone\scripts\comprobar.ps1
+```
+
+Sale «Warezone: bien» y código 0 si el JSON publicado tiene menos de 3 días, sin
+avisos, con los 5 modos y ninguno conservado del día anterior. No necesita Python
+para el paso que mira la web publicada.
+
 ## Límites que conviene tener claros
 
 - Las recomendaciones salen de la **meta pública** y del perfil que marcas a mano

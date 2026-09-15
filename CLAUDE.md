@@ -461,8 +461,8 @@ solo con permiso del usuario):
 
 | Acceso directo | Qué hace |
 |---|---|
-| **Panel de Warezone** | abre la web publicada. Es el uso diario y no necesita nada instalado |
-| **Warezone - servidor de pruebas** | lanza `scripts\servidor-pruebas.ps1`: sirve tu `docs\` local para ver un cambio **antes** de publicarlo |
+| **Warezone - PANEL - la Armeria publicada (web)** | abre la web publicada. Es el uso diario y no necesita nada instalado |
+| **Warezone - EJECUTAR - servidor de pruebas (ver la web antes de publicar)** | lanza `scripts\servidor-pruebas.ps1`: sirve tu `docs\` local para ver un cambio **antes** de publicarlo |
 
 La lógica del segundo vive en `scripts\servidor-pruebas.ps1` y no dentro del
 `.lnk` a propósito: así está versionada y se puede arreglar. Si no encuentra

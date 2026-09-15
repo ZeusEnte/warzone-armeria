@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-14T12:40:37+00:00",
+ "generated_at": "2026-09-15T11:41:08+00:00",
  "season": "Season 5 Reloaded, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-09-13T11:47:10+00:00",
+ "previous_generated_at": "2026-09-14T12:40:37+00:00",
  "warnings": [],
  "changes": [
   {
@@ -21709,27 +21709,27 @@
     {
      "context": "Black Ops 7 Multiplayer",
      "label": "Recommended",
-     "code": "A09-9SMK7-LQ51",
+     "code": "A09-34FK5-FBRUU-51",
      "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Armory"
+      },
       {
        "slot": "Muzzle",
        "name": "REDWELL SHADE-X SUPPRESSOR",
        "unlock": "Armory"
       },
       {
+       "slot": "Barrel",
+       "name": "20\" DANKO BARREL",
+       "unlock": "Level 21"
+      },
+      {
        "slot": "Underbarrel",
        "name": "VAS CONVERGENCE FOREGRIP",
        "unlock": "Armory"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "INITIATOR GRIP",
-       "unlock": "Level 4"
-      },
-      {
-       "slot": "Stock",
-       "name": "V-LAST CONTROL PAD",
-       "unlock": "Level 33"
       },
       {
        "slot": "Fire Mods",
@@ -21740,7 +21740,7 @@
     },
     {
      "context": "Black Ops 7 Multiplayer",
-     "label": "Lowest Recoil",
+     "label": "LOW RECOIL",
      "code": "A09-9IS9L-Q151",
      "attachments": [
       {
@@ -21772,104 +21772,8 @@
     },
     {
      "context": "Black Ops 7 Multiplayer",
-     "label": "Bullet Velocity",
-     "code": "A09-21WSG-NNSDG-2J11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 28"
-      },
-      {
-       "slot": "Barrel",
-       "name": "19.2\" GREAVES-C5 BARREL",
-       "unlock": "Level 7"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Stock",
-       "name": "V-LAST CONTROL PAD",
-       "unlock": "Level 33"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "7.62 SOVIET OVERPRESSURED",
-       "unlock": "Level 19"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "Fastest ADS",
-     "code": "A09-94I93-YPS11",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "14\" HAWKER FERVOR BARREL",
-       "unlock": "Level 16"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Magazine",
-       "name": "LANCING FEATHER MAG",
-       "unlock": "Level 17"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "CRISIS-Q GRIP",
-       "unlock": "Level 11"
-      },
-      {
-       "slot": "Laser",
-       "name": "1MW INSTINCT LASER ARRAY",
-       "unlock": "Level 8"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "Mobility",
-     "code": "A09-8VCJZ-YUQ11",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "14\" HAWKER FERVOR BARREL",
-       "unlock": "Level 16"
-      },
-      {
-       "slot": "Magazine",
-       "name": "LANCING FEATHER MAG",
-       "unlock": "Level 17"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "INITIATOR GRIP",
-       "unlock": "Level 4"
-      },
-      {
-       "slot": "Stock",
-       "name": "RIDGEWAY PAD",
-       "unlock": "Level 18"
-      },
-      {
-       "slot": "Laser",
-       "name": "1MW INSTINCT LASER ARRAY",
-       "unlock": "Level 8"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "Hip Fire",
-     "code": "A09-6ACBH-7H951",
+     "label": "HIPFIRE",
+     "code": "A09-E4ALH-5YH31",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -21877,9 +21781,9 @@
        "unlock": "Level 13"
       },
       {
-       "slot": "Underbarrel",
-       "name": "STRIDER HANDSTOP",
-       "unlock": "Level 31"
+       "slot": "Rear Grip",
+       "name": "INITIATOR GRIP",
+       "unlock": "Level 4"
       },
       {
        "slot": "Stock",
@@ -21888,116 +21792,20 @@
       },
       {
        "slot": "Laser",
-       "name": "CONVERGENCE BOX LASER",
-       "unlock": "Level 29"
+       "name": "MFS ANTI-DISPERSION MODULE",
+       "unlock": "Prestige"
       },
       {
        "slot": "Fire Mods",
-       "name": "BUFFER SPRING",
-       "unlock": "Level 41"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "Tac Stance",
-     "code": "A09-8VCJZ-YUQ11",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "14\" HAWKER FERVOR BARREL",
-       "unlock": "Level 16"
-      },
-      {
-       "slot": "Magazine",
-       "name": "LANCING FEATHER MAG",
-       "unlock": "Level 17"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "INITIATOR GRIP",
-       "unlock": "Level 4"
-      },
-      {
-       "slot": "Stock",
-       "name": "RIDGEWAY PAD",
-       "unlock": "Level 18"
-      },
-      {
-       "slot": "Laser",
-       "name": "1MW INSTINCT LASER ARRAY",
-       "unlock": "Level 8"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "Damage Range",
-     "code": "A09-BQ8J8-FQ951",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 28"
-      },
-      {
-       "slot": "Barrel",
-       "name": "20\" DANKO BARREL",
-       "unlock": "Level 21"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Laser",
-       "name": "3MW MOTION STRIKE LASER",
-       "unlock": "Level 37"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "BUFFER SPRING",
-       "unlock": "Level 41"
+       "name": "BOLT CARRIER GROUP",
+       "unlock": "Level 30"
       }
      ]
     },
     {
      "context": "Black Ops 7 Ranked",
      "label": "Recommended",
-     "code": "A09-2L7BF-X7FFD-51",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Mxr 17"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FORCE STABILIZER HANDSTOP",
-       "unlock": "Level 10"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "INITIATOR GRIP",
-       "unlock": "Level 4"
-      },
-      {
-       "slot": "Stock",
-       "name": "V-LAST CONTROL PAD",
-       "unlock": "Level 33"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "BUFFER SPRING",
-       "unlock": "Level 41"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Ranked",
-     "label": "Lowest Recoil",
-     "code": "A09-2L7B1-GZLXS-51",
+     "code": "",
      "attachments": [
       {
        "slot": "Optic",
@@ -22006,7 +21814,7 @@
       },
       {
        "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
        "unlock": "Armory"
       },
       {
@@ -22018,198 +21826,6 @@
        "slot": "Stock",
        "name": "V-LAST CONTROL PAD",
        "unlock": "Level 33"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "BUFFER SPRING",
-       "unlock": "Level 41"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Ranked",
-     "label": "Bullet Velocity",
-     "code": "A09-21YDM-QC4K2-1511",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Mxr 17"
-      },
-      {
-       "slot": "Barrel",
-       "name": "19.2\" GREAVES-C5 BARREL",
-       "unlock": "Level 7"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FORCE STABILIZER HANDSTOP",
-       "unlock": "Level 10"
-      },
-      {
-       "slot": "Stock",
-       "name": "V-LAST CONTROL PAD",
-       "unlock": "Level 33"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "7.62 SOVIET OVERPRESSURED",
-       "unlock": "Level 19"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Ranked",
-     "label": "Fastest ADS",
-     "code": "A09-8ZCG4-L9H11",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "14\" HAWKER FERVOR BARREL",
-       "unlock": "Level 16"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FORCE STABILIZER HANDSTOP",
-       "unlock": "Level 10"
-      },
-      {
-       "slot": "Magazine",
-       "name": "LANCING FEATHER MAG",
-       "unlock": "Level 17"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "CRISIS-Q GRIP",
-       "unlock": "Level 11"
-      },
-      {
-       "slot": "Laser",
-       "name": "1MW INSTINCT LASER ARRAY",
-       "unlock": "Level 8"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Ranked",
-     "label": "Mobility",
-     "code": "A09-8VCJZ-YUQ11",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "14\" HAWKER FERVOR BARREL",
-       "unlock": "Level 16"
-      },
-      {
-       "slot": "Magazine",
-       "name": "LANCING FEATHER MAG",
-       "unlock": "Level 17"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "INITIATOR GRIP",
-       "unlock": "Level 4"
-      },
-      {
-       "slot": "Stock",
-       "name": "RIDGEWAY PAD",
-       "unlock": "Level 18"
-      },
-      {
-       "slot": "Laser",
-       "name": "1MW INSTINCT LASER ARRAY",
-       "unlock": "Level 8"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Ranked",
-     "label": "Hip Fire",
-     "code": "A09-2LCG6-NHXLU-11",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Mxr 17"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "EMT3 PORTED-70",
-       "unlock": "Level 13"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "STRIDER HANDSTOP",
-       "unlock": "Level 31"
-      },
-      {
-       "slot": "Stock",
-       "name": "EMT3 NOCO PAD",
-       "unlock": "Level 39"
-      },
-      {
-       "slot": "Laser",
-       "name": "CONVERGENCE BOX LASER",
-       "unlock": "Level 29"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Ranked",
-     "label": "Tac Stance",
-     "code": "A09-8VCJZ-YUQ11",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "14\" HAWKER FERVOR BARREL",
-       "unlock": "Level 16"
-      },
-      {
-       "slot": "Magazine",
-       "name": "LANCING FEATHER MAG",
-       "unlock": "Level 17"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "INITIATOR GRIP",
-       "unlock": "Level 4"
-      },
-      {
-       "slot": "Stock",
-       "name": "RIDGEWAY PAD",
-       "unlock": "Level 18"
-      },
-      {
-       "slot": "Laser",
-       "name": "1MW INSTINCT LASER ARRAY",
-       "unlock": "Level 8"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Ranked",
-     "label": "Damage Range",
-     "code": "A09-2LHRV-VF1NU-51",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Mxr 17"
-      },
-      {
-       "slot": "Barrel",
-       "name": "20\" DANKO BARREL",
-       "unlock": "Level 21"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FORCE STABILIZER HANDSTOP",
-       "unlock": "Level 10"
-      },
-      {
-       "slot": "Laser",
-       "name": "3MW MOTION STRIKE LASER",
-       "unlock": "Level 37"
       },
       {
        "slot": "Fire Mods",

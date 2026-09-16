@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-15T11:41:08+00:00",
+ "generated_at": "2026-09-16T11:28:32+00:00",
  "season": "Season 5 Reloaded, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-09-14T12:40:37+00:00",
+ "previous_generated_at": "2026-09-15T11:41:08+00:00",
  "warnings": [],
  "changes": [
   {
@@ -13,8 +13,80 @@
    "to": "D"
   },
   {
+   "mode": "resurgence",
+   "weapon": "VMP",
+   "kind": "entra",
+   "to": "D"
+  },
+  {
+   "mode": "resurgence",
+   "weapon": "TR51 PARA",
+   "kind": "entra",
+   "to": "D"
+  },
+  {
+   "mode": "resurgence",
+   "weapon": "ROC 20MM",
+   "kind": "entra",
+   "to": "D"
+  },
+  {
+   "mode": "multiplayer",
+   "weapon": "VMP",
+   "kind": "entra",
+   "to": "D"
+  },
+  {
+   "mode": "multiplayer",
+   "weapon": "TR51 PARA",
+   "kind": "entra",
+   "to": "D"
+  },
+  {
+   "mode": "multiplayer",
+   "weapon": "ROC 20MM",
+   "kind": "entra",
+   "to": "D"
+  },
+  {
+   "mode": "resurgence_ranked",
+   "weapon": "VMP",
+   "kind": "entra",
+   "to": "D"
+  },
+  {
+   "mode": "resurgence_ranked",
+   "weapon": "TR51 PARA",
+   "kind": "entra",
+   "to": "D"
+  },
+  {
+   "mode": "resurgence_ranked",
+   "weapon": "ROC 20MM",
+   "kind": "entra",
+   "to": "D"
+  },
+  {
    "mode": "battle_royale",
    "weapon": "KNIFE",
+   "kind": "entra",
+   "to": "D"
+  },
+  {
+   "mode": "battle_royale",
+   "weapon": "VMP",
+   "kind": "entra",
+   "to": "D"
+  },
+  {
+   "mode": "battle_royale",
+   "weapon": "TR51 PARA",
+   "kind": "entra",
+   "to": "D"
+  },
+  {
+   "mode": "battle_royale",
+   "weapon": "ROC 20MM",
    "kind": "entra",
    "to": "D"
   }
@@ -4480,9 +4552,9 @@
      "tier": "D",
      "positions": [
       {
-       "range": "Close Range",
-       "rank": 118,
-       "role": "corto"
+       "range": "Long Range",
+       "rank": 120,
+       "role": "largo"
       }
      ],
      "weapon_type": "Special",
@@ -4499,7 +4571,7 @@
      "positions": [
       {
        "range": "Close Range",
-       "rank": 119,
+       "rank": 118,
        "role": "corto"
       }
      ],
@@ -4516,9 +4588,9 @@
      "tier": "D",
      "positions": [
       {
-       "range": "Close Range",
-       "rank": 120,
-       "role": "corto"
+       "range": "Long Range",
+       "rank": 121,
+       "role": "largo"
       }
      ],
      "weapon_type": "Special",
@@ -4534,9 +4606,9 @@
      "tier": "D",
      "positions": [
       {
-       "range": "Close Range",
-       "rank": 121,
-       "role": "corto"
+       "range": "Long Range",
+       "rank": 122,
+       "role": "largo"
       }
      ],
      "weapon_type": "Special",
@@ -4553,7 +4625,7 @@
      "positions": [
       {
        "range": "Close Range",
-       "rank": 122,
+       "rank": 119,
        "role": "corto"
       }
      ],
@@ -4570,9 +4642,9 @@
      "tier": "D",
      "positions": [
       {
-       "range": "Close Range",
+       "range": "Long Range",
        "rank": 123,
-       "role": "corto"
+       "role": "largo"
       }
      ],
      "weapon_type": "Special",
@@ -4589,7 +4661,7 @@
      "positions": [
       {
        "range": "Close Range",
-       "rank": 124,
+       "rank": 120,
        "role": "corto"
       }
      ],
@@ -4607,7 +4679,7 @@
      "positions": [
       {
        "range": "Close Range",
-       "rank": 125,
+       "rank": 121,
        "role": "corto"
       }
      ],
@@ -4617,6 +4689,60 @@
      ],
      "image": "",
      "desde": "2026-08-22"
+    },
+    {
+     "name": "VMP",
+     "slug": "vmp",
+     "tier": "D",
+     "positions": [
+      {
+       "range": "Close Range",
+       "rank": 122,
+       "role": "corto"
+      }
+     ],
+     "weapon_type": "SMG",
+     "tags": [
+      "SMG"
+     ],
+     "image": "",
+     "desde": "2026-09-16"
+    },
+    {
+     "name": "TR51 PARA",
+     "slug": "tr51-para",
+     "tier": "D",
+     "positions": [
+      {
+       "range": "Long Range",
+       "rank": 124,
+       "role": "largo"
+      }
+     ],
+     "weapon_type": "Assault Rifle",
+     "tags": [
+      "Assault Rifle"
+     ],
+     "image": "",
+     "desde": "2026-09-16"
+    },
+    {
+     "name": "ROC 20MM",
+     "slug": "roc-20mm",
+     "tier": "D",
+     "positions": [
+      {
+       "range": "Long Range",
+       "rank": 125,
+       "role": "largo"
+      }
+     ],
+     "weapon_type": "Special",
+     "tags": [
+      "Special"
+     ],
+     "image": "",
+     "desde": "2026-09-16"
     }
    ]
   },
@@ -5383,12 +5509,12 @@
      "tier": "C",
      "positions": [
       {
-       "range": "Special",
+       "range": "Launcher",
        "rank": 1,
        "role": "otro"
       }
      ],
-     "weapon_type": "Special",
+     "weapon_type": "Launcher",
      "tags": [],
      "image": "",
      "desde": "2026-08-20"
@@ -5399,12 +5525,12 @@
      "tier": "C",
      "positions": [
       {
-       "range": "Special",
+       "range": "Launcher",
        "rank": 2,
        "role": "otro"
       }
      ],
-     "weapon_type": "Special",
+     "weapon_type": "Launcher",
      "tags": [],
      "image": "",
      "desde": "2026-08-20"
@@ -5415,12 +5541,12 @@
      "tier": "C",
      "positions": [
       {
-       "range": "Special",
+       "range": "Launcher",
        "rank": 3,
        "role": "otro"
       }
      ],
-     "weapon_type": "Special",
+     "weapon_type": "Launcher",
      "tags": [],
      "image": "",
      "desde": "2026-08-20"
@@ -5432,7 +5558,7 @@
      "positions": [
       {
        "range": "Launcher",
-       "rank": 1,
+       "rank": 4,
        "role": "otro"
       }
      ],
@@ -5448,7 +5574,7 @@
      "positions": [
       {
        "range": "Launcher",
-       "rank": 2,
+       "rank": 5,
        "role": "otro"
       }
      ],
@@ -5527,12 +5653,12 @@
      "tier": "D",
      "positions": [
       {
-       "range": "Special",
-       "rank": 4,
+       "range": "Launcher",
+       "rank": 6,
        "role": "otro"
       }
      ],
-     "weapon_type": "Special",
+     "weapon_type": "Launcher",
      "tags": [],
      "image": "",
      "desde": "2026-08-20"
@@ -5584,6 +5710,54 @@
      "tags": [],
      "image": "",
      "desde": "2026-08-22"
+    },
+    {
+     "name": "VMP",
+     "slug": "vmp",
+     "tier": "D",
+     "positions": [
+      {
+       "range": "SMG",
+       "rank": 13,
+       "role": "corto"
+      }
+     ],
+     "weapon_type": "SMG",
+     "tags": [],
+     "image": "",
+     "desde": "2026-09-16"
+    },
+    {
+     "name": "TR51 PARA",
+     "slug": "tr51-para",
+     "tier": "D",
+     "positions": [
+      {
+       "range": "Assault Rifle",
+       "rank": 14,
+       "role": "largo"
+      }
+     ],
+     "weapon_type": "Assault Rifle",
+     "tags": [],
+     "image": "",
+     "desde": "2026-09-16"
+    },
+    {
+     "name": "ROC 20MM",
+     "slug": "roc-20mm",
+     "tier": "D",
+     "positions": [
+      {
+       "range": "Launcher",
+       "rank": 7,
+       "role": "otro"
+      }
+     ],
+     "weapon_type": "Launcher",
+     "tags": [],
+     "image": "",
+     "desde": "2026-09-16"
     }
    ]
   },
@@ -6467,9 +6641,9 @@
      "tier": "D",
      "positions": [
       {
-       "range": "Close Range",
-       "rank": 20,
-       "role": "corto"
+       "range": "Long Range",
+       "rank": 25,
+       "role": "largo"
       }
      ],
      "weapon_type": "Special",
@@ -6486,7 +6660,7 @@
      "positions": [
       {
        "range": "Close Range",
-       "rank": 21,
+       "rank": 20,
        "role": "corto"
       }
      ],
@@ -6503,9 +6677,9 @@
      "tier": "D",
      "positions": [
       {
-       "range": "Close Range",
-       "rank": 22,
-       "role": "corto"
+       "range": "Long Range",
+       "rank": 26,
+       "role": "largo"
       }
      ],
      "weapon_type": "Special",
@@ -6521,9 +6695,9 @@
      "tier": "D",
      "positions": [
       {
-       "range": "Close Range",
-       "rank": 23,
-       "role": "corto"
+       "range": "Long Range",
+       "rank": 27,
+       "role": "largo"
       }
      ],
      "weapon_type": "Special",
@@ -6540,7 +6714,7 @@
      "positions": [
       {
        "range": "Close Range",
-       "rank": 24,
+       "rank": 21,
        "role": "corto"
       }
      ],
@@ -6557,9 +6731,9 @@
      "tier": "D",
      "positions": [
       {
-       "range": "Close Range",
-       "rank": 25,
-       "role": "corto"
+       "range": "Long Range",
+       "rank": 28,
+       "role": "largo"
       }
      ],
      "weapon_type": "Special",
@@ -6576,7 +6750,7 @@
      "positions": [
       {
        "range": "Close Range",
-       "rank": 26,
+       "rank": 22,
        "role": "corto"
       }
      ],
@@ -6594,7 +6768,7 @@
      "positions": [
       {
        "range": "Close Range",
-       "rank": 27,
+       "rank": 23,
        "role": "corto"
       }
      ],
@@ -6604,6 +6778,60 @@
      ],
      "image": "",
      "desde": "2026-08-22"
+    },
+    {
+     "name": "VMP",
+     "slug": "vmp",
+     "tier": "D",
+     "positions": [
+      {
+       "range": "Close Range",
+       "rank": 24,
+       "role": "corto"
+      }
+     ],
+     "weapon_type": "SMG",
+     "tags": [
+      "SMG"
+     ],
+     "image": "",
+     "desde": "2026-09-16"
+    },
+    {
+     "name": "TR51 PARA",
+     "slug": "tr51-para",
+     "tier": "D",
+     "positions": [
+      {
+       "range": "Long Range",
+       "rank": 29,
+       "role": "largo"
+      }
+     ],
+     "weapon_type": "Assault Rifle",
+     "tags": [
+      "Assault Rifle"
+     ],
+     "image": "",
+     "desde": "2026-09-16"
+    },
+    {
+     "name": "ROC 20MM",
+     "slug": "roc-20mm",
+     "tier": "D",
+     "positions": [
+      {
+       "range": "Long Range",
+       "rank": 30,
+       "role": "largo"
+      }
+     ],
+     "weapon_type": "Special",
+     "tags": [
+      "Special"
+     ],
+     "image": "",
+     "desde": "2026-09-16"
     }
    ]
   },
@@ -11064,9 +11292,9 @@
      "tier": "D",
      "positions": [
       {
-       "range": "Close Range",
-       "rank": 115,
-       "role": "corto"
+       "range": "Long Range",
+       "rank": 118,
+       "role": "largo"
       }
      ],
      "weapon_type": "Special",
@@ -11083,7 +11311,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 118,
+       "rank": 119,
        "role": "largo"
       }
      ],
@@ -11101,7 +11329,7 @@
      "positions": [
       {
        "range": "Close Range",
-       "rank": 116,
+       "rank": 115,
        "role": "corto"
       }
      ],
@@ -11119,7 +11347,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 119,
+       "rank": 120,
        "role": "largo"
       }
      ],
@@ -11137,7 +11365,7 @@
      "positions": [
       {
        "range": "Close Range",
-       "rank": 117,
+       "rank": 116,
        "role": "corto"
       }
      ],
@@ -11155,7 +11383,7 @@
      "positions": [
       {
        "range": "Close Range",
-       "rank": 118,
+       "rank": 117,
        "role": "corto"
       }
      ],
@@ -11172,9 +11400,9 @@
      "tier": "D",
      "positions": [
       {
-       "range": "Close Range",
-       "rank": 119,
-       "role": "corto"
+       "range": "Long Range",
+       "rank": 121,
+       "role": "largo"
       }
      ],
      "weapon_type": "Special",
@@ -11191,7 +11419,7 @@
      "positions": [
       {
        "range": "Close Range",
-       "rank": 120,
+       "rank": 118,
        "role": "corto"
       }
      ],
@@ -11208,9 +11436,9 @@
      "tier": "D",
      "positions": [
       {
-       "range": "Close Range",
-       "rank": 121,
-       "role": "corto"
+       "range": "Long Range",
+       "rank": 122,
+       "role": "largo"
       }
      ],
      "weapon_type": "Special",
@@ -11227,7 +11455,7 @@
      "positions": [
       {
        "range": "Close Range",
-       "rank": 122,
+       "rank": 119,
        "role": "corto"
       }
      ],
@@ -11244,9 +11472,9 @@
      "tier": "D",
      "positions": [
       {
-       "range": "Close Range",
+       "range": "Long Range",
        "rank": 123,
-       "role": "corto"
+       "role": "largo"
       }
      ],
      "weapon_type": "Special",
@@ -11263,7 +11491,7 @@
      "positions": [
       {
        "range": "Close Range",
-       "rank": 124,
+       "rank": 120,
        "role": "corto"
       }
      ],
@@ -11281,7 +11509,7 @@
      "positions": [
       {
        "range": "Close Range",
-       "rank": 125,
+       "rank": 121,
        "role": "corto"
       }
      ],
@@ -11291,6 +11519,60 @@
      ],
      "image": "",
      "desde": "2026-08-22"
+    },
+    {
+     "name": "VMP",
+     "slug": "vmp",
+     "tier": "D",
+     "positions": [
+      {
+       "range": "Close Range",
+       "rank": 122,
+       "role": "corto"
+      }
+     ],
+     "weapon_type": "SMG",
+     "tags": [
+      "SMG"
+     ],
+     "image": "",
+     "desde": "2026-09-16"
+    },
+    {
+     "name": "TR51 PARA",
+     "slug": "tr51-para",
+     "tier": "D",
+     "positions": [
+      {
+       "range": "Long Range",
+       "rank": 124,
+       "role": "largo"
+      }
+     ],
+     "weapon_type": "Assault Rifle",
+     "tags": [
+      "Assault Rifle"
+     ],
+     "image": "",
+     "desde": "2026-09-16"
+    },
+    {
+     "name": "ROC 20MM",
+     "slug": "roc-20mm",
+     "tier": "D",
+     "positions": [
+      {
+       "range": "Long Range",
+       "rank": 125,
+       "role": "largo"
+      }
+     ],
+     "weapon_type": "Special",
+     "tags": [
+      "Special"
+     ],
+     "image": "",
+     "desde": "2026-09-16"
     }
    ]
   }

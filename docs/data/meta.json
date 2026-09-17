@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-16T11:28:32+00:00",
- "season": "Season 5 Reloaded, 2026",
+ "generated_at": "2026-09-17T11:37:49+00:00",
+ "season": "Season 6, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-09-15T11:41:08+00:00",
+ "previous_generated_at": "2026-09-16T11:28:32+00:00",
  "warnings": [],
  "changes": [
   {
@@ -13,80 +13,8 @@
    "to": "D"
   },
   {
-   "mode": "resurgence",
-   "weapon": "VMP",
-   "kind": "entra",
-   "to": "D"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "TR51 PARA",
-   "kind": "entra",
-   "to": "D"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "ROC 20MM",
-   "kind": "entra",
-   "to": "D"
-  },
-  {
-   "mode": "multiplayer",
-   "weapon": "VMP",
-   "kind": "entra",
-   "to": "D"
-  },
-  {
-   "mode": "multiplayer",
-   "weapon": "TR51 PARA",
-   "kind": "entra",
-   "to": "D"
-  },
-  {
-   "mode": "multiplayer",
-   "weapon": "ROC 20MM",
-   "kind": "entra",
-   "to": "D"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "VMP",
-   "kind": "entra",
-   "to": "D"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "TR51 PARA",
-   "kind": "entra",
-   "to": "D"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "ROC 20MM",
-   "kind": "entra",
-   "to": "D"
-  },
-  {
    "mode": "battle_royale",
    "weapon": "KNIFE",
-   "kind": "entra",
-   "to": "D"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "VMP",
-   "kind": "entra",
-   "to": "D"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "TR51 PARA",
-   "kind": "entra",
-   "to": "D"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "ROC 20MM",
    "kind": "entra",
    "to": "D"
   }
@@ -25524,22 +25452,54 @@
     {
      "context": "Warzone Battle Royale",
      "label": "Recommended",
-     "code": "L02-2R4MT-UKGV3-51",
+     "code": "L02-5XNY2-DG8N1-1",
      "attachments": [
       {
        "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
+       "name": "LETHAL TOOLS ELO",
+       "unlock": "Level 5"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
       },
       {
        "slot": "Barrel",
-       "name": "19.3\" R-556 CHIEF BARREL",
-       "unlock": "Level 23"
+       "name": "22\" HERMES FLUTED BARREL",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 3"
       },
       {
        "slot": "Magazine",
        "name": "ENFORCER EXTENDED BELT",
        "unlock": "Level 28"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Lowest Recoil",
+     "code": "L02-7YJTR-7951",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
+      },
+      {
+       "slot": "Barrel",
+       "name": "22\" HERMES FLUTED BARREL",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 3"
       },
       {
        "slot": "Stock",
@@ -25555,18 +25515,87 @@
     },
     {
      "context": "Warzone Battle Royale",
-     "label": "CONVERSION KIT",
-     "code": "L02-8VFN5-PU511",
+     "label": "Bullet Velocity",
+     "code": "L02-2JD6P-CFZN4-RJ11",
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "TITAN-R 7.62 COMPENSATOR",
-       "unlock": "Level 20"
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
       },
       {
        "slot": "Barrel",
-       "name": "18\" RISTRAUCH S-100 BARREL",
-       "unlock": "Level 32"
+       "name": "22\" HERMES FLUTED BARREL",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 3"
+      },
+      {
+       "slot": "Stock",
+       "name": "RX-7 SHOCK STOCK",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "5.56 CASELESS OVERPRESSURED",
+       "unlock": "Level 7"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Fastest ADS",
+     "code": "L02-8BDK7-AF11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
+      },
+      {
+       "slot": "Barrel",
+       "name": "22\" HERMES FLUTED BARREL",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 3"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "ELYSIAN QUICK GRIP",
+       "unlock": "Level 21"
+      },
+      {
+       "slot": "Stock",
+       "name": "RIST RAUCH RECON STOCK",
+       "unlock": "Level 24"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Mobility",
+     "code": "L02-BPCZU-TQ511",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
+      },
+      {
+       "slot": "Barrel",
+       "name": "22\" HERMES FLUTED BARREL",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 3"
       },
       {
        "slot": "Rear Grip",
@@ -25574,36 +25603,95 @@
        "unlock": "Level 11"
       },
       {
-       "slot": "Stock",
-       "name": "XM325 TITAN WIELD",
-       "unlock": "Armory"
-      },
-      {
        "slot": "Laser",
-       "name": "MFS MOTION STRIKE LASER",
-       "unlock": "Prestige"
+       "name": "1MW INSTINCT LASER ARRAY",
+       "unlock": "Level 46"
       }
      ]
     },
     {
      "context": "Warzone Battle Royale",
-     "label": "LOW RECOIL",
-     "code": "L02-6K64V-WQ51",
+     "label": "Hip Fire",
+     "code": "L02-6FWF1-Q2F11",
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "RL-7.62 COMPENSATOR",
-       "unlock": "Level 30"
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
       },
       {
        "slot": "Barrel",
-       "name": "19.3\" R-556 CHIEF BARREL",
-       "unlock": "Level 23"
+       "name": "22\" HERMES FLUTED BARREL",
+       "unlock": "Level 16"
       },
       {
        "slot": "Underbarrel",
-       "name": "LATERAL PRECISION GRIP",
-       "unlock": "Level 34"
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 3"
+      },
+      {
+       "slot": "Stock",
+       "name": "AEGIS-X40 STOCK",
+       "unlock": "Level 37"
+      },
+      {
+       "slot": "Laser",
+       "name": "CONVERGENCE BOX LASER",
+       "unlock": "Level 29"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Tac Stance",
+     "code": "L02-BPCZU-TQ511",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
+      },
+      {
+       "slot": "Barrel",
+       "name": "22\" HERMES FLUTED BARREL",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 3"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "CAUSEWAY GRIP",
+       "unlock": "Level 11"
+      },
+      {
+       "slot": "Laser",
+       "name": "1MW INSTINCT LASER ARRAY",
+       "unlock": "Level 46"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Damage Range",
+     "code": "L02-21WSG-MAIDN-8S11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
+      },
+      {
+       "slot": "Barrel",
+       "name": "22\" HERMES FLUTED BARREL",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 3"
       },
       {
        "slot": "Stock",
@@ -25612,8 +25700,8 @@
       },
       {
        "slot": "Fire Mods",
-       "name": "ACCELERATED RECOIL SYSTEM",
-       "unlock": "Level 25"
+       "name": "5.56 CASELESS FMJ",
+       "unlock": "Level 47"
       }
      ]
     },
@@ -25716,22 +25804,54 @@
     {
      "context": "Warzone Resurgence Ranked",
      "label": "Recommended",
-     "code": "L02-2R4MT-UKGV3-51",
+     "code": "L02-7YJTW-LQ11",
      "attachments": [
       {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
       },
       {
        "slot": "Barrel",
-       "name": "19.3\" R-556 CHIEF BARREL",
-       "unlock": "Level 23"
+       "name": "22\" HERMES FLUTED BARREL",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 3"
       },
       {
        "slot": "Magazine",
-       "name": "ENFORCER EXTENDED BELT",
-       "unlock": "Level 28"
+       "name": "SAWBLADE DRUM MAG",
+       "unlock": "Level 18"
+      },
+      {
+       "slot": "Stock",
+       "name": "VG-0 LIGHT STOCK",
+       "unlock": "Level 2"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "Lowest Recoil",
+     "code": "L02-7YJTR-7951",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
+      },
+      {
+       "slot": "Barrel",
+       "name": "22\" HERMES FLUTED BARREL",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 3"
       },
       {
        "slot": "Stock",
@@ -25747,33 +25867,193 @@
     },
     {
      "context": "Warzone Resurgence Ranked",
-     "label": "LOW RECOIL",
-     "code": "L02-6K64V-WQ51",
+     "label": "Bullet Velocity",
+     "code": "L02-2JD6P-CFZN9-QY11",
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "RL-7.62 COMPENSATOR",
-       "unlock": "Level 30"
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
       },
       {
        "slot": "Barrel",
-       "name": "19.3\" R-556 CHIEF BARREL",
-       "unlock": "Level 23"
+       "name": "22\" HERMES FLUTED BARREL",
+       "unlock": "Level 16"
       },
       {
        "slot": "Underbarrel",
-       "name": "LATERAL PRECISION GRIP",
-       "unlock": "Level 34"
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 3"
       },
       {
-       "slot": "Stock",
-       "name": "RX-7 SHOCK STOCK",
-       "unlock": "Level 14"
+       "slot": "Magazine",
+       "name": "SAWBLADE DRUM MAG",
+       "unlock": "Level 18"
       },
       {
        "slot": "Fire Mods",
-       "name": "ACCELERATED RECOIL SYSTEM",
-       "unlock": "Level 25"
+       "name": "5.56 CASELESS OVERPRESSURED",
+       "unlock": "Level 7"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "Fastest ADS",
+     "code": "L02-8BDKE-5U11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
+      },
+      {
+       "slot": "Barrel",
+       "name": "22\" HERMES FLUTED BARREL",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 3"
+      },
+      {
+       "slot": "Magazine",
+       "name": "WESSI FAST BELT",
+       "unlock": "Level 6"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "ELYSIAN QUICK GRIP",
+       "unlock": "Level 21"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "Mobility",
+     "code": "L02-BPCZU-TQ511",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
+      },
+      {
+       "slot": "Barrel",
+       "name": "22\" HERMES FLUTED BARREL",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 3"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "CAUSEWAY GRIP",
+       "unlock": "Level 11"
+      },
+      {
+       "slot": "Laser",
+       "name": "1MW INSTINCT LASER ARRAY",
+       "unlock": "Level 46"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "Hip Fire",
+     "code": "L02-6FWF1-Q2F11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
+      },
+      {
+       "slot": "Barrel",
+       "name": "22\" HERMES FLUTED BARREL",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 3"
+      },
+      {
+       "slot": "Stock",
+       "name": "AEGIS-X40 STOCK",
+       "unlock": "Level 37"
+      },
+      {
+       "slot": "Laser",
+       "name": "CONVERGENCE BOX LASER",
+       "unlock": "Level 29"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "Tac Stance",
+     "code": "L02-BPCZU-TQ511",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
+      },
+      {
+       "slot": "Barrel",
+       "name": "22\" HERMES FLUTED BARREL",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 3"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "CAUSEWAY GRIP",
+       "unlock": "Level 11"
+      },
+      {
+       "slot": "Laser",
+       "name": "1MW INSTINCT LASER ARRAY",
+       "unlock": "Level 46"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "Damage Range",
+     "code": "L02-21WSG-MAIDT-8711",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
+      },
+      {
+       "slot": "Barrel",
+       "name": "22\" HERMES FLUTED BARREL",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 3"
+      },
+      {
+       "slot": "Magazine",
+       "name": "SAWBLADE DRUM MAG",
+       "unlock": "Level 18"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "5.56 CASELESS FMJ",
+       "unlock": "Level 47"
       }
      ]
     },

@@ -1,149 +1,16 @@
 {
- "generated_at": "2026-09-18T11:10:30+00:00",
+ "generated_at": "2026-09-19T10:54:46+00:00",
  "season": "Season 6, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-09-17T11:37:49+00:00",
+ "previous_generated_at": "2026-09-18T11:10:30+00:00",
  "warnings": [],
  "changes": [
-  {
-   "mode": "resurgence",
-   "weapon": "VOYAK KT-3",
-   "kind": "sube",
-   "from": "A",
-   "to": "S"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "VMP",
-   "kind": "sube",
-   "from": "D",
-   "to": "S"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "AN-94",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "VST",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "TR51 PARA",
-   "kind": "sube",
-   "from": "D",
-   "to": "A"
-  },
   {
    "mode": "resurgence",
    "weapon": "KNIFE",
    "kind": "entra",
    "to": "D"
-  },
-  {
-   "mode": "multiplayer",
-   "weapon": "VMP",
-   "kind": "sube",
-   "from": "D",
-   "to": "S"
-  },
-  {
-   "mode": "multiplayer",
-   "weapon": "TR51 PARA",
-   "kind": "sube",
-   "from": "D",
-   "to": "S"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "VOYAK KT-3",
-   "kind": "sube",
-   "from": "A",
-   "to": "S"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "VMP",
-   "kind": "sube",
-   "from": "D",
-   "to": "S"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "DS20 MIRAGE",
-   "kind": "sube",
-   "from": "A",
-   "to": "S"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "MPC-25",
-   "kind": "sube",
-   "from": "A",
-   "to": "S"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "VST",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "AN-94",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "TR51 PARA",
-   "kind": "sube",
-   "from": "D",
-   "to": "A"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "VOYAK KT-3",
-   "kind": "sube",
-   "from": "A",
-   "to": "S"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "VMP",
-   "kind": "sube",
-   "from": "D",
-   "to": "S"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "VST",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "AN-94",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "TR51 PARA",
-   "kind": "sube",
-   "from": "D",
-   "to": "A"
   },
   {
    "mode": "battle_royale",
@@ -191,7 +58,7 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/vmp/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/vmp_version1/gunDisplayLoadouts",
      "desde": "2026-09-18"
     },
     {
@@ -556,7 +423,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": "https://img.wzstats.gg/tr51-para/gunFullDisplay",
+     "image": "https://img.wzstats.gg/tr51-para_version1/gunFullDisplay",
      "desde": "2026-09-18"
     },
     {
@@ -4841,7 +4708,7 @@
      ],
      "weapon_type": "SMG",
      "tags": [],
-     "image": "https://img.wzstats.gg/vmp/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/vmp_version1/gunDisplayLoadouts",
      "desde": "2026-09-18"
     },
     {
@@ -5033,7 +4900,7 @@
      ],
      "weapon_type": "Assault Rifle",
      "tags": [],
-     "image": "https://img.wzstats.gg/tr51-para/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/tr51-para_version1/gunDisplayLoadouts",
      "desde": "2026-09-18"
     },
     {
@@ -5860,7 +5727,7 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/vmp/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/vmp_version1/gunDisplayLoadouts",
      "desde": "2026-09-18"
     },
     {
@@ -6117,7 +5984,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": "https://img.wzstats.gg/tr51-para/gunFullDisplay",
+     "image": "https://img.wzstats.gg/tr51-para_version1/gunFullDisplay",
      "desde": "2026-09-18"
     },
     {
@@ -7021,7 +6888,7 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/vmp/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/vmp_version1/gunDisplayLoadouts",
      "desde": "2026-09-18"
     },
     {
@@ -7278,7 +7145,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": "https://img.wzstats.gg/tr51-para/gunFullDisplay",
+     "image": "https://img.wzstats.gg/tr51-para_version1/gunFullDisplay",
      "desde": "2026-09-18"
     },
     {
@@ -12422,6 +12289,204 @@
        "slot": "Fire Mods",
        "name": "BUFFER SPRING",
        "unlock": "Level 41"
+      }
+     ]
+    }
+   ]
+  },
+  "vmp": {
+   "name": "VMP",
+   "max_level": 35,
+   "builds": [
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "14.6\" NOCTURNAL-VI BARREL",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Magazine",
+       "name": "DAPPLE CAPACITY MAG",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Stock",
+       "name": "GREAVES VALOUR PAD",
+       "unlock": "Level 1"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "14.6\" NOCTURNAL-VI BARREL",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Magazine",
+       "name": "DAPPLE CAPACITY MAG",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Stock",
+       "name": "GREAVES VALOUR PAD",
+       "unlock": "Level 1"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "KEPLER T-RANGE HOLO",
+       "unlock": "Ryden 45k"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "14.6\" NOCTURNAL-VI BARREL",
+       "unlock": "Level 9"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "QUICKSTEP FOREGRIP",
+       "unlock": "Level 28"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "9MM PARABELLUM OVERPRESSURED",
+       "unlock": "Level 26"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "14.6\" NOCTURNAL-VI BARREL",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "MFS TACTICAL COMMAND GRIP",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Stock",
+       "name": "FLOUT HEAVY PAD",
+       "unlock": "Level 1"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "NON PRESTIGE",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "14.6\" NOCTURNAL-VI BARREL",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Stock",
+       "name": "FLOUT HEAVY PAD",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "RECOIL SYNC UNIT",
+       "unlock": "Level 1"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Ranked",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Mpc 25"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER SERIES 45",
+       "unlock": "Level 19"
+      },
+      {
+       "slot": "Barrel",
+       "name": "14.6\" NOCTURNAL-VI BARREL",
+       "unlock": "Level 9"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FORCE STABILIZER HANDSTOP",
+       "unlock": "Level 20"
+      },
+      {
+       "slot": "Stock",
+       "name": "FLOUT HEAVY PAD",
+       "unlock": "Level 15"
       }
      ]
     }
@@ -19695,6 +19760,11 @@
      "code": "",
      "attachments": [
       {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Mpc 25"
+      },
+      {
        "slot": "Barrel",
        "name": "12\" VIENNA BARREL",
        "unlock": "Level 23"
@@ -19705,14 +19775,9 @@
        "unlock": "Level 17"
       },
       {
-       "slot": "Rear Grip",
-       "name": "ERUPTION GRIP",
-       "unlock": "Level 37"
-      },
-      {
-       "slot": "Stock",
-       "name": "COLLAPSIBLE STOCK",
-       "unlock": "Level 41"
+       "slot": "Magazine",
+       "name": "TORCH EXTENDED MAG",
+       "unlock": "Level 13"
       },
       {
        "slot": "Fire Mods",
@@ -22532,6 +22597,268 @@
        "slot": "Fire Mods",
        "name": "BUFFER SPRING",
        "unlock": "Level 17"
+      }
+     ]
+    }
+   ]
+  },
+  "tr51-para": {
+   "name": "TR51 PARA",
+   "max_level": 41,
+   "builds": [
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "EAM DUAL ZOOM",
+       "unlock": "Ds20 Mirage"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Barrel",
+       "name": "17\" VAS ORSINO BARREL",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Magazine",
+       "name": "CARUS CAPACITY MAG",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "7.62 NATO OVERPRESSURED",
+       "unlock": "Level 1"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "PRESTIGE",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Barrel",
+       "name": "18.5\" MFS FALLEN ANGEL BARREL",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Magazine",
+       "name": "CARUS CAPACITY MAG",
+       "unlock": "Level 1"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "EAM DUAL ZOOM",
+       "unlock": "Ds20 Mirage"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Barrel",
+       "name": "17\" VAS ORSINO BARREL",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Magazine",
+       "name": "CARUS CAPACITY MAG",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "7.62 NATO OVERPRESSURED",
+       "unlock": "Level 1"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "PRESTIGE",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Barrel",
+       "name": "18.5\" MFS FALLEN ANGEL BARREL",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Magazine",
+       "name": "CARUS CAPACITY MAG",
+       "unlock": "Level 1"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "LTI MINI",
+       "unlock": "M15 Mod 0"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "20\" SUFFERANCE BARREL",
+       "unlock": "Level 2"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Magazine",
+       "name": "VERUCA EXTENDED MAG",
+       "unlock": "Level 13"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Barrel",
+       "name": "18.5\" MFS FALLEN ANGEL BARREL",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Laser",
+       "name": "3MW MOTION STRIKE LASER",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BUFFER SPRING",
+       "unlock": "Level 1"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "SEMI-AUTO",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "GREAVES TI-762",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Barrel",
+       "name": "20\" SUFFERANCE BARREL",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "EAM STEADY-90 GRIP",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "EAM ALACRITY GRIP",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Stock",
+       "name": "NO STOCK",
+       "unlock": "Level 1"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Ranked",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Mxr 17"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Stock",
+       "name": "ASHFORD HEAVY STOCK",
+       "unlock": "Level 10"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BUFFER SPRING",
+       "unlock": "Level 41"
       }
      ]
     }
@@ -29168,9 +29495,9 @@
      "code": "",
      "attachments": [
       {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Mpc 25"
+       "slot": "Barrel",
+       "name": "13\" RL-GENESYS BARREL",
+       "unlock": "Level 11"
       },
       {
        "slot": "Underbarrel",
@@ -34751,466 +35078,6 @@
        "slot": "Magazine",
        "name": "EXTENDED MAG II",
        "unlock": "Level 33"
-      }
-     ]
-    }
-   ]
-  },
-  "vmp": {
-   "name": "VMP",
-   "max_level": 33,
-   "builds": [
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "14.6\" NOCTURNAL-VI BARREL",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "SAPPER GUARD HANDSTOP",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Magazine",
-       "name": "DAPPLE CAPACITY MAG",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Stock",
-       "name": "GREAVES VALOUR PAD",
-       "unlock": "Level 1"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "14.6\" NOCTURNAL-VI BARREL",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "SAPPER GUARD HANDSTOP",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Magazine",
-       "name": "DAPPLE CAPACITY MAG",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Stock",
-       "name": "GREAVES VALOUR PAD",
-       "unlock": "Level 1"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence Ranked",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "KEPLER T-RANGE HOLO",
-       "unlock": "Ryden 45k"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "14.6\" NOCTURNAL-VI BARREL",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "QUICKSTEP FOREGRIP",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "9MM PARABELLUM OVERPRESSURED",
-       "unlock": "Level 1"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "14.6\" NOCTURNAL-VI BARREL",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "SAPPER GUARD HANDSTOP",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "MFS TACTICAL COMMAND GRIP",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Stock",
-       "name": "FLOUT HEAVY PAD",
-       "unlock": "Level 1"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "NON PRESTIGE",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "14.6\" NOCTURNAL-VI BARREL",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "SAPPER GUARD HANDSTOP",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Stock",
-       "name": "FLOUT HEAVY PAD",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "RECOIL SYNC UNIT",
-       "unlock": "Level 1"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Ranked",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Mpc 25"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "HAWKER SERIES 45",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Barrel",
-       "name": "14.6\" NOCTURNAL-VI BARREL",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FORCE STABILIZER HANDSTOP",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Stock",
-       "name": "FLOUT HEAVY PAD",
-       "unlock": "Level 1"
-      }
-     ]
-    }
-   ]
-  },
-  "tr51-para": {
-   "name": "TR51 PARA",
-   "max_level": 41,
-   "builds": [
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "EAM DUAL ZOOM",
-       "unlock": "Ds20 Mirage"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Barrel",
-       "name": "17\" VAS ORSINO BARREL",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Magazine",
-       "name": "CARUS CAPACITY MAG",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "7.62 NATO OVERPRESSURED",
-       "unlock": "Level 1"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "PRESTIGE",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Barrel",
-       "name": "18.5\" MFS FALLEN ANGEL BARREL",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Magazine",
-       "name": "CARUS CAPACITY MAG",
-       "unlock": "Level 1"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "EAM DUAL ZOOM",
-       "unlock": "Ds20 Mirage"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Barrel",
-       "name": "17\" VAS ORSINO BARREL",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Magazine",
-       "name": "CARUS CAPACITY MAG",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "7.62 NATO OVERPRESSURED",
-       "unlock": "Level 1"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "PRESTIGE",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Barrel",
-       "name": "18.5\" MFS FALLEN ANGEL BARREL",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Magazine",
-       "name": "CARUS CAPACITY MAG",
-       "unlock": "Level 1"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence Ranked",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "LTI MINI",
-       "unlock": "M15 Mod 0"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "20\" SUFFERANCE BARREL",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Magazine",
-       "name": "VERUCA EXTENDED MAG",
-       "unlock": "Level 1"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Barrel",
-       "name": "18.5\" MFS FALLEN ANGEL BARREL",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Laser",
-       "name": "3MW MOTION STRIKE LASER",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "BUFFER SPRING",
-       "unlock": "Level 1"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Multiplayer",
-     "label": "SEMI-AUTO",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "GREAVES TI-762",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Barrel",
-       "name": "20\" SUFFERANCE BARREL",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "EAM STEADY-90 GRIP",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "EAM ALACRITY GRIP",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Stock",
-       "name": "NO STOCK",
-       "unlock": "Level 1"
-      }
-     ]
-    },
-    {
-     "context": "Black Ops 7 Ranked",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Mxr 17"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Stock",
-       "name": "ASHFORD HEAVY STOCK",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "BUFFER SPRING",
-       "unlock": "Level 1"
       }
      ]
     }

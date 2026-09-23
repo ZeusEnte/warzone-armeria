@@ -1,44 +1,16 @@
 {
- "generated_at": "2026-09-22T11:33:02+00:00",
+ "generated_at": "2026-09-23T11:31:25+00:00",
  "season": "Season 6, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-09-21T12:44:01+00:00",
+ "previous_generated_at": "2026-09-22T11:33:02+00:00",
  "warnings": [],
  "changes": [
-  {
-   "mode": "resurgence",
-   "weapon": "TR51 PARA",
-   "kind": "sube",
-   "from": "A",
-   "to": "S"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "FG42",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
   {
    "mode": "resurgence",
    "weapon": "KNIFE",
    "kind": "entra",
    "to": "D"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "TR51 PARA",
-   "kind": "sube",
-   "from": "A",
-   "to": "S"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "FG42",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
   },
   {
    "mode": "battle_royale",
@@ -12299,14 +12271,14 @@
        "unlock": "Mxr 17"
       },
       {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
        "slot": "Underbarrel",
        "name": "FORCE STABILIZER HANDSTOP",
        "unlock": "Level 10"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "INITIATOR GRIP",
-       "unlock": "Level 4"
       },
       {
        "slot": "Stock",
@@ -15149,12 +15121,12 @@
     {
      "context": "Black Ops 7 Multiplayer",
      "label": "TAC STANCE",
-     "code": "A01-3MC3C-KT731",
+     "code": "A01-3LZ3B-QP331",
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
+       "name": "TITAN-R 5.56 COMPENSATOR",
+       "unlock": "Level 31"
       },
       {
        "slot": "Magazine",
@@ -15162,9 +15134,9 @@
        "unlock": "Level 14"
       },
       {
-       "slot": "Rear Grip",
-       "name": "PEREGRINE GRIP",
-       "unlock": "Level 20"
+       "slot": "Stock",
+       "name": "ULTRALIGHT TACTICAL STOCK",
+       "unlock": "Level 33"
       },
       {
        "slot": "Laser",
@@ -16581,17 +16553,12 @@
     {
      "context": "Warzone Battle Royale",
      "label": "PRESTIGE",
-     "code": "A05-LMWHU-Y657D-11",
+     "code": "A05-LMWI7-NRV4F-11",
      "attachments": [
       {
        "slot": "Optic",
        "name": "FANG HOVERPOINT ELO",
        "unlock": "Armory"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL 5.56 COMPENSATOR",
-       "unlock": "Level 23"
       },
       {
        "slot": "Barrel",
@@ -16607,6 +16574,11 @@
        "slot": "Magazine",
        "name": "GRIFFON RESERVE EXTENDED II",
        "unlock": "Level 27"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "NEEDLETAIL GRIP",
+       "unlock": "Level 16"
       }
      ]
     },
@@ -16741,17 +16713,12 @@
     {
      "context": "Warzone Resurgence",
      "label": "PRESTIGE",
-     "code": "A05-LMWHU-Y657D-11",
+     "code": "A05-LMWI7-NRV4F-11",
      "attachments": [
       {
        "slot": "Optic",
        "name": "FANG HOVERPOINT ELO",
        "unlock": "Armory"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL 5.56 COMPENSATOR",
-       "unlock": "Level 23"
       },
       {
        "slot": "Barrel",
@@ -16767,6 +16734,11 @@
        "slot": "Magazine",
        "name": "GRIFFON RESERVE EXTENDED II",
        "unlock": "Level 27"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "NEEDLETAIL GRIP",
+       "unlock": "Level 16"
       }
      ]
     },
@@ -18403,7 +18375,7 @@
     {
      "context": "Warzone Battle Royale",
      "label": "TAC STANCE",
-     "code": "S10-68XWS-HCS11",
+     "code": "S10-68XWS-HP311",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -18422,8 +18394,8 @@
       },
       {
        "slot": "Stock",
-       "name": "TARGIL ORBITER STOCK",
-       "unlock": "Level 21"
+       "name": "CINDER STOCK",
+       "unlock": "Level 27"
       },
       {
        "slot": "Laser",
@@ -18627,7 +18599,7 @@
     {
      "context": "Warzone Resurgence",
      "label": "TAC STANCE",
-     "code": "S10-68XWS-HCS11",
+     "code": "S10-68XWS-HP311",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -18646,8 +18618,8 @@
       },
       {
        "slot": "Stock",
-       "name": "TARGIL ORBITER STOCK",
-       "unlock": "Level 21"
+       "name": "CINDER STOCK",
+       "unlock": "Level 27"
       },
       {
        "slot": "Laser",
@@ -18915,12 +18887,12 @@
     {
      "context": "Black Ops 7 Multiplayer",
      "label": "TAC STANCE",
-     "code": "S10-6BQNL-SWU11",
+     "code": "S10-6BQFS-1IF11",
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
+       "name": "HAWKER PORTED COMP",
+       "unlock": "Level 36"
       },
       {
        "slot": "Underbarrel",
@@ -18934,8 +18906,8 @@
       },
       {
        "slot": "Stock",
-       "name": "TARGIL ORBITER STOCK",
-       "unlock": "Level 21"
+       "name": "CINDER STOCK",
+       "unlock": "Level 27"
       },
       {
        "slot": "Laser",
@@ -22765,8 +22737,13 @@
     {
      "context": "Black Ops 7 Multiplayer",
      "label": "TAC STANCE",
-     "code": "A06-3RNG8-76P11",
+     "code": "A06-3R5VB-3T411",
      "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "KÜHN PORTED COMP",
+       "unlock": "Level 20"
+      },
       {
        "slot": "Underbarrel",
        "name": "QUICKSTEP FOREGRIP",
@@ -22776,11 +22753,6 @@
        "slot": "Magazine",
        "name": "VULCAN REACH EXTENSION",
        "unlock": "Level 3"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "EAM DASHFIRE GRIP",
-       "unlock": "Level 19"
       },
       {
        "slot": "Stock",
@@ -26496,12 +26468,12 @@
     {
      "context": "Black Ops 7 Multiplayer",
      "label": "TAC STANCE",
-     "code": "M01-3LZ9K-ZZS31",
+     "code": "M01-3LZ3B-KF131",
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "LTI STENTORIAN BRAKE",
-       "unlock": "Armory"
+       "name": "TITAN-R 5.56 COMPENSATOR",
+       "unlock": "Level 43"
       },
       {
        "slot": "Barrel",
@@ -27288,7 +27260,7 @@
     {
      "context": "Black Ops 7 Multiplayer",
      "label": "PRESTIGE",
-     "code": "R03-3MBW2-ZXF51",
+     "code": "R03-3MBW3-1KB51",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -27296,14 +27268,14 @@
        "unlock": "Prestige"
       },
       {
-       "slot": "Barrel",
-       "name": "15\" FRINGE BARREL",
-       "unlock": "Level 25"
-      },
-      {
        "slot": "Rear Grip",
        "name": "L.T. SLING GRIP",
        "unlock": "Level 19"
+      },
+      {
+       "slot": "Stock",
+       "name": "EXPOSED-73 STOCK",
+       "unlock": "Level 34"
       },
       {
        "slot": "Laser",
@@ -28650,17 +28622,17 @@
     {
      "context": "Warzone Battle Royale",
      "label": "TAC STANCE",
-     "code": "S03-3R5QK-YHY11",
+     "code": "S03-3LZ3B-NXJ11",
      "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER PORTED COMP",
+       "unlock": "Level 40"
+      },
       {
        "slot": "Barrel",
        "name": "9\" HERON BARREL",
        "unlock": "Level 4"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "EAM LIGHTPATH FOREGRIP",
-       "unlock": "Level 17"
       },
       {
        "slot": "Magazine",
@@ -28669,8 +28641,8 @@
       },
       {
        "slot": "Stock",
-       "name": "TALOS PAD",
-       "unlock": "Level 19"
+       "name": "CONSTRICTOR PAD",
+       "unlock": "Level 26"
       },
       {
        "slot": "Laser",
@@ -28842,17 +28814,17 @@
     {
      "context": "Warzone Resurgence",
      "label": "TAC STANCE",
-     "code": "S03-3R5QK-YHY11",
+     "code": "S03-3LZ3B-NXJ11",
      "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER PORTED COMP",
+       "unlock": "Level 40"
+      },
       {
        "slot": "Barrel",
        "name": "9\" HERON BARREL",
        "unlock": "Level 4"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "EAM LIGHTPATH FOREGRIP",
-       "unlock": "Level 17"
       },
       {
        "slot": "Magazine",
@@ -28861,8 +28833,8 @@
       },
       {
        "slot": "Stock",
-       "name": "TALOS PAD",
-       "unlock": "Level 19"
+       "name": "CONSTRICTOR PAD",
+       "unlock": "Level 26"
       },
       {
        "slot": "Laser",
@@ -29034,8 +29006,13 @@
     {
      "context": "Black Ops 7 Multiplayer",
      "label": "TAC STANCE",
-     "code": "S03-3RNG8-72W11",
+     "code": "S03-3R5VB-45D11",
      "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER PORTED COMP",
+       "unlock": "Level 40"
+      },
       {
        "slot": "Underbarrel",
        "name": "EAM LIGHTPATH FOREGRIP",
@@ -29047,14 +29024,9 @@
        "unlock": "Level 15"
       },
       {
-       "slot": "Rear Grip",
-       "name": "READIFLEX GRIP",
-       "unlock": "Level 9"
-      },
-      {
        "slot": "Stock",
-       "name": "TALOS PAD",
-       "unlock": "Level 19"
+       "name": "CONSTRICTOR PAD",
+       "unlock": "Level 26"
       },
       {
        "slot": "Laser",
@@ -29890,7 +29862,7 @@
     {
      "context": "Warzone Battle Royale",
      "label": "TAC STANCE",
-     "code": "S05-3R5VB-5GJ11",
+     "code": "S05-3R5VB-5WL11",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -29909,8 +29881,8 @@
       },
       {
        "slot": "Stock",
-       "name": "HAMMER PLATOON PAD",
-       "unlock": "Level 37"
+       "name": "OBERON TACTICAL PAD",
+       "unlock": "Level 12"
       },
       {
        "slot": "Laser",
@@ -30114,7 +30086,7 @@
     {
      "context": "Warzone Resurgence",
      "label": "TAC STANCE",
-     "code": "S05-3R5VB-5GJ11",
+     "code": "S05-3R5VB-5WL11",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -30133,8 +30105,8 @@
       },
       {
        "slot": "Stock",
-       "name": "HAMMER PLATOON PAD",
-       "unlock": "Level 37"
+       "name": "OBERON TACTICAL PAD",
+       "unlock": "Level 12"
       },
       {
        "slot": "Laser",
@@ -31741,24 +31713,24 @@
      "code": "",
      "attachments": [
       {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Level 22"
-      },
-      {
        "slot": "Barrel",
-       "name": "15\" WRAITH BARREL",
-       "unlock": "Level 8"
+       "name": "17\" GREAVES SCOURGE BARREL",
+       "unlock": "Level 35"
       },
       {
        "slot": "Underbarrel",
-       "name": "SENTRY PRO HANDSTOP",
-       "unlock": "Level 9"
+       "name": "EAM STEADY-90 GRIP",
+       "unlock": "Level 38"
       },
       {
        "slot": "Rear Grip",
-       "name": "BELL-H81 GRIP",
-       "unlock": "Level 4"
+       "name": "FISSURE GRIP",
+       "unlock": "Level 25"
+      },
+      {
+       "slot": "Stock",
+       "name": "GREAVES COVENANT STOCK",
+       "unlock": "Level 7"
       },
       {
        "slot": "Fire Mods",

@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-23T11:31:25+00:00",
+ "generated_at": "2026-09-24T11:41:53+00:00",
  "season": "Season 6, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-09-22T11:33:02+00:00",
+ "previous_generated_at": "2026-09-23T11:31:25+00:00",
  "warnings": [],
  "changes": [
   {
@@ -12331,6 +12331,102 @@
      ]
     },
     {
+     "context": "Warzone Battle Royale",
+     "label": "PRESTIGE",
+     "code": "S14-6U311-QH11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "10.9\" GAMBOL LIGHT BARREL",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 33"
+      },
+      {
+       "slot": "Magazine",
+       "name": "DAPPLE CAPACITY MAG",
+       "unlock": "Level 35"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "MFS TACTICAL COMMAND GRIP",
+       "unlock": "Prestige"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Mobility",
+     "code": "S14-6KAU6-FY11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER HYBRID .45",
+       "unlock": "Level 27"
+      },
+      {
+       "slot": "Barrel",
+       "name": "10.9\" GAMBOL LIGHT BARREL",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 33"
+      },
+      {
+       "slot": "Magazine",
+       "name": "DAPPLE CAPACITY MAG",
+       "unlock": "Level 35"
+      },
+      {
+       "slot": "Stock",
+       "name": "GREAVES VALOUR PAD",
+       "unlock": "Level 8"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "SPRINT",
+     "code": "S14-6KAU6-NH11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER HYBRID .45",
+       "unlock": "Level 27"
+      },
+      {
+       "slot": "Barrel",
+       "name": "10.9\" GAMBOL LIGHT BARREL",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 33"
+      },
+      {
+       "slot": "Magazine",
+       "name": "DAPPLE CAPACITY MAG",
+       "unlock": "Level 35"
+      },
+      {
+       "slot": "Stock",
+       "name": "MONARCH MOVE PAD",
+       "unlock": "Level 21"
+      }
+     ]
+    },
+    {
      "context": "Warzone Resurgence",
      "label": "Recommended",
      "code": "S14-6K7PG-6B11",
@@ -12359,6 +12455,102 @@
        "slot": "Stock",
        "name": "GREAVES VALOUR PAD",
        "unlock": "Level 8"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "PRESTIGE",
+     "code": "S14-6U311-QH11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Barrel",
+       "name": "10.9\" GAMBOL LIGHT BARREL",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 33"
+      },
+      {
+       "slot": "Magazine",
+       "name": "DAPPLE CAPACITY MAG",
+       "unlock": "Level 35"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "MFS TACTICAL COMMAND GRIP",
+       "unlock": "Prestige"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Mobility",
+     "code": "S14-6KAU6-FY11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER HYBRID .45",
+       "unlock": "Level 27"
+      },
+      {
+       "slot": "Barrel",
+       "name": "10.9\" GAMBOL LIGHT BARREL",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 33"
+      },
+      {
+       "slot": "Magazine",
+       "name": "DAPPLE CAPACITY MAG",
+       "unlock": "Level 35"
+      },
+      {
+       "slot": "Stock",
+       "name": "GREAVES VALOUR PAD",
+       "unlock": "Level 8"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "SPRINT",
+     "code": "S14-6KAU6-NH11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER HYBRID .45",
+       "unlock": "Level 27"
+      },
+      {
+       "slot": "Barrel",
+       "name": "10.9\" GAMBOL LIGHT BARREL",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 33"
+      },
+      {
+       "slot": "Magazine",
+       "name": "DAPPLE CAPACITY MAG",
+       "unlock": "Level 35"
+      },
+      {
+       "slot": "Stock",
+       "name": "MONARCH MOVE PAD",
+       "unlock": "Level 21"
       }
      ]
     },
@@ -12531,7 +12723,7 @@
     {
      "context": "Warzone Battle Royale",
      "label": "TAC STANCE",
-     "code": "S06-3R5VB-1X311",
+     "code": "S06-3R5VB-2D511",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -12550,8 +12742,8 @@
       },
       {
        "slot": "Stock",
-       "name": "K-1 PEDAL STOCK",
-       "unlock": "Level 18"
+       "name": "VAS TACTICAL SCALE STOCK",
+       "unlock": "Level 25"
       },
       {
        "slot": "Laser",
@@ -12627,7 +12819,7 @@
     {
      "context": "Warzone Battle Royale",
      "label": "PRESTIGE",
-     "code": "S06-AQZNP-QD51",
+     "code": "S06-AQZNP-XW11",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -12650,9 +12842,9 @@
        "unlock": "Level 35"
       },
       {
-       "slot": "Fire Mods",
-       "name": "RECOIL SYNC UNIT",
-       "unlock": "Level 19"
+       "slot": "Stock",
+       "name": "K-1 PEDAL STOCK",
+       "unlock": "Level 18"
       }
      ]
     },
@@ -12723,7 +12915,7 @@
     {
      "context": "Warzone Resurgence",
      "label": "TAC STANCE",
-     "code": "S06-3R5VB-1X311",
+     "code": "S06-3R5VB-2D511",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -12742,8 +12934,8 @@
       },
       {
        "slot": "Stock",
-       "name": "K-1 PEDAL STOCK",
-       "unlock": "Level 18"
+       "name": "VAS TACTICAL SCALE STOCK",
+       "unlock": "Level 25"
       },
       {
        "slot": "Laser",
@@ -12819,7 +13011,7 @@
     {
      "context": "Warzone Resurgence",
      "label": "PRESTIGE",
-     "code": "S06-AQZNP-QD51",
+     "code": "S06-AQZNP-XW11",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -12842,9 +13034,9 @@
        "unlock": "Level 35"
       },
       {
-       "slot": "Fire Mods",
-       "name": "RECOIL SYNC UNIT",
-       "unlock": "Level 19"
+       "slot": "Stock",
+       "name": "K-1 PEDAL STOCK",
+       "unlock": "Level 18"
       }
      ]
     },
@@ -12915,7 +13107,7 @@
     {
      "context": "Warzone Resurgence Ranked",
      "label": "LOW RECOIL",
-     "code": "S06-7YDJF-4J51",
+     "code": "S06-21WSG-MAC4C-6311",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -12939,15 +13131,15 @@
       },
       {
        "slot": "Fire Mods",
-       "name": "RECOIL SYNC UNIT",
-       "unlock": "Level 19"
+       "name": "5.56X30MM OVERPRESSURED",
+       "unlock": "Level 9"
       }
      ]
     },
     {
      "context": "Warzone Resurgence Ranked",
      "label": "TAC STANCE",
-     "code": "S06-3R5VB-1X311",
+     "code": "S06-3R5VB-2D511",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -12966,8 +13158,8 @@
       },
       {
        "slot": "Stock",
-       "name": "K-1 PEDAL STOCK",
-       "unlock": "Level 18"
+       "name": "VAS TACTICAL SCALE STOCK",
+       "unlock": "Level 25"
       },
       {
        "slot": "Laser",
@@ -13011,8 +13203,13 @@
     {
      "context": "Black Ops 7 Multiplayer",
      "label": "TAC STANCE",
-     "code": "S06-3RHJC-GGF11",
+     "code": "S06-3R5VB-45D11",
      "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "KÜHN PORTED COMP",
+       "unlock": "Level 41"
+      },
       {
        "slot": "Underbarrel",
        "name": "QUICKSTEP FOREGRIP",
@@ -13024,14 +13221,9 @@
        "unlock": "Level 17"
       },
       {
-       "slot": "Rear Grip",
-       "name": "QUICKSHIFT GRIP",
-       "unlock": "Level 11"
-      },
-      {
        "slot": "Stock",
-       "name": "K-1 PEDAL STOCK",
-       "unlock": "Level 18"
+       "name": "VAS TACTICAL SCALE STOCK",
+       "unlock": "Level 25"
       },
       {
        "slot": "Laser",
@@ -19245,8 +19437,13 @@
     {
      "context": "Warzone Battle Royale",
      "label": "TAC STANCE",
-     "code": "S04-697QI-N8B11",
+     "code": "S04-68XYC-SXS11",
      "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER HYBRID .45",
+       "unlock": "Level 30"
+      },
       {
        "slot": "Barrel",
        "name": "12\" CLOUD BARREL",
@@ -19258,14 +19455,9 @@
        "unlock": "Level 11"
       },
       {
-       "slot": "Rear Grip",
-       "name": "QUIKARM GRIP",
-       "unlock": "Level 9"
-      },
-      {
        "slot": "Stock",
-       "name": "SERVAL Q-STEP STOCK",
-       "unlock": "Level 14"
+       "name": "CONVERGE TACTICAL STOCK",
+       "unlock": "Level 19"
       },
       {
        "slot": "Laser",
@@ -19437,8 +19629,13 @@
     {
      "context": "Warzone Resurgence",
      "label": "TAC STANCE",
-     "code": "S04-697QI-N8B11",
+     "code": "S04-68XYC-SXS11",
      "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER HYBRID .45",
+       "unlock": "Level 30"
+      },
       {
        "slot": "Barrel",
        "name": "12\" CLOUD BARREL",
@@ -19450,14 +19647,9 @@
        "unlock": "Level 11"
       },
       {
-       "slot": "Rear Grip",
-       "name": "QUIKARM GRIP",
-       "unlock": "Level 9"
-      },
-      {
        "slot": "Stock",
-       "name": "SERVAL Q-STEP STOCK",
-       "unlock": "Level 14"
+       "name": "CONVERGE TACTICAL STOCK",
+       "unlock": "Level 19"
       },
       {
        "slot": "Laser",
@@ -21605,17 +21797,17 @@
     {
      "context": "Black Ops 7 Multiplayer",
      "label": "PRESTIGE",
-     "code": "S01-3R5QL-1QQ11",
+     "code": "S01-3LZ3B-QQ911",
      "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER HYBRID .45",
+       "unlock": "Level 39"
+      },
       {
        "slot": "Barrel",
        "name": "12\" VIENNA BARREL",
        "unlock": "Level 23"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "EAM LIGHTPATH FOREGRIP",
-       "unlock": "Level 21"
       },
       {
        "slot": "Magazine",
@@ -24661,7 +24853,7 @@
     {
      "context": "Warzone Battle Royale",
      "label": "Recommended",
-     "code": "C05-GTZDL-HWL31",
+     "code": "C05-GPTKM-5WD31",
      "attachments": [
       {
        "slot": "Barrel",
@@ -24669,14 +24861,14 @@
        "unlock": "Level 4"
       },
       {
-       "slot": "Underbarrel",
-       "name": "SAPPER GUARD HANDSTOP",
-       "unlock": "Level 38"
-      },
-      {
        "slot": "Magazine",
        "name": "BOWEN BIGHORN DRUM",
        "unlock": "Level 37"
+      },
+      {
+       "slot": "Stock",
+       "name": "BEADLINE TACTICAL PAD",
+       "unlock": "Level 2"
       },
       {
        "slot": "Laser",
@@ -24693,7 +24885,7 @@
     {
      "context": "Warzone Battle Royale",
      "label": "NON PRESTIGE",
-     "code": "C05-3R5QL-4KW31",
+     "code": "C05-3LYXL-RKN31",
      "attachments": [
       {
        "slot": "Barrel",
@@ -24701,14 +24893,14 @@
        "unlock": "Level 4"
       },
       {
-       "slot": "Underbarrel",
-       "name": "SAPPER GUARD HANDSTOP",
-       "unlock": "Level 38"
-      },
-      {
        "slot": "Magazine",
        "name": "BOWEN BIGHORN DRUM",
        "unlock": "Level 37"
+      },
+      {
+       "slot": "Stock",
+       "name": "BEADLINE TACTICAL PAD",
+       "unlock": "Level 2"
       },
       {
        "slot": "Laser",
@@ -24725,7 +24917,7 @@
     {
      "context": "Warzone Resurgence",
      "label": "Recommended",
-     "code": "C05-GTZDL-HWL31",
+     "code": "C05-GPTKM-5WD31",
      "attachments": [
       {
        "slot": "Barrel",
@@ -24733,14 +24925,14 @@
        "unlock": "Level 4"
       },
       {
-       "slot": "Underbarrel",
-       "name": "SAPPER GUARD HANDSTOP",
-       "unlock": "Level 38"
-      },
-      {
        "slot": "Magazine",
        "name": "BOWEN BIGHORN DRUM",
        "unlock": "Level 37"
+      },
+      {
+       "slot": "Stock",
+       "name": "BEADLINE TACTICAL PAD",
+       "unlock": "Level 2"
       },
       {
        "slot": "Laser",
@@ -24757,7 +24949,7 @@
     {
      "context": "Warzone Resurgence",
      "label": "NON PRESTIGE",
-     "code": "C05-3R5QL-4KW31",
+     "code": "C05-3LYXL-RKN31",
      "attachments": [
       {
        "slot": "Barrel",
@@ -24765,14 +24957,14 @@
        "unlock": "Level 4"
       },
       {
-       "slot": "Underbarrel",
-       "name": "SAPPER GUARD HANDSTOP",
-       "unlock": "Level 38"
-      },
-      {
        "slot": "Magazine",
        "name": "BOWEN BIGHORN DRUM",
        "unlock": "Level 37"
+      },
+      {
+       "slot": "Stock",
+       "name": "BEADLINE TACTICAL PAD",
+       "unlock": "Level 2"
       },
       {
        "slot": "Laser",
@@ -24806,7 +24998,7 @@
     {
      "context": "Black Ops 7 Multiplayer",
      "label": "Recommended",
-     "code": "C05-GQ9FX-ZYL11",
+     "code": "C05-GQ9FX-WV711",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -24819,14 +25011,14 @@
        "unlock": "Level 30"
       },
       {
-       "slot": "Magazine",
-       "name": "H-COMB EXTENDED MAG",
-       "unlock": "Level 14"
-      },
-      {
        "slot": "Rear Grip",
        "name": "DASHBOUND GRIP",
        "unlock": "Level 16"
+      },
+      {
+       "slot": "Stock",
+       "name": "BEADLINE TACTICAL PAD",
+       "unlock": "Level 2"
       },
       {
        "slot": "Laser",
@@ -24838,7 +25030,7 @@
     {
      "context": "Black Ops 7 Multiplayer",
      "label": "NON PRESTIGE",
-     "code": "C05-3MESX-I4F31",
+     "code": "C05-3LZ1R-82B31",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -24851,9 +25043,9 @@
        "unlock": "Level 30"
       },
       {
-       "slot": "Rear Grip",
-       "name": "DASHBOUND GRIP",
-       "unlock": "Level 16"
+       "slot": "Stock",
+       "name": "BEADLINE TACTICAL PAD",
+       "unlock": "Level 2"
       },
       {
        "slot": "Laser",
@@ -27848,7 +28040,7 @@
     {
      "context": "Warzone Battle Royale",
      "label": "TAC STANCE",
-     "code": "S12-6D4SW-Q9Y11",
+     "code": "S12-6D4SW-QL911",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -27867,8 +28059,8 @@
       },
       {
        "slot": "Stock",
-       "name": "LTI STERN AIM PAD",
-       "unlock": "Level 30"
+       "name": "SUFFUSE TACTICAL PAD",
+       "unlock": "Level 24"
       },
       {
        "slot": "Laser",
@@ -28072,7 +28264,7 @@
     {
      "context": "Warzone Resurgence",
      "label": "TAC STANCE",
-     "code": "S12-6D4SW-Q9Y11",
+     "code": "S12-6D4SW-QL911",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -28091,8 +28283,8 @@
       },
       {
        "slot": "Stock",
-       "name": "LTI STERN AIM PAD",
-       "unlock": "Level 30"
+       "name": "SUFFUSE TACTICAL PAD",
+       "unlock": "Level 24"
       },
       {
        "slot": "Laser",
@@ -28392,8 +28584,13 @@
     {
      "context": "Black Ops 7 Multiplayer",
      "label": "TAC STANCE",
-     "code": "S12-6DGGY-29U11",
+     "code": "S12-6D4SW-NU111",
      "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER HYBRID .45",
+       "unlock": "Level 21"
+      },
       {
        "slot": "Underbarrel",
        "name": "EAM LIGHTPATH FOREGRIP",
@@ -28405,14 +28602,9 @@
        "unlock": "Level 15"
       },
       {
-       "slot": "Rear Grip",
-       "name": "PILLION READY GRIP",
-       "unlock": "Level 25"
-      },
-      {
        "slot": "Stock",
-       "name": "LTI STERN AIM PAD",
-       "unlock": "Level 30"
+       "name": "SUFFUSE TACTICAL PAD",
+       "unlock": "Level 24"
       },
       {
        "slot": "Laser",

@@ -1,163 +1,16 @@
 {
- "generated_at": "2026-09-26T11:20:47+00:00",
+ "generated_at": "2026-09-27T11:59:38+00:00",
  "season": "Season 6, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-09-25T11:48:18+00:00",
+ "previous_generated_at": "2026-09-26T11:20:47+00:00",
  "warnings": [],
  "changes": [
-  {
-   "mode": "resurgence",
-   "weapon": "RYDEN 45K",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "MK35 ISR",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "RIVETER",
-   "kind": "sube",
-   "from": "B",
-   "to": "A"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "X9 MAVERICK",
-   "kind": "baja",
-   "from": "A",
-   "to": "B"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "M8A1",
-   "kind": "baja",
-   "from": "A",
-   "to": "B"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "SWORDFISH A1",
-   "kind": "baja",
-   "from": "A",
-   "to": "B"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "TR2",
-   "kind": "baja",
-   "from": "A",
-   "to": "B"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "GPR 91",
-   "kind": "baja",
-   "from": "A",
-   "to": "B"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "XM325",
-   "kind": "baja",
-   "from": "A",
-   "to": "B"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "MK.78",
-   "kind": "baja",
-   "from": "A",
-   "to": "B"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "M34 NOVALINE",
-   "kind": "baja",
-   "from": "A",
-   "to": "B"
-  },
   {
    "mode": "resurgence",
    "weapon": "KNIFE",
    "kind": "entra",
    "to": "D"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "RYDEN 45K",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "MK35 ISR",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "TR51 PARA",
-   "kind": "sube",
-   "from": "A",
-   "to": "S"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "FG42",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "RIVETER",
-   "kind": "sube",
-   "from": "B",
-   "to": "A"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "M8A1",
-   "kind": "baja",
-   "from": "A",
-   "to": "B"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "SWORDFISH A1",
-   "kind": "baja",
-   "from": "A",
-   "to": "B"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "TR2",
-   "kind": "baja",
-   "from": "A",
-   "to": "B"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "M34 NOVALINE",
-   "kind": "baja",
-   "from": "A",
-   "to": "B"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "WARDEN 308",
-   "kind": "baja",
-   "from": "A",
-   "to": "B"
   },
   {
    "mode": "battle_royale",
@@ -12434,14 +12287,14 @@
        "unlock": "Mxr 17"
       },
       {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
        "slot": "Underbarrel",
        "name": "FORCE STABILIZER HANDSTOP",
        "unlock": "Level 10"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "INITIATOR GRIP",
+       "unlock": "Level 4"
       },
       {
        "slot": "Stock",
@@ -32714,24 +32567,24 @@
      "code": "",
      "attachments": [
       {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Level 22"
-      },
-      {
        "slot": "Barrel",
-       "name": "15\" WRAITH BARREL",
-       "unlock": "Level 8"
+       "name": "17\" GREAVES SCOURGE BARREL",
+       "unlock": "Level 35"
       },
       {
        "slot": "Underbarrel",
-       "name": "SENTRY PRO HANDSTOP",
-       "unlock": "Level 9"
+       "name": "EAM STEADY-90 GRIP",
+       "unlock": "Level 38"
       },
       {
        "slot": "Rear Grip",
-       "name": "BELL-H81 GRIP",
-       "unlock": "Level 4"
+       "name": "FISSURE GRIP",
+       "unlock": "Level 25"
+      },
+      {
+       "slot": "Stock",
+       "name": "GREAVES COVENANT STOCK",
+       "unlock": "Level 7"
       },
       {
        "slot": "Fire Mods",
@@ -33357,6 +33210,108 @@
        "slot": "Fire Mods",
        "name": "BUFFER SPRING",
        "unlock": "Level 3"
+      }
+     ]
+    }
+   ]
+  },
+  "riveter": {
+   "name": "RIVETER",
+   "max_level": 0,
+   "builds": [
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Barrel",
+       "name": "SA DRAVEN-20 LONG BARREL",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "30 ROUND MAG",
+       "unlock": ""
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "XTEN GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "DEMO D50 BUFFER TUBE",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SL RAZORHAWK LASER LIGHT",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Barrel",
+       "name": "SA DRAVEN-20 LONG BARREL",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "30 ROUND MAG",
+       "unlock": ""
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "XTEN GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "DEMO D50 BUFFER TUBE",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SL RAZORHAWK LASER LIGHT",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence Ranked",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Barrel",
+       "name": "SA DRAVEN-20 LONG BARREL",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "30 ROUND MAG",
+       "unlock": ""
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "XTEN GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "DEMO D50 BUFFER TUBE",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SL RAZORHAWK LASER LIGHT",
+       "unlock": ""
       }
      ]
     }
@@ -35420,108 +35375,6 @@
       {
        "slot": "Laser",
        "name": "VERDANT HOOK CYLINDRICAL LASER",
-       "unlock": ""
-      }
-     ]
-    }
-   ]
-  },
-  "riveter": {
-   "name": "RIVETER",
-   "max_level": 0,
-   "builds": [
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "SA DRAVEN-20 LONG BARREL",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "30 ROUND MAG",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "XTEN GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "DEMO D50 BUFFER TUBE",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SL RAZORHAWK LASER LIGHT",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "SA DRAVEN-20 LONG BARREL",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "30 ROUND MAG",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "XTEN GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "DEMO D50 BUFFER TUBE",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SL RAZORHAWK LASER LIGHT",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence Ranked",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "SA DRAVEN-20 LONG BARREL",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "30 ROUND MAG",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "XTEN GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "DEMO D50 BUFFER TUBE",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SL RAZORHAWK LASER LIGHT",
        "unlock": ""
       }
      ]

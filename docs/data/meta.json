@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-28T13:48:35+00:00",
+ "generated_at": "2026-09-29T12:47:46+00:00",
  "season": "Season 6, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-09-27T11:59:38+00:00",
+ "previous_generated_at": "2026-09-28T13:48:35+00:00",
  "warnings": [],
  "changes": [
   {
@@ -369,7 +369,7 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/vst_version1/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/vst_version1/gunFullDisplay",
      "desde": "2026-09-18"
     },
     {
@@ -5044,7 +5044,7 @@
      ],
      "weapon_type": "SMG",
      "tags": [],
-     "image": "https://img.wzstats.gg/vst_version1/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/vst_version1/gunFullDisplay",
      "desde": "2026-08-20"
     },
     {
@@ -5948,7 +5948,7 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/vst_version1/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/vst_version1/gunFullDisplay",
      "desde": "2026-09-18"
     },
     {
@@ -7143,7 +7143,7 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/vst_version1/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/vst_version1/gunFullDisplay",
      "desde": "2026-09-18"
     },
     {
@@ -12823,6 +12823,70 @@
        "slot": "Fire Mods",
        "name": "RECOIL SYNC UNIT",
        "unlock": "Level 13"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "HIPFIRE",
+     "code": "S14-91WUT-PIB11",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER HYBRID .45",
+       "unlock": "Level 27"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "SAPPER GUARD HANDSTOP",
+       "unlock": "Level 33"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "PLUSHED POISE GRIP",
+       "unlock": "Level 14"
+      },
+      {
+       "slot": "Stock",
+       "name": "TACTICIAN SPREAD PAD",
+       "unlock": "Level 25"
+      },
+      {
+       "slot": "Laser",
+       "name": "CONVERGENCE BOX LASER",
+       "unlock": "Level 22"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "TAC STANCE",
+     "code": "S14-6DDRC-PU511",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HAWKER HYBRID .45",
+       "unlock": "Level 27"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "QUICKSTEP FOREGRIP",
+       "unlock": "Level 28"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "MFS TACTICAL COMMAND GRIP",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Stock",
+       "name": "TACTICIAN SPREAD PAD",
+       "unlock": "Level 25"
+      },
+      {
+       "slot": "Laser",
+       "name": "2MW ADAPTIVE TACTICAL LASER",
+       "unlock": "Level 29"
       }
      ]
     },
@@ -18967,38 +19031,6 @@
     {
      "context": "Warzone Battle Royale",
      "label": "Recommended",
-     "code": "A17-34FK5-FBYY1-11",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 37"
-      },
-      {
-       "slot": "Barrel",
-       "name": "18.5\" MFS FALLEN ANGEL BARREL",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Magazine",
-       "name": "CARUS CAPACITY MAG",
-       "unlock": "Level 28"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "SEMI-AUTO",
      "code": "A17-21Y8Q-574GE-C711",
      "attachments": [
       {
@@ -19025,44 +19057,44 @@
        "slot": "Fire Mods",
        "name": "7.62 NATO OVERPRESSURED",
        "unlock": "Level 17"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "PRESTIGE",
+     "code": "A17-34FK5-FBYY1-11",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 37"
+      },
+      {
+       "slot": "Barrel",
+       "name": "18.5\" MFS FALLEN ANGEL BARREL",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Magazine",
+       "name": "CARUS CAPACITY MAG",
+       "unlock": "Level 28"
       }
      ]
     },
     {
      "context": "Warzone Resurgence",
      "label": "Recommended",
-     "code": "A17-34FK5-FBYY1-11",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 37"
-      },
-      {
-       "slot": "Barrel",
-       "name": "18.5\" MFS FALLEN ANGEL BARREL",
-       "unlock": "Prestige"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Magazine",
-       "name": "CARUS CAPACITY MAG",
-       "unlock": "Level 28"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "SEMI-AUTO",
      "code": "A17-21Y8Q-574GE-C711",
      "attachments": [
       {
@@ -19089,6 +19121,38 @@
        "slot": "Fire Mods",
        "name": "7.62 NATO OVERPRESSURED",
        "unlock": "Level 17"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "PRESTIGE",
+     "code": "A17-34FK5-FBYY1-11",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 37"
+      },
+      {
+       "slot": "Barrel",
+       "name": "18.5\" MFS FALLEN ANGEL BARREL",
+       "unlock": "Prestige"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Magazine",
+       "name": "CARUS CAPACITY MAG",
+       "unlock": "Level 28"
       }
      ]
     },
@@ -32567,24 +32631,24 @@
      "code": "",
      "attachments": [
       {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Level 22"
+      },
+      {
        "slot": "Barrel",
-       "name": "17\" GREAVES SCOURGE BARREL",
-       "unlock": "Level 35"
+       "name": "15\" WRAITH BARREL",
+       "unlock": "Level 8"
       },
       {
        "slot": "Underbarrel",
-       "name": "EAM STEADY-90 GRIP",
-       "unlock": "Level 38"
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 9"
       },
       {
        "slot": "Rear Grip",
-       "name": "FISSURE GRIP",
-       "unlock": "Level 25"
-      },
-      {
-       "slot": "Stock",
-       "name": "GREAVES COVENANT STOCK",
-       "unlock": "Level 7"
+       "name": "BELL-H81 GRIP",
+       "unlock": "Level 4"
       },
       {
        "slot": "Fire Mods",

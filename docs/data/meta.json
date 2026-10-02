@@ -1,37 +1,16 @@
 {
- "generated_at": "2026-10-01T13:08:18+00:00",
+ "generated_at": "2026-10-02T12:29:06+00:00",
  "season": "Season 6, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-09-30T12:31:12+00:00",
+ "previous_generated_at": "2026-10-01T13:08:18+00:00",
  "warnings": [],
  "changes": [
-  {
-   "mode": "resurgence",
-   "weapon": "TR51 PARA",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
   {
    "mode": "resurgence",
    "weapon": "KNIFE",
    "kind": "entra",
    "to": "D"
-  },
-  {
-   "mode": "resurgence_ranked",
-   "weapon": "TR51 PARA",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "TR51 PARA",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
   },
   {
    "mode": "battle_royale",
@@ -32652,24 +32631,24 @@
      "code": "",
      "attachments": [
       {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Level 22"
-      },
-      {
        "slot": "Barrel",
-       "name": "15\" WRAITH BARREL",
-       "unlock": "Level 8"
+       "name": "17\" GREAVES SCOURGE BARREL",
+       "unlock": "Level 35"
       },
       {
        "slot": "Underbarrel",
-       "name": "SENTRY PRO HANDSTOP",
-       "unlock": "Level 9"
+       "name": "EAM STEADY-90 GRIP",
+       "unlock": "Level 38"
       },
       {
        "slot": "Rear Grip",
-       "name": "BELL-H81 GRIP",
-       "unlock": "Level 4"
+       "name": "FISSURE GRIP",
+       "unlock": "Level 25"
+      },
+      {
+       "slot": "Stock",
+       "name": "GREAVES COVENANT STOCK",
+       "unlock": "Level 7"
       },
       {
        "slot": "Fire Mods",

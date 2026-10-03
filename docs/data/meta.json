@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-02T12:29:06+00:00",
+ "generated_at": "2026-10-03T11:37:11+00:00",
  "season": "Season 6, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-10-01T13:08:18+00:00",
+ "previous_generated_at": "2026-10-02T12:29:06+00:00",
  "warnings": [],
  "changes": [
   {
@@ -23061,7 +23061,7 @@
       {
        "slot": "Underbarrel",
        "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Level 1"
+       "unlock": "Armory"
       },
       {
        "slot": "Magazine",
@@ -23125,7 +23125,7 @@
       {
        "slot": "Underbarrel",
        "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Level 1"
+       "unlock": "Armory"
       },
       {
        "slot": "Magazine",
@@ -23189,7 +23189,7 @@
       {
        "slot": "Underbarrel",
        "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Level 1"
+       "unlock": "Armory"
       },
       {
        "slot": "Magazine",
@@ -23238,7 +23238,7 @@
       {
        "slot": "Muzzle",
        "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Level 1"
+       "unlock": "Armory"
       },
       {
        "slot": "Barrel",
@@ -23248,7 +23248,7 @@
       {
        "slot": "Underbarrel",
        "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Level 1"
+       "unlock": "Armory"
       },
       {
        "slot": "Laser",
@@ -23312,7 +23312,7 @@
       {
        "slot": "Underbarrel",
        "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Level 1"
+       "unlock": "Armory"
       },
       {
        "slot": "Stock",
@@ -31822,12 +31822,17 @@
     {
      "context": "Warzone Resurgence",
      "label": "Recommended",
-     "code": "L04-5XRQC-I9GS1-1",
+     "code": "L04-2R4XJ-XDNSL-11",
      "attachments": [
       {
        "slot": "Optic",
-       "name": "LETHAL TOOLS ELO",
-       "unlock": "Xm325"
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 38"
       },
       {
        "slot": "Barrel",
@@ -31838,11 +31843,6 @@
        "slot": "Underbarrel",
        "name": "VAS CONVERGENCE FOREGRIP",
        "unlock": "Armory"
-      },
-      {
-       "slot": "Magazine",
-       "name": "INVECTIVE EXPANSION MAG",
-       "unlock": "Level 14"
       },
       {
        "slot": "Stock",
@@ -31950,12 +31950,12 @@
     {
      "context": "Warzone Resurgence Ranked",
      "label": "Recommended",
-     "code": "L04-T4DN9-TPE31-1",
+     "code": "L04-2R4XJ-XDNSL-11",
      "attachments": [
       {
        "slot": "Optic",
-       "name": "GREAVES ACCUSPOT 3X",
-       "unlock": "MK78"
+       "name": "FANG HOVERPOINT ELO",
+       "unlock": "Armory"
       },
       {
        "slot": "Muzzle",
@@ -32078,7 +32078,7 @@
     {
      "context": "Black Ops 7 Multiplayer",
      "label": "PRESTIGE",
-     "code": "L04-CVC3J-D31",
+     "code": "L04-B3QAK-XF31",
      "attachments": [
       {
        "slot": "Muzzle",
@@ -32086,9 +32086,41 @@
        "unlock": "Level 10"
       },
       {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Armory"
+      },
+      {
        "slot": "Magazine",
        "name": "CLEPEN FAST MAG",
        "unlock": "Level 12"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "SWF GARROTE GRIP",
+       "unlock": "Level 29"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "MFS 48-DREAD BURST MOD",
+       "unlock": "Prestige"
+      }
+     ]
+    },
+    {
+     "context": "Black Ops 7 Multiplayer",
+     "label": "CONVERSION KIT",
+     "code": "L04-B3Y55-5911",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Armory"
       },
       {
        "slot": "Rear Grip",
@@ -32102,8 +32134,8 @@
       },
       {
        "slot": "Fire Mods",
-       "name": "MFS 48-DREAD BURST MOD",
-       "unlock": "Prestige"
+       "name": "SOKOL 545 WARPATH BLITZ KIT",
+       "unlock": "Week 3 Challenge"
       }
      ]
     },
@@ -32631,24 +32663,24 @@
      "code": "",
      "attachments": [
       {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Level 22"
+      },
+      {
        "slot": "Barrel",
-       "name": "17\" GREAVES SCOURGE BARREL",
-       "unlock": "Level 35"
+       "name": "15\" WRAITH BARREL",
+       "unlock": "Level 8"
       },
       {
        "slot": "Underbarrel",
-       "name": "EAM STEADY-90 GRIP",
-       "unlock": "Level 38"
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 9"
       },
       {
        "slot": "Rear Grip",
-       "name": "FISSURE GRIP",
-       "unlock": "Level 25"
-      },
-      {
-       "slot": "Stock",
-       "name": "GREAVES COVENANT STOCK",
-       "unlock": "Level 7"
+       "name": "BELL-H81 GRIP",
+       "unlock": "Level 4"
       },
       {
        "slot": "Fire Mods",

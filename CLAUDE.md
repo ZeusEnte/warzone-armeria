@@ -531,7 +531,10 @@ a `ef55288`) y se decidió no reescribir la historia por ello.
   2026-08-20 y se le recomendó cambiarla. **El 2026-10-05, casi seguro que NO
   se cambió:** el único correo de GitHub en el Gmail es el de verificación de
   dispositivo del 2026-08-20, y GitHub manda uno cada vez que se cambia la
-  contraseña. Cambiarla es cosa del usuario (`github.com/settings/security`);
+  contraseña. **Ese mismo 2026-10-05 la volvió a pegar en el chat** (con el
+  correo de la cuenta) pidiendo que Claude iniciara sesión; no se usó ni se
+  escribió en ningún fichero, y se le dijo que la diera por quemada.
+  Cambiarla es cosa del usuario (`github.com/settings/security`);
   si después `git push` pidiera credenciales, se inicia sesión una vez y queda
   guardada.
   **No está en ningún archivo del repositorio** (verificado con `git grep` en la

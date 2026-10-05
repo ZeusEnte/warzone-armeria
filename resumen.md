@@ -1,10 +1,47 @@
 # Resumen de estado — Armería Warzone
 
-**Última actualización: 2026-09-14** (auditoría de autonomía: desde el 16-09-2026 el proyecto funciona sin Claude).
+**Última actualización: 2026-10-05** (repaso a la vuelta: tres semanas solo y sin un fallo).
 
 El contexto técnico detallado vive en **[CLAUDE.md](CLAUDE.md)**: arquitectura,
 formato de los datos, trampas del scraping y cómo probarlo. Este fichero es la
 bitácora: en qué punto está, qué se decidió y qué viene después.
+
+---
+
+## 2026-10-05 — Repaso a la vuelta: tres semanas funcionando solo
+
+Primera ventana desde el 15-09. Repaso desde Worker, sin tocar código.
+
+### ✅ Lo que se comprobó
+
+| Qué | Resultado |
+|---|---|
+| Commits del bot | 20 seguidos, del 15-09 al 04-10, ningún día perdido |
+| JSON publicado | `generated_at` 2026-10-04T14:18Z, sin warnings, 5 modos, ninguno `stale`, 67 armas con accesorios |
+| Temporada | pasó sola de «Season 5 Reloaded» a **«Season 6, 2026»** |
+| Modern Warfare 4 | ningún slug `-mw4` todavía; normal, sale el 23-10 |
+| `scripts\comprobar.ps1` | los tres pasos en verde, código 0 |
+| Avisos de otros proyectos | ninguno nuevo |
+
+**Un commit local sin subir:** `CLAUDE.md: nombres nuevos de los dos accesos directos`,
+del 15-09. Solo documentación. Rebasado sobre los 20 del bot y subido (`eb36b86`).
+
+**Puesta al día de la documentación**, que se había quedado atrás: el «Pendiente» de
+`CLAUDE.md` seguía dando las fases A y B por sin confirmar (se cerraron el 10-09), y la
+ficha de `_CONTRATOS` seguía diciendo que en Gamer no hay Python y que los tres pasos de
+la comprobación usan Python (las dos cosas dejaron de ser ciertas el 10-09).
+
+### ⚠️ Sigue abierto, y es del usuario
+
+- El ajuste de correo de *failed workflows* en GitHub (ver 2026-09-14). Preguntado otra
+  vez hoy, sin respuesta todavía; tampoco se sabe aún si ha llegado algún correo de
+  GitHub desde el 16-09.
+- La contraseña de GitHub pegada en el chat el 2026-08-20: sin confirmar que se cambió.
+
+### Lo que viene
+
+La fase C, cuando salte el detector de MW4 (noviembre). Si el 15-11-2026 no ha saltado,
+mirar wzstats a mano. Nada más que hacer hasta entonces.
 
 ---
 

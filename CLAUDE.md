@@ -429,7 +429,7 @@ temporal.
 - Hizo falta `git config --global --add safe.directory F:/COMPARTIDO/Claude/Warezone`
   porque la unidad F: pertenece a otro usuario de red.
 - **Node NO está instalado. `gh` NO está instalado.** Ninguno hace falta.
-- Python 3.13 y git 2.55 sí.
+- Python 3.13 (en Worker; en Gamer, 3.12) y git 2.55 sí.
 
 **Son dos Windows, y este proyecto se gestiona entero desde cualquiera de los
 dos** (decidido por el usuario el 2026-09-10). `Worker` tiene Python 3.13;
@@ -510,22 +510,24 @@ a `ef55288`) y se decidió no reescribir la historia por ello.
 ## Pendiente
 
 - **Plan por fases aprobado el 2026-09-08:** `documentacion/plan-2026-09-08-fases.md`.
-  **Fase A (sonnet · high): hecha el 2026-09-08** — textos de desbloqueo,
-  etiquetas, nivel del arma, versión visible, juego base y detector del cambio
-  a MW4. Pendiente que el usuario la confirme **desde el Windows Gamer**
-  (versión de interfaz en el pie y la función nueva) antes de darla por
-  cerrada. **Fase B (opus · high): hecha el 2026-09-08** — ventajas raspadas de
-  wzstats, una tier list por modo, y la sección «Ventajas meta por ranura».
-  Pendiente la misma confirmación desde Gamer.
+  **Fases A y B: hechas el 2026-09-08 y cerradas el 2026-09-10**, verificadas
+  por el usuario desde el Windows Gamer (pie `interfaz 2026-09-08c`, nivel del
+  arma en las tarjetas, «Ventajas meta por ranura», juego base en cabecera).
   **Fase C** (fable · high), noviembre de 2026: Modern Warfare 4 sale el
   23-10-2026 y en su temporada 1 Warzone cambia de juego base; la avisa sola
-  el detector de la fase A (`detectar_mw4()`). Cada fase empieza diciendo
+  el detector de la fase A (`detectar_mw4()`). **Si el 15-11-2026 no ha
+  saltado, mirar wzstats a mano** (paso C1 del plan). Cada fase empieza diciendo
   modelo y potencia. El informe que lo justifica:
   `documentacion/informe-2026-09-08-nivel-desbloqueos-ventajas-zodiac.md`.
+- **Sin verificar desde el 2026-09-14, y solo lo puede mirar el usuario:** que
+  en `github.com/settings/notifications` → *Actions* esté activado el correo de
+  *failed workflows*. Es la única alerta rápida y nunca se ha visto llegar,
+  porque no ha habido ningún run en `failure`. Preguntado otra vez el
+  2026-10-05, sin respuesta todavía.
 - El usuario pegó su contraseña de GitHub en texto plano en el chat el
   2026-08-20 y se le recomendó cambiarla. Sin confirmar que lo hiciera.
   **No está en ningún archivo del repositorio** (verificado con `git grep` en la
   auditoría del 2026-08-20).
-- `multiplayer_ranked` solo trae **5 armas**. Verificado el 2026-08-20 contra la
-  web en vivo: es lo que publica wzstats en esa página, no es un fallo del
-  parser. `validar_meta.py` tiene el mínimo en 3 por eso.
+- `multiplayer_ranked` solo trae **5 o 6 armas** (6 el 2026-10-04). Verificado
+  el 2026-08-20 contra la web en vivo: es lo que publica wzstats en esa página,
+  no es un fallo del parser. `validar_meta.py` tiene el mínimo en 3 por eso.

@@ -522,10 +522,18 @@ a `ef55288`) y se decidió no reescribir la historia por ello.
 - **Sin verificar desde el 2026-09-14, y solo lo puede mirar el usuario:** que
   en `github.com/settings/notifications` → *Actions* esté activado el correo de
   *failed workflows*. Es la única alerta rápida y nunca se ha visto llegar,
-  porque no ha habido ningún run en `failure`. Preguntado otra vez el
-  2026-10-05, sin respuesta todavía.
+  porque no ha habido ningún run en `failure`: el 2026-10-05 la API pública daba
+  **20 de 20 runs en `success`** desde el 15-09, y en el Gmail no había ni un
+  correo de GitHub desde entonces, que es lo esperable. Ese día se intentó
+  mirar el ajuste desde el navegador de Worker y **no hay sesión de GitHub**;
+  iniciarla con la contraseña es cosa del usuario, no de Claude.
 - El usuario pegó su contraseña de GitHub en texto plano en el chat el
-  2026-08-20 y se le recomendó cambiarla. Sin confirmar que lo hiciera.
+  2026-08-20 y se le recomendó cambiarla. **El 2026-10-05, casi seguro que NO
+  se cambió:** el único correo de GitHub en el Gmail es el de verificación de
+  dispositivo del 2026-08-20, y GitHub manda uno cada vez que se cambia la
+  contraseña. Cambiarla es cosa del usuario (`github.com/settings/security`);
+  si después `git push` pidiera credenciales, se inicia sesión una vez y queda
+  guardada.
   **No está en ningún archivo del repositorio** (verificado con `git grep` en la
   auditoría del 2026-08-20).
 - `multiplayer_ranked` solo trae **5 o 6 armas** (6 el 2026-10-04). Verificado

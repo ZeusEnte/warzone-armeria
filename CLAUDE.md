@@ -519,26 +519,20 @@ a `ef55288`) y se decidió no reescribir la historia por ello.
   saltado, mirar wzstats a mano** (paso C1 del plan). Cada fase empieza diciendo
   modelo y potencia. El informe que lo justifica:
   `documentacion/informe-2026-09-08-nivel-desbloqueos-ventajas-zodiac.md`.
-- **Sin verificar desde el 2026-09-14, y solo lo puede mirar el usuario:** que
-  en `github.com/settings/notifications` → *Actions* esté activado el correo de
-  *failed workflows*. Es la única alerta rápida y nunca se ha visto llegar,
-  porque no ha habido ningún run en `failure`: el 2026-10-05 la API pública daba
-  **20 de 20 runs en `success`** desde el 15-09, y en el Gmail no había ni un
-  correo de GitHub desde entonces, que es lo esperable. Ese día se intentó
-  mirar el ajuste desde el navegador de Worker y **no hay sesión de GitHub**;
-  iniciarla con la contraseña es cosa del usuario, no de Claude.
-- El usuario pegó su contraseña de GitHub en texto plano en el chat el
-  2026-08-20 y se le recomendó cambiarla. **El 2026-10-05, casi seguro que NO
-  se cambió:** el único correo de GitHub en el Gmail es el de verificación de
-  dispositivo del 2026-08-20, y GitHub manda uno cada vez que se cambia la
-  contraseña. **Ese mismo 2026-10-05 la volvió a pegar en el chat** (con el
-  correo de la cuenta) pidiendo que Claude iniciara sesión; no se usó ni se
-  escribió en ningún fichero, y se le dijo que la diera por quemada.
-  Cambiarla es cosa del usuario (`github.com/settings/security`);
-  si después `git push` pidiera credenciales, se inicia sesión una vez y queda
-  guardada.
+- **La contraseña de GitHub sigue sin cambiar** (registro de seguridad mirado
+  el 2026-10-05: ningún `user.change_password`). Se pegó en el chat el
+  2026-08-20 y **otra vez el 2026-10-05**, con el correo de la cuenta,
+  pidiendo que Claude iniciara sesión; no se usó ni se escribió en ningún
+  fichero. Cambiarla es cosa del usuario (`github.com/settings/security`); si después
+  `git push` pidiera credenciales, se inicia sesión una vez y queda guardada.
   **No está en ningún archivo del repositorio** (verificado con `git grep` en la
   auditoría del 2026-08-20).
+
+**Cerrado el 2026-10-05:** el correo de fallos de GitHub. Mirado en
+`github.com/settings/notifications` con la sesión del usuario: *Actions* →
+«on GitHub, Email (Failed workflows only)», al Gmail del usuario.
+Nunca ha llegado uno porque no ha habido ningún run en `failure` (20 de 20 en
+`success` del 15-09 al 04-10).
 - `multiplayer_ranked` solo trae **5 o 6 armas** (6 el 2026-10-04). Verificado
   el 2026-08-20 contra la web en vivo: es lo que publica wzstats en esa página,
   no es un fallo del parser. `validar_meta.py` tiene el mínimo en 3 por eso.

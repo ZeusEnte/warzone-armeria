@@ -33,16 +33,17 @@ la comprobación usan Python (las dos cosas dejaron de ser ciertas el 10-09).
 
 ### ⚠️ Sigue abierto, y es del usuario
 
-- **El ajuste de correo de *failed workflows* en GitHub** (ver 2026-09-14). El usuario
-  pidió que lo mirara Claude: en el navegador de Worker **no hay sesión de GitHub**, y
-  entrar con la contraseña no lo hace Claude. Lo que sí se comprobó: la API pública da
-  **20 de 20 runs en `success`** desde el 15-09, y en el Gmail **no hay ningún correo de
-  GitHub** desde entonces. Que no haya correos es lo esperable, así que no dice nada del
-  ajuste en ningún sentido.
-- **La contraseña de GitHub pegada en el chat el 2026-08-20: casi seguro que NO se ha
-  cambiado.** El único correo de GitHub en el Gmail es la verificación de dispositivo
-  del 20-08, y GitHub manda un aviso cada vez que se cambia la contraseña. Cambiarla es
-  cosa del usuario, en `github.com/settings/security`.
+- **La contraseña de GitHub sigue sin cambiar.** Pegada en el chat el 2026-08-20 y otra
+  vez hoy. El registro de seguridad de GitHub no tiene ningún cambio de contraseña.
+  Cambiarla es cosa del usuario, en `github.com/settings/security`.
+
+### ✅ Cerrado hoy
+
+- **El correo de fallos de GitHub está activado**, mirado en
+  `github.com/settings/notifications` con la sesión que el usuario abrió en Chrome:
+  *Actions* → «Email (Failed workflows only)». Pendiente desde el 2026-09-14. Nunca ha
+  llegado uno porque los 20 runs desde el 15-09 están en `success`; tampoco hay ningún
+  correo de GitHub en el Gmail desde entonces, que cuadra.
 
 ### Lo que viene
 

@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-13T14:07:47+00:00",
+ "generated_at": "2026-10-14T11:47:00+00:00",
  "season": "Season 6, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-10-12T15:16:58+00:00",
+ "previous_generated_at": "2026-10-13T14:07:47+00:00",
  "warnings": [],
  "changes": [
   {
@@ -25568,8 +25568,8 @@
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "CASTLE COMPENSATOR",
-       "unlock": "Level 15"
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
       },
       {
        "slot": "Barrel",

@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-22T11:46:09+00:00",
+ "generated_at": "2026-10-23T11:34:11+00:00",
  "season": "Season 6, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-10-21T11:43:59+00:00",
+ "previous_generated_at": "2026-10-22T11:46:09+00:00",
  "warnings": [],
  "changes": [
   {
@@ -819,7 +819,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": "https://img.wzstats.gg/cr-56-amax/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/cr-56-amax_version1/gunFullDisplay",
      "desde": "2026-08-20"
     },
     {
@@ -7976,7 +7976,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": "https://img.wzstats.gg/cr-56-amax/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/cr-56-amax_version1/gunFullDisplay",
      "desde": "2026-08-20"
     },
     {

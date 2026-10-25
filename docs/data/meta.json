@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-24T10:54:02+00:00",
+ "generated_at": "2026-10-25T11:20:07+00:00",
  "season": "Season 6, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-10-23T11:34:11+00:00",
+ "previous_generated_at": "2026-10-24T10:54:02+00:00",
  "warnings": [],
  "changes": [
   {
@@ -12287,14 +12287,14 @@
        "unlock": "Mxr 17"
       },
       {
+       "slot": "Muzzle",
+       "name": "REDWELL SHADE-X SUPPRESSOR",
+       "unlock": "Armory"
+      },
+      {
        "slot": "Underbarrel",
        "name": "FORCE STABILIZER HANDSTOP",
        "unlock": "Level 10"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "INITIATOR GRIP",
-       "unlock": "Level 4"
       },
       {
        "slot": "Stock",

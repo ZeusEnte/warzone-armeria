@@ -425,6 +425,14 @@ temporal.
 
 ## Entorno del usuario
 
+> **Desde el 26-10-2026 hay un solo Windows** (PC nuevo, AMD: placa MSI B850 +
+> Ryzen 7 9800X3D). `DESPACHO_GAMER` ya no existe: lo que abajo se dice de «las
+> dos máquinas» es historia. En el Windows nuevo hizo falta
+> `pip install --user -r scripts\requirements.txt` (sin `requests`, `pruebas.py`
+> fallaba) y **volver a iniciar sesión en GitHub** para `git push` (Git Credential
+> Manager; la sesión vieja se fue con el Windows viejo). El cron no se ve
+> afectado: vive en GitHub.
+
 - Windows 11, proyecto en `F:\COMPARTIDO\Claude\Warezone`.
 - Hizo falta `git config --global --add safe.directory F:/COMPARTIDO/Claude/Warezone`
   porque la unidad F: pertenece a otro usuario de red.

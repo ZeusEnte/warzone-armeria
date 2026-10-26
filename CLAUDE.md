@@ -530,14 +530,12 @@ a `ef55288`) y se decidió no reescribir la historia por ello.
   saltado, mirar wzstats a mano** (paso C1 del plan). Cada fase empieza diciendo
   modelo y potencia. El informe que lo justifica:
   `documentacion/informe-2026-09-08-nivel-desbloqueos-ventajas-zodiac.md`.
-- **La contraseña de GitHub sigue sin cambiar** (registro de seguridad mirado
-  el 2026-10-05: ningún `user.change_password`). Se pegó en el chat el
-  2026-08-20 y **otra vez el 2026-10-05**, con el correo de la cuenta,
-  pidiendo que Claude iniciara sesión; no se usó ni se escribió en ningún
-  fichero. Cambiarla es cosa del usuario (`github.com/settings/security`); si después
-  `git push` pidiera credenciales, se inicia sesión una vez y queda guardada.
-  **No está en ningún archivo del repositorio** (verificado con `git grep` en la
-  auditoría del 2026-08-20).
+**Cerrado el 2026-10-26:** la contraseña de GitHub, que se había pegado en el
+chat el 2026-08-20 y el 2026-10-05. **El usuario dice que la ha cambiado**; no lo
+he mirado en el registro de seguridad. Git sigue entrando, porque usa la
+autorización OAuth del Credential Manager y no la contraseña. Y se volvió a
+ofrecer pegar la nueva: **no se pide ni se acepta nunca**, porque no hace falta
+para nada.
 
 **Cerrado el 2026-10-05:** el correo de fallos de GitHub. Mirado en
 `github.com/settings/notifications` con la sesión del usuario: *Actions* →

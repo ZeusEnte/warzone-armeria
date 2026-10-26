@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-25T11:20:07+00:00",
+ "generated_at": "2026-10-26T12:54:08+00:00",
  "season": "Season 6, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-10-24T10:54:02+00:00",
+ "previous_generated_at": "2026-10-25T11:20:07+00:00",
  "warnings": [],
  "changes": [
   {
@@ -29345,9 +29345,9 @@
      "code": "",
      "attachments": [
       {
-       "slot": "Barrel",
-       "name": "13\" RL-GENESYS BARREL",
-       "unlock": "Level 11"
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Mpc 25"
       },
       {
        "slot": "Underbarrel",

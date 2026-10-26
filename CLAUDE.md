@@ -431,7 +431,10 @@ temporal.
 > `pip install --user -r scripts\requirements.txt` (sin `requests`, `pruebas.py`
 > fallaba) y **volver a iniciar sesión en GitHub** para `git push` (Git Credential
 > Manager; la sesión vieja se fue con el Windows viejo). El cron no se ve
-> afectado: vive en GitHub.
+> afectado: vive en GitHub. **Hecho el mismo día.** Trampa: Claude Code pone
+> `GCM_INTERACTIVE=never`, y una terminal que abra una sesión de Claude lo hereda,
+> así que el login falla siempre con «Cannot prompt». La terminal la tiene que
+> abrir el usuario desde Inicio.
 
 - Windows 11, proyecto en `F:\COMPARTIDO\Claude\Warezone`.
 - Hizo falta `git config --global --add safe.directory F:/COMPARTIDO/Claude/Warezone`

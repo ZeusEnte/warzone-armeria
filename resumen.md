@@ -1,10 +1,26 @@
 # Resumen de estado — Armería Warzone
 
-**Última actualización: 2026-10-05** (repaso a la vuelta: tres semanas solo y sin un fallo).
+**Última actualización: 2026-10-26** (ronda del PC nuevo: todo en verde).
 
 El contexto técnico detallado vive en **[CLAUDE.md](CLAUDE.md)**: arquitectura,
 formato de los datos, trampas del scraping y cómo probarlo. Este fichero es la
 bitácora: en qué punto está, qué se decidió y qué viene después.
+
+---
+
+## 2026-10-26 — PC nuevo (AMD, un solo Windows)
+
+Encargo de Configuracion-PC tras reinstalar Windows. Comprobación en verde 3/3
+después de `pip install --user -r scripts\requirements.txt` (faltaba `requests`).
+El cron siguió publicando sin PC (datos del 23, 24 y 25-10). La sesión de GitHub
+se rehízo desde una terminal abierta desde Inicio: la que abre una sesión de
+Claude hereda `GCM_INTERACTIVE=never` y no puede iniciarla (ver CLAUDE.md). El
+usuario cambió la contraseña de GitHub; no se ha mirado en el registro de
+seguridad.
+
+**Queda abierto:** nada de la reinstalación. La fase C (MW4) sigue igual: la
+avisa `detectar_mw4()`, y si el 15-11-2026 no ha saltado, se mira a mano.
+**No comprobado:** la web a ojo en el navegador; solo el JSON publicado.
 
 ---
 

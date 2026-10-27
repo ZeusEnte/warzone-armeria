@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-26T12:54:08+00:00",
+ "generated_at": "2026-10-27T12:05:40+00:00",
  "season": "Season 6, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-10-25T11:20:07+00:00",
+ "previous_generated_at": "2026-10-26T12:54:08+00:00",
  "warnings": [],
  "changes": [
   {
@@ -12287,14 +12287,14 @@
        "unlock": "Mxr 17"
       },
       {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
        "slot": "Underbarrel",
        "name": "FORCE STABILIZER HANDSTOP",
        "unlock": "Level 10"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "INITIATOR GRIP",
+       "unlock": "Level 4"
       },
       {
        "slot": "Stock",
@@ -21909,145 +21909,17 @@
     {
      "context": "Warzone Battle Royale",
      "label": "Recommended",
-     "code": "A02-34FK5-DRI8N-11",
+     "code": "A02-26ERW-58SXJ-51",
      "attachments": [
       {
        "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
+       "name": "GREAVES ACCUSPOT 3X",
+       "unlock": "X9 Maverick"
       },
       {
        "slot": "Muzzle",
        "name": "MONOLITHIC SUPPRESSOR",
        "unlock": "Level 44"
-      },
-      {
-       "slot": "Barrel",
-       "name": "17.6\" VANDAL HEAVY BARREL",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Magazine",
-       "name": "SABER PACK HEAVY DRUM",
-       "unlock": "Level 38"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "LOW RECOIL",
-     "code": "A02-9CP4K-3Q11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "ECLIPSE 7.62 BRAKE",
-       "unlock": "Level 28"
-      },
-      {
-       "slot": "Barrel",
-       "name": "17.6\" VANDAL HEAVY BARREL",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Magazine",
-       "name": "SABER PACK HEAVY DRUM",
-       "unlock": "Level 38"
-      },
-      {
-       "slot": "Stock",
-       "name": "PUGIL HEAVY STOCK",
-       "unlock": "Level 29"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "SNIPER SUPPORT",
-     "code": "A02-9PP57-CB11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Barrel",
-       "name": "17\" BYSTRO SPEED BARREL",
-       "unlock": "Level 6"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Magazine",
-       "name": "EPITAPH EXTENDED MAG",
-       "unlock": "Level 11"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "LITHE THIN GRIP",
-       "unlock": "Level 19"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "HIGH BULLET VELOCITY",
-     "code": "A02-21WSG-NNSDG-9511",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 44"
-      },
-      {
-       "slot": "Barrel",
-       "name": "17.6\" VANDAL HEAVY BARREL",
-       "unlock": "Level 34"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Stock",
-       "name": "SWF-62 VARIABLE STOCK",
-       "unlock": "Level 45"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "7.62 SOVIET FMJ",
-       "unlock": "Level 30"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "PRESTIGE",
-     "code": "A02-34FBS-LICRB-31",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "EMT3 COMPENSATOR",
-       "unlock": "Level 3"
       },
       {
        "slot": "Barrel",
@@ -22061,30 +21933,25 @@
       },
       {
        "slot": "Fire Mods",
-       "name": "ENHANCED CYCLE SYSTEM",
-       "unlock": "Prestige"
+       "name": "BUFFER SPRING",
+       "unlock": "Level 13"
       }
      ]
     },
     {
      "context": "Warzone Battle Royale",
-     "label": "CONVERSION KIT",
-     "code": "A02-34FKZ-SEYAW-11",
+     "label": "Lowest Recoil",
+     "code": "A02-A8D75-PS51",
      "attachments": [
       {
-       "slot": "Optic",
-       "name": "FANG HOVERPOINT ELO",
-       "unlock": "Armory"
-      },
-      {
        "slot": "Muzzle",
-       "name": "ECLIPSE 7.62 BRAKE",
-       "unlock": "Level 28"
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 44"
       },
       {
        "slot": "Barrel",
-       "name": "AK-27 BATTLE-SCAR CONVERSION",
-       "unlock": "Armory"
+       "name": "17.6\" VANDAL HEAVY BARREL",
+       "unlock": "Level 34"
       },
       {
        "slot": "Underbarrel",
@@ -22095,6 +21962,203 @@
        "slot": "Comb",
        "name": "PUGIL CONTROL COMB",
        "unlock": "Level 1"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BUFFER SPRING",
+       "unlock": "Level 13"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Bullet Velocity",
+     "code": "A02-A8D75-PS51",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 44"
+      },
+      {
+       "slot": "Barrel",
+       "name": "17.6\" VANDAL HEAVY BARREL",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Comb",
+       "name": "PUGIL CONTROL COMB",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BUFFER SPRING",
+       "unlock": "Level 13"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Fastest ADS",
+     "code": "A02-2BJEF-BD51",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 44"
+      },
+      {
+       "slot": "Barrel",
+       "name": "17.6\" VANDAL HEAVY BARREL",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Comb",
+       "name": "LITHE RISER",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "LITHE THIN GRIP",
+       "unlock": "Level 19"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BUFFER SPRING",
+       "unlock": "Level 13"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Mobility",
+     "code": "A02-2BJEQ-BD51",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 44"
+      },
+      {
+       "slot": "Barrel",
+       "name": "17.6\" VANDAL HEAVY BARREL",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Comb",
+       "name": "CALIBAN LIGHT COMB",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "DICTUM LIGHT GRIP",
+       "unlock": "Level 4"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BUFFER SPRING",
+       "unlock": "Level 13"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Hip Fire",
+     "code": "A02-68Y42-RXN51",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 44"
+      },
+      {
+       "slot": "Barrel",
+       "name": "17.6\" VANDAL HEAVY BARREL",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Stock",
+       "name": "PRODIGAL SKELETON STOCK",
+       "unlock": "Level 26"
+      },
+      {
+       "slot": "Laser",
+       "name": "CONVERGENCE BOX LASER",
+       "unlock": "Level 16"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BUFFER SPRING",
+       "unlock": "Level 13"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Tac Stance",
+     "code": "A02-2BJEQ-BD51",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 44"
+      },
+      {
+       "slot": "Barrel",
+       "name": "17.6\" VANDAL HEAVY BARREL",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Comb",
+       "name": "CALIBAN LIGHT COMB",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "DICTUM LIGHT GRIP",
+       "unlock": "Level 4"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BUFFER SPRING",
+       "unlock": "Level 13"
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Damage Range",
+     "code": "A02-A8D75-PS51",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "MONOLITHIC SUPPRESSOR",
+       "unlock": "Level 44"
+      },
+      {
+       "slot": "Barrel",
+       "name": "17.6\" VANDAL HEAVY BARREL",
+       "unlock": "Level 34"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Comb",
+       "name": "PUGIL CONTROL COMB",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "BUFFER SPRING",
+       "unlock": "Level 13"
       }
      ]
     },
@@ -29345,9 +29409,9 @@
      "code": "",
      "attachments": [
       {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Mpc 25"
+       "slot": "Barrel",
+       "name": "13\" RL-GENESYS BARREL",
+       "unlock": "Level 11"
       },
       {
        "slot": "Underbarrel",

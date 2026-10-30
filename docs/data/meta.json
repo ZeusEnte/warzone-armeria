@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-29T12:55:50+00:00",
+ "generated_at": "2026-10-30T12:48:42+00:00",
  "season": "Season 6, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-10-28T12:46:26+00:00",
+ "previous_generated_at": "2026-10-29T12:55:50+00:00",
  "warnings": [],
  "changes": [
   {
@@ -23827,17 +23827,17 @@
     {
      "context": "Warzone Battle Royale",
      "label": "Recommended",
-     "code": "P02-BH8S1-9K311",
+     "code": "P02-D5R2S-Q31",
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 25"
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
       },
       {
        "slot": "Barrel",
-       "name": "7.8\" REDWELL T-ARROW BARREL",
-       "unlock": "Level 13"
+       "name": "4\" MFS CELESTE BARREL",
+       "unlock": "Prestige"
       },
       {
        "slot": "Magazine",
@@ -23850,31 +23850,31 @@
        "unlock": "Level 9"
       },
       {
-       "slot": "Laser",
-       "name": "AIRGLIDE TARGET LASER",
-       "unlock": "Level 30"
+       "slot": "Fire Mods",
+       "name": "ENHANCED CYCLE SYSTEM",
+       "unlock": "Level 11"
       }
      ]
     },
     {
      "context": "Warzone Battle Royale",
-     "label": "Lowest Recoil",
-     "code": "P02-BH8S1-6IB11",
+     "label": "Recommended",
+     "code": "P02-2E9ZW-UY31",
      "attachments": [
       {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 25"
-      },
-      {
        "slot": "Barrel",
-       "name": "7.8\" REDWELL T-ARROW BARREL",
-       "unlock": "Level 13"
+       "name": "VELOX 5.7 CARBINE CHASSIS",
+       "unlock": "Armory"
       },
       {
-       "slot": "Rear Grip",
-       "name": "QUICK SPINE GRIP",
-       "unlock": "Level 9"
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Level 1"
+      },
+      {
+       "slot": "Magazine",
+       "name": "DRACO RESERVE EXTENDED II",
+       "unlock": "Level 17"
       },
       {
        "slot": "Stock",
@@ -23882,68 +23882,36 @@
        "unlock": "Level 1"
       },
       {
-       "slot": "Laser",
-       "name": "AIRGLIDE TARGET LASER",
-       "unlock": "Level 30"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Bullet Velocity",
-     "code": "P02-21WSR-WJQK3-3511",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 25"
-      },
-      {
-       "slot": "Barrel",
-       "name": "7.8\" REDWELL T-ARROW BARREL",
-       "unlock": "Level 13"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "QUICK SPINE GRIP",
-       "unlock": "Level 9"
-      },
-      {
-       "slot": "Laser",
-       "name": "AIRGLIDE TARGET LASER",
-       "unlock": "Level 30"
-      },
-      {
        "slot": "Fire Mods",
-       "name": "5.7X28MM OVERPRESSURED",
-       "unlock": "Level 14"
+       "name": "ENHANCED CYCLE SYSTEM",
+       "unlock": "Level 11"
       }
      ]
     },
     {
      "context": "Warzone Battle Royale",
-     "label": "Fastest ADS",
-     "code": "P02-BH8S1-61L31",
+     "label": "NON PRESTIGE",
+     "code": "P02-D5R2T-N31",
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 25"
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
       },
       {
        "slot": "Barrel",
-       "name": "7.8\" REDWELL T-ARROW BARREL",
-       "unlock": "Level 13"
+       "name": "VELOX 5.7 CARBINE CHASSIS",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Magazine",
+       "name": "DRACO RESERVE EXTENDED II",
+       "unlock": "Level 17"
       },
       {
        "slot": "Rear Grip",
        "name": "QUICK SPINE GRIP",
        "unlock": "Level 9"
-      },
-      {
-       "slot": "Laser",
-       "name": "AIRGLIDE TARGET LASER",
-       "unlock": "Level 30"
       },
       {
        "slot": "Fire Mods",
@@ -23954,129 +23922,33 @@
     },
     {
      "context": "Warzone Battle Royale",
-     "label": "Mobility",
-     "code": "P02-BH8S1-6EJ11",
+     "label": "Akimbo",
+     "code": "P02-AABQ1-EMAZ3-31",
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 25"
+       "name": "LTI STENTORIAN BRAKE",
+       "unlock": "Armory"
       },
       {
-       "slot": "Barrel",
-       "name": "7.8\" REDWELL T-ARROW BARREL",
-       "unlock": "Level 13"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "QUICK SPINE GRIP",
-       "unlock": "Level 9"
+       "slot": "Magazine",
+       "name": "DRACO RESERVE EXTENDED II",
+       "unlock": "Level 17"
       },
       {
        "slot": "Stock",
-       "name": "NO STOCK",
-       "unlock": "Level 1"
+       "name": "AKIMBO VELOX 5.7",
+       "unlock": "Level 22"
       },
       {
        "slot": "Laser",
-       "name": "AIRGLIDE TARGET LASER",
-       "unlock": "Level 30"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Hip Fire",
-     "code": "P02-BH8S1-6EJ11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 25"
-      },
-      {
-       "slot": "Barrel",
-       "name": "7.8\" REDWELL T-ARROW BARREL",
-       "unlock": "Level 13"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "QUICK SPINE GRIP",
-       "unlock": "Level 9"
-      },
-      {
-       "slot": "Stock",
-       "name": "NO STOCK",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Laser",
-       "name": "AIRGLIDE TARGET LASER",
-       "unlock": "Level 30"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Tac Stance",
-     "code": "P02-BH8S1-61L31",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 25"
-      },
-      {
-       "slot": "Barrel",
-       "name": "7.8\" REDWELL T-ARROW BARREL",
-       "unlock": "Level 13"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "QUICK SPINE GRIP",
-       "unlock": "Level 9"
-      },
-      {
-       "slot": "Laser",
-       "name": "AIRGLIDE TARGET LASER",
-       "unlock": "Level 30"
+       "name": "VECTOR SYNC LASER",
+       "unlock": "Level 15"
       },
       {
        "slot": "Fire Mods",
        "name": "ENHANCED CYCLE SYSTEM",
        "unlock": "Level 11"
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Damage Range",
-     "code": "P02-BH8S1-6EJ11",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "MONOLITHIC SUPPRESSOR",
-       "unlock": "Level 25"
-      },
-      {
-       "slot": "Barrel",
-       "name": "7.8\" REDWELL T-ARROW BARREL",
-       "unlock": "Level 13"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "QUICK SPINE GRIP",
-       "unlock": "Level 9"
-      },
-      {
-       "slot": "Stock",
-       "name": "NO STOCK",
-       "unlock": "Level 1"
-      },
-      {
-       "slot": "Laser",
-       "name": "AIRGLIDE TARGET LASER",
-       "unlock": "Level 30"
       }
      ]
     },

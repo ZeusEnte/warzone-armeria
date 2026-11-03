@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-02T15:42:51+00:00",
+ "generated_at": "2026-11-03T14:05:58+00:00",
  "season": "Season 6, 2026",
  "base_game": "Black Ops 7",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-11-01T13:16:40+00:00",
+ "previous_generated_at": "2026-11-02T15:42:51+00:00",
  "warnings": [],
  "changes": [
   {
@@ -18164,8 +18164,8 @@
       },
       {
        "slot": "Muzzle",
-       "name": "REDWELL SHADE-X SUPPRESSOR",
-       "unlock": "Armory"
+       "name": "REDWELL 5.56 COMPENSATOR",
+       "unlock": "Level 2"
       },
       {
        "slot": "Underbarrel",
@@ -21874,6 +21874,11 @@
      "code": "",
      "attachments": [
       {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Mpc 25"
+      },
+      {
        "slot": "Barrel",
        "name": "12\" VIENNA BARREL",
        "unlock": "Level 23"
@@ -21884,14 +21889,9 @@
        "unlock": "Level 17"
       },
       {
-       "slot": "Rear Grip",
-       "name": "ERUPTION GRIP",
-       "unlock": "Level 37"
-      },
-      {
-       "slot": "Stock",
-       "name": "COLLAPSIBLE STOCK",
-       "unlock": "Level 41"
+       "slot": "Magazine",
+       "name": "TORCH EXTENDED MAG",
+       "unlock": "Level 13"
       },
       {
        "slot": "Fire Mods",

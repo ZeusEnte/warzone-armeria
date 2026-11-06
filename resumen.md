@@ -1,10 +1,35 @@
 # Resumen de estado — Armería Warzone
 
-**Última actualización: 2026-10-26** (ronda del PC nuevo: todo en verde).
+**Última actualización: 2026-11-06** (Warzone pasa a Modern Warfare 4).
 
 El contexto técnico detallado vive en **[CLAUDE.md](CLAUDE.md)**: arquitectura,
 formato de los datos, trampas del scraping y cómo probarlo. Este fichero es la
 bitácora: en qué punto está, qué se decidió y qué viene después.
+
+---
+
+## 2026-11-06 — El correo de las 15:14 y el paso a Modern Warfare 4
+
+**Qué fue el correo.** La temporada 1 de MW4 salió hoy y wzstats sirvió sus armas en
+Warzone. El detector de la fase A hizo fallar `avisar` a las 14:14 UTC, que es para lo
+que está. La web se había publicado bien un minuto antes.
+
+**Después hubo tres relanzamientos con la cuenta ZeusEnte (14:39, 14:41 y 14:48 UTC).**
+El primero solo repitió `avisar`. Los otros dos volvieron a raspar desde el commit viejo
+y fallaron en «Guardar cambios», seguramente con el push rechazado: los registros piden
+sesión y no se han leído. El correo no se debía a eso, pero el defecto era real.
+
+**Arreglado:** `BASE_GAME`, `multiplayer` a `/mw4/meta`, `ref: main` en el checkout, un
+modo que cambia de página no genera movimientos, texto de Apex, documentación que decía
+que Run workflow no raspa. Raspado completo hecho y publicado: sin avisos, «Season 1, 2026».
+
+**El cron no está apagado:** workflow `active`, corrió hoy, y el bot commitea casi a
+diario, así que los 60 días no llegan. El aviso del Calendar se escribió el 14-09 con
+«último commit 14-09» y esa premisa ya no vale.
+
+**Queda abierto:** C4 y C5 de la fase C, que decide el usuario, y su OK al panel.
+**No comprobado:** el arreglo de `ref: main` con un relanzamiento real, ni un cron
+programado con el código nuevo; el primero será el de mañana.
 
 ---
 

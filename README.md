@@ -123,8 +123,8 @@ estos cuatro casos, y ninguno requiere programar nada:
 qué job está en rojo:
 
 - `deploy` en `cancelled` o `failure`: los datos están en `main` pero la web sirve
-  los de ayer. Pulsa **Run workflow** (botón en la pestaña del workflow): no vuelve a
-  raspar, solo publica lo que ya hay. Pasó el 2026-09-10 y así se arregló.
+  los de ayer. Pulsa **Run workflow** (botón en la pestaña del workflow): vuelve a
+  raspar, commitea y publica. Pasó el 2026-09-10 y así se arregló.
 - `avisar` en rojo por «El raspado dejó avisos»: la web ya se publicó con el dato
   conservado del día anterior en ese modo. **No hay que hacer nada** ese día. Si el
   mismo aviso se repite tres o cuatro días, wzstats ha cambiado su HTML y el parser

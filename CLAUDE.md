@@ -52,7 +52,7 @@ sin cambiar a la vez `path: docs` en el workflow.
 {
   "generated_at": "2026-08-20T14:42:59+00:00",
   "season": "Season 5 Reloaded, 2026",          // sacado de wzranked.com
-  "base_game": "Black Ops 7",                   // ver "Juego base y el aviso de MW4" abajo
+  "base_game": "Modern Warfare 4",              // ver "Juego base y el aviso de MW4" abajo
   "source": "wzstats.gg",
   "previous_generated_at": "...",
   "warnings": [ "Resurgence: no se pudo leer, se conserva el dato del 2026-08-19" ],
@@ -243,8 +243,14 @@ Efecto secundario aceptado: si se cancela un run **a mano**, también llega corr
 Se prefiere eso al silencio.
 
 Cuando pase, se arregla **relanzando el workflow a mano** (*Actions → Run
-workflow*): al ser `workflow_dispatch` no vuelve a raspar, solo valida y publica lo
-que ya hay en `main`.
+workflow*). **Corregido el 2026-11-06:** aquí ponía que `workflow_dispatch` no vuelve
+a raspar, y sí raspa: el paso solo se salta en `push`. Vuelve a raspar, commitea y
+publica. Para publicar sin raspar basta un push que toque `docs/` o el código.
+
+**Y «Re-run» desde el correo acababa en rojo hasta el 2026-11-06.** GitHub vuelve al
+commit original del run; como el bot ya había avanzado `main`, el `git push` de
+«Guardar cambios» fallaba (deducido: los registros piden sesión y no se leyeron). Por
+eso el checkout de `build` lleva `ref: main`.
 
 **Ojo con la antigüedad como red de seguridad:** `comprobar.ps1` tolera 3 días, así
 que un fallo de publicado no se ve hasta el tercero. Es a propósito, pero significa
@@ -287,7 +293,7 @@ Son 5 peticiones más al día (una por modo), sobre las ~70 que ya se hacían.
 
 ## Juego base y el aviso del cambio a Modern Warfare 4 (añadido en la fase A, 2026-09-08)
 
-`BASE_GAME` en `scrape.py` (hoy `"Black Ops 7"`) se escribe en el JSON como
+`BASE_GAME` en `scrape.py` (`"Modern Warfare 4"` desde el 2026-11-06) se escribe en el JSON como
 `base_game` y la web lo enseña junto a la temporada («Warzone · Black Ops 7 ·
 Season 5 Reloaded, 2026»), para que un «Season 1» de Modern Warfare 4 en
 noviembre no se lea igual que el «Season 1» de Black Ops 7 de hace un año.
@@ -300,9 +306,31 @@ Si lo ve y `BASE_GAME` todavía no es `"Modern Warfare 4"`, añade un aviso a
 `payload["warnings"]`: sale en la cabecera de la web (`renderAvisos()` en
 `index.html` ahora sí lee `DATA.warnings`, además de las dos comprobaciones de
 frescura que ya hacía), hace fallar el job `avisar` del workflow (manda
-correo) y el repaso de las 09:00. **Es el recordatorio de la fase C** del plan
+correo) y el repaso de las 09:00. **Saltó el 2026-11-06, el día que salió la temporada 1 de MW4, y ya está apagado.
+Ver «Warzone sobre Modern Warfare 4» abajo.** Era el recordatorio de la fase C del plan
 `documentacion/plan-2026-09-08-fases.md`; se apaga haciendo esa fase (cambiar
 `BASE_GAME` a `"Modern Warfare 4"`).
+
+## Warzone sobre Modern Warfare 4 (comprobado el 2026-11-06)
+
+Lo que sirve wzstats ese día, mirado en la fuente:
+
+- **Resurgence y Battle Royale:** 287 armas, 35 de MW4. Todas las S y A son de MW4;
+  las de Black Ops 7 siguen en B, C y D, sin accesorios, como cualquier arma por debajo
+  de A. No llevan etiqueta de juego.
+- **De las armas S y A de Warzone, 19 solo tienen build de MW4 Multiplayer.**
+  `buildTitle()` lo avisa («build de Modern Warfare 4 Multiplayer»). No hay build de
+  Warzone para esas armas, no es un fallo del parser.
+- **`multiplayer` apunta a `/mw4/meta`** (35 armas) con ventajas propias.
+- **Los dos Ranked siguen en Black Ops 7.** `/mw4/ranked/meta` responde 302 sin destino:
+  no existe aún. Cuando exista, `multiplayer_ranked` se cambia en `MODES`.
+- **Las fichas de MW4 no traen código de canje ni casi requisitos:** 53 de 53 builds
+  sin código, y salvo los Apex el `unlock` va vacío. `max_level` queda en 0 y el campo
+  de nivel va sin tope. Es lo que publica wzstats.
+- **El accesorio Apex llega sin ranura** (`slot: ""`) y la web pinta «—».
+- **El primer día los movimientos son cientos** (313 entre los dos modos de Warzone):
+  es el cambio de juego, no un meta loco. Un modo que cambia de página no se compara
+  (`diff_modes`), para no llenar el panel con dos listas de juegos distintos.
 
 ## Lógica de recomendación (`score()` en index.html)
 
@@ -524,11 +552,11 @@ a `ef55288`) y se decidió no reescribir la historia por ello.
   **Fases A y B: hechas el 2026-09-08 y cerradas el 2026-09-10**, verificadas
   por el usuario desde el Windows Gamer (pie `interfaz 2026-09-08c`, nivel del
   arma en las tarjetas, «Ventajas meta por ranura», juego base en cabecera).
-  **Fase C** (fable · high), noviembre de 2026: Modern Warfare 4 sale el
-  23-10-2026 y en su temporada 1 Warzone cambia de juego base; la avisa sola
-  el detector de la fase A (`detectar_mw4()`). **Si el 15-11-2026 no ha
-  saltado, mirar wzstats a mano** (paso C1 del plan). Cada fase empieza diciendo
-  modelo y potencia. El informe que lo justifica:
+  **Fase C, a medias desde el 2026-11-06:** hechos C1, C2, C3 (textos) y C6 (mirado:
+  sin etiqueta). **Sin hacer C4 y C5**, las tablas por nivel de jugador y de ventajas
+  por estilo: no hacen falta para que la web funcione y son tablas a mano sin fuente
+  comprobada, así que las decide el usuario. Falta su OK al panel. Cada fase empieza
+  diciendo modelo y potencia. El informe que lo justifica:
   `documentacion/informe-2026-09-08-nivel-desbloqueos-ventajas-zodiac.md`.
 **Cerrado el 2026-10-26:** la contraseña de GitHub, que se había pegado en el
 chat el 2026-08-20 y el 2026-10-05. **El usuario dice que la ha cambiado**; no lo

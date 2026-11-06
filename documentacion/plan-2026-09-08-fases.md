@@ -101,6 +101,10 @@ ve tarde. Tiene que aplicar la regla de la casa «nada que falle borra un dato b
 
 ## Fase C — cuando wzstats pase Warzone a Modern Warfare 4 (noviembre de 2026)
 
+> **Estado el 2026-11-06:** saltó el aviso de A5. Hechos C1, C2, C3 (textos) y C6 (mirado,
+> sin etiqueta). Sin hacer C4 y C5, que los decide el usuario. Detalle en `CLAUDE.md`,
+> «Warzone sobre Modern Warfare 4».
+
 **Modelo: fable · Potencia: high.** Es diagnóstico sobre un cambio que no está escrito en ningún
 sitio: hay que mirar qué hace wzstats ese día y decidir.
 

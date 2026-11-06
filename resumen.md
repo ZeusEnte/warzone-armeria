@@ -27,7 +27,8 @@ que Run workflow no raspa. Raspado completo hecho y publicado: sin avisos, «Sea
 diario, así que los 60 días no llegan. El aviso del Calendar se escribió el 14-09 con
 «último commit 14-09» y esa premisa ya no vale.
 
-**Queda abierto:** C4 y C5 de la fase C, que decide el usuario, y su OK al panel.
+**Para el lunes 09-11-2026, por decisión del usuario:** mirar que los crons del 07, 08 y
+09-11 salieron en verde, pedirle su OK al panel y que decida C4 y C5 de la fase C.
 **No comprobado:** el arreglo de `ref: main` con un relanzamiento real, ni un cron
 programado con el código nuevo; el primero será el de mañana.
 

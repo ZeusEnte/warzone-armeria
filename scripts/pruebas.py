@@ -392,6 +392,13 @@ comprobar("todos los modos declaran su pagina de ventajas",
 comprobar("y ninguna se repite entre modos",
           len({m["perks_url"] for m in sc.MODES}) == len(sc.MODES))
 
+print("\nun modo que cambia de pagina no genera movimientos")
+_viejo = {"modes": {"multiplayer": {"url": "/bo7/meta", "weapons": [{"name": "FG42", "tier": "S"}]}}}
+_mismo = {"multiplayer": {"url": "/bo7/meta", "weapons": [{"name": "VMP", "tier": "A"}]}}
+_otro = {"multiplayer": {"url": "/mw4/meta", "weapons": [{"name": "M4", "tier": "S"}]}}
+comprobar("misma pagina: entra y sale", len(sc.diff_modes(_viejo, _mismo)) == 2)
+comprobar("otra pagina: no se compara", sc.diff_modes(_viejo, _otro) == [])
+
 print("\ndetector de Modern Warfare 4 en Warzone")
 sin_mw4 = {"resurgence": {"weapons": [{"slug": "fg42"}, {"slug": "kar98k"}]}}
 con_mw4 = {"resurgence": {"weapons": [{"slug": "fg42"}, {"slug": "nueva-mw4"}]}}

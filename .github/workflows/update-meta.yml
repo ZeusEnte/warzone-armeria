@@ -41,7 +41,12 @@ jobs:
     outputs:
       avisos: ${{ steps.revisar.outputs.avisos }}
     steps:
+      # "ref: main" y no el commit del run: al pulsar "Re-run" GitHub vuelve al
+      # commit original, el bot ya ha avanzado main y su push se rechaza. El
+      # 2026-11-06 dos relanzamientos acabaron en rojo en "Guardar cambios".
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -150,13 +155,13 @@ jobs:
           ESTADO_DEPLOY: ${{ needs.deploy.result }}
         run: |
           if [ "$ESTADO_BUILD" != "success" ]; then
-            echo "::error::El job 'build' termino en '$ESTADO_BUILD': no hay nada publicado hoy."
+            echo "::error::El job 'build' termino en '$ESTADO_BUILD': esta ejecucion no ha publicado nada."
             exit 1
           fi
           if [ "$ESTADO_DEPLOY" != "success" ]; then
             echo "::error::El job 'deploy' termino en '$ESTADO_DEPLOY'. Los datos de hoy estan en main pero la web sigue sirviendo los del dia anterior."
             echo "Si pone 'cancelled', lo normal es que Pages tardara mas que el timeout-minutes de 'deploy'."
-            echo "Se arregla relanzando el workflow a mano (Actions -> Run workflow): no vuelve a raspar, solo publica lo que ya hay en main."
+            echo "Se arregla relanzando el workflow a mano (Actions -> Run workflow): vuelve a raspar, commitea y publica."
             exit 1
           fi
           echo "Despliegue correcto: la web sirve los datos de hoy."

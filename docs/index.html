@@ -330,7 +330,7 @@ const DEFAULTS = {mode:"resurgence", style:"agresivo", input:"mando", avoid:[], 
 // mira desde el Windows Gamer para saber si ya tiene la versión publicada. Si
 // hay más de una publicación el mismo día se añade letra (b, c...), o desde
 // Gamer no habría forma de distinguirlas.
-const UI_VERSION = "2026-09-08c";
+const UI_VERSION = "2026-11-06";
 let profile = load();
 let DATA = null;
 let openSlug = null;
@@ -431,8 +431,8 @@ function mainBuild(slug){
 
 // Identifica el tipo de requisito de un accesorio. "Week N Challenge" y "Apex"
 // caían antes en "es el nombre de otra arma" (salía "subir Week 2 Challenge");
-// Apex es la etiqueta que wzstats ya usa en Modern Warfare 4 para el accesorio
-// que se gana al máximo nivel del arma, y todavía no aparece en Warzone.
+// Apex es la etiqueta que wzstats usa en Modern Warfare 4 para el accesorio que
+// se gana al máximo nivel del arma.
 function parseUnlock(unlock){
   if(!unlock) return {kind:"vacio"};
   let m = /^Level\s+(\d+)$/i.exec(unlock);
@@ -487,7 +487,7 @@ const UNLOCK_HELP = {
   otraArma: p => "Este accesorio se desbloquea subiendo de nivel la " + p.arma +
     ", no esta arma. wzstats no dice a qué nivel.",
   apex: () => "Apex es un accesorio especial que se gana subiendo esta arma a su nivel máximo, " +
-    "uno por arma. Es propio de Modern Warfare 4; en Warzone hoy todavía no se desbloquea así.",
+    "uno por arma. Es propio de las armas de Modern Warfare 4.",
   vacio: () => "wzstats no publica el requisito de este accesorio.",
 };
 

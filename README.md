@@ -133,20 +133,10 @@ qué job está en rojo:
   paso que falló; si es «Raspar la meta» con ningún modo leído, wzstats está caída o
   cambiada. Un día suelto no importa; varios seguidos, lo mismo que el punto anterior.
 
-**2. La cabecera de la web (y el correo diario) dicen que ya hay armas de Modern
-Warfare 4.** Es el aviso previsto para noviembre de 2026. Mientras no se atienda,
-la web funciona igual, pero la cabecera sigue diciendo «Black Ops 7» y el correo
-llega **cada día**. Para apagarlo, sin Claude ni PC: en github.com abre
-`scripts/scrape.py`, pulsa el lápiz (*Edit*), cambia la línea
-
-```python
-BASE_GAME = "Black Ops 7"
-```
-
-por `BASE_GAME = "Modern Warfare 4"` y guarda (*Commit changes*). Ese push
-republica la web al momento y el cron del día siguiente ya sale sin aviso. Lo que
-sí quedará por hacer con calma es la fase C del plan (`documentacion/plan-2026-09-08-fases.md`):
-mapas, modos y textos nuevos. Eso no es urgente.
+**2. El aviso de que ya hay armas de Modern Warfare 4 ya no debe salir.** Saltó el
+6 de noviembre de 2026, cuando salió su temporada 1, y se apagó ese mismo día
+poniendo `BASE_GAME = "Modern Warfare 4"` en `scripts/scrape.py`. Si vuelve a salir,
+alguien ha devuelto ese valor a otro juego.
 
 **3. Sin correo, pero la web dice que los datos tienen más de 48 h.** Abre *Actions*.
 Si el workflow aparece como **disabled** (GitHub apaga los cron tras 60 días sin

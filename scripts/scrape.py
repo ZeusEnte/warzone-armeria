@@ -47,9 +47,9 @@ MODES = [
     {"id": "resurgence", "label": "Resurgence", "url": BASE + "/warzone/meta/resurgence",
      "context": "Warzone Resurgence",
      "perks_url": BASE + "/warzone-2/loadouts/best-perks-tier-list/resurgence"},
-    {"id": "multiplayer", "label": "Multijugador (BO7)", "url": BASE + "/bo7/meta",
-     "context": "Black Ops 7 Multiplayer",
-     "perks_url": BASE + "/bo7/loadouts/best-perks-tier-list"},
+    {"id": "multiplayer", "label": "Multijugador (MW4)", "url": BASE + "/mw4/meta",
+     "context": "Modern Warfare 4 Multiplayer",
+     "perks_url": BASE + "/mw4/loadouts/best-perks-tier-list"},
     {"id": "resurgence_ranked", "label": "Resurgence Ranked", "url": BASE + "/warzone/meta/ranked/resurgence",
      "context": "Warzone Resurgence Ranked",
      "perks_url": BASE + "/warzone-2/loadouts/best-perks-tier-list/ranked/resurgence"},
@@ -69,10 +69,10 @@ REQUEST_PAUSE = 1.5
 
 TIER_ORDER = ["S", "A", "B", "C", "D", "E", "F"]
 
-# Juego sobre el que corre Warzone hoy. En noviembre de 2026 wzstats debe pasar
-# a servir Warzone sobre Modern Warfare 4 (ver detectar_mw4): ese dia toca la
-# fase C del plan del 2026-09-08, y este valor es lo primero que cambia.
-BASE_GAME = "Black Ops 7"
+# Juego sobre el que corre Warzone hoy. Cambiado a Modern Warfare 4 el
+# 2026-11-06, el dia que salio su temporada 1 y wzstats paso a servir sus armas
+# en Warzone. Con este valor, detectar_mw4 ya no dispara el aviso.
+BASE_GAME = "Modern Warfare 4"
 
 # Los modos de Warzone (no los de Black Ops 7 multijugador), para el detector
 # de Modern Warfare 4: solo importa si SUS armas ya llevan el sufijo "-mw4".
@@ -536,6 +536,10 @@ def diff_modes(old: dict, new: dict) -> list:
             continue
         prev_mode = (old.get("modes") or {}).get(mode_id)
         if not prev_mode:
+            continue
+        # El modo ha cambiado de pagina (de Black Ops 7 a Modern Warfare 4, por
+        # ejemplo): son dos listas de juegos distintos, no movimientos del meta.
+        if prev_mode.get("url") and mode.get("url") and prev_mode["url"] != mode["url"]:
             continue
         prev = {w["name"]: w for w in prev_mode["weapons"]}
         for w in mode["weapons"]:

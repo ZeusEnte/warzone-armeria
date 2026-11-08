@@ -1,18 +1,11 @@
 {
- "generated_at": "2026-11-07T12:55:17+00:00",
+ "generated_at": "2026-11-08T13:17:44+00:00",
  "season": "Season 1, 2026",
  "base_game": "Modern Warfare 4",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-11-06T19:59:34+00:00",
+ "previous_generated_at": "2026-11-07T12:55:17+00:00",
  "warnings": [],
  "changes": [
-  {
-   "mode": "resurgence",
-   "weapon": "CRONEN OSPREY",
-   "kind": "sube",
-   "from": "D",
-   "to": "S"
-  },
   {
    "mode": "resurgence",
    "weapon": "KASTOV 762",
@@ -29,13 +22,6 @@
   },
   {
    "mode": "resurgence",
-   "weapon": "MOSIN-NAGANT",
-   "kind": "sube",
-   "from": "A",
-   "to": "S"
-  },
-  {
-   "mode": "resurgence",
    "weapon": "M4",
    "kind": "sube",
    "from": "B",
@@ -46,20 +32,6 @@
    "weapon": "PPSH-41",
    "kind": "sube",
    "from": "B",
-   "to": "A"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "KG-7 VULCAN",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "CSG-35",
-   "kind": "sube",
-   "from": "D",
    "to": "A"
   },
   {
@@ -120,17 +92,10 @@
   },
   {
    "mode": "multiplayer",
-   "weapon": "CRONEN OSPREY",
+   "weapon": "HYEON BURST",
    "kind": "sube",
-   "from": "D",
+   "from": "A",
    "to": "S"
-  },
-  {
-   "mode": "multiplayer",
-   "weapon": "CSG-35",
-   "kind": "sube",
-   "from": "D",
-   "to": "A"
   },
   {
    "mode": "battle_royale",
@@ -158,13 +123,6 @@
    "weapon": "PPSH-41",
    "kind": "sube",
    "from": "B",
-   "to": "A"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "CSG-35",
-   "kind": "sube",
-   "from": "D",
    "to": "A"
   },
   {
@@ -287,7 +245,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/kastov-762-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-07"
+     "desde": "2026-11-08"
     },
     {
      "name": "VEL 46",
@@ -305,7 +263,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vel-46-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-07"
+     "desde": "2026-11-08"
     },
     {
      "name": "HAN 86",
@@ -344,8 +302,8 @@
      "desde": "2026-11-07"
     },
     {
-     "name": "M4",
-     "slug": "m4-mw4",
+     "name": "AXION",
+     "slug": "axion-mw4",
      "tier": "A",
      "positions": [
       {
@@ -358,8 +316,8 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": "https://img.wzstats.gg/m4-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-07"
+     "image": "https://img.wzstats.gg/axion-mw4/gunDisplayLoadouts",
+     "desde": "2026-11-06"
     },
     {
      "name": "WZ.55 STRIGA",
@@ -380,8 +338,8 @@
      "desde": "2026-11-06"
     },
     {
-     "name": "AXION",
-     "slug": "axion-mw4",
+     "name": "M4",
+     "slug": "m4-mw4",
      "tier": "A",
      "positions": [
       {
@@ -394,12 +352,12 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": "https://img.wzstats.gg/axion-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-06"
+     "image": "https://img.wzstats.gg/m4-mw4/gunDisplayLoadouts",
+     "desde": "2026-11-08"
     },
     {
-     "name": "PPSH-41",
-     "slug": "ppsh-41-mw4",
+     "name": "CSG-35",
+     "slug": "csg-35-mw4",
      "tier": "A",
      "positions": [
       {
@@ -412,8 +370,26 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
+     "image": "https://img.wzstats.gg/csg-35-mw4/gunDisplayLoadouts",
      "desde": "2026-11-07"
+    },
+    {
+     "name": "X-58 NYX",
+     "slug": "x-58-nyx-mw4",
+     "tier": "A",
+     "positions": [
+      {
+       "range": "Close Range",
+       "rank": 5,
+       "role": "corto"
+      }
+     ],
+     "weapon_type": "SMG",
+     "tags": [
+      "SMG"
+     ],
+     "image": "https://img.wzstats.gg/x-58-nyx-mw4_version1/gunFullDisplay",
+     "desde": "2026-11-06"
     },
     {
      "name": "KG-7 VULCAN",
@@ -434,26 +410,8 @@
      "desde": "2026-11-07"
     },
     {
-     "name": "CSG-35",
-     "slug": "csg-35-mw4",
-     "tier": "A",
-     "positions": [
-      {
-       "range": "Close Range",
-       "rank": 5,
-       "role": "corto"
-      }
-     ],
-     "weapon_type": "SMG",
-     "tags": [
-      "SMG"
-     ],
-     "image": "https://img.wzstats.gg/csg-35-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-07"
-    },
-    {
-     "name": "X-58 NYX",
-     "slug": "x-58-nyx-mw4",
+     "name": "PPSH-41",
+     "slug": "ppsh-41-mw4",
      "tier": "A",
      "positions": [
       {
@@ -466,8 +424,8 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/x-58-nyx-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-06"
+     "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
+     "desde": "2026-11-08"
     },
     {
      "name": "ASTAROTH .57",
@@ -502,7 +460,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": "https://img.wzstats.gg/hyeon-burst-mw4_version1/gunFullDisplay",
+     "image": "https://img.wzstats.gg/hyeon-burst-mw4/gunDisplayLoadouts",
      "desde": "2026-11-06"
     },
     {
@@ -539,7 +497,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/cronen-squall-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-07"
+     "desde": "2026-11-08"
     },
     {
      "name": "APOC-338",
@@ -647,7 +605,7 @@
       "Sniper"
      ],
      "image": "https://img.wzstats.gg/signal-50-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-07"
+     "desde": "2026-11-08"
     },
     {
      "name": "WARLORD",
@@ -5515,8 +5473,8 @@
    "context": "Modern Warfare 4 Multiplayer",
    "weapons": [
     {
-     "name": "AXION",
-     "slug": "axion-mw4",
+     "name": "CRONEN OSPREY",
+     "slug": "cronen-osprey-mw4",
      "tier": "S",
      "positions": [
       {
@@ -5527,8 +5485,40 @@
      ],
      "weapon_type": "Assault Rifle",
      "tags": [],
+     "image": "https://img.wzstats.gg/cronen-osprey-mw4/gunDisplayLoadouts",
+     "desde": "2026-11-07"
+    },
+    {
+     "name": "AXION",
+     "slug": "axion-mw4",
+     "tier": "S",
+     "positions": [
+      {
+       "range": "Assault Rifle",
+       "rank": 2,
+       "role": "largo"
+      }
+     ],
+     "weapon_type": "Assault Rifle",
+     "tags": [],
      "image": "https://img.wzstats.gg/axion-mw4_version1/gunDisplayLoadouts",
      "desde": "2026-11-06"
+    },
+    {
+     "name": "HYEON BURST",
+     "slug": "hyeon-burst-mw4",
+     "tier": "S",
+     "positions": [
+      {
+       "range": "Assault Rifle",
+       "rank": 3,
+       "role": "largo"
+      }
+     ],
+     "weapon_type": "Assault Rifle",
+     "tags": [],
+     "image": "https://img.wzstats.gg/hyeon-burst-mw4_version1/gunDisplayLoadouts",
+     "desde": "2026-11-08"
     },
     {
      "name": "ISO NIGHTSHADE",
@@ -5547,29 +5537,13 @@
      "desde": "2026-11-06"
     },
     {
-     "name": "CRONEN OSPREY",
-     "slug": "cronen-osprey-mw4",
-     "tier": "S",
-     "positions": [
-      {
-       "range": "Assault Rifle",
-       "rank": 2,
-       "role": "largo"
-      }
-     ],
-     "weapon_type": "Assault Rifle",
-     "tags": [],
-     "image": "https://img.wzstats.gg/cronen-osprey-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-07"
-    },
-    {
      "name": "M4",
      "slug": "m4-mw4",
      "tier": "S",
      "positions": [
       {
        "range": "Assault Rifle",
-       "rank": 3,
+       "rank": 4,
        "role": "largo"
       }
      ],
@@ -5633,7 +5607,7 @@
      "positions": [
       {
        "range": "Assault Rifle",
-       "rank": 4,
+       "rank": 5,
        "role": "largo"
       }
      ],
@@ -5649,29 +5623,13 @@
      "positions": [
       {
        "range": "Assault Rifle",
-       "rank": 5,
-       "role": "largo"
-      }
-     ],
-     "weapon_type": "Assault Rifle",
-     "tags": [],
-     "image": "https://img.wzstats.gg/patriot-xmr-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-06"
-    },
-    {
-     "name": "HYEON BURST",
-     "slug": "hyeon-burst-mw4",
-     "tier": "A",
-     "positions": [
-      {
-       "range": "Assault Rifle",
        "rank": 6,
        "role": "largo"
       }
      ],
      "weapon_type": "Assault Rifle",
      "tags": [],
-     "image": "https://img.wzstats.gg/hyeon-burst-mw4_version1/gunFullDisplay",
+     "image": "https://img.wzstats.gg/patriot-xmr-mw4_version1/gunFullDisplay",
      "desde": "2026-11-06"
     },
     {
@@ -7328,7 +7286,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vel-46-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-07"
+     "desde": "2026-11-08"
     },
     {
      "name": "MOSIN-NAGANT",
@@ -7364,7 +7322,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/kastov-762-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-07"
+     "desde": "2026-11-08"
     },
     {
      "name": "WZ.55 STRIGA",
@@ -7400,11 +7358,11 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/m4-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-07"
+     "desde": "2026-11-08"
     },
     {
-     "name": "PPSH-41",
-     "slug": "ppsh-41-mw4",
+     "name": "CSG-35",
+     "slug": "csg-35-mw4",
      "tier": "A",
      "positions": [
       {
@@ -7417,25 +7375,25 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
+     "image": "https://img.wzstats.gg/csg-35-mw4/gunDisplayLoadouts",
      "desde": "2026-11-07"
     },
     {
-     "name": "KG-7 VULCAN",
-     "slug": "kg-7-vulcan-mw4",
+     "name": "X-58 NYX",
+     "slug": "x-58-nyx-mw4",
      "tier": "A",
      "positions": [
       {
-       "range": "Sniper",
-       "rank": 2,
-       "role": "sniper"
+       "range": "Close Range",
+       "rank": 5,
+       "role": "corto"
       }
      ],
-     "weapon_type": "Sniper",
+     "weapon_type": "SMG",
      "tags": [
-      "Sniper"
+      "SMG"
      ],
-     "image": "https://img.wzstats.gg/kg-7-vulcan-mw4/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/x-58-nyx-mw4_version1/gunFullDisplay",
      "desde": "2026-11-06"
     },
     {
@@ -7457,26 +7415,8 @@
      "desde": "2026-11-06"
     },
     {
-     "name": "CSG-35",
-     "slug": "csg-35-mw4",
-     "tier": "A",
-     "positions": [
-      {
-       "range": "Close Range",
-       "rank": 5,
-       "role": "corto"
-      }
-     ],
-     "weapon_type": "SMG",
-     "tags": [
-      "SMG"
-     ],
-     "image": "https://img.wzstats.gg/csg-35-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-07"
-    },
-    {
-     "name": "X-58 NYX",
-     "slug": "x-58-nyx-mw4",
+     "name": "PPSH-41",
+     "slug": "ppsh-41-mw4",
      "tier": "A",
      "positions": [
       {
@@ -7489,7 +7429,25 @@
      "tags": [
       "SMG"
      ],
-     "image": "https://img.wzstats.gg/x-58-nyx-mw4_version1/gunFullDisplay",
+     "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
+     "desde": "2026-11-08"
+    },
+    {
+     "name": "KG-7 VULCAN",
+     "slug": "kg-7-vulcan-mw4",
+     "tier": "A",
+     "positions": [
+      {
+       "range": "Sniper",
+       "rank": 2,
+       "role": "sniper"
+      }
+     ],
+     "weapon_type": "Sniper",
+     "tags": [
+      "Sniper"
+     ],
+     "image": "https://img.wzstats.gg/kg-7-vulcan-mw4/gunDisplayLoadouts",
      "desde": "2026-11-06"
     },
     {
@@ -7525,7 +7483,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": "https://img.wzstats.gg/hyeon-burst-mw4_version1/gunFullDisplay",
+     "image": "https://img.wzstats.gg/hyeon-burst-mw4/gunDisplayLoadouts",
      "desde": "2026-11-06"
     },
     {
@@ -7562,7 +7520,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/cronen-squall-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-07"
+     "desde": "2026-11-08"
     },
     {
      "name": "APOC-338",
@@ -7670,7 +7628,7 @@
       "Sniper"
      ],
      "image": "https://img.wzstats.gg/signal-50-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-07"
+     "desde": "2026-11-08"
     },
     {
      "name": "WARLORD",
@@ -13434,204 +13392,6 @@
     }
    ]
   },
-  "axion-mw4": {
-   "name": "AXION",
-   "max_level": 0,
-   "builds": [
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Long Range",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "CRONEN R808",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS300",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "SA DMN-L 30\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "40 ROUND MAG",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "TA HARROW STOCK",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Long Range",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "CRONEN R808",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS300",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "SA DMN-L 30\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "40 ROUND MAG",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "TA HARROW STOCK",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Versatile",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS300",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "SA DMN-L 30\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "GS50 GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SCHLAGER VISIV-5",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "AXION REAVER",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS300",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "XRK 09-RTAC PRO",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "100 ROUND DRUM",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": ".300 BLK FRANGIBLE",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Mobility",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS40",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "XRK 09-RTAC PRO",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "GS50 GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "XRK RELAY 7",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SCHLAGER VISIV-5",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Recoil",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "SZ PRIMA-4 DOT",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "CORVUS LVL-40",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "CRONEN DC-FORGE 40",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "CRONEN BLACKSTONE-6P",
-       "unlock": ""
-      }
-     ]
-    }
-   ]
-  },
   "voyak-kt-3": {
    "name": "VOYAK KT-3",
    "max_level": 42,
@@ -14714,6 +14474,204 @@
     }
    ]
   },
+  "axion-mw4": {
+   "name": "AXION",
+   "max_level": 0,
+   "builds": [
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Long Range",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "CRONEN R808",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "FSS IS300",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "SA DMN-L 30\"",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "40 ROUND MAG",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "TA HARROW STOCK",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Long Range",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "CRONEN R808",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "FSS IS300",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "SA DMN-L 30\"",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "40 ROUND MAG",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "TA HARROW STOCK",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Versatile",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "FSS IS300",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "SA DMN-L 30\"",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FSS FIRELINE GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "GS50 GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SCHLAGER VISIV-5",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Apex",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "",
+       "name": "AXION REAVER",
+       "unlock": "Apex"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "FSS IS300",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "XRK 09-RTAC PRO",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "100 ROUND DRUM",
+       "unlock": ""
+      },
+      {
+       "slot": "Ammunition",
+       "name": ".300 BLK FRANGIBLE",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Mobility",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "FSS IS40",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "XRK 09-RTAC PRO",
+       "unlock": ""
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "GS50 GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "XRK RELAY 7",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SCHLAGER VISIV-5",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Low Recoil",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "SZ PRIMA-4 DOT",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "CORVUS LVL-40",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "CRONEN DC-FORGE 40",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FSS FIRELINE GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "CRONEN BLACKSTONE-6P",
+       "unlock": ""
+      }
+     ]
+    }
+   ]
+  },
   "kg-7-vulcan-mw4": {
    "name": "KG-7 VULCAN",
    "max_level": 0,
@@ -15084,15 +15042,20 @@
     }
    ]
   },
-  "m4-mw4": {
-   "name": "M4",
+  "hyeon-burst-mw4": {
+   "name": "HYEON BURST",
    "max_level": 0,
    "builds": [
     {
      "context": "Warzone Battle Royale",
-     "label": "Long Range",
+     "label": "Apex",
      "code": "",
      "attachments": [
+      {
+       "slot": "",
+       "name": "HYEON HYPERBURST",
+       "unlock": "Apex"
+      },
       {
        "slot": "Optic",
        "name": "CRONEN R808",
@@ -15105,26 +15068,31 @@
       },
       {
        "slot": "Barrel",
-       "name": "16\" HIGHMARK BARREL",
+       "name": "MUGI SEUNGRI-OP 609.6MM",
        "unlock": ""
       },
       {
-       "slot": "Magazine",
-       "name": "45 ROUND MAG",
+       "slot": "Rear Grip",
+       "name": "HYN-MEIPEUL",
        "unlock": ""
       },
       {
        "slot": "Ammunition",
-       "name": "5.56 NATO HIGH VELOCITY",
+       "name": "6.8X43MM HIGH VELOCITY",
        "unlock": ""
       }
      ]
     },
     {
      "context": "Warzone Resurgence",
-     "label": "Long Range",
+     "label": "Apex",
      "code": "",
      "attachments": [
+      {
+       "slot": "",
+       "name": "HYEON HYPERBURST",
+       "unlock": "Apex"
+      },
       {
        "slot": "Optic",
        "name": "CRONEN R808",
@@ -15137,81 +15105,17 @@
       },
       {
        "slot": "Barrel",
-       "name": "16\" HIGHMARK BARREL",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "45 ROUND MAG",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "5.56 NATO HIGH VELOCITY",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Versatile",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS300",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
+       "name": "MUGI SEUNGRI-OP 609.6MM",
        "unlock": ""
       },
       {
        "slot": "Rear Grip",
-       "name": "ZLR PHASE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "ZLR ASP50 STOCK",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SA LAZ-500",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Level",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "SLIMLINE ELITE",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS300",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "PF1 FIXED STOCK",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SZ GEN.6 PEQ",
+       "name": "HYN-MEIPEUL",
        "unlock": ""
       },
       {
        "slot": "Ammunition",
-       "name": "5.56 NATO OVERPRESSURED",
+       "name": "6.8X43MM HIGH VELOCITY",
        "unlock": ""
       }
      ]
@@ -15223,59 +15127,27 @@
      "attachments": [
       {
        "slot": "",
-       "name": "M4 Hurricane",
+       "name": "HYEON HYPERBURST",
        "unlock": "Apex"
       },
       {
-       "slot": "Optic",
-       "name": "IOTA-D",
-       "unlock": ""
-      },
-      {
        "slot": "Muzzle",
-       "name": "FSS IS300",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "Hurricane Stock",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SA LAZ-500",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Mobility",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "CORVUS LVL-40",
+       "name": "FSS IS40",
        "unlock": ""
       },
       {
        "slot": "Barrel",
-       "name": "FT CANNONADE 7\"",
+       "name": "MUGI INGOEM 558.8MM",
        "unlock": ""
       },
       {
-       "slot": "Rear Grip",
-       "name": "ZLR PHASE GRIP",
+       "slot": "Underbarrel",
+       "name": "FSS TAC90 GRIP",
        "unlock": ""
       },
       {
        "slot": "Stock",
-       "name": "ZLR ASP50 STOCK",
+       "name": "HVY-80 STOCKPAD",
        "unlock": ""
       },
       {
@@ -15287,32 +15159,32 @@
     },
     {
      "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Recoil",
+     "label": "Burst",
      "code": "",
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "CORVUS LVL-40",
+       "name": "ZLR REVERB90",
        "unlock": ""
       },
       {
        "slot": "Barrel",
-       "name": "16\" HIGHMARK BARREL",
+       "name": "MUGI INGOEM 558.8MM",
        "unlock": ""
       },
       {
        "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
+       "name": "FSS TAC90 GRIP",
        "unlock": ""
       },
       {
        "slot": "Rear Grip",
-       "name": "BRACE DX GRIP",
+       "name": "HYN-MEIPEUL",
        "unlock": ""
       },
       {
-       "slot": "Stock",
-       "name": "PF1 FIXED STOCK",
+       "slot": "Laser",
+       "name": "SA LAZ-500",
        "unlock": ""
       }
      ]
@@ -15550,6 +15422,241 @@
        "slot": "Fire Mods",
        "name": ".45 CAL OVERPRESSURED",
        "unlock": "Level 24"
+      }
+     ]
+    }
+   ]
+  },
+  "m4-mw4": {
+   "name": "M4",
+   "max_level": 0,
+   "builds": [
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Long Range",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "CRONEN R808",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "FSS IS300",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "16\" HIGHMARK BARREL",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "45 ROUND MAG",
+       "unlock": ""
+      },
+      {
+       "slot": "Ammunition",
+       "name": "5.56 NATO HIGH VELOCITY",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Long Range",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "CRONEN R808",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "FSS IS300",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "16\" HIGHMARK BARREL",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "45 ROUND MAG",
+       "unlock": ""
+      },
+      {
+       "slot": "Ammunition",
+       "name": "5.56 NATO HIGH VELOCITY",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Versatile",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "FSS IS300",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FSS FIRELINE GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "ZLR PHASE GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "ZLR ASP50 STOCK",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SA LAZ-500",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Low Level",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "SLIMLINE ELITE",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "FSS IS300",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "PF1 FIXED STOCK",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SZ GEN.6 PEQ",
+       "unlock": ""
+      },
+      {
+       "slot": "Ammunition",
+       "name": "5.56 NATO OVERPRESSURED",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Apex",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "",
+       "name": "M4 Hurricane",
+       "unlock": "Apex"
+      },
+      {
+       "slot": "Optic",
+       "name": "IOTA-D",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "FSS IS300",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FSS FIRELINE GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "Hurricane Stock",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SA LAZ-500",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Mobility",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "CORVUS LVL-40",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "FT CANNONADE 7\"",
+       "unlock": ""
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "ZLR PHASE GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "ZLR ASP50 STOCK",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SZ GEN.6 PEQ",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Low Recoil",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "CORVUS LVL-40",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "16\" HIGHMARK BARREL",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FSS FIRELINE GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "BRACE DX GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "PF1 FIXED STOCK",
+       "unlock": ""
       }
      ]
     }
@@ -16117,6 +16224,219 @@
       {
        "slot": "Laser",
        "name": "SCHLAGER VISIV-5",
+       "unlock": ""
+      }
+     ]
+    }
+   ]
+  },
+  "csg-35-mw4": {
+   "name": "CSG-35",
+   "max_level": 0,
+   "builds": [
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Short Range",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "EXP Forage-Hvy",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "CQC Stop",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "40 Round Mag",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "XRK Slight Stock",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SA Laz-500",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Apex",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "",
+       "name": "CSG Crossfire",
+       "unlock": "Apex"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "EXP Forage-Hvy",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "40 Round Mag",
+       "unlock": ""
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "Matuzek Fire-Pro",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "XRK Fury-8",
+       "unlock": ""
+      },
+      {
+       "slot": "Ammunition",
+       "name": "9mm Parabellum Frangible",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Short Range",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "EXP Forage-Hvy",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "CQC Stop",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "40 Round Mag",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "XRK Slight Stock",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SA Laz-500",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Apex",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "",
+       "name": "CSG Crossfire",
+       "unlock": "Apex"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "EXP Forage-Hvy",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "40 Round Mag",
+       "unlock": ""
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "Matuzek Fire-Pro",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "XRK Fury-8",
+       "unlock": ""
+      },
+      {
+       "slot": "Ammunition",
+       "name": "9mm Parabellum Frangible",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Versatile",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "EXP Forage-Hvy",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "CQC Stop",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "40 Round Mag",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "XRK Slight Stock",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SA Laz-500",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Apex",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "",
+       "name": "CSG Crossfire",
+       "unlock": "Apex"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "EXP Forage-Hvy",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "40 Round Mag",
+       "unlock": ""
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "Matuzek Fire-Pro",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "XRK Fury-8",
+       "unlock": ""
+      },
+      {
+       "slot": "Ammunition",
+       "name": "9mm Parabellum Frangible",
        "unlock": ""
       }
      ]
@@ -17232,140 +17552,6 @@
     }
    ]
   },
-  "patriot-xmr-mw4": {
-   "name": "PATRIOT XMR",
-   "max_level": 0,
-   "builds": [
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Long Range",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "CRONEN R808",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "EXP UNDERTOW GEN. 2",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "SO 898F 19\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "50 ROUND DRUM MAG",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "HANBIT B56T-L9",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Long Range",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "CRONEN R808",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "EXP UNDERTOW GEN. 2",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "SO 898F 19\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "50 ROUND DRUM MAG",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "HANBIT B56T-L9",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Versatile",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "MEIKO 30CAL-SP",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "SCHLAGER ATTACK-7 GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "HANBIT B56T-L9",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SA LAZ-500",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Recoil",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "HET-S6 COMP",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "SO 898F 19\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "SCHLAGER ATTACK-7 GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SZ GEN.6 PEQ",
-       "unlock": ""
-      }
-     ]
-    }
-   ]
-  },
   "sturmwolf-45": {
    "name": "STURMWOLF 45",
    "max_level": 38,
@@ -17666,20 +17852,15 @@
     }
    ]
   },
-  "hyeon-burst-mw4": {
-   "name": "HYEON BURST",
+  "patriot-xmr-mw4": {
+   "name": "PATRIOT XMR",
    "max_level": 0,
    "builds": [
     {
      "context": "Warzone Battle Royale",
-     "label": "Apex",
+     "label": "Long Range",
      "code": "",
      "attachments": [
-      {
-       "slot": "",
-       "name": "HYEON HYPERBURST",
-       "unlock": "Apex"
-      },
       {
        "slot": "Optic",
        "name": "CRONEN R808",
@@ -17687,36 +17868,31 @@
       },
       {
        "slot": "Muzzle",
-       "name": "FSS IS300",
+       "name": "EXP UNDERTOW GEN. 2",
        "unlock": ""
       },
       {
        "slot": "Barrel",
-       "name": "MUGI SEUNGRI-OP 609.6MM",
+       "name": "SO 898F 19\"",
        "unlock": ""
       },
       {
-       "slot": "Rear Grip",
-       "name": "HYN-MEIPEUL",
+       "slot": "Magazine",
+       "name": "50 ROUND DRUM MAG",
        "unlock": ""
       },
       {
-       "slot": "Ammunition",
-       "name": "6.8X43MM HIGH VELOCITY",
+       "slot": "Stock",
+       "name": "HANBIT B56T-L9",
        "unlock": ""
       }
      ]
     },
     {
      "context": "Warzone Resurgence",
-     "label": "Apex",
+     "label": "Long Range",
      "code": "",
      "attachments": [
-      {
-       "slot": "",
-       "name": "HYEON HYPERBURST",
-       "unlock": "Apex"
-      },
       {
        "slot": "Optic",
        "name": "CRONEN R808",
@@ -17724,91 +17900,86 @@
       },
       {
        "slot": "Muzzle",
-       "name": "FSS IS300",
+       "name": "EXP UNDERTOW GEN. 2",
        "unlock": ""
       },
       {
        "slot": "Barrel",
-       "name": "MUGI SEUNGRI-OP 609.6MM",
+       "name": "SO 898F 19\"",
        "unlock": ""
       },
       {
-       "slot": "Rear Grip",
-       "name": "HYN-MEIPEUL",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "6.8X43MM HIGH VELOCITY",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "HYEON HYPERBURST",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS40",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "MUGI INGOEM 558.8MM",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS TAC90 GRIP",
+       "slot": "Magazine",
+       "name": "50 ROUND DRUM MAG",
        "unlock": ""
       },
       {
        "slot": "Stock",
-       "name": "HVY-80 STOCKPAD",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SZ GEN.6 PEQ",
+       "name": "HANBIT B56T-L9",
        "unlock": ""
       }
      ]
     },
     {
      "context": "Modern Warfare 4 Multiplayer",
-     "label": "Burst",
+     "label": "Versatile",
      "code": "",
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "ZLR REVERB90",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "MUGI INGOEM 558.8MM",
+       "name": "MEIKO 30CAL-SP",
        "unlock": ""
       },
       {
        "slot": "Underbarrel",
-       "name": "FSS TAC90 GRIP",
+       "name": "FSS FIRELINE GRIP",
        "unlock": ""
       },
       {
        "slot": "Rear Grip",
-       "name": "HYN-MEIPEUL",
+       "name": "SCHLAGER ATTACK-7 GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "HANBIT B56T-L9",
        "unlock": ""
       },
       {
        "slot": "Laser",
        "name": "SA LAZ-500",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Low Recoil",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "HET-S6 COMP",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "SO 898F 19\"",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FSS FIRELINE GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "SCHLAGER ATTACK-7 GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SZ GEN.6 PEQ",
        "unlock": ""
       }
      ]
@@ -20092,24 +20263,24 @@
      "code": "",
      "attachments": [
       {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Level 22"
+      },
+      {
        "slot": "Barrel",
-       "name": "17\" GREAVES SCOURGE BARREL",
-       "unlock": "Level 35"
+       "name": "15\" WRAITH BARREL",
+       "unlock": "Level 8"
       },
       {
        "slot": "Underbarrel",
-       "name": "EAM STEADY-90 GRIP",
-       "unlock": "Level 38"
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 9"
       },
       {
        "slot": "Rear Grip",
-       "name": "FISSURE GRIP",
-       "unlock": "Level 25"
-      },
-      {
-       "slot": "Stock",
-       "name": "GREAVES COVENANT STOCK",
-       "unlock": "Level 7"
+       "name": "BELL-H81 GRIP",
+       "unlock": "Level 4"
       },
       {
        "slot": "Fire Mods",
@@ -20415,219 +20586,6 @@
        "slot": "Stock",
        "name": "K&S IMPACT STOCK",
        "unlock": "Level 37"
-      }
-     ]
-    }
-   ]
-  },
-  "csg-35-mw4": {
-   "name": "CSG-35",
-   "max_level": 0,
-   "builds": [
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Short Range",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "EXP Forage-Hvy",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "CQC Stop",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "40 Round Mag",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "XRK Slight Stock",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SA Laz-500",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "CSG Crossfire",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "EXP Forage-Hvy",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "40 Round Mag",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "Matuzek Fire-Pro",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "XRK Fury-8",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "9mm Parabellum Frangible",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Short Range",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "EXP Forage-Hvy",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "CQC Stop",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "40 Round Mag",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "XRK Slight Stock",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SA Laz-500",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "CSG Crossfire",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "EXP Forage-Hvy",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "40 Round Mag",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "Matuzek Fire-Pro",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "XRK Fury-8",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "9mm Parabellum Frangible",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Versatile",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "EXP Forage-Hvy",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "CQC Stop",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "40 Round Mag",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "XRK Slight Stock",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SA Laz-500",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "CSG Crossfire",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "EXP Forage-Hvy",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "40 Round Mag",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "Matuzek Fire-Pro",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "XRK Fury-8",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "9mm Parabellum Frangible",
-       "unlock": ""
       }
      ]
     }

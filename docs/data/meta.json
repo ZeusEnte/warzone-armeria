@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-10T14:48:51+00:00",
+ "generated_at": "2026-11-11T14:11:48+00:00",
  "season": "Season 1, 2026",
  "base_game": "Modern Warfare 4",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-11-09T16:08:24+00:00",
+ "previous_generated_at": "2026-11-10T14:48:51+00:00",
  "warnings": [],
  "changes": [
   {
@@ -238,7 +238,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/kastov-762-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-10"
+     "desde": "2026-11-11"
     },
     {
      "name": "VEL 46",
@@ -256,7 +256,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vel-46-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-10"
+     "desde": "2026-11-11"
     },
     {
      "name": "HAN 86",
@@ -346,7 +346,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/m4-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-10"
+     "desde": "2026-11-11"
     },
     {
      "name": "CSG-35",
@@ -418,7 +418,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-10"
+     "desde": "2026-11-11"
     },
     {
      "name": "ASTAROTH .57",
@@ -490,7 +490,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/cronen-squall-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-10"
+     "desde": "2026-11-11"
     },
     {
      "name": "APOC-338",
@@ -598,7 +598,7 @@
       "Sniper"
      ],
      "image": "https://img.wzstats.gg/signal-50-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-10"
+     "desde": "2026-11-11"
     },
     {
      "name": "WARLORD",
@@ -7279,7 +7279,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vel-46-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-10"
+     "desde": "2026-11-11"
     },
     {
      "name": "MOSIN-NAGANT",
@@ -7315,7 +7315,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/kastov-762-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-10"
+     "desde": "2026-11-11"
     },
     {
      "name": "CSG-35",
@@ -7351,7 +7351,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/m4-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-10"
+     "desde": "2026-11-11"
     },
     {
      "name": "WZ.55 STRIGA",
@@ -7423,7 +7423,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-10"
+     "desde": "2026-11-11"
     },
     {
      "name": "KG-7 VULCAN",
@@ -7513,7 +7513,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/cronen-squall-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-10"
+     "desde": "2026-11-11"
     },
     {
      "name": "APOC-338",
@@ -7621,7 +7621,7 @@
       "Sniper"
      ],
      "image": "https://img.wzstats.gg/signal-50-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-10"
+     "desde": "2026-11-11"
     },
     {
      "name": "WARLORD",
@@ -14066,12 +14066,7 @@
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "212 LC40 COMP",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "VB-46 SERIES 11",
+       "name": "TA LIGHTNING R3M",
        "unlock": ""
       },
       {
@@ -14087,6 +14082,11 @@
       {
        "slot": "Stock",
        "name": "EXP U-TURN STOCK",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "XRK CLUTCH-LS",
        "unlock": ""
       }
      ]
@@ -14098,12 +14098,7 @@
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "212 LC40 COMP",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "VB-46 SERIES 11",
+       "name": "TA LIGHTNING R3M",
        "unlock": ""
       },
       {
@@ -14119,6 +14114,11 @@
       {
        "slot": "Stock",
        "name": "EXP U-TURN STOCK",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "XRK CLUTCH-LS",
        "unlock": ""
       }
      ]
@@ -14269,7 +14269,7 @@
      "attachments": [
       {
        "slot": "Optic",
-       "name": "CRONEN R808",
+       "name": "LOCUS PX3 CANTED",
        "unlock": ""
       },
       {
@@ -14301,7 +14301,7 @@
      "attachments": [
       {
        "slot": "Optic",
-       "name": "CRONEN R808",
+       "name": "LOCUS PX3 CANTED",
        "unlock": ""
       },
       {
@@ -18127,24 +18127,24 @@
      "code": "",
      "attachments": [
       {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Level 22"
+      },
+      {
        "slot": "Barrel",
-       "name": "17\" GREAVES SCOURGE BARREL",
-       "unlock": "Level 35"
+       "name": "15\" WRAITH BARREL",
+       "unlock": "Level 8"
       },
       {
        "slot": "Underbarrel",
-       "name": "EAM STEADY-90 GRIP",
-       "unlock": "Level 38"
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 9"
       },
       {
        "slot": "Rear Grip",
-       "name": "FISSURE GRIP",
-       "unlock": "Level 25"
-      },
-      {
-       "slot": "Stock",
-       "name": "GREAVES COVENANT STOCK",
-       "unlock": "Level 7"
+       "name": "BELL-H81 GRIP",
+       "unlock": "Level 4"
       },
       {
        "slot": "Fire Mods",

@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-16T15:37:37+00:00",
+ "generated_at": "2026-11-17T15:56:12+00:00",
  "season": "Season 1, 2026",
  "base_game": "Modern Warfare 4",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-11-15T13:53:41+00:00",
+ "previous_generated_at": "2026-11-16T15:37:37+00:00",
  "warnings": [],
  "changes": [
   {
@@ -11,13 +11,6 @@
    "weapon": "KASTOV 762",
    "kind": "sube",
    "from": "C",
-   "to": "S"
-  },
-  {
-   "mode": "resurgence",
-   "weapon": "WZ.55 STRIGA",
-   "kind": "sube",
-   "from": "A",
    "to": "S"
   },
   {
@@ -96,13 +89,6 @@
    "weapon": "KNIFE",
    "kind": "entra",
    "to": "D"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "WZ.55 STRIGA",
-   "kind": "sube",
-   "from": "A",
-   "to": "S"
   },
   {
    "mode": "battle_royale",
@@ -252,7 +238,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/kastov-762-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-16"
+     "desde": "2026-11-17"
     },
     {
      "name": "WZ.55 STRIGA",
@@ -306,7 +292,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vel-46-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-16"
+     "desde": "2026-11-17"
     },
     {
      "name": "MOSIN-NAGANT",
@@ -378,7 +364,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/m4-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-16"
+     "desde": "2026-11-17"
     },
     {
      "name": "X-58 NYX",
@@ -432,7 +418,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-16"
+     "desde": "2026-11-17"
     },
     {
      "name": "ASTAROTH .57",
@@ -504,7 +490,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/cronen-squall-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-16"
+     "desde": "2026-11-17"
     },
     {
      "name": "APOC-338",
@@ -612,7 +598,7 @@
       "Sniper"
      ],
      "image": "https://img.wzstats.gg/signal-50-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-16"
+     "desde": "2026-11-17"
     },
     {
      "name": "WARLORD",
@@ -7329,7 +7315,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/kastov-762-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-16"
+     "desde": "2026-11-17"
     },
     {
      "name": "VEL 46",
@@ -7347,7 +7333,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vel-46-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-16"
+     "desde": "2026-11-17"
     },
     {
      "name": "M4",
@@ -7365,7 +7351,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/m4-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-16"
+     "desde": "2026-11-17"
     },
     {
      "name": "CSG-35",
@@ -7437,7 +7423,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-16"
+     "desde": "2026-11-17"
     },
     {
      "name": "KG-7 VULCAN",
@@ -7527,7 +7513,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/cronen-squall-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-16"
+     "desde": "2026-11-17"
     },
     {
      "name": "APOC-338",
@@ -7635,7 +7621,7 @@
       "Sniper"
      ],
      "image": "https://img.wzstats.gg/signal-50-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-16"
+     "desde": "2026-11-17"
     },
     {
      "name": "WARLORD",
@@ -14080,7 +14066,7 @@
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "FULL PORT COMP",
+       "name": "RX-5 OVERSTRIKE",
        "unlock": ""
       },
       {
@@ -14112,7 +14098,7 @@
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "FULL PORT COMP",
+       "name": "RX-5 OVERSTRIKE",
        "unlock": ""
       },
       {
@@ -16350,6 +16336,11 @@
      "code": "",
      "attachments": [
       {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Mpc 25"
+      },
+      {
        "slot": "Barrel",
        "name": "12\" VIENNA BARREL",
        "unlock": "Level 23"
@@ -16360,14 +16351,9 @@
        "unlock": "Level 17"
       },
       {
-       "slot": "Rear Grip",
-       "name": "ERUPTION GRIP",
-       "unlock": "Level 37"
-      },
-      {
-       "slot": "Stock",
-       "name": "COLLAPSIBLE STOCK",
-       "unlock": "Level 41"
+       "slot": "Magazine",
+       "name": "TORCH EXTENDED MAG",
+       "unlock": "Level 13"
       },
       {
        "slot": "Fire Mods",

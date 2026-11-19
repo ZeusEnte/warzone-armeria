@@ -1,10 +1,32 @@
 # Resumen de estado — Armería Warzone
 
-**Última actualización: 2026-11-06** (Warzone pasa a Modern Warfare 4).
+**Última actualización: 2026-11-19** (revisión de temporada, de madrugada y sin el usuario delante).
 
 El contexto técnico detallado vive en **[CLAUDE.md](CLAUDE.md)**: arquitectura,
 formato de los datos, trampas del scraping y cómo probarlo. Este fichero es la
 bitácora: en qué punto está, qué se decidió y qué viene después.
+
+---
+
+## 2026-11-19 (madrugada) — «Ya es temporada nueva»: revisión autónoma
+
+El usuario pidió poner la web al día para la temporada nueva y se fue a dormir. Se trabajó con
+tope de cupo puesto por él: la ventana de 5 h hasta que quede un 1-2 % (y reprogramarse sola al
+reinicio) y la semana hasta el 85 % (ahí se para y espera a que él diga «sigue»).
+
+- **Crons del 07 al 18-11: todos en verde.** Cierra el punto 1 de los pendientes del 06-11:
+  `ref: main` no rompió el cron.
+- **wzstats no ha cambiado desde el 18-11.** Raspado completo de prueba a las 01:26 UTC, a un
+  fichero aparte (sin tocar `meta.json`): 5 modos, validador OK, sin avisos, «Season 1, 2026» sobre
+  Modern Warfare 4. Los Ranked siguen en Black Ops 7 y `/mw4/ranked/meta` sigue en 302. El
+  raspador no necesitó cambios.
+- **Ya hay builds de Warzone para las armas de MW4** (27 de BR y 27 de Resurgence; el 06-11 no
+  había). Siguen sin código de canje: es lo que publica wzstats.
+- **Interfaz `2026-11-19`:** los accesorios Apex ponen «Apex» en la columna de ranura en vez de
+  «—». Service worker `armeria-v9`.
+
+**Pendiente del usuario** (de la lista del 06-11): mirar el panel y dar el OK (el pie debe decir
+`interfaz 2026-11-19`), y decidir si se hacen C4 y C5.
 
 ---
 

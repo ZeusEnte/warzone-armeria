@@ -330,7 +330,7 @@ const DEFAULTS = {mode:"resurgence", style:"agresivo", input:"mando", avoid:[], 
 // mira desde el Windows Gamer para saber si ya tiene la versión publicada. Si
 // hay más de una publicación el mismo día se añade letra (b, c...), o desde
 // Gamer no habría forma de distinguirlas.
-const UI_VERSION = "2026-11-06";
+const UI_VERSION = "2026-11-19";
 let profile = load();
 let DATA = null;
 let openSlug = null;
@@ -549,7 +549,7 @@ function attsHtml(build, slug){
     const mio = profile.levels[slug];
     const cumplido = p.kind === "nivel" && mio !== undefined && mio !== null && mio !== "" && p.n <= mio;
     const r = (cumplido ? "✓ " : "") + reqLabel(a.unlock);
-    h += '<li><span class="sl">' + esc(a.slot || "—") + '</span>' +
+    h += '<li><span class="sl">' + esc(a.slot || (/^apex$/i.test(a.unlock || "") ? "Apex" : "—")) + '</span>' +
          '<span class="right"><span class="at">' + esc(a.name) + '</span>' +
          '<button class="req' + (cumplido ? " done" : "") + '" type="button">' + esc(r) + '</button>' +
          '<div class="help" hidden>' + esc(unlockHelp(a.unlock, slug)) + '</div>' +

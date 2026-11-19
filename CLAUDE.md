@@ -327,10 +327,16 @@ Lo que sirve wzstats ese día, mirado en la fuente:
 - **Las fichas de MW4 no traen código de canje ni casi requisitos:** 53 de 53 builds
   sin código, y salvo los Apex el `unlock` va vacío. `max_level` queda en 0 y el campo
   de nivel va sin tope. Es lo que publica wzstats.
-- **El accesorio Apex llega sin ranura** (`slot: ""`) y la web pinta «—».
+- **El accesorio Apex llega sin ranura** (`slot: ""`); desde el 2026-11-19 la web pone
+  «Apex» en esa columna en vez de «—».
 - **El primer día los movimientos son cientos** (313 entre los dos modos de Warzone):
   es el cambio de juego, no un meta loco. Un modo que cambia de página no se compara
   (`diff_modes`), para no llenar el panel con dos listas de juegos distintos.
+
+**Revisado el 2026-11-19** (el usuario: «ya es temporada nueva»): wzstats sirve lo mismo que
+el 18-11. Los Ranked siguen en Black Ops 7 y `/mw4/ranked/meta` sigue en 302. Lo que sí ha
+llegado desde el 06-11 son builds de Warzone para las armas de MW4 (27 de Battle Royale y 27
+de Resurgence), todavía sin código de canje. No hizo falta tocar el raspador.
 
 ## Lógica de recomendación (`score()` en index.html)
 

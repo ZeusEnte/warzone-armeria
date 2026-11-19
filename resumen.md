@@ -25,8 +25,9 @@ reinicio) y la semana hasta el 85 % (ahí se para y espera a que él diga «sigu
 - **Interfaz `2026-11-19`:** los accesorios Apex ponen «Apex» en la columna de ranura en vez de
   «—». Service worker `armeria-v9`.
 
-**Pendiente del usuario** (de la lista del 06-11): mirar el panel y dar el OK (el pie debe decir
-`interfaz 2026-11-19`), y decidir si se hacen C4 y C5.
+**Cerrado después, el mismo 19-11:** el usuario dio el OK al panel (`interfaz 2026-11-19`) y
+dejó C4 y C5 a «si merece la pena». Descartadas: sin fuente serían tablas inventadas (ver
+`CLAUDE.md`, «Pendiente»). **La fase C queda cerrada.**
 
 ---
 

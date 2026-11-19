@@ -558,10 +558,13 @@ a `ef55288`) y se decidió no reescribir la historia por ello.
   **Fases A y B: hechas el 2026-09-08 y cerradas el 2026-09-10**, verificadas
   por el usuario desde el Windows Gamer (pie `interfaz 2026-09-08c`, nivel del
   arma en las tarjetas, «Ventajas meta por ranura», juego base en cabecera).
-  **Fase C, a medias desde el 2026-11-06:** hechos C1, C2, C3 (textos) y C6 (mirado:
-  sin etiqueta). **Sin hacer C4 y C5**, las tablas por nivel de jugador y de ventajas
-  por estilo: no hacen falta para que la web funcione y son tablas a mano sin fuente
-  comprobada, así que las decide el usuario. Falta su OK al panel. Cada fase empieza
+  **Fase C, cerrada el 2026-11-19:** hechos C1, C2, C3 (textos) y C6 (mirado: sin
+  etiqueta), y el usuario dio el OK al panel (pie `interfaz 2026-11-19`). **C4 y C5,
+  descartadas ese día:** el usuario las dejó a «si merece la pena», y sin fuente no la
+  merecen. La tabla de armas por nivel de jugador y la de ventajas por estilo habría que
+  escribirlas a mano, y nadie tiene el dato: wzstats no lo publica y el modelo no conoce
+  MW4. Serían inventadas, como la tabla de orígenes descartada el 2026-09-10. **Se
+  reabren solo si aparece una fuente.** Cada fase empieza
   diciendo modelo y potencia. El informe que lo justifica:
   `documentacion/informe-2026-09-08-nivel-desbloqueos-ventajas-zodiac.md`.
 **Cerrado el 2026-10-26:** la contraseña de GitHub, que se había pegado en el

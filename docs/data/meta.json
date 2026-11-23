@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-22T14:30:50+00:00",
+ "generated_at": "2026-11-23T17:59:56+00:00",
  "season": "Season 1, 2026",
  "base_game": "Modern Warfare 4",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-11-21T14:35:48+00:00",
+ "previous_generated_at": "2026-11-22T14:30:50+00:00",
  "warnings": [],
  "changes": [
   {
@@ -89,6 +89,20 @@
    "weapon": "KNIFE",
    "kind": "entra",
    "to": "D"
+  },
+  {
+   "mode": "multiplayer",
+   "weapon": "HYEON BURST",
+   "kind": "baja",
+   "from": "S",
+   "to": "A"
+  },
+  {
+   "mode": "multiplayer",
+   "weapon": "FINN LMG",
+   "kind": "sube",
+   "from": "B",
+   "to": "A"
   },
   {
    "mode": "battle_royale",
@@ -238,7 +252,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/kastov-762-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-22"
+     "desde": "2026-11-23"
     },
     {
      "name": "WZ.55 STRIGA",
@@ -292,7 +306,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vel-46-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-22"
+     "desde": "2026-11-23"
     },
     {
      "name": "MOSIN-NAGANT",
@@ -363,8 +377,8 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": "https://img.wzstats.gg/m4-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-22"
+     "image": "https://img.wzstats.gg/m4-mw4/gunDisplayLoadouts",
+     "desde": "2026-11-23"
     },
     {
      "name": "X-58 NYX",
@@ -418,7 +432,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-22"
+     "desde": "2026-11-23"
     },
     {
      "name": "ASTAROTH .57",
@@ -453,7 +467,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": "https://img.wzstats.gg/hyeon-burst-mw4/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/hyeon-burst-mw4_version1/gunFullDisplay",
      "desde": "2026-11-06"
     },
     {
@@ -490,7 +504,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/cronen-squall-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-22"
+     "desde": "2026-11-23"
     },
     {
      "name": "APOC-338",
@@ -598,7 +612,7 @@
       "Sniper"
      ],
      "image": "https://img.wzstats.gg/signal-50-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-22"
+     "desde": "2026-11-23"
     },
     {
      "name": "WARLORD",
@@ -5498,22 +5512,6 @@
      "desde": "2026-11-06"
     },
     {
-     "name": "HYEON BURST",
-     "slug": "hyeon-burst-mw4",
-     "tier": "S",
-     "positions": [
-      {
-       "range": "Assault Rifle",
-       "rank": 3,
-       "role": "largo"
-      }
-     ],
-     "weapon_type": "Assault Rifle",
-     "tags": [],
-     "image": "https://img.wzstats.gg/hyeon-burst-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-08"
-    },
-    {
      "name": "ISO NIGHTSHADE",
      "slug": "iso-nightshade-mw4",
      "tier": "S",
@@ -5536,7 +5534,7 @@
      "positions": [
       {
        "range": "Assault Rifle",
-       "rank": 4,
+       "rank": 3,
        "role": "largo"
       }
      ],
@@ -5576,6 +5574,22 @@
      "tags": [],
      "image": "https://img.wzstats.gg/kg-7-vulcan-mw4_version1/gunDisplayLoadouts",
      "desde": "2026-11-06"
+    },
+    {
+     "name": "HYEON BURST",
+     "slug": "hyeon-burst-mw4",
+     "tier": "A",
+     "positions": [
+      {
+       "range": "Assault Rifle",
+       "rank": 4,
+       "role": "largo"
+      }
+     ],
+     "weapon_type": "Assault Rifle",
+     "tags": [],
+     "image": "https://img.wzstats.gg/hyeon-burst-mw4_version1/gunFullDisplay",
+     "desde": "2026-11-23"
     },
     {
      "name": "VEL 46",
@@ -5754,6 +5768,22 @@
      "desde": "2026-11-06"
     },
     {
+     "name": "FINN LMG",
+     "slug": "finn-lmg-mw4",
+     "tier": "A",
+     "positions": [
+      {
+       "range": "LMG",
+       "rank": 1,
+       "role": "largo"
+      }
+     ],
+     "weapon_type": "LMG",
+     "tags": [],
+     "image": "https://img.wzstats.gg/finn-lmg-mw4_version1/gunFullDisplay",
+     "desde": "2026-11-23"
+    },
+    {
      "name": "ASTAROTH .57",
      "slug": "astaroth-57-mw4",
      "tier": "A",
@@ -5776,29 +5806,13 @@
      "positions": [
       {
        "range": "LMG",
-       "rank": 1,
-       "role": "largo"
-      }
-     ],
-     "weapon_type": "LMG",
-     "tags": [],
-     "image": "https://img.wzstats.gg/apoc-338-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-06"
-    },
-    {
-     "name": "FINN LMG",
-     "slug": "finn-lmg-mw4",
-     "tier": "B",
-     "positions": [
-      {
-       "range": "LMG",
        "rank": 2,
        "role": "largo"
       }
      ],
      "weapon_type": "LMG",
      "tags": [],
-     "image": "https://img.wzstats.gg/finn-lmg-mw4_version1/gunFullDisplay",
+     "image": "https://img.wzstats.gg/apoc-338-mw4_version1/gunFullDisplay",
      "desde": "2026-11-06"
     },
     {
@@ -7315,7 +7329,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/kastov-762-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-22"
+     "desde": "2026-11-23"
     },
     {
      "name": "VEL 46",
@@ -7333,7 +7347,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vel-46-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-22"
+     "desde": "2026-11-23"
     },
     {
      "name": "M4",
@@ -7350,8 +7364,8 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": "https://img.wzstats.gg/m4-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-22"
+     "image": "https://img.wzstats.gg/m4-mw4/gunDisplayLoadouts",
+     "desde": "2026-11-23"
     },
     {
      "name": "CSG-35",
@@ -7423,7 +7437,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-22"
+     "desde": "2026-11-23"
     },
     {
      "name": "KG-7 VULCAN",
@@ -7476,7 +7490,7 @@
      "tags": [
       "Assault Rifle"
      ],
-     "image": "https://img.wzstats.gg/hyeon-burst-mw4/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/hyeon-burst-mw4_version1/gunFullDisplay",
      "desde": "2026-11-06"
     },
     {
@@ -7513,7 +7527,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/cronen-squall-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-22"
+     "desde": "2026-11-23"
     },
     {
      "name": "APOC-338",
@@ -7621,7 +7635,7 @@
       "Sniper"
      ],
      "image": "https://img.wzstats.gg/signal-50-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-22"
+     "desde": "2026-11-23"
     },
     {
      "name": "WARLORD",
@@ -12930,7 +12944,7 @@
      "attachments": [
       {
        "slot": "Optic",
-       "name": "Locus PX3 Canted",
+       "name": "LOCUS PX3 CANTED",
        "unlock": ""
       },
       {
@@ -12940,17 +12954,17 @@
       },
       {
        "slot": "Barrel",
-       "name": "IO-556 Tac 18\"",
+       "name": "IO-556 TAC 18\"",
        "unlock": ""
       },
       {
        "slot": "Magazine",
-       "name": "60 Round Mag",
+       "name": "60 ROUND MAG",
        "unlock": ""
       },
       {
        "slot": "Stock",
-       "name": "XR-9 Tac V2",
+       "name": "FT STALWART MK2",
        "unlock": ""
       }
      ]
@@ -12961,28 +12975,28 @@
      "code": "",
      "attachments": [
       {
-       "slot": "Muzzle",
-       "name": "XRK Mil-Tac Suppressor",
+       "slot": "Optic",
+       "name": "LOCUS PX3 CANTED",
        "unlock": ""
       },
       {
        "slot": "Barrel",
-       "name": "IO-556 Tac 18\"",
+       "name": "IO-556 TAC 18\"",
        "unlock": ""
       },
       {
        "slot": "Underbarrel",
-       "name": "FSS Tac90 Grip",
+       "name": "FSS TAC90 GRIP",
        "unlock": ""
       },
       {
        "slot": "Magazine",
-       "name": "60 Round Mag",
+       "name": "100 ROUND DRUM",
        "unlock": ""
       },
       {
        "slot": "Stock",
-       "name": "Fade Tac 9L",
+       "name": "FT STALWART MK2",
        "unlock": ""
       }
      ]
@@ -12994,7 +13008,7 @@
      "attachments": [
       {
        "slot": "Optic",
-       "name": "Locus PX3 Canted",
+       "name": "LOCUS PX3 CANTED",
        "unlock": ""
       },
       {
@@ -13004,17 +13018,17 @@
       },
       {
        "slot": "Barrel",
-       "name": "IO-556 Tac 18\"",
+       "name": "IO-556 TAC 18\"",
        "unlock": ""
       },
       {
        "slot": "Magazine",
-       "name": "60 Round Mag",
+       "name": "60 ROUND MAG",
        "unlock": ""
       },
       {
        "slot": "Stock",
-       "name": "XR-9 Tac V2",
+       "name": "FT STALWART MK2",
        "unlock": ""
       }
      ]
@@ -13025,28 +13039,28 @@
      "code": "",
      "attachments": [
       {
-       "slot": "Muzzle",
-       "name": "XRK Mil-Tac Suppressor",
+       "slot": "Optic",
+       "name": "LOCUS PX3 CANTED",
        "unlock": ""
       },
       {
        "slot": "Barrel",
-       "name": "IO-556 Tac 18\"",
+       "name": "IO-556 TAC 18\"",
        "unlock": ""
       },
       {
        "slot": "Underbarrel",
-       "name": "FSS Tac90 Grip",
+       "name": "FSS TAC90 GRIP",
        "unlock": ""
       },
       {
        "slot": "Magazine",
-       "name": "60 Round Mag",
+       "name": "100 ROUND DRUM",
        "unlock": ""
       },
       {
        "slot": "Stock",
-       "name": "Fade Tac 9L",
+       "name": "FT STALWART MK2",
        "unlock": ""
       }
      ]
@@ -13063,22 +13077,22 @@
       },
       {
        "slot": "Underbarrel",
-       "name": "FSS Tac90 Grip",
+       "name": "FSS TAC90 GRIP",
        "unlock": ""
       },
       {
        "slot": "Rear Grip",
-       "name": "A56 Stout",
+       "name": "A56 STOUT",
        "unlock": ""
       },
       {
        "slot": "Stock",
-       "name": "FT Stalwart MK2",
+       "name": "FT STALWART MK2",
        "unlock": ""
       },
       {
        "slot": "Laser",
-       "name": "SA Laz-500",
+       "name": "SA LAZ-500",
        "unlock": ""
       }
      ]
@@ -13116,7 +13130,7 @@
       },
       {
        "slot": "Laser",
-       "name": "XRK CLUTCH-LS",
+       "name": "SCHLAGER VISIV-5",
        "unlock": ""
       }
      ]
@@ -13148,7 +13162,7 @@
       },
       {
        "slot": "Laser",
-       "name": "XRK CLUTCH-LS",
+       "name": "SCHLAGER VISIV-5",
        "unlock": ""
       }
      ]
@@ -13184,102 +13198,6 @@
        "unlock": ""
       }
      ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Level",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "FSS CRACKDOWN",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "ZLR MAG-Z 9\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "DEMO STP-1",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "GI-80 MILSPEC STOCK",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "9MM PARABELLUM FRANGIBLE",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Mobility",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "DEMO IRONSHADE",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "RT OUTRIDE-X 8\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "DEMO STP-1",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "EXP G2-44 STOCK",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SCHLAGER VISIV-5",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Recoil",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "212 LC40 COMP",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "ZLR CARBON-900",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "BRUEN MOD3",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "GI-80 MILSPEC STOCK",
-       "unlock": ""
-      }
-     ]
     }
    ]
   },
@@ -13289,7 +13207,7 @@
    "builds": [
     {
      "context": "Warzone Battle Royale",
-     "label": "Long Range",
+     "label": "Sniper",
      "code": "",
      "attachments": [
       {
@@ -13321,7 +13239,7 @@
     },
     {
      "context": "Warzone Resurgence",
-     "label": "Long Range",
+     "label": "Sniper",
      "code": "",
      "attachments": [
       {
@@ -13353,7 +13271,7 @@
     },
     {
      "context": "Modern Warfare 4 Multiplayer",
-     "label": "Build",
+     "label": "Versatile",
      "code": "",
      "attachments": [
       {
@@ -14080,13 +13998,13 @@
        "unlock": ""
       },
       {
-       "slot": "Rear Grip",
-       "name": "MATUZEK 532-L GRIP",
+       "slot": "Stock",
+       "name": "EXP NARROW-LITE",
        "unlock": ""
       },
       {
-       "slot": "Stock",
-       "name": "WIRE STOCK",
+       "slot": "Laser",
+       "name": "SCHLAGER VISIV-5",
        "unlock": ""
       }
      ]
@@ -14112,13 +14030,13 @@
        "unlock": ""
       },
       {
-       "slot": "Rear Grip",
-       "name": "MATUZEK 532-L GRIP",
+       "slot": "Stock",
+       "name": "EXP NARROW-LITE",
        "unlock": ""
       },
       {
-       "slot": "Stock",
-       "name": "WIRE STOCK",
+       "slot": "Laser",
+       "name": "SCHLAGER VISIV-5",
        "unlock": ""
       }
      ]
@@ -14150,7 +14068,7 @@
       },
       {
        "slot": "Rear Grip",
-       "name": "FTAC GUARDS",
+       "name": "FTAC GUARD5",
        "unlock": ""
       },
       {
@@ -14459,102 +14377,6 @@
        "unlock": ""
       }
      ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "AXION REAVER",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS300",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "XRK 09-RTAC PRO",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "100 ROUND DRUM",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": ".300 BLK FRANGIBLE",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Mobility",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS40",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "XRK 09-RTAC PRO",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "GS50 GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "XRK RELAY 7",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SCHLAGER VISIV-5",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Recoil",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "SZ PRIMA-4 DOT",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "CORVUS LVL-40",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "CRONEN DC-FORGE 40",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "CRONEN BLACKSTONE-6P",
-       "unlock": ""
-      }
-     ]
     }
    ]
   },
@@ -14837,23 +14659,18 @@
     }
    ]
   },
-  "hyeon-burst-mw4": {
-   "name": "HYEON BURST",
+  "m4-mw4": {
+   "name": "M4",
    "max_level": 0,
    "builds": [
     {
      "context": "Warzone Battle Royale",
-     "label": "Apex",
+     "label": "Long Range",
      "code": "",
      "attachments": [
       {
-       "slot": "",
-       "name": "HYEON HYPERBURST",
-       "unlock": "Apex"
-      },
-      {
        "slot": "Optic",
-       "name": "CRONEN R808",
+       "name": "LOCUS PX3 CANTED",
        "unlock": ""
       },
       {
@@ -14863,34 +14680,29 @@
       },
       {
        "slot": "Barrel",
-       "name": "MUGI SEUNGRI-OP 609.6MM",
+       "name": "16\" HIGHMARK BARREL",
        "unlock": ""
       },
       {
-       "slot": "Rear Grip",
-       "name": "HYN-MEIPEUL",
+       "slot": "Magazine",
+       "name": "60 ROUND DRUM",
        "unlock": ""
       },
       {
-       "slot": "Ammunition",
-       "name": "6.8X43MM HIGH VELOCITY",
+       "slot": "Stock",
+       "name": "PF1 FIXED STOCK",
        "unlock": ""
       }
      ]
     },
     {
      "context": "Warzone Resurgence",
-     "label": "Apex",
+     "label": "Long Range",
      "code": "",
      "attachments": [
       {
-       "slot": "",
-       "name": "HYEON HYPERBURST",
-       "unlock": "Apex"
-      },
-      {
        "slot": "Optic",
-       "name": "CRONEN R808",
+       "name": "LOCUS PX3 CANTED",
        "unlock": ""
       },
       {
@@ -14900,71 +14712,29 @@
       },
       {
        "slot": "Barrel",
-       "name": "MUGI SEUNGRI-OP 609.6MM",
+       "name": "16\" HIGHMARK BARREL",
        "unlock": ""
       },
       {
-       "slot": "Rear Grip",
-       "name": "HYN-MEIPEUL",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "6.8X43MM HIGH VELOCITY",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "HYEON HYPERBURST",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS40",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "MUGI INGOEM 558.8MM",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS TAC90 GRIP",
+       "slot": "Magazine",
+       "name": "60 ROUND DRUM",
        "unlock": ""
       },
       {
        "slot": "Stock",
-       "name": "HVY-80 STOCKPAD",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SZ GEN.6 PEQ",
+       "name": "PF1 FIXED STOCK",
        "unlock": ""
       }
      ]
     },
     {
      "context": "Modern Warfare 4 Multiplayer",
-     "label": "Burst",
+     "label": "Versatile",
      "code": "",
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "ZLR REVERB90",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "MUGI INGOEM 558.8MM",
+       "name": "FSS IS300",
        "unlock": ""
       },
       {
@@ -14974,7 +14744,12 @@
       },
       {
        "slot": "Rear Grip",
-       "name": "HYN-MEIPEUL",
+       "name": "SCHLAGER STB GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "DEMO HVR2 STOCK",
        "unlock": ""
       },
       {
@@ -15062,8 +14837,8 @@
     }
    ]
   },
-  "m4-mw4": {
-   "name": "M4",
+  "finn-lmg-mw4": {
+   "name": "FINN LMG",
    "max_level": 0,
    "builds": [
     {
@@ -15073,7 +14848,7 @@
      "attachments": [
       {
        "slot": "Optic",
-       "name": "LOCUS PX3 CANTED",
+       "name": "SZ HELIOS HOLO",
        "unlock": ""
       },
       {
@@ -15083,17 +14858,17 @@
       },
       {
        "slot": "Barrel",
-       "name": "16\" HIGHMARK BARREL",
+       "name": "TA SUSTAIN-99 20\"",
        "unlock": ""
       },
       {
-       "slot": "Magazine",
-       "name": "60 ROUND DRUM",
+       "slot": "Rear Grip",
+       "name": "SCHLAGER KM60-G",
        "unlock": ""
       },
       {
-       "slot": "Stock",
-       "name": "PF1 FIXED STOCK",
+       "slot": "Ammunition",
+       "name": "5.56 NATO HIGH VELOCITY",
        "unlock": ""
       }
      ]
@@ -15105,7 +14880,7 @@
      "attachments": [
       {
        "slot": "Optic",
-       "name": "LOCUS PX3 CANTED",
+       "name": "SZ HELIOS HOLO",
        "unlock": ""
       },
       {
@@ -15115,17 +14890,17 @@
       },
       {
        "slot": "Barrel",
-       "name": "16\" HIGHMARK BARREL",
+       "name": "TA SUSTAIN-99 20\"",
        "unlock": ""
       },
       {
-       "slot": "Magazine",
-       "name": "60 ROUND DRUM",
+       "slot": "Rear Grip",
+       "name": "SCHLAGER KM60-G",
        "unlock": ""
       },
       {
-       "slot": "Stock",
-       "name": "PF1 FIXED STOCK",
+       "slot": "Ammunition",
+       "name": "5.56 NATO HIGH VELOCITY",
        "unlock": ""
       }
      ]
@@ -15136,28 +14911,28 @@
      "code": "",
      "attachments": [
       {
+       "slot": "Optic",
+       "name": "IOTA-D",
+       "unlock": ""
+      },
+      {
        "slot": "Muzzle",
-       "name": "FSS IS300",
+       "name": "XRK MIL-TAC SUPPRESSOR",
        "unlock": ""
       },
       {
        "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
+       "name": "BRUEN RENEGADE GRIP",
        "unlock": ""
       },
       {
-       "slot": "Rear Grip",
-       "name": "ZLR PHASE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "ZLR ASP50 STOCK",
+       "slot": "Magazine",
+       "name": "75 ROUND BOX MAG",
        "unlock": ""
       },
       {
        "slot": "Laser",
-       "name": "SA LAZ-500",
+       "name": "SZ GEN.6 PEQ",
        "unlock": ""
       }
      ]
@@ -15174,123 +14949,22 @@
       },
       {
        "slot": "Muzzle",
-       "name": "FSS IS300",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "PF1 FIXED STOCK",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SZ GEN.6 PEQ",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "5.56 NATO OVERPRESSURED",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "M4 Hurricane",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Optic",
-       "name": "IOTA-D",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS300",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "Hurricane Stock",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SA LAZ-500",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Mobility",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "CORVUS LVL-40",
+       "name": "FTAC DOMINION",
        "unlock": ""
       },
       {
        "slot": "Barrel",
-       "name": "FT CANNONADE 7\"",
+       "name": "FTAC FIREBASE-70 15\"",
        "unlock": ""
       },
       {
        "slot": "Rear Grip",
-       "name": "ZLR PHASE GRIP",
+       "name": "XRK AURA-5",
        "unlock": ""
       },
       {
        "slot": "Stock",
-       "name": "ZLR ASP50 STOCK",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SZ GEN.6 PEQ",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Recoil",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "CORVUS LVL-40",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "16\" HIGHMARK BARREL",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "BRACE DX GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "PF1 FIXED STOCK",
+       "name": "HANBIT TECH50 GEN.5",
        "unlock": ""
       }
      ]
@@ -15507,7 +15181,7 @@
       },
       {
        "slot": "Barrel",
-       "name": "FTAC Harbinger 45",
+       "name": "FTAC Harbinger 45\"",
        "unlock": ""
       },
       {
@@ -15539,7 +15213,7 @@
       },
       {
        "slot": "Barrel",
-       "name": "FTAC Harbinger 45",
+       "name": "FTAC Harbinger 45\"",
        "unlock": ""
       },
       {
@@ -15576,7 +15250,7 @@
       },
       {
        "slot": "Barrel",
-       "name": "FTAC Crosswind 30",
+       "name": "FTAC Crosswind 30\"",
        "unlock": ""
       },
       {
@@ -15693,7 +15367,7 @@
       },
       {
        "slot": "Bolt",
-       "name": "LIGHTFIR-5 QUICK BOLT",
+       "name": "LIGHTFIRE-5 QUICK BOLT",
        "unlock": ""
       }
      ]
@@ -16218,7 +15892,7 @@
       },
       {
        "slot": "Stock",
-       "name": "HANBIT JANGUN-H9",
+       "name": "HANBIT JANGGUN-H9",
        "unlock": ""
       },
       {
@@ -16282,7 +15956,7 @@
       },
       {
        "slot": "Stock",
-       "name": "MT-L5 JINHUA",
+       "name": "MT-L5 JINHWA",
        "unlock": ""
       },
       {
@@ -16314,12 +15988,161 @@
       },
       {
        "slot": "Stock",
-       "name": "HANBIT JANGUN-H9",
+       "name": "HANBIT JANGGUN-H9",
        "unlock": ""
       },
       {
        "slot": "Laser",
        "name": "SCHLAGER VISIV-5",
+       "unlock": ""
+      }
+     ]
+    }
+   ]
+  },
+  "hyeon-burst-mw4": {
+   "name": "HYEON BURST",
+   "max_level": 0,
+   "builds": [
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Apex",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "",
+       "name": "HYEON HYPERBURST",
+       "unlock": "Apex"
+      },
+      {
+       "slot": "Optic",
+       "name": "CRONEN R808",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "FSS IS300",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "MUGI SEUNGRI-OP 609MM",
+       "unlock": ""
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "HYN-MEIPEUL",
+       "unlock": ""
+      },
+      {
+       "slot": "Ammunition",
+       "name": "6.8X43MM HIGH VELOCITY",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Apex",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "",
+       "name": "HYEON HYPERBURST",
+       "unlock": "Apex"
+      },
+      {
+       "slot": "Optic",
+       "name": "CRONEN R808",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "FSS IS300",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "MUGI SEUNGRI-OP 609MM",
+       "unlock": ""
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "HYN-MEIPEUL",
+       "unlock": ""
+      },
+      {
+       "slot": "Ammunition",
+       "name": "6.8X43MM HIGH VELOCITY",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Apex",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "",
+       "name": "HYEON HYPERBURST",
+       "unlock": "Apex"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "FSS IS40",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "MUGI INGOEM 559MM",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FSS TAC90 GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "HVY-80 STOCKPAD",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SZ GEN.6 PEQ",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Burst",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "ZLR REVERB90",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "MUGI INGOEM 559MM",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FSS TAC90 GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "HYN-MEIPEUL",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SA LAZ-500",
        "unlock": ""
       }
      ]
@@ -16413,7 +16236,7 @@
      "attachments": [
       {
        "slot": "Barrel",
-       "name": "DOKSA 4F 304.8MM",
+       "name": "DOKSA 4F 305MM",
        "unlock": ""
       },
       {
@@ -16445,7 +16268,7 @@
      "attachments": [
       {
        "slot": "Barrel",
-       "name": "DOKSA 4F 304.8MM",
+       "name": "DOKSA 4F 305MM",
        "unlock": ""
       },
       {
@@ -16477,7 +16300,7 @@
      "attachments": [
       {
        "slot": "Barrel",
-       "name": "DOKSA 4F 304.8MM",
+       "name": "DOKSA 4F 305MM",
        "unlock": ""
       },
       {
@@ -16509,7 +16332,7 @@
      "attachments": [
       {
        "slot": "Barrel",
-       "name": "DOKSA 4F 304.8MM",
+       "name": "DOKSA 4F 305MM",
        "unlock": ""
       },
       {
@@ -16524,7 +16347,7 @@
       },
       {
        "slot": "Stock",
-       "name": "No Stock",
+       "name": "NO STOCK",
        "unlock": ""
       },
       {
@@ -17566,7 +17389,7 @@
       },
       {
        "slot": "Rear Grip",
-       "name": "DV3-SINSQK GRIP",
+       "name": "DV3-SINSOK GRIP",
        "unlock": ""
       },
       {
@@ -17870,140 +17693,6 @@
        "slot": "Fire Mods",
        "name": "BUFFER SPRING",
        "unlock": "Level 14"
-      }
-     ]
-    }
-   ]
-  },
-  "finn-lmg-mw4": {
-   "name": "FINN LMG",
-   "max_level": 0,
-   "builds": [
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Long Range",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "SZ HELIOS HOLO",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS300",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "TA SUSTAIN-99 20\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "SCHLAGER KM60-G",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "5.56 NATO HIGH VELOCITY",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Long Range",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "SZ HELIOS HOLO",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS300",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "TA SUSTAIN-99 20\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "SCHLAGER KM60-G",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "5.56 NATO HIGH VELOCITY",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Versatile",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "IOTA-D",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "XRK MIL-TAC SUPPRESSOR",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "BRUEN RENEGADE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "75 ROUND BOX MAG",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SZ GEN.6 PEQ",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Level",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "SLIMLINE ELITE",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FTAC DOMINION",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "FTAC FIREBASE-70 15\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "XRK AURA-5",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "HANBIT TECH50 GEN.5",
-       "unlock": ""
       }
      ]
     }

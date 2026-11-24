@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-23T17:59:56+00:00",
+ "generated_at": "2026-11-24T17:36:40+00:00",
  "season": "Season 1, 2026",
  "base_game": "Modern Warfare 4",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-11-22T14:30:50+00:00",
+ "previous_generated_at": "2026-11-23T17:59:56+00:00",
  "warnings": [],
  "changes": [
   {
@@ -89,20 +89,6 @@
    "weapon": "KNIFE",
    "kind": "entra",
    "to": "D"
-  },
-  {
-   "mode": "multiplayer",
-   "weapon": "HYEON BURST",
-   "kind": "baja",
-   "from": "S",
-   "to": "A"
-  },
-  {
-   "mode": "multiplayer",
-   "weapon": "FINN LMG",
-   "kind": "sube",
-   "from": "B",
-   "to": "A"
   },
   {
    "mode": "battle_royale",
@@ -252,7 +238,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/kastov-762-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-23"
+     "desde": "2026-11-24"
     },
     {
      "name": "WZ.55 STRIGA",
@@ -306,7 +292,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vel-46-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-23"
+     "desde": "2026-11-24"
     },
     {
      "name": "MOSIN-NAGANT",
@@ -378,7 +364,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/m4-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-23"
+     "desde": "2026-11-24"
     },
     {
      "name": "X-58 NYX",
@@ -432,7 +418,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-23"
+     "desde": "2026-11-24"
     },
     {
      "name": "ASTAROTH .57",
@@ -504,7 +490,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/cronen-squall-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-23"
+     "desde": "2026-11-24"
     },
     {
      "name": "APOC-338",
@@ -612,7 +598,7 @@
       "Sniper"
      ],
      "image": "https://img.wzstats.gg/signal-50-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-23"
+     "desde": "2026-11-24"
     },
     {
      "name": "WARLORD",
@@ -7329,7 +7315,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/kastov-762-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-23"
+     "desde": "2026-11-24"
     },
     {
      "name": "VEL 46",
@@ -7347,7 +7333,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vel-46-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-23"
+     "desde": "2026-11-24"
     },
     {
      "name": "M4",
@@ -7365,7 +7351,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/m4-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-23"
+     "desde": "2026-11-24"
     },
     {
      "name": "CSG-35",
@@ -7437,7 +7423,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-23"
+     "desde": "2026-11-24"
     },
     {
      "name": "KG-7 VULCAN",
@@ -7527,7 +7513,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/cronen-squall-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-23"
+     "desde": "2026-11-24"
     },
     {
      "name": "APOC-338",
@@ -7635,7 +7621,7 @@
       "Sniper"
      ],
      "image": "https://img.wzstats.gg/signal-50-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-23"
+     "desde": "2026-11-24"
     },
     {
      "name": "WARLORD",
@@ -15417,64 +15403,27 @@
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "EXP Forage-Hvy",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "CQC Stop",
+       "name": "EXP FORAGE-HVY",
        "unlock": ""
       },
       {
        "slot": "Magazine",
-       "name": "40 Round Mag",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "XRK Slight Stock",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SA Laz-500",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "CSG Crossfire",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "EXP Forage-Hvy",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "40 Round Mag",
+       "name": "40 ROUND MAG",
        "unlock": ""
       },
       {
        "slot": "Rear Grip",
-       "name": "Matuzek Fire-Pro",
+       "name": "MATUZEK FIRE-PRO",
        "unlock": ""
       },
       {
        "slot": "Stock",
-       "name": "XRK Fury-8",
+       "name": "XRK SLIGHT STOCK",
        "unlock": ""
       },
       {
-       "slot": "Ammunition",
-       "name": "9mm Parabellum Frangible",
+       "slot": "Laser",
+       "name": "SA LAZ-500",
        "unlock": ""
       }
      ]
@@ -15486,64 +15435,27 @@
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "EXP Forage-Hvy",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "CQC Stop",
+       "name": "EXP FORAGE-HVY",
        "unlock": ""
       },
       {
        "slot": "Magazine",
-       "name": "40 Round Mag",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "XRK Slight Stock",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SA Laz-500",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "CSG Crossfire",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "EXP Forage-Hvy",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "40 Round Mag",
+       "name": "40 ROUND MAG",
        "unlock": ""
       },
       {
        "slot": "Rear Grip",
-       "name": "Matuzek Fire-Pro",
+       "name": "MATUZEK FIRE-PRO",
        "unlock": ""
       },
       {
        "slot": "Stock",
-       "name": "XRK Fury-8",
+       "name": "XRK SLIGHT STOCK",
        "unlock": ""
       },
       {
-       "slot": "Ammunition",
-       "name": "9mm Parabellum Frangible",
+       "slot": "Laser",
+       "name": "SA LAZ-500",
        "unlock": ""
       }
      ]
@@ -17816,24 +17728,24 @@
      "code": "",
      "attachments": [
       {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Level 22"
+      },
+      {
        "slot": "Barrel",
-       "name": "17\" GREAVES SCOURGE BARREL",
-       "unlock": "Level 35"
+       "name": "15\" WRAITH BARREL",
+       "unlock": "Level 8"
       },
       {
        "slot": "Underbarrel",
-       "name": "EAM STEADY-90 GRIP",
-       "unlock": "Level 38"
+       "name": "SENTRY PRO HANDSTOP",
+       "unlock": "Level 9"
       },
       {
        "slot": "Rear Grip",
-       "name": "FISSURE GRIP",
-       "unlock": "Level 25"
-      },
-      {
-       "slot": "Stock",
-       "name": "GREAVES COVENANT STOCK",
-       "unlock": "Level 7"
+       "name": "BELL-H81 GRIP",
+       "unlock": "Level 4"
       },
       {
        "slot": "Fire Mods",

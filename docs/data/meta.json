@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-24T17:36:40+00:00",
+ "generated_at": "2026-11-25T17:08:04+00:00",
  "season": "Season 1, 2026",
  "base_game": "Modern Warfare 4",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-11-23T17:59:56+00:00",
+ "previous_generated_at": "2026-11-24T17:36:40+00:00",
  "warnings": [],
  "changes": [
   {
@@ -89,6 +89,13 @@
    "weapon": "KNIFE",
    "kind": "entra",
    "to": "D"
+  },
+  {
+   "mode": "battle_royale",
+   "weapon": "KG-7 VULCAN",
+   "kind": "sube",
+   "from": "A",
+   "to": "S"
   },
   {
    "mode": "battle_royale",
@@ -238,7 +245,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/kastov-762-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-24"
+     "desde": "2026-11-25"
     },
     {
      "name": "WZ.55 STRIGA",
@@ -292,7 +299,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vel-46-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-24"
+     "desde": "2026-11-25"
     },
     {
      "name": "MOSIN-NAGANT",
@@ -300,9 +307,9 @@
      "tier": "S",
      "positions": [
       {
-       "range": "Long Range",
-       "rank": 4,
-       "role": "largo"
+       "range": "Sniper",
+       "rank": 1,
+       "role": "sniper"
       }
      ],
      "weapon_type": "Marksman",
@@ -319,7 +326,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 5,
+       "rank": 4,
        "role": "largo"
       }
      ],
@@ -355,7 +362,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 6,
+       "rank": 5,
        "role": "largo"
       }
      ],
@@ -364,7 +371,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/m4-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-24"
+     "desde": "2026-11-25"
     },
     {
      "name": "X-58 NYX",
@@ -391,7 +398,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 1,
+       "rank": 2,
        "role": "sniper"
       }
      ],
@@ -418,7 +425,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-24"
+     "desde": "2026-11-25"
     },
     {
      "name": "ASTAROTH .57",
@@ -427,7 +434,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 2,
+       "rank": 3,
        "role": "sniper"
       }
      ],
@@ -445,7 +452,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 7,
+       "rank": 6,
        "role": "largo"
       }
      ],
@@ -463,7 +470,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 8,
+       "rank": 7,
        "role": "largo"
       }
      ],
@@ -481,7 +488,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 9,
+       "rank": 8,
        "role": "largo"
       }
      ],
@@ -490,7 +497,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/cronen-squall-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-24"
+     "desde": "2026-11-25"
     },
     {
      "name": "APOC-338",
@@ -499,7 +506,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 10,
+       "rank": 9,
        "role": "largo"
       }
      ],
@@ -517,7 +524,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 11,
+       "rank": 10,
        "role": "largo"
       }
      ],
@@ -535,7 +542,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 12,
+       "rank": 11,
        "role": "largo"
       }
      ],
@@ -589,7 +596,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 3,
+       "rank": 4,
        "role": "sniper"
       }
      ],
@@ -597,8 +604,8 @@
      "tags": [
       "Sniper"
      ],
-     "image": "https://img.wzstats.gg/signal-50-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-24"
+     "image": "https://img.wzstats.gg/signal-50-mw4_version1/gunFullDisplay",
+     "desde": "2026-11-25"
     },
     {
      "name": "WARLORD",
@@ -625,7 +632,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 13,
+       "rank": 12,
        "role": "largo"
       }
      ],
@@ -661,7 +668,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 14,
+       "rank": 13,
        "role": "largo"
       }
      ],
@@ -697,7 +704,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 15,
+       "rank": 14,
        "role": "largo"
       }
      ],
@@ -751,7 +758,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 4,
+       "rank": 5,
        "role": "sniper"
       }
      ],
@@ -769,7 +776,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 16,
+       "rank": 15,
        "role": "largo"
       }
      ],
@@ -805,7 +812,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 17,
+       "rank": 16,
        "role": "largo"
       }
      ],
@@ -841,7 +848,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 18,
+       "rank": 17,
        "role": "largo"
       }
      ],
@@ -877,7 +884,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 19,
+       "rank": 18,
        "role": "largo"
       }
      ],
@@ -895,7 +902,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 20,
+       "rank": 19,
        "role": "largo"
       }
      ],
@@ -913,7 +920,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 21,
+       "rank": 20,
        "role": "largo"
       }
      ],
@@ -931,7 +938,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 22,
+       "rank": 21,
        "role": "largo"
       }
      ],
@@ -967,7 +974,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 5,
+       "rank": 6,
        "role": "sniper"
       }
      ],
@@ -985,7 +992,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 6,
+       "rank": 7,
        "role": "sniper"
       }
      ],
@@ -1003,7 +1010,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 23,
+       "rank": 22,
        "role": "largo"
       }
      ],
@@ -1039,7 +1046,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 24,
+       "rank": 23,
        "role": "largo"
       }
      ],
@@ -1111,7 +1118,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 25,
+       "rank": 24,
        "role": "largo"
       }
      ],
@@ -1129,7 +1136,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 26,
+       "rank": 25,
        "role": "largo"
       }
      ],
@@ -1147,7 +1154,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 27,
+       "rank": 26,
        "role": "largo"
       }
      ],
@@ -1165,7 +1172,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 28,
+       "rank": 27,
        "role": "largo"
       }
      ],
@@ -1183,7 +1190,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 7,
+       "rank": 8,
        "role": "sniper"
       }
      ],
@@ -1201,7 +1208,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 29,
+       "rank": 28,
        "role": "largo"
       }
      ],
@@ -1219,7 +1226,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 30,
+       "rank": 29,
        "role": "largo"
       }
      ],
@@ -1237,7 +1244,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 31,
+       "rank": 30,
        "role": "largo"
       }
      ],
@@ -1345,7 +1352,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 8,
+       "rank": 9,
        "role": "sniper"
       }
      ],
@@ -1363,7 +1370,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 9,
+       "rank": 10,
        "role": "sniper"
       }
      ],
@@ -1381,7 +1388,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 10,
+       "rank": 11,
        "role": "sniper"
       }
      ],
@@ -1399,7 +1406,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 11,
+       "rank": 12,
        "role": "sniper"
       }
      ],
@@ -1417,7 +1424,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 12,
+       "rank": 13,
        "role": "sniper"
       }
      ],
@@ -1435,7 +1442,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 13,
+       "rank": 14,
        "role": "sniper"
       }
      ],
@@ -1471,7 +1478,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 32,
+       "rank": 31,
        "role": "largo"
       }
      ],
@@ -1489,7 +1496,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 14,
+       "rank": 15,
        "role": "sniper"
       }
      ],
@@ -1507,7 +1514,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 33,
+       "rank": 32,
        "role": "largo"
       }
      ],
@@ -1525,7 +1532,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 34,
+       "rank": 33,
        "role": "largo"
       }
      ],
@@ -1548,7 +1555,7 @@
       },
       {
        "range": "Long Range",
-       "rank": 61,
+       "rank": 60,
        "role": "largo"
       }
      ],
@@ -1566,7 +1573,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 35,
+       "rank": 34,
        "role": "largo"
       }
      ],
@@ -1584,7 +1591,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 36,
+       "rank": 35,
        "role": "largo"
       }
      ],
@@ -1602,7 +1609,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 37,
+       "rank": 36,
        "role": "largo"
       }
      ],
@@ -1656,7 +1663,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 38,
+       "rank": 37,
        "role": "largo"
       }
      ],
@@ -1710,7 +1717,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 39,
+       "rank": 38,
        "role": "largo"
       }
      ],
@@ -1728,7 +1735,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 40,
+       "rank": 39,
        "role": "largo"
       }
      ],
@@ -1908,7 +1915,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 41,
+       "rank": 40,
        "role": "largo"
       }
      ],
@@ -1962,7 +1969,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 42,
+       "rank": 41,
        "role": "largo"
       }
      ],
@@ -1980,7 +1987,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 43,
+       "rank": 42,
        "role": "largo"
       }
      ],
@@ -1998,7 +2005,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 44,
+       "rank": 43,
        "role": "largo"
       }
      ],
@@ -2016,7 +2023,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 45,
+       "rank": 44,
        "role": "largo"
       }
      ],
@@ -2034,7 +2041,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 46,
+       "rank": 45,
        "role": "largo"
       }
      ],
@@ -2052,7 +2059,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 47,
+       "rank": 46,
        "role": "largo"
       }
      ],
@@ -2070,7 +2077,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 48,
+       "rank": 47,
        "role": "largo"
       }
      ],
@@ -2088,7 +2095,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 49,
+       "rank": 48,
        "role": "largo"
       }
      ],
@@ -2214,7 +2221,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 50,
+       "rank": 49,
        "role": "largo"
       }
      ],
@@ -2232,7 +2239,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 51,
+       "rank": 50,
        "role": "largo"
       },
       {
@@ -2256,7 +2263,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 52,
+       "rank": 51,
        "role": "largo"
       }
      ],
@@ -2274,7 +2281,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 53,
+       "rank": 52,
        "role": "largo"
       }
      ],
@@ -2310,7 +2317,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 54,
+       "rank": 53,
        "role": "largo"
       },
       {
@@ -2333,7 +2340,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 15,
+       "rank": 16,
        "role": "sniper"
       }
      ],
@@ -2369,7 +2376,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 55,
+       "rank": 54,
        "role": "largo"
       }
      ],
@@ -2429,7 +2436,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 56,
+       "rank": 55,
        "role": "largo"
       }
      ],
@@ -2447,7 +2454,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 57,
+       "rank": 56,
        "role": "largo"
       }
      ],
@@ -2465,7 +2472,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 16,
+       "rank": 17,
        "role": "sniper"
       }
      ],
@@ -2483,7 +2490,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 58,
+       "rank": 57,
        "role": "largo"
       }
      ],
@@ -2501,7 +2508,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 17,
+       "rank": 18,
        "role": "sniper"
       }
      ],
@@ -2555,7 +2562,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 59,
+       "rank": 58,
        "role": "largo"
       }
      ],
@@ -2573,7 +2580,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 18,
+       "rank": 19,
        "role": "sniper"
       }
      ],
@@ -2614,7 +2621,7 @@
       },
       {
        "range": "Long Range",
-       "rank": 71,
+       "rank": 70,
        "role": "largo"
       }
      ],
@@ -2657,12 +2664,12 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 60,
+       "rank": 59,
        "role": "largo"
       },
       {
        "range": "Long Range",
-       "rank": 73,
+       "rank": 72,
        "role": "largo"
       }
      ],
@@ -2681,7 +2688,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 62,
+       "rank": 61,
        "role": "largo"
       }
      ],
@@ -2699,7 +2706,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 63,
+       "rank": 62,
        "role": "largo"
       }
      ],
@@ -2819,7 +2826,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 64,
+       "rank": 63,
        "role": "largo"
       }
      ],
@@ -2837,7 +2844,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 65,
+       "rank": 64,
        "role": "largo"
       }
      ],
@@ -2873,7 +2880,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 66,
+       "rank": 65,
        "role": "largo"
       }
      ],
@@ -2891,7 +2898,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 67,
+       "rank": 66,
        "role": "largo"
       },
       {
@@ -2915,7 +2922,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 68,
+       "rank": 67,
        "role": "largo"
       }
      ],
@@ -2933,7 +2940,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 69,
+       "rank": 68,
        "role": "largo"
       }
      ],
@@ -2951,7 +2958,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 70,
+       "rank": 69,
        "role": "largo"
       }
      ],
@@ -2969,7 +2976,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 72,
+       "rank": 71,
        "role": "largo"
       }
      ],
@@ -2987,7 +2994,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 74,
+       "rank": 73,
        "role": "largo"
       }
      ],
@@ -3005,12 +3012,12 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 75,
+       "rank": 74,
        "role": "largo"
       },
       {
        "range": "Long Range",
-       "rank": 100,
+       "rank": 99,
        "role": "largo"
       }
      ],
@@ -3029,7 +3036,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 76,
+       "rank": 75,
        "role": "largo"
       }
      ],
@@ -3047,7 +3054,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 77,
+       "rank": 76,
        "role": "largo"
       }
      ],
@@ -3065,7 +3072,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 78,
+       "rank": 77,
        "role": "largo"
       }
      ],
@@ -3101,7 +3108,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 79,
+       "rank": 78,
        "role": "largo"
       }
      ],
@@ -3119,12 +3126,12 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 80,
+       "rank": 79,
        "role": "largo"
       },
       {
        "range": "Long Range",
-       "rank": 99,
+       "rank": 98,
        "role": "largo"
       }
      ],
@@ -3143,7 +3150,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 81,
+       "rank": 80,
        "role": "largo"
       }
      ],
@@ -3161,7 +3168,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 82,
+       "rank": 81,
        "role": "largo"
       }
      ],
@@ -3202,7 +3209,7 @@
       },
       {
        "range": "Long Range",
-       "rank": 127,
+       "rank": 126,
        "role": "largo"
       }
      ],
@@ -3221,12 +3228,12 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 83,
+       "rank": 82,
        "role": "largo"
       },
       {
        "range": "Long Range",
-       "rank": 107,
+       "rank": 106,
        "role": "largo"
       }
      ],
@@ -3245,7 +3252,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 84,
+       "rank": 83,
        "role": "largo"
       }
      ],
@@ -3263,7 +3270,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 85,
+       "rank": 84,
        "role": "largo"
       }
      ],
@@ -3281,7 +3288,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 86,
+       "rank": 85,
        "role": "largo"
       }
      ],
@@ -3299,7 +3306,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 87,
+       "rank": 86,
        "role": "largo"
       }
      ],
@@ -3317,7 +3324,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 88,
+       "rank": 87,
        "role": "largo"
       }
      ],
@@ -3335,7 +3342,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 89,
+       "rank": 88,
        "role": "largo"
       }
      ],
@@ -3353,7 +3360,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 90,
+       "rank": 89,
        "role": "largo"
       }
      ],
@@ -3413,7 +3420,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 91,
+       "rank": 90,
        "role": "largo"
       }
      ],
@@ -3431,7 +3438,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 92,
+       "rank": 91,
        "role": "largo"
       }
      ],
@@ -3449,7 +3456,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 93,
+       "rank": 92,
        "role": "largo"
       }
      ],
@@ -3467,7 +3474,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 94,
+       "rank": 93,
        "role": "largo"
       }
      ],
@@ -3485,7 +3492,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 95,
+       "rank": 94,
        "role": "largo"
       }
      ],
@@ -3557,7 +3564,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 96,
+       "rank": 95,
        "role": "largo"
       }
      ],
@@ -3647,7 +3654,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 97,
+       "rank": 96,
        "role": "largo"
       }
      ],
@@ -3833,7 +3840,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 98,
+       "rank": 97,
        "role": "largo"
       }
      ],
@@ -3851,7 +3858,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 101,
+       "rank": 100,
        "role": "largo"
       }
      ],
@@ -3887,7 +3894,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 19,
+       "rank": 20,
        "role": "sniper"
       }
      ],
@@ -3905,7 +3912,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 20,
+       "rank": 21,
        "role": "sniper"
       }
      ],
@@ -3923,7 +3930,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 21,
+       "rank": 22,
        "role": "sniper"
       }
      ],
@@ -3941,7 +3948,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 102,
+       "rank": 101,
        "role": "largo"
       }
      ],
@@ -3959,7 +3966,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 103,
+       "rank": 102,
        "role": "largo"
       }
      ],
@@ -3977,7 +3984,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 104,
+       "rank": 103,
        "role": "largo"
       }
      ],
@@ -3995,7 +4002,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 105,
+       "rank": 104,
        "role": "largo"
       }
      ],
@@ -4013,7 +4020,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 106,
+       "rank": 105,
        "role": "largo"
       }
      ],
@@ -4067,7 +4074,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 108,
+       "rank": 107,
        "role": "largo"
       }
      ],
@@ -4085,7 +4092,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 109,
+       "rank": 108,
        "role": "largo"
       }
      ],
@@ -4139,12 +4146,12 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 110,
+       "rank": 109,
        "role": "largo"
       },
       {
        "range": "Long Range",
-       "rank": 130,
+       "rank": 129,
        "role": "largo"
       }
      ],
@@ -4163,7 +4170,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 22,
+       "rank": 23,
        "role": "sniper"
       }
      ],
@@ -4181,7 +4188,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 23,
+       "rank": 24,
        "role": "sniper"
       }
      ],
@@ -4199,7 +4206,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 24,
+       "rank": 25,
        "role": "sniper"
       }
      ],
@@ -4235,7 +4242,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 25,
+       "rank": 26,
        "role": "sniper"
       }
      ],
@@ -4253,7 +4260,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 111,
+       "rank": 110,
        "role": "largo"
       }
      ],
@@ -4271,7 +4278,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 112,
+       "rank": 111,
        "role": "largo"
       }
      ],
@@ -4289,7 +4296,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 113,
+       "rank": 112,
        "role": "largo"
       }
      ],
@@ -4325,12 +4332,12 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 114,
+       "rank": 113,
        "role": "largo"
       },
       {
        "range": "Long Range",
-       "rank": 125,
+       "rank": 124,
        "role": "largo"
       }
      ],
@@ -4349,7 +4356,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 115,
+       "rank": 114,
        "role": "largo"
       }
      ],
@@ -4367,7 +4374,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 116,
+       "rank": 115,
        "role": "largo"
       }
      ],
@@ -4385,7 +4392,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 117,
+       "rank": 116,
        "role": "largo"
       }
      ],
@@ -4403,7 +4410,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 26,
+       "rank": 27,
        "role": "sniper"
       }
      ],
@@ -4421,7 +4428,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 118,
+       "rank": 117,
        "role": "largo"
       }
      ],
@@ -4439,7 +4446,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 119,
+       "rank": 118,
        "role": "largo"
       }
      ],
@@ -4457,7 +4464,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 120,
+       "rank": 119,
        "role": "largo"
       }
      ],
@@ -4475,7 +4482,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 121,
+       "rank": 120,
        "role": "largo"
       }
      ],
@@ -4565,7 +4572,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 122,
+       "rank": 121,
        "role": "largo"
       }
      ],
@@ -4583,7 +4590,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 123,
+       "rank": 122,
        "role": "largo"
       }
      ],
@@ -4601,7 +4608,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 124,
+       "rank": 123,
        "role": "largo"
       }
      ],
@@ -4673,7 +4680,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 126,
+       "rank": 125,
        "role": "largo"
       }
      ],
@@ -4727,7 +4734,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 128,
+       "rank": 127,
        "role": "largo"
       }
      ],
@@ -4799,7 +4806,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 129,
+       "rank": 128,
        "role": "largo"
       }
      ],
@@ -5015,7 +5022,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 131,
+       "rank": 130,
        "role": "largo"
       }
      ],
@@ -5033,7 +5040,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 132,
+       "rank": 131,
        "role": "largo"
       }
      ],
@@ -5069,7 +5076,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 133,
+       "rank": 132,
        "role": "largo"
       }
      ],
@@ -5123,7 +5130,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 134,
+       "rank": 133,
        "role": "largo"
       }
      ],
@@ -5159,7 +5166,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 135,
+       "rank": 134,
        "role": "largo"
       }
      ],
@@ -5195,7 +5202,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 136,
+       "rank": 135,
        "role": "largo"
       }
      ],
@@ -5249,7 +5256,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 137,
+       "rank": 136,
        "role": "largo"
       }
      ],
@@ -5267,7 +5274,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 138,
+       "rank": 137,
        "role": "largo"
       }
      ],
@@ -5303,7 +5310,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 139,
+       "rank": 138,
        "role": "largo"
       }
      ],
@@ -5339,7 +5346,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 140,
+       "rank": 139,
        "role": "largo"
       }
      ],
@@ -5393,7 +5400,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 141,
+       "rank": 140,
        "role": "largo"
       }
      ],
@@ -5411,7 +5418,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 142,
+       "rank": 141,
        "role": "largo"
       }
      ],
@@ -5429,7 +5436,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 143,
+       "rank": 142,
        "role": "largo"
       }
      ],
@@ -5447,7 +5454,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 144,
+       "rank": 143,
        "role": "largo"
       }
      ],
@@ -5862,7 +5869,7 @@
      ],
      "weapon_type": "Sniper",
      "tags": [],
-     "image": "https://img.wzstats.gg/signal-50-mw4/gunDisplayLoadouts",
+     "image": "https://img.wzstats.gg/signal-50-mw4_version1/gunFullDisplay",
      "desde": "2026-11-06"
     },
     {
@@ -7287,9 +7294,9 @@
      "tier": "S",
      "positions": [
       {
-       "range": "Long Range",
-       "rank": 3,
-       "role": "largo"
+       "range": "Sniper",
+       "rank": 1,
+       "role": "sniper"
       }
      ],
      "weapon_type": "Marksman",
@@ -7300,13 +7307,31 @@
      "desde": "2026-11-06"
     },
     {
+     "name": "KG-7 VULCAN",
+     "slug": "kg-7-vulcan-mw4",
+     "tier": "S",
+     "positions": [
+      {
+       "range": "Sniper",
+       "rank": 2,
+       "role": "sniper"
+      }
+     ],
+     "weapon_type": "Sniper",
+     "tags": [
+      "Sniper"
+     ],
+     "image": "https://img.wzstats.gg/kg-7-vulcan-mw4_version1/gunDisplayLoadouts",
+     "desde": "2026-11-25"
+    },
+    {
      "name": "KASTOV 762",
      "slug": "kastov-762-mw4",
      "tier": "A",
      "positions": [
       {
        "range": "Long Range",
-       "rank": 4,
+       "rank": 3,
        "role": "largo"
       }
      ],
@@ -7315,7 +7340,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/kastov-762-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-24"
+     "desde": "2026-11-25"
     },
     {
      "name": "VEL 46",
@@ -7333,7 +7358,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vel-46-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-24"
+     "desde": "2026-11-25"
     },
     {
      "name": "M4",
@@ -7342,7 +7367,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 5,
+       "rank": 4,
        "role": "largo"
       }
      ],
@@ -7351,7 +7376,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/m4-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-24"
+     "desde": "2026-11-25"
     },
     {
      "name": "CSG-35",
@@ -7372,6 +7397,24 @@
      "desde": "2026-11-07"
     },
     {
+     "name": "AXION",
+     "slug": "axion-mw4",
+     "tier": "A",
+     "positions": [
+      {
+       "range": "Long Range",
+       "rank": 5,
+       "role": "largo"
+      }
+     ],
+     "weapon_type": "Assault Rifle",
+     "tags": [
+      "Assault Rifle"
+     ],
+     "image": "https://img.wzstats.gg/axion-mw4/gunDisplayLoadouts",
+     "desde": "2026-11-06"
+    },
+    {
      "name": "X-58 NYX",
      "slug": "x-58-nyx-mw4",
      "tier": "A",
@@ -7390,24 +7433,6 @@
      "desde": "2026-11-06"
     },
     {
-     "name": "AXION",
-     "slug": "axion-mw4",
-     "tier": "A",
-     "positions": [
-      {
-       "range": "Long Range",
-       "rank": 6,
-       "role": "largo"
-      }
-     ],
-     "weapon_type": "Assault Rifle",
-     "tags": [
-      "Assault Rifle"
-     ],
-     "image": "https://img.wzstats.gg/axion-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-06"
-    },
-    {
      "name": "PPSH-41",
      "slug": "ppsh-41-mw4",
      "tier": "A",
@@ -7423,25 +7448,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-24"
-    },
-    {
-     "name": "KG-7 VULCAN",
-     "slug": "kg-7-vulcan-mw4",
-     "tier": "A",
-     "positions": [
-      {
-       "range": "Sniper",
-       "rank": 1,
-       "role": "sniper"
-      }
-     ],
-     "weapon_type": "Sniper",
-     "tags": [
-      "Sniper"
-     ],
-     "image": "https://img.wzstats.gg/kg-7-vulcan-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-06"
+     "desde": "2026-11-25"
     },
     {
      "name": "ASTAROTH .57",
@@ -7450,7 +7457,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 2,
+       "rank": 3,
        "role": "sniper"
       }
      ],
@@ -7468,7 +7475,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 7,
+       "rank": 6,
        "role": "largo"
       }
      ],
@@ -7486,7 +7493,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 8,
+       "rank": 7,
        "role": "largo"
       }
      ],
@@ -7504,7 +7511,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 9,
+       "rank": 8,
        "role": "largo"
       }
      ],
@@ -7513,7 +7520,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/cronen-squall-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-24"
+     "desde": "2026-11-25"
     },
     {
      "name": "APOC-338",
@@ -7522,7 +7529,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 10,
+       "rank": 9,
        "role": "largo"
       }
      ],
@@ -7540,7 +7547,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 11,
+       "rank": 10,
        "role": "largo"
       }
      ],
@@ -7558,7 +7565,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 12,
+       "rank": 11,
        "role": "largo"
       }
      ],
@@ -7612,7 +7619,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 3,
+       "rank": 4,
        "role": "sniper"
       }
      ],
@@ -7620,8 +7627,8 @@
      "tags": [
       "Sniper"
      ],
-     "image": "https://img.wzstats.gg/signal-50-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-24"
+     "image": "https://img.wzstats.gg/signal-50-mw4_version1/gunFullDisplay",
+     "desde": "2026-11-25"
     },
     {
      "name": "WARLORD",
@@ -7648,7 +7655,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 13,
+       "rank": 12,
        "role": "largo"
       }
      ],
@@ -7684,7 +7691,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 14,
+       "rank": 13,
        "role": "largo"
       }
      ],
@@ -7720,7 +7727,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 15,
+       "rank": 14,
        "role": "largo"
       }
      ],
@@ -7774,7 +7781,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 4,
+       "rank": 5,
        "role": "sniper"
       }
      ],
@@ -7792,7 +7799,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 16,
+       "rank": 15,
        "role": "largo"
       }
      ],
@@ -7828,7 +7835,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 17,
+       "rank": 16,
        "role": "largo"
       }
      ],
@@ -7864,7 +7871,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 18,
+       "rank": 17,
        "role": "largo"
       }
      ],
@@ -7900,7 +7907,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 19,
+       "rank": 18,
        "role": "largo"
       }
      ],
@@ -7918,7 +7925,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 20,
+       "rank": 19,
        "role": "largo"
       }
      ],
@@ -7936,7 +7943,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 21,
+       "rank": 20,
        "role": "largo"
       }
      ],
@@ -7954,7 +7961,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 22,
+       "rank": 21,
        "role": "largo"
       }
      ],
@@ -7990,7 +7997,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 5,
+       "rank": 6,
        "role": "sniper"
       }
      ],
@@ -8008,7 +8015,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 6,
+       "rank": 7,
        "role": "sniper"
       }
      ],
@@ -8026,7 +8033,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 23,
+       "rank": 22,
        "role": "largo"
       }
      ],
@@ -8062,7 +8069,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 24,
+       "rank": 23,
        "role": "largo"
       }
      ],
@@ -8134,7 +8141,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 25,
+       "rank": 24,
        "role": "largo"
       }
      ],
@@ -8152,7 +8159,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 26,
+       "rank": 25,
        "role": "largo"
       }
      ],
@@ -8170,7 +8177,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 27,
+       "rank": 26,
        "role": "largo"
       }
      ],
@@ -8188,7 +8195,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 28,
+       "rank": 27,
        "role": "largo"
       }
      ],
@@ -8206,7 +8213,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 7,
+       "rank": 8,
        "role": "sniper"
       }
      ],
@@ -8224,7 +8231,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 29,
+       "rank": 28,
        "role": "largo"
       }
      ],
@@ -8242,7 +8249,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 30,
+       "rank": 29,
        "role": "largo"
       }
      ],
@@ -8260,7 +8267,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 31,
+       "rank": 30,
        "role": "largo"
       }
      ],
@@ -8368,7 +8375,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 8,
+       "rank": 9,
        "role": "sniper"
       }
      ],
@@ -8386,7 +8393,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 9,
+       "rank": 10,
        "role": "sniper"
       }
      ],
@@ -8404,7 +8411,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 10,
+       "rank": 11,
        "role": "sniper"
       }
      ],
@@ -8422,7 +8429,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 11,
+       "rank": 12,
        "role": "sniper"
       }
      ],
@@ -8440,7 +8447,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 12,
+       "rank": 13,
        "role": "sniper"
       }
      ],
@@ -8458,7 +8465,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 13,
+       "rank": 14,
        "role": "sniper"
       }
      ],
@@ -8494,7 +8501,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 32,
+       "rank": 31,
        "role": "largo"
       }
      ],
@@ -8512,7 +8519,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 14,
+       "rank": 15,
        "role": "sniper"
       }
      ],
@@ -8530,7 +8537,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 33,
+       "rank": 32,
        "role": "largo"
       }
      ],
@@ -8548,7 +8555,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 34,
+       "rank": 33,
        "role": "largo"
       }
      ],
@@ -8571,7 +8578,7 @@
       },
       {
        "range": "Long Range",
-       "rank": 61,
+       "rank": 60,
        "role": "largo"
       }
      ],
@@ -8589,7 +8596,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 35,
+       "rank": 34,
        "role": "largo"
       }
      ],
@@ -8607,7 +8614,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 36,
+       "rank": 35,
        "role": "largo"
       }
      ],
@@ -8625,7 +8632,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 37,
+       "rank": 36,
        "role": "largo"
       }
      ],
@@ -8679,7 +8686,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 38,
+       "rank": 37,
        "role": "largo"
       }
      ],
@@ -8733,7 +8740,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 39,
+       "rank": 38,
        "role": "largo"
       }
      ],
@@ -8751,7 +8758,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 40,
+       "rank": 39,
        "role": "largo"
       }
      ],
@@ -8931,7 +8938,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 41,
+       "rank": 40,
        "role": "largo"
       }
      ],
@@ -8985,7 +8992,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 42,
+       "rank": 41,
        "role": "largo"
       }
      ],
@@ -9003,7 +9010,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 43,
+       "rank": 42,
        "role": "largo"
       }
      ],
@@ -9021,7 +9028,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 44,
+       "rank": 43,
        "role": "largo"
       }
      ],
@@ -9039,7 +9046,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 45,
+       "rank": 44,
        "role": "largo"
       }
      ],
@@ -9057,7 +9064,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 46,
+       "rank": 45,
        "role": "largo"
       }
      ],
@@ -9075,7 +9082,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 47,
+       "rank": 46,
        "role": "largo"
       }
      ],
@@ -9093,7 +9100,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 48,
+       "rank": 47,
        "role": "largo"
       }
      ],
@@ -9111,7 +9118,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 49,
+       "rank": 48,
        "role": "largo"
       }
      ],
@@ -9237,7 +9244,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 50,
+       "rank": 49,
        "role": "largo"
       }
      ],
@@ -9255,7 +9262,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 51,
+       "rank": 50,
        "role": "largo"
       },
       {
@@ -9279,7 +9286,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 52,
+       "rank": 51,
        "role": "largo"
       }
      ],
@@ -9297,7 +9304,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 53,
+       "rank": 52,
        "role": "largo"
       }
      ],
@@ -9333,7 +9340,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 54,
+       "rank": 53,
        "role": "largo"
       },
       {
@@ -9356,7 +9363,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 15,
+       "rank": 16,
        "role": "sniper"
       }
      ],
@@ -9392,7 +9399,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 55,
+       "rank": 54,
        "role": "largo"
       }
      ],
@@ -9452,7 +9459,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 56,
+       "rank": 55,
        "role": "largo"
       }
      ],
@@ -9470,7 +9477,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 57,
+       "rank": 56,
        "role": "largo"
       }
      ],
@@ -9488,7 +9495,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 16,
+       "rank": 17,
        "role": "sniper"
       }
      ],
@@ -9506,7 +9513,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 58,
+       "rank": 57,
        "role": "largo"
       }
      ],
@@ -9524,7 +9531,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 17,
+       "rank": 18,
        "role": "sniper"
       }
      ],
@@ -9578,7 +9585,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 59,
+       "rank": 58,
        "role": "largo"
       }
      ],
@@ -9596,7 +9603,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 18,
+       "rank": 19,
        "role": "sniper"
       }
      ],
@@ -9637,7 +9644,7 @@
       },
       {
        "range": "Long Range",
-       "rank": 71,
+       "rank": 70,
        "role": "largo"
       }
      ],
@@ -9680,12 +9687,12 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 60,
+       "rank": 59,
        "role": "largo"
       },
       {
        "range": "Long Range",
-       "rank": 73,
+       "rank": 72,
        "role": "largo"
       }
      ],
@@ -9704,7 +9711,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 62,
+       "rank": 61,
        "role": "largo"
       }
      ],
@@ -9722,7 +9729,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 63,
+       "rank": 62,
        "role": "largo"
       }
      ],
@@ -9842,7 +9849,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 64,
+       "rank": 63,
        "role": "largo"
       }
      ],
@@ -9860,7 +9867,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 65,
+       "rank": 64,
        "role": "largo"
       }
      ],
@@ -9896,7 +9903,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 66,
+       "rank": 65,
        "role": "largo"
       }
      ],
@@ -9914,7 +9921,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 67,
+       "rank": 66,
        "role": "largo"
       },
       {
@@ -9938,7 +9945,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 68,
+       "rank": 67,
        "role": "largo"
       }
      ],
@@ -9956,7 +9963,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 69,
+       "rank": 68,
        "role": "largo"
       }
      ],
@@ -9974,7 +9981,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 70,
+       "rank": 69,
        "role": "largo"
       }
      ],
@@ -9992,7 +9999,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 72,
+       "rank": 71,
        "role": "largo"
       }
      ],
@@ -10010,7 +10017,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 74,
+       "rank": 73,
        "role": "largo"
       }
      ],
@@ -10028,12 +10035,12 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 75,
+       "rank": 74,
        "role": "largo"
       },
       {
        "range": "Long Range",
-       "rank": 100,
+       "rank": 99,
        "role": "largo"
       }
      ],
@@ -10052,7 +10059,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 76,
+       "rank": 75,
        "role": "largo"
       }
      ],
@@ -10070,7 +10077,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 77,
+       "rank": 76,
        "role": "largo"
       }
      ],
@@ -10088,7 +10095,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 78,
+       "rank": 77,
        "role": "largo"
       }
      ],
@@ -10124,7 +10131,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 79,
+       "rank": 78,
        "role": "largo"
       }
      ],
@@ -10142,12 +10149,12 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 80,
+       "rank": 79,
        "role": "largo"
       },
       {
        "range": "Long Range",
-       "rank": 99,
+       "rank": 98,
        "role": "largo"
       }
      ],
@@ -10166,7 +10173,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 81,
+       "rank": 80,
        "role": "largo"
       }
      ],
@@ -10184,7 +10191,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 82,
+       "rank": 81,
        "role": "largo"
       }
      ],
@@ -10225,7 +10232,7 @@
       },
       {
        "range": "Long Range",
-       "rank": 127,
+       "rank": 126,
        "role": "largo"
       }
      ],
@@ -10244,12 +10251,12 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 83,
+       "rank": 82,
        "role": "largo"
       },
       {
        "range": "Long Range",
-       "rank": 107,
+       "rank": 106,
        "role": "largo"
       }
      ],
@@ -10268,7 +10275,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 84,
+       "rank": 83,
        "role": "largo"
       }
      ],
@@ -10286,7 +10293,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 85,
+       "rank": 84,
        "role": "largo"
       }
      ],
@@ -10304,7 +10311,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 86,
+       "rank": 85,
        "role": "largo"
       }
      ],
@@ -10322,7 +10329,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 87,
+       "rank": 86,
        "role": "largo"
       }
      ],
@@ -10340,7 +10347,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 88,
+       "rank": 87,
        "role": "largo"
       }
      ],
@@ -10358,7 +10365,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 89,
+       "rank": 88,
        "role": "largo"
       }
      ],
@@ -10376,7 +10383,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 90,
+       "rank": 89,
        "role": "largo"
       }
      ],
@@ -10436,7 +10443,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 91,
+       "rank": 90,
        "role": "largo"
       }
      ],
@@ -10454,7 +10461,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 92,
+       "rank": 91,
        "role": "largo"
       }
      ],
@@ -10472,7 +10479,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 93,
+       "rank": 92,
        "role": "largo"
       }
      ],
@@ -10490,7 +10497,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 94,
+       "rank": 93,
        "role": "largo"
       }
      ],
@@ -10508,7 +10515,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 95,
+       "rank": 94,
        "role": "largo"
       }
      ],
@@ -10580,7 +10587,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 96,
+       "rank": 95,
        "role": "largo"
       }
      ],
@@ -10670,7 +10677,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 97,
+       "rank": 96,
        "role": "largo"
       }
      ],
@@ -10856,7 +10863,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 98,
+       "rank": 97,
        "role": "largo"
       }
      ],
@@ -10874,7 +10881,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 101,
+       "rank": 100,
        "role": "largo"
       }
      ],
@@ -10910,7 +10917,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 19,
+       "rank": 20,
        "role": "sniper"
       }
      ],
@@ -10928,7 +10935,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 20,
+       "rank": 21,
        "role": "sniper"
       }
      ],
@@ -10946,7 +10953,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 21,
+       "rank": 22,
        "role": "sniper"
       }
      ],
@@ -10964,7 +10971,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 102,
+       "rank": 101,
        "role": "largo"
       }
      ],
@@ -10982,7 +10989,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 103,
+       "rank": 102,
        "role": "largo"
       }
      ],
@@ -11000,7 +11007,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 104,
+       "rank": 103,
        "role": "largo"
       }
      ],
@@ -11018,7 +11025,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 105,
+       "rank": 104,
        "role": "largo"
       }
      ],
@@ -11036,7 +11043,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 106,
+       "rank": 105,
        "role": "largo"
       }
      ],
@@ -11090,7 +11097,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 108,
+       "rank": 107,
        "role": "largo"
       }
      ],
@@ -11108,7 +11115,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 109,
+       "rank": 108,
        "role": "largo"
       }
      ],
@@ -11162,12 +11169,12 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 110,
+       "rank": 109,
        "role": "largo"
       },
       {
        "range": "Long Range",
-       "rank": 130,
+       "rank": 129,
        "role": "largo"
       }
      ],
@@ -11186,7 +11193,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 22,
+       "rank": 23,
        "role": "sniper"
       }
      ],
@@ -11204,7 +11211,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 23,
+       "rank": 24,
        "role": "sniper"
       }
      ],
@@ -11222,7 +11229,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 24,
+       "rank": 25,
        "role": "sniper"
       }
      ],
@@ -11258,7 +11265,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 25,
+       "rank": 26,
        "role": "sniper"
       }
      ],
@@ -11276,7 +11283,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 111,
+       "rank": 110,
        "role": "largo"
       }
      ],
@@ -11294,7 +11301,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 112,
+       "rank": 111,
        "role": "largo"
       }
      ],
@@ -11312,7 +11319,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 113,
+       "rank": 112,
        "role": "largo"
       }
      ],
@@ -11348,12 +11355,12 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 114,
+       "rank": 113,
        "role": "largo"
       },
       {
        "range": "Long Range",
-       "rank": 125,
+       "rank": 124,
        "role": "largo"
       }
      ],
@@ -11372,7 +11379,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 115,
+       "rank": 114,
        "role": "largo"
       }
      ],
@@ -11390,7 +11397,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 116,
+       "rank": 115,
        "role": "largo"
       }
      ],
@@ -11408,7 +11415,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 117,
+       "rank": 116,
        "role": "largo"
       }
      ],
@@ -11426,7 +11433,7 @@
      "positions": [
       {
        "range": "Sniper",
-       "rank": 26,
+       "rank": 27,
        "role": "sniper"
       }
      ],
@@ -11444,7 +11451,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 118,
+       "rank": 117,
        "role": "largo"
       }
      ],
@@ -11462,7 +11469,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 119,
+       "rank": 118,
        "role": "largo"
       }
      ],
@@ -11480,7 +11487,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 120,
+       "rank": 119,
        "role": "largo"
       }
      ],
@@ -11498,7 +11505,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 121,
+       "rank": 120,
        "role": "largo"
       }
      ],
@@ -11588,7 +11595,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 122,
+       "rank": 121,
        "role": "largo"
       }
      ],
@@ -11606,7 +11613,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 123,
+       "rank": 122,
        "role": "largo"
       }
      ],
@@ -11624,7 +11631,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 124,
+       "rank": 123,
        "role": "largo"
       }
      ],
@@ -11696,7 +11703,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 126,
+       "rank": 125,
        "role": "largo"
       }
      ],
@@ -11750,7 +11757,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 128,
+       "rank": 127,
        "role": "largo"
       }
      ],
@@ -11822,7 +11829,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 129,
+       "rank": 128,
        "role": "largo"
       }
      ],
@@ -12038,7 +12045,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 131,
+       "rank": 130,
        "role": "largo"
       }
      ],
@@ -12056,7 +12063,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 132,
+       "rank": 131,
        "role": "largo"
       }
      ],
@@ -12092,7 +12099,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 133,
+       "rank": 132,
        "role": "largo"
       }
      ],
@@ -12146,7 +12153,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 134,
+       "rank": 133,
        "role": "largo"
       }
      ],
@@ -12182,7 +12189,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 135,
+       "rank": 134,
        "role": "largo"
       }
      ],
@@ -12218,7 +12225,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 136,
+       "rank": 135,
        "role": "largo"
       }
      ],
@@ -12272,7 +12279,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 137,
+       "rank": 136,
        "role": "largo"
       }
      ],
@@ -12290,7 +12297,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 138,
+       "rank": 137,
        "role": "largo"
       }
      ],
@@ -12326,7 +12333,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 139,
+       "rank": 138,
        "role": "largo"
       }
      ],
@@ -12362,7 +12369,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 140,
+       "rank": 139,
        "role": "largo"
       }
      ],
@@ -12416,7 +12423,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 141,
+       "rank": 140,
        "role": "largo"
       }
      ],
@@ -12434,7 +12441,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 142,
+       "rank": 141,
        "role": "largo"
       }
      ],
@@ -12452,7 +12459,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 143,
+       "rank": 142,
        "role": "largo"
       }
      ],
@@ -12470,7 +12477,7 @@
      "positions": [
       {
        "range": "Long Range",
-       "rank": 144,
+       "rank": 143,
        "role": "largo"
       }
      ],
@@ -13295,7 +13302,7 @@
    "builds": [
     {
      "context": "Warzone Battle Royale",
-     "label": "Long Range",
+     "label": "Sniper",
      "code": "",
      "attachments": [
       {
@@ -13310,24 +13317,24 @@
       },
       {
        "slot": "Stock",
-       "name": "TT G76-RP STOCK",
+       "name": "BRUEN KG-7 MK. IV",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "XRK CLUTCH-LS",
        "unlock": ""
       },
       {
        "slot": "Ammunition",
        "name": "7.62X54MMR HIGH VELOCITY",
-       "unlock": ""
-      },
-      {
-       "slot": "Bolt",
-       "name": "KT76 LIGHT BOLT",
        "unlock": ""
       }
      ]
     },
     {
      "context": "Warzone Resurgence",
-     "label": "Long Range",
+     "label": "Sniper",
      "code": "",
      "attachments": [
       {
@@ -13342,24 +13349,24 @@
       },
       {
        "slot": "Stock",
-       "name": "TT G76-RP STOCK",
+       "name": "BRUEN KG-7 MK. IV",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "XRK CLUTCH-LS",
        "unlock": ""
       },
       {
        "slot": "Ammunition",
        "name": "7.62X54MMR HIGH VELOCITY",
        "unlock": ""
-      },
-      {
-       "slot": "Bolt",
-       "name": "KT76 LIGHT BOLT",
-       "unlock": ""
       }
      ]
     },
     {
      "context": "Modern Warfare 4 Multiplayer",
-     "label": "Long Range",
+     "label": "Sniper",
      "code": "",
      "attachments": [
       {
@@ -13385,38 +13392,6 @@
       {
        "slot": "Bolt",
        "name": "KT76 LIGHT BOLT",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Level",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "HANBIT 3080 FIRELINE",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "DS RKT-90",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "TT BAEM 12\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Comb",
-       "name": "TT TYPE 40 COMB",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SCHLAGER VISIV-5",
        "unlock": ""
       }
      ]
@@ -13858,96 +13833,27 @@
     },
     {
      "context": "Modern Warfare 4 Multiplayer",
-     "label": "Mobility",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "CRONEN ZERO-K",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FT HYPERPORT 408",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "TT 414-R HIGHTAC",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "KASTOV DOGFIGHTER 27",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SCHLAGER VISIV-5",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Recoil",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "CRONEN ZERO-K",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FT HYPERPORT 408",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "HAEBANG MT-414MM",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "SPETSNAZ S10 STOCK",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
      "label": "Versatile",
      "code": "",
      "attachments": [
       {
-       "slot": "",
-       "name": "KASTOV ARC",
-       "unlock": "Apex"
+       "slot": "Optic",
+       "name": "CRONEN ZERO-K",
+       "unlock": ""
       },
       {
        "slot": "Muzzle",
-       "name": "IVANOV QR600",
+       "name": "FT HYPERPORT 408",
        "unlock": ""
       },
       {
        "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "HANBIT TECHGRIP",
+       "name": "FSS TAC90 GRIP",
        "unlock": ""
       },
       {
        "slot": "Stock",
-       "name": "SPETSNAZ S10 STOCK",
+       "name": "KASTOV RIDGEWOOD 7",
        "unlock": ""
       },
       {
@@ -14029,43 +13935,6 @@
     },
     {
      "context": "Modern Warfare 4 Multiplayer",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "WZ.55 STRIGA RAMPAGE",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FTAC SILENT RECON",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "GW SENDER 500",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "35 ROUND MAG",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "FTAC GUARD5",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SCHLAGER VISIV-5",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
      "label": "Versatile",
      "code": "",
      "attachments": [
@@ -14092,38 +13961,6 @@
       {
        "slot": "Stock",
        "name": "WIRE STOCK",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Mobility",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "1/2X28 DUAL PORT",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "DS 9X18 PRO",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "35 ROUND MAG",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "MATUZEK 532-L GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SCHLAGER VISIV-5",
        "unlock": ""
       }
      ]
@@ -14229,38 +14066,6 @@
        "unlock": ""
       }
      ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Level",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "SZ MICRO D-3",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "HANBIT RK8 406MM",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "FR4 RETRACTABLE STOCK",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "XRK CLUTCH-LS",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "5.56 NATO FRANGIBLE",
-       "unlock": ""
-      }
-     ]
     }
    ]
   },
@@ -14289,13 +14094,13 @@
        "unlock": ""
       },
       {
-       "slot": "Underbarrel",
-       "name": "FSS TAC90 GRIP",
+       "slot": "Magazine",
+       "name": "40 ROUND MAG",
        "unlock": ""
       },
       {
-       "slot": "Magazine",
-       "name": "40 ROUND MAG",
+       "slot": "Stock",
+       "name": "TA HARROW STOCK",
        "unlock": ""
       }
      ]
@@ -14321,13 +14126,13 @@
        "unlock": ""
       },
       {
-       "slot": "Underbarrel",
-       "name": "FSS TAC90 GRIP",
+       "slot": "Magazine",
+       "name": "40 ROUND MAG",
        "unlock": ""
       },
       {
-       "slot": "Magazine",
-       "name": "40 ROUND MAG",
+       "slot": "Stock",
+       "name": "TA HARROW STOCK",
        "unlock": ""
       }
      ]
@@ -14541,107 +14346,6 @@
        "unlock": ""
       }
      ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "VEL 46 SNAP",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "212 LC40 COMP",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "VB-46 SERIES 11",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "LM COMBAT GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SCHLAGER VISIV-5",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Mobility",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "212 LC40 COMP",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "RV-B V2 BARREL",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "LM COMBAT GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "EXP U-TURN STOCK",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SCHLAGER VISIV-5",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Recoil",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "212 LC40 COMP",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "XRK TANGO 380 BARREL",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "V46 R-SKEL GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "EXP LOCKDOWN STOCK",
-       "unlock": ""
-      }
-     ]
     }
    ]
   },
@@ -14676,7 +14380,7 @@
       },
       {
        "slot": "Stock",
-       "name": "PF1 FIXED STOCK",
+       "name": "DEMO HVR2 STOCK",
        "unlock": ""
       }
      ]
@@ -14708,7 +14412,7 @@
       },
       {
        "slot": "Stock",
-       "name": "PF1 FIXED STOCK",
+       "name": "DEMO HVR2 STOCK",
        "unlock": ""
       }
      ]
@@ -15467,27 +15171,285 @@
      "attachments": [
       {
        "slot": "Muzzle",
-       "name": "EXP Forage-Hvy",
+       "name": "EXP FORAGE-HVY",
        "unlock": ""
       },
       {
        "slot": "Underbarrel",
-       "name": "CQC Stop",
+       "name": "CQC STOP",
        "unlock": ""
       },
       {
        "slot": "Magazine",
-       "name": "40 Round Mag",
+       "name": "40 ROUND MAG",
        "unlock": ""
       },
       {
        "slot": "Stock",
-       "name": "XRK Slight Stock",
+       "name": "XRK SLIGHT STOCK",
        "unlock": ""
       },
       {
        "slot": "Laser",
-       "name": "SA Laz-500",
+       "name": "SA LAZ-500",
+       "unlock": ""
+      }
+     ]
+    }
+   ]
+  },
+  "vx-compact": {
+   "name": "VX COMPACT",
+   "max_level": 42,
+   "builds": [
+    {
+     "context": "Black Ops 7 Ranked",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "BOWEN X-25 IR",
+       "unlock": "Mxr 17"
+      },
+      {
+       "slot": "Muzzle",
+       "name": "REDWELL 5.56 COMPENSATOR",
+       "unlock": "Level 21"
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "VAS CONVERGENCE FOREGRIP",
+       "unlock": "Armory"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "GALLANT STRIDE GRIP",
+       "unlock": "Level 26"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "RECOIL SYNC UNIT",
+       "unlock": "Level 42"
+      }
+     ]
+    }
+   ]
+  },
+  "strider-300": {
+   "name": "STRIDER 300",
+   "max_level": 40,
+   "builds": [
+    {
+     "context": "Black Ops 7 Ranked",
+     "label": "Recommended",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Underbarrel",
+       "name": "BOWEN HUNTSMEN GUARD",
+       "unlock": "Level 17"
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "HATCH QUICK GRIP",
+       "unlock": "Level 23"
+      },
+      {
+       "slot": "Stock",
+       "name": "AMBULATE-X4 STOCK",
+       "unlock": "Level 29"
+      },
+      {
+       "slot": "Laser",
+       "name": "5MW LOCKSTEP LASER",
+       "unlock": "Level 27"
+      },
+      {
+       "slot": "Fire Mods",
+       "name": "QUICK BOLT",
+       "unlock": "Level 30"
+      }
+     ]
+    }
+   ]
+  },
+  "ppsh-41-mw4": {
+   "name": "PPSH-41",
+   "max_level": 0,
+   "builds": [
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Close Range",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "ZLR TYPE C",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "FULL PORT COMP",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FSS TAC90 GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "MT-L5 JINHWA",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "XRK CLUTCH-LS",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Close Range",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "ZLR TYPE C",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "FULL PORT COMP",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FSS TAC90 GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "MT-L5 JINHWA",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "XRK CLUTCH-LS",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Versatile",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Barrel",
+       "name": "HANBIT CHIMMUK-INTR",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FSS TAC90 GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "53 ROUND MAG",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "MT-L5 JINHWA",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SCHLAGER VISIV-5",
+       "unlock": ""
+      }
+     ]
+    }
+   ]
+  },
+  "hyeon-burst-mw4": {
+   "name": "HYEON BURST",
+   "max_level": 0,
+   "builds": [
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Apex",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "",
+       "name": "HYEON AUTO",
+       "unlock": "Apex"
+      },
+      {
+       "slot": "Optic",
+       "name": "LOCUS PX3 CANTED",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "FSS IS300",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "MUGI SEUNGRI-OP 609MM",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "60 ROUND DRUM MAG",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "HVY-80 STOCKPAD",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Apex",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "",
+       "name": "HYEON AUTO",
+       "unlock": "Apex"
+      },
+      {
+       "slot": "Optic",
+       "name": "LOCUS PX3 CANTED",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "FSS IS300",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "MUGI SEUNGRI-OP 609MM",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "60 ROUND DRUM MAG",
+       "unlock": ""
+      },
+      {
+       "slot": "Stock",
+       "name": "HVY-80 STOCKPAD",
        "unlock": ""
       }
      ]
@@ -15499,32 +15461,64 @@
      "attachments": [
       {
        "slot": "",
-       "name": "CSG Crossfire",
+       "name": "HYEON HYPERBURST",
        "unlock": "Apex"
       },
       {
        "slot": "Muzzle",
-       "name": "EXP Forage-Hvy",
+       "name": "FSS IS40",
        "unlock": ""
       },
       {
-       "slot": "Magazine",
-       "name": "40 Round Mag",
+       "slot": "Barrel",
+       "name": "MUGI INGOEM 559MM",
        "unlock": ""
       },
       {
-       "slot": "Rear Grip",
-       "name": "Matuzek Fire-Pro",
+       "slot": "Underbarrel",
+       "name": "FSS TAC90 GRIP",
        "unlock": ""
       },
       {
        "slot": "Stock",
-       "name": "XRK Fury-8",
+       "name": "HVY-80 STOCKPAD",
        "unlock": ""
       },
       {
-       "slot": "Ammunition",
-       "name": "9mm Parabellum Frangible",
+       "slot": "Laser",
+       "name": "SZ GEN.6 PEQ",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Burst",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Muzzle",
+       "name": "ZLR REVERB90",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "MUGI INGOEM 559MM",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FSS TAC90 GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Rear Grip",
+       "name": "HYN-MEIPEUL",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SA LAZ-500",
        "unlock": ""
       }
      ]
@@ -15638,429 +15632,6 @@
     }
    ]
   },
-  "vx-compact": {
-   "name": "VX COMPACT",
-   "max_level": 42,
-   "builds": [
-    {
-     "context": "Black Ops 7 Ranked",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Mxr 17"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "REDWELL 5.56 COMPENSATOR",
-       "unlock": "Level 21"
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "VAS CONVERGENCE FOREGRIP",
-       "unlock": "Armory"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "GALLANT STRIDE GRIP",
-       "unlock": "Level 26"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "RECOIL SYNC UNIT",
-       "unlock": "Level 42"
-      }
-     ]
-    }
-   ]
-  },
-  "strider-300": {
-   "name": "STRIDER 300",
-   "max_level": 40,
-   "builds": [
-    {
-     "context": "Black Ops 7 Ranked",
-     "label": "Recommended",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Underbarrel",
-       "name": "BOWEN HUNTSMEN GUARD",
-       "unlock": "Level 17"
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "HATCH QUICK GRIP",
-       "unlock": "Level 23"
-      },
-      {
-       "slot": "Stock",
-       "name": "AMBULATE-X4 STOCK",
-       "unlock": "Level 29"
-      },
-      {
-       "slot": "Laser",
-       "name": "5MW LOCKSTEP LASER",
-       "unlock": "Level 27"
-      },
-      {
-       "slot": "Fire Mods",
-       "name": "QUICK BOLT",
-       "unlock": "Level 30"
-      }
-     ]
-    }
-   ]
-  },
-  "ppsh-41-mw4": {
-   "name": "PPSH-41",
-   "max_level": 0,
-   "builds": [
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Close Range",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "ZLR TYPE C",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FULL PORT COMP",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "TT BANSEOK-24N",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "MIRE-50 TAC GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "MT-L5 JINHWA",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Close Range",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "ZLR TYPE C",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FULL PORT COMP",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "TT BANSEOK-24N",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "MIRE-50 TAC GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "MT-L5 JINHWA",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Versatile",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "HANBIT CHIMMUK-INTR",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS TAC90 GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "53 ROUND MAG",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "HANBIT JANGGUN-H9",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SCHLAGER VISIV-5",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Level",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "FTAC SILENT RECON",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "HANBIT RDR-TIGER 50-XL",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "53 ROUND MAG",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SCHLAGER VISIV-5",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "7.62 TOKAREV OVERPRESSURED",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Mobility",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "1/2X28 DUAL PORT",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS TAC90 GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "53 ROUND MAG",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "MT-L5 JINHWA",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SCHLAGER VISIV-5",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Recoil",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "1/2X28 DUAL PORT",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "HANBIT RDR-TIGER 50",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "HANBIT JANGGUN-H9",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SCHLAGER VISIV-5",
-       "unlock": ""
-      }
-     ]
-    }
-   ]
-  },
-  "hyeon-burst-mw4": {
-   "name": "HYEON BURST",
-   "max_level": 0,
-   "builds": [
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "HYEON HYPERBURST",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Optic",
-       "name": "CRONEN R808",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS300",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "MUGI SEUNGRI-OP 609MM",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "HYN-MEIPEUL",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "6.8X43MM HIGH VELOCITY",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "HYEON HYPERBURST",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Optic",
-       "name": "CRONEN R808",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS300",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "MUGI SEUNGRI-OP 609MM",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "HYN-MEIPEUL",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "6.8X43MM HIGH VELOCITY",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "HYEON HYPERBURST",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Muzzle",
-       "name": "FSS IS40",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "MUGI INGOEM 559MM",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS TAC90 GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "HVY-80 STOCKPAD",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SZ GEN.6 PEQ",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Burst",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "ZLR REVERB90",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "MUGI INGOEM 559MM",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS TAC90 GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "HYN-MEIPEUL",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SA LAZ-500",
-       "unlock": ""
-      }
-     ]
-    }
-   ]
-  },
   "ryden-45k": {
    "name": "RYDEN 45K",
    "max_level": 42,
@@ -16153,7 +15724,7 @@
       },
       {
        "slot": "Underbarrel",
-       "name": "MIRE-50 TAC GRIP",
+       "name": "FSS TAC90 GRIP",
        "unlock": ""
       },
       {
@@ -16162,13 +15733,13 @@
        "unlock": ""
       },
       {
-       "slot": "Rear Grip",
-       "name": "BOK-980",
+       "slot": "Stock",
+       "name": "MUGI HUL-73.M STOCK",
        "unlock": ""
       },
       {
-       "slot": "Stock",
-       "name": "MUGI HUL-73.M STOCK",
+       "slot": "Laser",
+       "name": "XRK CLUTCH-LS",
        "unlock": ""
       }
      ]
@@ -16185,7 +15756,7 @@
       },
       {
        "slot": "Underbarrel",
-       "name": "MIRE-50 TAC GRIP",
+       "name": "FSS TAC90 GRIP",
        "unlock": ""
       },
       {
@@ -16194,13 +15765,13 @@
        "unlock": ""
       },
       {
-       "slot": "Rear Grip",
-       "name": "BOK-980",
+       "slot": "Stock",
+       "name": "MUGI HUL-73.M STOCK",
        "unlock": ""
       },
       {
-       "slot": "Stock",
-       "name": "MUGI HUL-73.M STOCK",
+       "slot": "Laser",
+       "name": "XRK CLUTCH-LS",
        "unlock": ""
       }
      ]
@@ -16233,38 +15804,6 @@
       {
        "slot": "Laser",
        "name": "XRK CLUTCH-LS",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Mobility",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Barrel",
-       "name": "DOKSA 4F 305MM",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS TAC90 GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "BOK-980",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "NO STOCK",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SCHLAGER VISIV-5",
        "unlock": ""
       }
      ]
@@ -16454,7 +15993,7 @@
      "attachments": [
       {
        "slot": "Optic",
-       "name": "CRONEN R808",
+       "name": "LOCUS PX3 CANTED",
        "unlock": ""
       },
       {
@@ -16486,7 +16025,7 @@
      "attachments": [
       {
        "slot": "Optic",
-       "name": "CRONEN R808",
+       "name": "LOCUS PX3 CANTED",
        "unlock": ""
       },
       {
@@ -16523,7 +16062,7 @@
       },
       {
        "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
+       "name": "FSS TAC90 GRIP",
        "unlock": ""
       },
       {
@@ -16539,38 +16078,6 @@
       {
        "slot": "Laser",
        "name": "SA LAZ-500",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Recoil",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Muzzle",
-       "name": "HET-S6 COMP",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "SO 898F 19\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "SCHLAGER ATTACK-7 GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SZ GEN.6 PEQ",
        "unlock": ""
       }
      ]
@@ -16700,7 +16207,7 @@
       },
       {
        "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
+       "name": "FSS TAC90 GRIP",
        "unlock": ""
       },
       {
@@ -16711,75 +16218,6 @@
       {
        "slot": "Laser",
        "name": "SCHLAGER VISIV-5",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "ODEN SENTINEL",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Optic",
-       "name": "SZ SRE-7",
-       "unlock": ""
-      },
-      {
-       "slot": "Comb",
-       "name": "KV-R98 COMB",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "VLK NVS-32 PAD",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "XRK CLUTCH-LS",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "12.7X55MM HIGH VELOCITY",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Low Recoil",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "SLIMLINE ELITE",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "BRYSON BULLHIDE 90",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "ROCKFALL-900 BARREL",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "FSS FIRELINE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "HAEBANG STAL-W5",
        "unlock": ""
       }
      ]
@@ -16969,6 +16407,145 @@
     }
    ]
   },
+  "cronen-squall-mw4": {
+   "name": "CRONEN SQUALL",
+   "max_level": 0,
+   "builds": [
+    {
+     "context": "Warzone Battle Royale",
+     "label": "Long Range",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "LOCUS PX3 CANTED",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "EXP UNDERTOW GEN. 2",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "FJX SYPHER 27\"",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FSS FIRELINE GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "60 ROUND DRUM",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Warzone Resurgence",
+     "label": "Long Range",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "LOCUS PX3 CANTED",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "EXP UNDERTOW GEN. 2",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "FJX SYPHER 27\"",
+       "unlock": ""
+      },
+      {
+       "slot": "Underbarrel",
+       "name": "FSS FIRELINE GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "60 ROUND DRUM",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Versatile",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "Optic",
+       "name": "SZ PRIMA-4 DOT",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "OCTA-63 COMP",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "BRYSON LONGHORN 20\"",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "30 ROUND MAG",
+       "unlock": ""
+      },
+      {
+       "slot": "Laser",
+       "name": "SZ GEN.6 PEQ",
+       "unlock": ""
+      }
+     ]
+    },
+    {
+     "context": "Modern Warfare 4 Multiplayer",
+     "label": "Apex",
+     "code": "",
+     "attachments": [
+      {
+       "slot": "",
+       "name": "CRONEN MAELSTROM",
+       "unlock": "Apex"
+      },
+      {
+       "slot": "Optic",
+       "name": "SZ PRIMA-4 DOT",
+       "unlock": ""
+      },
+      {
+       "slot": "Muzzle",
+       "name": "OCTA-63 COMP",
+       "unlock": ""
+      },
+      {
+       "slot": "Barrel",
+       "name": "BRYSON LONGHORN 20\"",
+       "unlock": ""
+      },
+      {
+       "slot": "Magazine",
+       "name": "30 ROUND MAG",
+       "unlock": ""
+      },
+      {
+       "slot": "Ammunition",
+       "name": "6.8 WRATH FRANGIBLE",
+       "unlock": ""
+      }
+     ]
+    }
+   ]
+  },
   "kogot-7": {
    "name": "KOGOT-7",
    "max_level": 39,
@@ -17077,8 +16654,8 @@
     }
    ]
   },
-  "cronen-squall-mw4": {
-   "name": "CRONEN SQUALL",
+  "apoc-338-mw4": {
+   "name": "APOC-338",
    "max_level": 0,
    "builds": [
     {
@@ -17088,27 +16665,27 @@
      "attachments": [
       {
        "slot": "Optic",
-       "name": "CRONEN R808",
+       "name": "SZ HELIOS HOLO",
        "unlock": ""
       },
       {
        "slot": "Muzzle",
-       "name": "EXP UNDERTOW GEN. 2",
+       "name": "TV MULTICAL-77",
        "unlock": ""
       },
       {
        "slot": "Barrel",
-       "name": "FJX SYPHER 27\"",
+       "name": "SA TRIDENT 24.5\"",
        "unlock": ""
       },
       {
-       "slot": "Magazine",
-       "name": "30 ROUND MAG",
+       "slot": "Rear Grip",
+       "name": "FSS TCB-1 GRIP",
        "unlock": ""
       },
       {
-       "slot": "Ammunition",
-       "name": "6.8 WRATH HIGH VELOCITY",
+       "slot": "Stock",
+       "name": "EXP ARC-7 STOCK",
        "unlock": ""
       }
      ]
@@ -17120,27 +16697,27 @@
      "attachments": [
       {
        "slot": "Optic",
-       "name": "CRONEN R808",
+       "name": "SZ HELIOS HOLO",
        "unlock": ""
       },
       {
        "slot": "Muzzle",
-       "name": "EXP UNDERTOW GEN. 2",
+       "name": "TV MULTICAL-77",
        "unlock": ""
       },
       {
        "slot": "Barrel",
-       "name": "FJX SYPHER 27\"",
+       "name": "SA TRIDENT 24.5\"",
        "unlock": ""
       },
       {
-       "slot": "Magazine",
-       "name": "30 ROUND MAG",
+       "slot": "Rear Grip",
+       "name": "FSS TCB-1 GRIP",
        "unlock": ""
       },
       {
-       "slot": "Ammunition",
-       "name": "6.8 WRATH HIGH VELOCITY",
+       "slot": "Stock",
+       "name": "EXP ARC-7 STOCK",
        "unlock": ""
       }
      ]
@@ -17152,64 +16729,27 @@
      "attachments": [
       {
        "slot": "Optic",
-       "name": "SZ PRIMA-4 DOT",
+       "name": "SZ MICRO D-3",
        "unlock": ""
       },
       {
        "slot": "Muzzle",
-       "name": "OCTA-63 COMP",
+       "name": "EXP 450 RTL",
        "unlock": ""
       },
       {
-       "slot": "Barrel",
-       "name": "BRYSON LONGHORN 20\"",
+       "slot": "Underbarrel",
+       "name": "BRUEN RENEGADE GRIP",
        "unlock": ""
       },
       {
-       "slot": "Magazine",
-       "name": "30 ROUND MAG",
+       "slot": "Stock",
+       "name": "DEMO BAR-7 STOCK",
        "unlock": ""
       },
       {
        "slot": "Laser",
        "name": "SZ GEN.6 PEQ",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "CRONEN MAELSTROM",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Optic",
-       "name": "SZ PRIMA-4 DOT",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "OCTA-63 COMP",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "BRYSON LONGHORN 20\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "30 ROUND MAG",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "6.8 WRATH FRANGIBLE",
        "unlock": ""
       }
      ]
@@ -17389,108 +16929,6 @@
        "slot": "Fire Mods",
        "name": "BUFFER SPRINGS",
        "unlock": "Level 9"
-      }
-     ]
-    }
-   ]
-  },
-  "apoc-338-mw4": {
-   "name": "APOC-338",
-   "max_level": 0,
-   "builds": [
-    {
-     "context": "Warzone Battle Royale",
-     "label": "Long Range",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "SZ HELIOS HOLO",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "TV MULTICAL-77",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "SA TRIDENT 24.5\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "FSS TCB-1 GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "EXP ARC-7 STOCK",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Warzone Resurgence",
-     "label": "Long Range",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "SZ HELIOS HOLO",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "TV MULTICAL-77",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "SA TRIDENT 24.5\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Rear Grip",
-       "name": "FSS TCB-1 GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "EXP ARC-7 STOCK",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Versatile",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "Optic",
-       "name": "SZ MICRO D-3",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "EXP 450 RTL",
-       "unlock": ""
-      },
-      {
-       "slot": "Underbarrel",
-       "name": "BRUEN RENEGADE GRIP",
-       "unlock": ""
-      },
-      {
-       "slot": "Stock",
-       "name": "DEMO BAR-7 STOCK",
-       "unlock": ""
-      },
-      {
-       "slot": "Laser",
-       "name": "SZ GEN.6 PEQ",
-       "unlock": ""
       }
      ]
     }
@@ -17728,24 +17166,24 @@
      "code": "",
      "attachments": [
       {
-       "slot": "Optic",
-       "name": "BOWEN X-25 IR",
-       "unlock": "Level 22"
-      },
-      {
        "slot": "Barrel",
-       "name": "15\" WRAITH BARREL",
-       "unlock": "Level 8"
+       "name": "17\" GREAVES SCOURGE BARREL",
+       "unlock": "Level 35"
       },
       {
        "slot": "Underbarrel",
-       "name": "SENTRY PRO HANDSTOP",
-       "unlock": "Level 9"
+       "name": "EAM STEADY-90 GRIP",
+       "unlock": "Level 38"
       },
       {
        "slot": "Rear Grip",
-       "name": "BELL-H81 GRIP",
-       "unlock": "Level 4"
+       "name": "FISSURE GRIP",
+       "unlock": "Level 25"
+      },
+      {
+       "slot": "Stock",
+       "name": "GREAVES COVENANT STOCK",
+       "unlock": "Level 7"
       },
       {
        "slot": "Fire Mods",

@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-25T17:08:04+00:00",
+ "generated_at": "2026-11-26T16:49:34+00:00",
  "season": "Season 1, 2026",
  "base_game": "Modern Warfare 4",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-11-24T17:36:40+00:00",
+ "previous_generated_at": "2026-11-25T17:08:04+00:00",
  "warnings": [],
  "changes": [
   {
@@ -89,13 +89,6 @@
    "weapon": "KNIFE",
    "kind": "entra",
    "to": "D"
-  },
-  {
-   "mode": "battle_royale",
-   "weapon": "KG-7 VULCAN",
-   "kind": "sube",
-   "from": "A",
-   "to": "S"
   },
   {
    "mode": "battle_royale",
@@ -245,7 +238,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/kastov-762-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-25"
+     "desde": "2026-11-26"
     },
     {
      "name": "WZ.55 STRIGA",
@@ -299,7 +292,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vel-46-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-25"
+     "desde": "2026-11-26"
     },
     {
      "name": "MOSIN-NAGANT",
@@ -371,7 +364,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/m4-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-25"
+     "desde": "2026-11-26"
     },
     {
      "name": "X-58 NYX",
@@ -425,7 +418,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-25"
+     "desde": "2026-11-26"
     },
     {
      "name": "ASTAROTH .57",
@@ -497,7 +490,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/cronen-squall-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-25"
+     "desde": "2026-11-26"
     },
     {
      "name": "APOC-338",
@@ -605,7 +598,7 @@
       "Sniper"
      ],
      "image": "https://img.wzstats.gg/signal-50-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-25"
+     "desde": "2026-11-26"
     },
     {
      "name": "WARLORD",
@@ -7340,7 +7333,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/kastov-762-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-25"
+     "desde": "2026-11-26"
     },
     {
      "name": "VEL 46",
@@ -7358,7 +7351,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vel-46-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-25"
+     "desde": "2026-11-26"
     },
     {
      "name": "M4",
@@ -7376,7 +7369,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/m4-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-25"
+     "desde": "2026-11-26"
     },
     {
      "name": "CSG-35",
@@ -7448,7 +7441,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-25"
+     "desde": "2026-11-26"
     },
     {
      "name": "ASTAROTH .57",
@@ -7520,7 +7513,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/cronen-squall-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-25"
+     "desde": "2026-11-26"
     },
     {
      "name": "APOC-338",
@@ -7628,7 +7621,7 @@
       "Sniper"
      ],
      "image": "https://img.wzstats.gg/signal-50-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-25"
+     "desde": "2026-11-26"
     },
     {
      "name": "WARLORD",
@@ -14644,12 +14637,12 @@
       },
       {
        "slot": "Barrel",
-       "name": "FTAC FIREBASE-70 15\"",
+       "name": "FTAC MOD3-LK 15\"",
        "unlock": ""
       },
       {
        "slot": "Rear Grip",
-       "name": "XRK AURA-5",
+       "name": "XRK SINGULARITY-13",
        "unlock": ""
       },
       {

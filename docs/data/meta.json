@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-26T16:49:34+00:00",
+ "generated_at": "2026-11-27T16:35:11+00:00",
  "season": "Season 1, 2026",
  "base_game": "Modern Warfare 4",
  "source": "wzstats.gg",
- "previous_generated_at": "2026-11-25T17:08:04+00:00",
+ "previous_generated_at": "2026-11-26T16:49:34+00:00",
  "warnings": [],
  "changes": [
   {
@@ -238,7 +238,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/kastov-762-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-26"
+     "desde": "2026-11-27"
     },
     {
      "name": "WZ.55 STRIGA",
@@ -292,7 +292,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vel-46-mw4_version1/gunDisplayLoadouts",
-     "desde": "2026-11-26"
+     "desde": "2026-11-27"
     },
     {
      "name": "MOSIN-NAGANT",
@@ -364,7 +364,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/m4-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-26"
+     "desde": "2026-11-27"
     },
     {
      "name": "X-58 NYX",
@@ -418,7 +418,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-26"
+     "desde": "2026-11-27"
     },
     {
      "name": "ASTAROTH .57",
@@ -490,7 +490,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/cronen-squall-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-26"
+     "desde": "2026-11-27"
     },
     {
      "name": "APOC-338",
@@ -598,7 +598,7 @@
       "Sniper"
      ],
      "image": "https://img.wzstats.gg/signal-50-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-26"
+     "desde": "2026-11-27"
     },
     {
      "name": "WARLORD",
@@ -7333,7 +7333,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/kastov-762-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-26"
+     "desde": "2026-11-27"
     },
     {
      "name": "VEL 46",
@@ -7351,7 +7351,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/vel-46-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-26"
+     "desde": "2026-11-27"
     },
     {
      "name": "M4",
@@ -7369,7 +7369,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/m4-mw4/gunDisplayLoadouts",
-     "desde": "2026-11-26"
+     "desde": "2026-11-27"
     },
     {
      "name": "CSG-35",
@@ -7441,7 +7441,7 @@
       "SMG"
      ],
      "image": "https://img.wzstats.gg/ppsh-41-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-26"
+     "desde": "2026-11-27"
     },
     {
      "name": "ASTAROTH .57",
@@ -7513,7 +7513,7 @@
       "Assault Rifle"
      ],
      "image": "https://img.wzstats.gg/cronen-squall-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-26"
+     "desde": "2026-11-27"
     },
     {
      "name": "APOC-338",
@@ -7621,7 +7621,7 @@
       "Sniper"
      ],
      "image": "https://img.wzstats.gg/signal-50-mw4_version1/gunFullDisplay",
-     "desde": "2026-11-26"
+     "desde": "2026-11-27"
     },
     {
      "name": "WARLORD",
@@ -16474,13 +16474,8 @@
      "code": "",
      "attachments": [
       {
-       "slot": "Optic",
-       "name": "SZ PRIMA-4 DOT",
-       "unlock": ""
-      },
-      {
        "slot": "Muzzle",
-       "name": "OCTA-63 COMP",
+       "name": "EXP UNDERTOW GEN. 2",
        "unlock": ""
       },
       {
@@ -16489,50 +16484,18 @@
        "unlock": ""
       },
       {
-       "slot": "Magazine",
-       "name": "30 ROUND MAG",
+       "slot": "Underbarrel",
+       "name": "FSS TAC90 GRIP",
+       "unlock": ""
+      },
+      {
+       "slot": "Comb",
+       "name": "EXP FCO-44",
        "unlock": ""
       },
       {
        "slot": "Laser",
-       "name": "SZ GEN.6 PEQ",
-       "unlock": ""
-      }
-     ]
-    },
-    {
-     "context": "Modern Warfare 4 Multiplayer",
-     "label": "Apex",
-     "code": "",
-     "attachments": [
-      {
-       "slot": "",
-       "name": "CRONEN MAELSTROM",
-       "unlock": "Apex"
-      },
-      {
-       "slot": "Optic",
-       "name": "SZ PRIMA-4 DOT",
-       "unlock": ""
-      },
-      {
-       "slot": "Muzzle",
-       "name": "OCTA-63 COMP",
-       "unlock": ""
-      },
-      {
-       "slot": "Barrel",
-       "name": "BRYSON LONGHORN 20\"",
-       "unlock": ""
-      },
-      {
-       "slot": "Magazine",
-       "name": "30 ROUND MAG",
-       "unlock": ""
-      },
-      {
-       "slot": "Ammunition",
-       "name": "6.8 WRATH FRANGIBLE",
+       "name": "SA LAZ-500",
        "unlock": ""
       }
      ]
